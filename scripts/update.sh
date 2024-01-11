@@ -16,3 +16,6 @@ fi
 git fetch nasa
 git merge nasa/main
 git rebase nasa/main
+
+# update submodules
+git submodule update --init --recursive
