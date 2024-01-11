@@ -2,3 +2,15 @@ Makefile
 build
 /sample_defs
 .DS_Store
+coverage/
+lcov/
+osal_lcov/
+coverage_base.info
+coverage_test.info
+coverage_total.info
+lcov_out.txt
+test_results.txt
+outputOnFailure.txt
+cfe_ut_results.txt
+lcov_summary.txt
+cfe_lcov
