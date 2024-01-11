@@ -45,27 +45,36 @@
 [submodule "apps/cf"]
 	path = apps/cf
 	url = https://github.com/nasa/CF.git
+  branch = main
 [submodule "apps/ds"]
 	path = apps/ds
 	url = https://github.com/nasa/DS.git
+  branch = main
 [submodule "apps/fm"]
 	path = apps/fm
 	url = https://github.com/nasa/FM.git
+  branch = main
 [submodule "apps/cs"]
 	path = apps/cs
 	url = https://github.com/nasa/CS.git
+  branch = main
 [submodule "apps/hk"]
 	path = apps/hk
 	url = https://github.com/nasa/HK.git
+  branch = main
 [submodule "apps/hs"]
 	path = apps/hs
 	url = https://github.com/nasa/HS.git
+  branch = main
 [submodule "apps/lc"]
 	path = apps/lc
 	url = https://github.com/nasa/LC.git
+  branch = main
 [submodule "apps/md"]
 	path = apps/md
 	url = https://github.com/nasa/MD.git
+  branch = main
 [submodule "apps/mm"]
 	path = apps/mm
 	url = https://github.com/nasa/MM.git
+  branch = main
