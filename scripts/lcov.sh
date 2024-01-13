@@ -33,12 +33,12 @@ make -C build/tools/elf2cfetbl
 make -C build/native/default_cpu1/apps/$APP_LOWER
 
 # capture initial lcov and run test
-lcov --capture --initial --directory build --output-file coverage_base.info
-(cd build/native/default_cpu1/apps/$APP_LOWER; ctest --verbose) | tee test_results.txt
+lcov --capture --initial --directory build --output-file "${app}_coverage_base.info"
+(cd build/native/default_cpu1/apps/$APP_LOWER; ctest --verbose) | tee "${app}_test_results.txt"
 
 # calculate coveage
-lcov --capture --rc lcov_branch_coverage=1 --directory build --output-file coverage_test.info
-lcov --rc lcov_branch_coverage=1 --add-tracefile coverage_base.info --add-tracefile coverage_test.info --output-file coverage_total.info
-genhtml coverage_total.info --branch-coverage --output-directory lcov | tee lcov_out.txt
+lcov --capture --rc lcov_branch_coverage=1 --directory build --output-file "${app}_coverage_test.info"
+lcov --rc lcov_branch_coverage=1 --add-tracefile "${app}_coverage_base.info" --add-tracefile "${app}_coverage_test.info" --output-file "${app}_coverage_total.info"
+genhtml "${app}_coverage_total.info" --branch-coverage --output-directory "${app}_lcov" | tee "${app}_lcov_out.txt"
 
 
