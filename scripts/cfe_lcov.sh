@@ -40,12 +40,6 @@ lcov --capture --initial --directory build --output-file coverage_base.info
 (cd build/native/default_cpu1/tbl && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
 (cd build/native/default_cpu1/time && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
 
-# # calculate coverage
-# lcov --capture --rc lcov_branch_coverage=1 --directory build --output-file coverage_test.info
-# lcov --rc lcov_branch_coverage=1 --add-tracefile coverage_base.info --add-tracefile coverage_test.info --output-file coverage_total.info
-# genhtml coverage_total.info --branch-coverage --output-directory lcov | tee lcov_out.txt
-
-
 cd build/native/default_cpu1/config;ctest --verbose > ../../../../cfe_ut_results.txt
 cd ../core_api;ctest --verbose >> ../../../../cfe_ut_results.txt
 cd ../core_private;ctest --verbose >> ../../../../cfe_ut_results.txt
@@ -64,4 +58,4 @@ cd ../../../..
 # calculate coverage
 lcov --capture --rc lcov_branch_coverage=1 --directory build --output-file cfe_coverage_test.info
 lcov --rc lcov_branch_coverage=1 --add-tracefile cfe_coverage_base.info --add-tracefile cfe_coverage_test.info --output-file cfe_coverage_total.info
-genhtml coverage_total.info --branch-coverage --output-directory cfe_lcov | tee cfe_lcov_summary.txt
+genhtml cfe_coverage_total.info --branch-coverage --output-directory cfe_lcov | tee cfe_lcov_summary.txt
