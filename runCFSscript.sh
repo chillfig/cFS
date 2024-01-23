@@ -1,7 +1,11 @@
 #!/bin/bash
 
-cfs_apps=( sch_lab ci_lab to_lab sample_app sample_lib cFS-GroundSystem cf cfs_ci cs ds fm hk hs lc md mm sc cfs_to sch )
+cfs_apps=( apps/sch_lab apps/ci_lab apps/to_lab apps/sample_app tools/cFS-GroundSystem tools/elf2cfetbl tools/tblCRCTool apps/cf apps/cs apps/ds apps/fm apps/hk apps/hs apps/lc apps/md apps/mm apps/sc )
 scriptNums=( 1 2 3 4 5 6 7 8 )
+
+# Create a string from the array elements
+apps_string=$(printf " %s" "${cfs_apps[@]}")
+apps_string=${apps_string:1} # Remove leading space
 
 # get user script
 cat << EOF
@@ -24,7 +28,7 @@ if [[ "$userNum" -ge 2 && "$userNum" -le 4 ]]; then
     # get user cFS application
     echo -e "\n\
         Enter the cFS application name that you want to run the script on\n\
-        sch_lab ci_lab to_lab sample_app sample_lib cFS-GroundSystem cf cfs_ci cs ds fm hk hs lc md mm sc cfs_to sch \
+        $apps_string \
     "
 
     read userApp
@@ -35,19 +39,19 @@ fi
 case $userNum in
 
     1)
-        ./scripts/update.sh
+        ./scripts/update.sh "${cfs_apps[@]}"
         ;;
     2)
-        ./scripts/build-app.sh $userApp
+        ./scripts/build-app.sh "${userApp##*/}"
         ;;
     3)
-        ./scripts/lcov.sh $userApp
+        ./scripts/lcov.sh "${userApp##*/}"
         ;;
     4)
-        ./scripts/format-check.sh $userApp
+        ./scripts/format-check.sh "${userApp##*/}"
         ;;
     5)
-        ./scripts/run-clang-format.sh $userApp
+        ./scripts/run-clang-format.sh "${userApp##*/}"
         ;;
     6)
         ./scripts/gen_cfe_usersguide.sh
