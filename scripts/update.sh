@@ -26,7 +26,6 @@ git rebase nasa/main
 # update submodules
 git submodule update --init --recursive
 
-# Update submodules
 for app in "${cfs_apps[@]}"; do
     cd "${app}"
     git fetch
@@ -34,3 +33,15 @@ for app in "${cfs_apps[@]}"; do
     git pull
     cd "$ROOT_DIR"
 done
+
+# Check if there are any changes
+if [ -n "$(git status --porcelain)" ]; then
+    # Add all changes
+    git add .
+
+    # Commit the changes
+    git commit -m "Updating submodule references"
+
+    # Push the changes
+    git push
+fi
