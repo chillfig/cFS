@@ -43,5 +43,5 @@ if [ -n "$(git status --porcelain)" ]; then
     git commit -m "Updating submodule references"
 
     # Push the changes
-    git push
+    git push --set-upstream origin cFS_testbed
 fi
