@@ -3,8 +3,14 @@
 cfs_apps=( apps/sch_lab apps/ci_lab apps/to_lab apps/sample_app tools/cFS-GroundSystem tools/elf2cfetbl tools/tblCRCTool apps/cf apps/cs apps/ds apps/fm apps/hk apps/hs apps/lc apps/md apps/mm apps/sc )
 scriptNums=( 1 2 3 4 5 6 7 8 )
 
-# Create a string from the array elements
-apps_string=$(printf " %s" "${cfs_apps[@]}")
+# Process each element to get the substring after the last '/'
+for app in "${cfs_apps[@]}"; do
+    app_name="${app##*/}"  # Remove everything up to and including the last '/'
+    apps_shortened+=("$app_name")
+done
+
+# Create a string from the shortened array elements
+apps_string=$(printf " %s" "${apps_shortened[@]}")
 apps_string=${apps_string:1} # Remove leading space
 
 # get user script
@@ -32,7 +38,7 @@ if [[ "$userNum" -ge 2 && "$userNum" -le 4 ]]; then
     "
 
     read userApp
-    while [[ ! " ${cfs_apps[*]} " =~ " ${userApp} " ]]; do echo "try again"; read userApp; done
+    while [[ ! " ${apps_string[*]} " =~ " ${userApp} " ]]; do echo "try again"; read userApp; done
 fi
 
 # execute user script
