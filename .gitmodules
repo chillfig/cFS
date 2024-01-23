@@ -78,3 +78,7 @@
 	path = apps/mm
 	url = https://github.com/nasa/MM.git
   branch = main
+[submodule "apps/sc"]
+	path = apps/sc
+	url = https://github.com/nasa/SC.git
+  branch = main
