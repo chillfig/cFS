@@ -15,3 +15,4 @@ outputOnFailure.txt
 cfe_ut_results.txt
 cfe_lcov_summary.txt
 cfe_lcov
+*doc_logs/
