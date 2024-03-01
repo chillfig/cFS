@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #apps
 #assumes these are all in the cFS/apps directory
 #and that they're all in lowercase

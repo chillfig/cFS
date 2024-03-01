@@ -22,7 +22,7 @@ cat << EOF
     3) lcov.sh
     4) format-check.sh
     5) run-clang-format.sh
-    6) gen_cfe_usersguide.sh
+    6) dox.sh
     7) cfe_functionaltests.sh
     8) cfe_lcov.sh
 EOF
@@ -60,7 +60,7 @@ case $userNum in
         ./scripts/run-clang-format.sh "${userApp##*/}"
         ;;
     6)
-        ./scripts/gen_cfe_usersguide.sh
+        ./scripts/dox.sh "${userApp##*/}"
         ;;
     7)
         ./scripts/cfe_functionaltests.sh
