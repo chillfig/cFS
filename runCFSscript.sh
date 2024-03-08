@@ -30,7 +30,7 @@ EOF
 read userNum
 while [[ ! " ${scriptNums[*]} " =~ " ${userNum} " ]]; do echo "try again"; read userNum; done
 
-if [[ "$userNum" -ge 2 && "$userNum" -le 4 ]]; then
+if [[ "$userNum" -ge 2 && "$userNum" -le 6 ]]; then
     # get user cFS application
     echo -e "\n\
         Enter the cFS application name that you want to run the script on\n\
