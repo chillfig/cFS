@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cfs_apps=( apps/sch_lab apps/ci_lab apps/to_lab apps/sample_app tools/cFS-GroundSystem tools/elf2cfetbl tools/tblCRCTool apps/cf apps/cs apps/ds apps/fm apps/hk apps/hs apps/lc apps/md apps/mm apps/sc )
-scriptNums=( 1 2 3 4 5 6 7 8 )
+scriptNums=( 1 2 3 4 5 6 7 8 9 )
 
 # Process each element to get the substring after the last '/'
 for app in "${cfs_apps[@]}"; do
@@ -23,14 +23,15 @@ cat << EOF
     4) format-check.sh
     5) run-clang-format.sh
     6) dox.sh
-    7) cfe_functionaltests.sh
-    8) cfe_lcov.sh
+    7) static-analysis.sh
+    8) cfe_functionaltests.sh
+    9) cfe_lcov.sh
 EOF
 
 read userNum
 while [[ ! " ${scriptNums[*]} " =~ " ${userNum} " ]]; do echo "try again"; read userNum; done
 
-if [[ "$userNum" -ge 2 && "$userNum" -le 6 ]]; then
+if [[ "$userNum" -ge 2 && "$userNum" -le 7 ]]; then
     # get user cFS application
     echo -e "\n\
         Enter the cFS application name that you want to run the script on\n\
@@ -63,9 +64,12 @@ case $userNum in
         ./scripts/dox.sh "${userApp##*/}"
         ;;
     7)
-        ./scripts/cfe_functionaltests.sh
+        ./scripts/static-analysis.sh "${userApp##*/}"
         ;;
     8)
+        ./scripts/cfe_functionaltests.sh
+        ;;
+    9)
         ./scripts/cfe_lcov.sh
         ;;
 esac
