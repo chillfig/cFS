@@ -16,3 +16,7 @@ cfe_ut_results.txt
 cfe_lcov_summary.txt
 cfe_lcov
 *doc_logs/
+*staticAnalysis_errors
+cppcheck-merge.xslt
+cppcheck-xml2text.xslt
+package-lock.json

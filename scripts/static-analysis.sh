@@ -5,6 +5,7 @@ app=$1
 errorDir="${app}_staticAnalysis_errors"
 DIR=$(pwd) # Save the current working directory to DIR
 cppcheck_xslt_path="nasa/cFS/main/.github/scripts"
+rm -rf ${errorDir}
 mkdir ${errorDir}
 
 # software dependencies

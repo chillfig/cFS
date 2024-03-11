@@ -3,6 +3,10 @@
 applist="cf cs ds fm hk hs lc md mm sc"
 app=$1
 
+# software dependencies
+sudo apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+sudo apt-get update && sudo apt-get install doxygen graphviz -y
+
 # generate documents with logs
 if [[ " $applist " =~ " $app " ]]; then
     # build app usersguide (cFS application layer)
