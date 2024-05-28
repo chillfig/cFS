@@ -41,24 +41,7 @@ defaults:
     shell: bash
 
 jobs:
-  # Checks for duplicate actions. Skips push actions if there is a matching or
-  # duplicate pull-request action.
-  checks-for-duplicates:
-    runs-on: ubuntu-latest
-    # Map a step output to a job output
-    outputs:
-      should_skip: ${{ steps.skip_check.outputs.should_skip }}
-    steps:
-      - id: skip_check
-        uses: fkirc/skip-duplicate-actions@master
-        with:
-          concurrent_skipping: 'same_content'
-          skip_after_successful_duplicate: 'true'
-          do_not_skip: '["pull_request", "workflow_dispatch", "schedule"]'
-
   build-doc:
-    needs: checks-for-duplicates
-    if: ${{ needs.checks-for-duplicates.outputs.should_skip != 'true' || contains(github.ref, 'main') }}
     name: Build Documentation
     runs-on: ubuntu-20.04
 
@@ -77,21 +60,21 @@ jobs:
       - name: Get cache if supplied
         id: cache-src-bld
         if: ${{ inputs.cache-key != '' }}
-        uses: actions/cache@v4
+        uses: actions/cache@v3
         with:
           path: /home/runner/work/${{ github.event.repository.name }}/${{ github.event.repository.name }}/*
           key: ${{ inputs.cache-key }}
 
       - name: Checkout Bundle Main
         if: ${{ inputs.app-name != '' }}
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
           submodules: true
           repository: nasa/cFS
 
       - name: Checkout Repo
         if: ${{ inputs.app-name != '' }}
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
           path: apps/${{ inputs.app-name }}
 
@@ -158,7 +141,7 @@ jobs:
 
       - name: Archive PDF
         if: ${{ inputs.buildpdf == true }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: ${{ matrix.target }}_pdf
           path: ./deploy/${{ matrix.target }}.pdf
