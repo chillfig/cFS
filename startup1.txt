@@ -1,0 +1,183 @@
+OS_Posix_GetSchedulerParams():202:Policy 1: available, min-max: 1-99
+OS_Posix_GetSchedulerParams():202:Policy 2: available, min-max: 1-99
+OS_Posix_TaskAPI_Impl_Init():388:Selected policy 2 for RT tasks, root task = 99
+OS_Posix_TaskAPI_Impl_Init():405:Could not setschedparam in main thread: Operation not permitted (1)
+CFE_PSP: EEPROM Range (2) created: Start Address = 7F11F46A3000, Size = 00080000 Status = 0
+CFE_PSP: Starting the cFE with a POWER ON reset.
+CFE_PSP: Clearing out CFE CDS Shared memory segment.
+CFE_PSP: Clearing out CFE Reset Shared memory segment.
+CFE_PSP: Clearing out CFE User Reserved Shared memory segment.
+1980-001-01:40:14.53275 CFE_ES_SetupResetVariables: POWER ON RESET due to Power Cycle (Power Cycle).
+1980-001-01:40:14.53278 CFE_ES_Main: CFE_ES_Main in EARLY_INIT state
+CFE_PSP: CFE_PSP_AttachExceptions called
+1980-001-01:40:14.53306 CFE_ES_Main: CFE_ES_Main entering CORE_STARTUP state
+1980-001-01:40:14.53306 CFE_ES_CreateObjects: Starting Object Creation calls.
+1980-001-01:40:14.53306 CFE_ES_CreateObjects: Calling CFE_Config_Init
+1980-001-01:40:14.53309 CFE_ES_CreateObjects: Calling CFE_ES_CDSEarlyInit
+1980-001-01:40:14.53318 CFE_ES_CreateObjects: Calling CFE_EVS_EarlyInit
+1980-001-01:40:14.53323 CFE_EVS_EarlyInit: Event Log cleared following power-on reset
+1980-001-01:40:14.53323 CFE_ES_CreateObjects: Calling CFE_SB_EarlyInit
+1980-001-01:40:14.53342 CFE_ES_CreateObjects: Calling CFE_TIME_EarlyInit
+1980-012-14:03:20.00000 CFE_ES_CreateObjects: Calling CFE_TBL_EarlyInit
+1980-012-14:03:20.00022 CFE_ES_CreateObjects: Calling CFE_FS_EarlyInit
+JUSTIN's printf: snprintf_result: 158 and AppName: CFE_EVS
+JUSTIN's printf: strlen(PortMessage): 158
+EVS Port1 1980-012-14:03:20.05087 66/1/CFE_EVS 1: cFE EVS Initialized: cFE Development Build equuleus-rc1+dev137 (Codename Equuleus), Last Official Release: cFE v6.7.0)
+1980-012-14:03:20.15321 CFE_SB_AppInit: Registered 4 events for filtering
+JUSTIN's printf: snprintf_result: 156 and AppName: CFE_SB
+JUSTIN's printf: strlen(PortMessage): 156
+EVS Port1 1980-012-14:03:20.15328 66/1/CFE_SB 1: cFE SB Initialized: cFE Development Build equuleus-rc1+dev137 (Codename Equuleus), Last Official Release: cFE v6.7.0)
+JUSTIN's printf: snprintf_result: 84 and AppName: CFE_SB
+JUSTIN's printf: strlen(PortMessage): 84
+EVS Port1 1980-012-14:03:20.15328 66/1/CFE_SB 14: No subscribers for MsgId 0x808,sender CFE_SB
+JUSTIN's printf: snprintf_result: 156 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 156
+EVS Port1 1980-012-14:03:20.20539 66/1/CFE_ES 1: cFE ES Initialized: cFE Development Build equuleus-rc1+dev137 (Codename Equuleus), Last Official Release: cFE v6.7.0)
+JUSTIN's printf: snprintf_result: 84 and AppName: CFE_SB
+JUSTIN's printf: strlen(PortMessage): 84
+EVS Port1 1980-012-14:03:20.20544 66/1/CFE_SB 14: No subscribers for MsgId 0x808,sender CFE_ES
+JUSTIN's printf: snprintf_result: 142 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 142
+EVS Port1 1980-012-14:03:20.20545 66/1/CFE_ES 2: cFS Versions: cfe equuleus-rc1+dev137, osal equuleus-rc1+dev66, psp equuleus-rc1+dev42. cFE chksm 48413
+JUSTIN's printf: snprintf_result: 84 and AppName: CFE_SB
+JUSTIN's printf: strlen(PortMessage): 84
+EVS Port1 1980-012-14:03:20.20547 66/1/CFE_SB 14: No subscribers for MsgId 0x808,sender CFE_ES
+JUSTIN's printf: snprintf_result: 119 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 119
+EVS Port1 1980-012-14:03:20.20547 66/1/CFE_ES 91: Version Info: Mission SampleMission, version git:equuleus-rc1-74-g3791d82-dirty
+JUSTIN's printf: snprintf_result: 84 and AppName: CFE_SB
+JUSTIN's printf: strlen(PortMessage): 84
+EVS Port1 1980-012-14:03:20.20547 66/1/CFE_SB 14: No subscribers for MsgId 0x808,sender CFE_ES
+JUSTIN's printf: snprintf_result: 112 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 112
+EVS Port1 1980-012-14:03:20.20547 66/1/CFE_ES 91: Version Info: Module CORE_API, version git:draco-rc5-140-g5d8e9a60-dirty
+JUSTIN's printf: snprintf_result: 106 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 106
+EVS Port1 1980-012-14:03:20.20549 66/1/CFE_ES 91: Version Info: Module ES, version git:draco-rc5-140-g5d8e9a60-dirty
+JUSTIN's printf: snprintf_result: 107 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 107
+EVS Port1 1980-012-14:03:20.20549 66/1/CFE_ES 91: Version Info: Module EVS, version git:draco-rc5-140-g5d8e9a60-dirty
+JUSTIN's printf: snprintf_result: 106 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 106
+EVS Port1 1980-012-14:03:20.20549 66/1/CFE_ES 91: Version Info: Module FS, version git:draco-rc5-140-g5d8e9a60-dirty
+JUSTIN's printf: snprintf_result: 106 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 106
+EVS Port1 1980-012-14:03:20.20549 66/1/CFE_ES 91: Version Info: Module SB, version git:draco-rc5-140-g5d8e9a60-dirty
+JUSTIN's printf: snprintf_result: 107 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 107
+EVS Port1 1980-012-14:03:20.20549 66/1/CFE_ES 91: Version Info: Module TBL, version git:draco-rc5-140-g5d8e9a60-dirty
+JUSTIN's printf: snprintf_result: 108 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 108
+EVS Port1 1980-012-14:03:20.20550 66/1/CFE_ES 91: Version Info: Module TIME, version git:draco-rc5-140-g5d8e9a60-dirty
+JUSTIN's printf: snprintf_result: 101 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 101
+EVS Port1 1980-012-14:03:20.20550 66/1/CFE_ES 91: Version Info: Module OSAL, version git:draco-rc5-68-g6483329b
+JUSTIN's printf: snprintf_result: 102 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 102
+EVS Port1 1980-012-14:03:20.20550 66/1/CFE_ES 91: Version Info: Module PSP, version git:equuleus-rc1-44-gf592144
+JUSTIN's printf: snprintf_result: 107 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 107
+EVS Port1 1980-012-14:03:20.20550 66/1/CFE_ES 91: Version Info: Module MSG, version git:draco-rc5-140-g5d8e9a60-dirty
+JUSTIN's printf: snprintf_result: 107 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 107
+EVS Port1 1980-012-14:03:20.20550 66/1/CFE_ES 91: Version Info: Module SBR, version git:draco-rc5-140-g5d8e9a60-dirty
+JUSTIN's printf: snprintf_result: 114 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 114
+EVS Port1 1980-012-14:03:20.20559 66/1/CFE_ES 91: Version Info: Module RESOURCEID, version git:draco-rc5-140-g5d8e9a60-dirty
+JUSTIN's printf: snprintf_result: 110 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 110
+EVS Port1 1980-012-14:03:20.20559 66/1/CFE_ES 91: Version Info: Module CONFIG, version git:draco-rc5-140-g5d8e9a60-dirty
+JUSTIN's printf: snprintf_result: 91 and AppName: CFE_ES
+JUSTIN's printf: strlen(PortMessage): 91
+EVS Port1 1980-012-14:03:20.20561 66/1/CFE_ES 92: Build 202405231028 by jdfiguer@Linux, config sample
+JUSTIN's printf: snprintf_result: 160 and AppName: CFE_TIME
+JUSTIN's printf: strlen(PortMessage): 160
+EVS Port1 1980-012-14:03:20.30642 66/1/CFE_TIME 1: cFE TIME Initialized: cFE Development Build equuleus-rc1+dev137 (Codename Equuleus), Last Official Release: cFE v6.7.0)
+JUSTIN's printf: snprintf_result: 158 and AppName: CFE_TBL
+JUSTIN's printf: strlen(PortMessage): 158
+EVS Port1 1980-012-14:03:20.40686 66/1/CFE_TBL 1: cFE TBL Initialized: cFE Development Build equuleus-rc1+dev137 (Codename Equuleus), Last Official Release: cFE v6.7.0)
+1980-012-14:03:20.45719 CFE_ES_CreateObjects: Finished ES CreateObject table entries.
+1980-012-14:03:20.45725 CFE_ES_Main: CFE_ES_Main entering CORE_READY state
+1980-012-14:03:20.45729 CFE_ES_StartApplications: Opened ES App Startup file: /cf/cfe_es_startup.scr
+1980-012-14:03:20.45754 CFE_ES_ParseFileEntry: Loading shared library: /cf/cfe_assert.so
+1980-012-14:03:20.45774 [BEGIN] CFE FUNCTIONAL TEST
+1980-012-14:03:20.45779 [BEGIN] 01 CFE-STARTUP
+1980-012-14:03:20.45799 CFE_ES_ParseFileEntry: Loading shared library: /cf/sample_lib.so
+SAMPLE Lib Initialized.Sample Lib Development Build equuleus-rc1+dev2 (Codename Equuleus), Last Official Release: Sample Lib v1.1.0)
+1980-012-14:03:20.45853 CFE_ES_ParseFileEntry: Loading file: /cf/sample_app.so, APP: SAMPLE_APP
+1980-012-14:03:20.45902 CFE_ES_ParseFileEntry: Loading file: /cf/ci_lab.so, APP: CI_LAB_APP
+1980-012-14:03:20.45938 CFE_ES_ParseFileEntry: Loading file: /cf/to_lab.so, APP: TO_LAB_APP
+1980-012-14:03:20.45982 CFE_ES_ParseFileEntry: Loading file: /cf/sch_lab.so, APP: SCH_LAB_APP
+1980-012-14:03:20.51014 CI_LAB listening on UDP port: 1234
+(unsigned int)EVS_PktPtr->Payload.PacketID.SpacecraftID: 66
+(unsigned int)EVS_PktPtr->Payload.PacketID.ProcessorID: 1
+(unsigned int)EVS_PktPtr->Payload.PacketID.EventID: 3
+TimeBuffer length: 23
+AppName length: 10
+Message length: 121
+JUSTIN's printf: snprintf_result: 164 and AppName: CI_LAB_APP
+JUSTIN's printf: strlen(PortMessage): 160
+Warning: PortMessage was truncated. Required size: 164, Buffer size: 161
+EVS Port1 1980-012-14:03:20.51020 66/1/CI_LAB_APP 3: CI Lab Initialized.CI Lab App Development Build equuleus-rc1+dev61 (Codename Equuleus), Last Official Release: CI La*
+(unsigned int)EVS_PktPtr->Payload.PacketID.SpacecraftID: 66
+(unsigned int)EVS_PktPtr->Payload.PacketID.ProcessorID: 1
+(unsigned int)EVS_PktPtr->Payload.PacketID.EventID: 1
+TimeBuffer length: 23
+AppName length: 10
+Message length: 121
+JUSTIN's printf: snprintf_result: 164 and AppName: SAMPLE_APP
+JUSTIN's printf: strlen(PortMessage): 160
+Warning: PortMessage was truncated. Required size: 164, Buffer size: 161
+EVS Port1 1980-012-14:03:20.51817 66/1/SAMPLE_APP 1: Sample App Initialized.Sample App Development Build equuleus-rc1+dev46 (Codename Equuleus), Last Official Release: S*
+(unsigned int)EVS_PktPtr->Payload.PacketID.SpacecraftID: 66
+(unsigned int)EVS_PktPtr->Payload.PacketID.ProcessorID: 1
+(unsigned int)EVS_PktPtr->Payload.PacketID.EventID: 1
+TimeBuffer length: 23
+AppName length: 10
+Message length: 121
+JUSTIN's printf: snprintf_result: 164 and AppName: TO_LAB_APP
+SCH Lab Initialized.SCH Lab Development Build equuleus-rc1+dev29 (Codename Equuleus), Last Official Release: SCH Lab v2.3.0)
+JUSTIN's printf: strlen(PortMessage): 160
+Warning: PortMessage was truncated. Required size: 164, Buffer size: 161
+EVS Port1 1980-012-14:03:20.51835 66/1/TO_LAB_APP 1: TO Lab Initialized.TO Lab Development Build equuleus-rc1+dev56 (Codename Equuleus), Last Official Release: TO Lab v2*
+1980-012-14:03:20.57326 CFE_ES_Main: CFE_ES_Main entering APPS_INIT state
+1980-012-14:03:20.57368 CFE_ES_Main: CFE_ES_Main entering OPERATIONAL state
+JUSTIN's printf: snprintf_result: 55 and AppName: CFE_TIME
+JUSTIN's printf: strlen(PortMessage): 55
+EVS Port1 1980-012-14:03:22.00001 66/1/CFE_TIME 21: Stop FLYWHEEL
+JUSTIN's printf: snprintf_result: 55 and AppName: CFE_TIME
+JUSTIN's printf: strlen(PortMessage): 55
+EVS Port1 1980-012-14:03:30.00001 66/1/CFE_TIME 21: Stop FLYWHEEL
+JUSTIN's printf: snprintf_result: 56 and AppName: CFE_TIME
+JUSTIN's printf: strlen(PortMessage): 56
+EVS Port1 1980-012-14:03:31.00038 66/1/CFE_TIME 20: Start FLYWHEEL
+JUSTIN's printf: snprintf_result: 55 and AppName: CFE_TIME
+JUSTIN's printf: strlen(PortMessage): 55
+EVS Port1 1980-012-14:03:55.00004 66/1/CFE_TIME 21: Stop FLYWHEEL
+JUSTIN's printf: snprintf_result: 56 and AppName: CFE_TIME
+JUSTIN's printf: strlen(PortMessage): 56
+EVS Port1 1980-012-14:03:55.99880 66/1/CFE_TIME 20: Start FLYWHEEL
+1980-012-14:04:17.35238 CFE_ES_RunExceptionScan: ExceptionID 0x1110000 in TaskID 0: Caught SIGINT
+1980-012-14:04:17.35244 CFE_ES_RunExceptionScan: Processor Reset count not reached (0/2)
+CFE_PSP: Exiting cFE with PROCESSOR Reset status.
+
+CFE_PSP: Shutdown initiated - Exiting cFE
+CI delete callback -- Closing CI Network socket.
+TO delete callback -- Closing TO Network socket.
+OS_BSP_Initialize():Maximum user msg queue depth = 10
+CFE_PSP: Default Reset SubType = 1
+CFE_PSP: Default CPU ID = 1
+CFE_PSP: Default Spacecraft ID = 66
+CFE_PSP: Default CPU Name: cpu1
+CFE_PSP: initializing module 'soft_timebase' with ID 0110ff00
+CFE_PSP: Instantiated software timebase 'cFS-Master' running at 10000 usec
+CFE_PSP: initializing module 'timebase_posix_clock' with ID 0110ff01
+CFE_PSP: Using POSIX monotonic clock as CFE timebase
+CFE_PSP: initializing module 'eeprom_mmap_file' with ID 0110ff02
+CFE_PSP: Using MMAP simulated EEPROM implementation
+CFE_PSP: initializing module 'ram_notimpl' with ID 0110ff03
+CFE_PSP: Physical RAM access not implemented
+CFE_PSP: initializing module 'port_notimpl' with ID 0110ff04
+CFE_PSP: I/O Port access not implemented
+CFE_PSP: initializing module 'iodriver' with ID 0110ff05
+CFE_PSP: initializing module 'linux_sysmon' with ID 0110ff06

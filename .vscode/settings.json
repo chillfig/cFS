@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "ds_test_utils.h": "c",
+        "utstubs.h": "c",
+        "ds_cmds.h": "c",
+        "cfe_msgids.h": "c",
+        "ds_msg.h": "c",
+        "ds_app.h": "c",
+        "stub_stdio.h": "c",
+        "stub_stdarg.h": "c",
+        "cf_test_utils.h": "c"
+    }
+}
