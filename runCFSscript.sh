@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cfs_apps=( apps/sch_lab apps/ci_lab apps/to_lab apps/sample_app tools/cFS-GroundSystem tools/elf2cfetbl tools/tblCRCTool apps/cf apps/cs apps/ds apps/fm apps/hk apps/hs apps/lc apps/md apps/mm apps/sc cfe )
+cfs_apps=( apps/sch_lab apps/ci_lab apps/to_lab apps/sample_app tools/cFS-GroundSystem tools/elf2cfetbl tools/tblCRCTool apps/cf apps/cs apps/ds apps/fm apps/hk apps/hs apps/lc apps/md apps/mm apps/sc cfe psp )
 scriptNums=( 1 2 3 4 5 6 7 8 )
 
 # Process each element to get the substring after the last '/'
