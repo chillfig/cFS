@@ -49,7 +49,7 @@ jobs:
           echo "APP_UPPER=$(echo ${{ inputs.app-name }} | sed 's/[a-z]/\U&/g')" >> $GITHUB_ENV
           echo "APP_LOWER=$(echo ${{ inputs.app-name }} | sed 's/[A-Z]/\L&/g')" >> $GITHUB_ENV
 
-      - name: Set up start string for verificaiton
+      - name: Set up start string for verification
         run: |
           if [[ "${{ inputs.startup-string }}" == '' ]]; then
             echo "START_STRING=$APP_UPPER Initialized." >> $GITHUB_ENV
@@ -58,13 +58,13 @@ jobs:
           fi
 
       - name: Checkout Bundle Main
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: true
           repository: nasa/cFS
 
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: apps/${{  env.APP_LOWER  }}
 
@@ -93,7 +93,7 @@ jobs:
           ../host/cmdUtil --endian=LE --pktid=0x1806 --cmdcode=2 --half=0x0002
 
       - name: Archive results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cFS_startup_log
           path: cFS_startup_cpu1.txt
