@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# execute the following commented-out environment change cmds in terminal before executing psp lcov
+: << 'COMMENT'
+/opt/WindRiver/wrenv.linux -p workbench-3.3
+/opt/WindRiver/wrenv.linux -p vxworks-6.9
+COMMENT
+
 #apps
 #assumes these are all in the cFS/apps directory
 #and that they're all in lowercase
@@ -44,6 +50,41 @@ make -C build/native/default_cpu1/$app_dir$APP_LOWER
 
 # store all result files
 mkdir -p ${results_dir}
+
+if [ ${app} = "psp" ]; then
+    make -C build/native/default_cpu1/psp/unit-test-coverage/modules/eeprom_direct
+    make -C build/native/default_cpu1/psp/unit-test-coverage/modules/eeprom_mmap_file
+    make -C build/native/default_cpu1/psp/unit-test-coverage/modules/eeprom_notimpl
+    make -C build/native/default_cpu1/psp/unit-test-coverage/modules/port_direct
+    make -C build/native/default_cpu1/psp/unit-test-coverage/modules/port_notimpl
+    make -C build/native/default_cpu1/psp/unit-test-coverage/modules/ram_direct
+    make -C build/native/default_cpu1/psp/unit-test-coverage/modules/ram_notimpl
+    make -C build/native/default_cpu1/psp/unit-test-coverage/modules/timebase_vxworks
+    make -C build/native/default_cpu1/psp/unit-test-coverage/modules/vxworks_sysmon
+    # lcov --capture --initial --directory build --output-file "${results_dir}${app}_coverage_base.info"
+# fi
+# if [ ${app} = "psp" ]; then
+    (cd build/native/default_cpu1/psp/unit-test-coverage/modules/eeprom_direct && ctest --output-on-failure > ${results_dir}outputOnFailure.txt)
+    (cd build/native/default_cpu1/psp/unit-test-coverage/modules/eeprom_mmap_file && ctest --output-on-failure >> ${results_dir}outputOnFailure.txt)
+    (cd build/native/default_cpu1/psp/unit-test-coverage/modules/eeprom_notimpl && ctest --output-on-failure >> ${results_dir}outputOnFailure.txt)
+    (cd build/native/default_cpu1/psp/unit-test-coverage/modules/port_direct && ctest --output-on-failure >> ${results_dir}outputOnFailure.txt)
+    (cd build/native/default_cpu1/psp/unit-test-coverage/modules/port_notimpl && ctest --output-on-failure >> ${results_dir}outputOnFailure.txt)
+    (cd build/native/default_cpu1/psp/unit-test-coverage/modules/ram_direct && ctest --output-on-failure >> ${results_dir}outputOnFailure.txt)
+    (cd build/native/default_cpu1/psp/unit-test-coverage/modules/ram_notimpl && ctest --output-on-failure >> ${results_dir}outputOnFailure.txt)
+    (cd build/native/default_cpu1/psp/unit-test-coverage/modules/timebase_vxworks && ctest --output-on-failure >> ${results_dir}outputOnFailure.txt)
+    (cd build/native/default_cpu1/psp/unit-test-coverage/modules/vxworks_sysmon && ctest --output-on-failure >> ${results_dir}outputOnFailure.txt)
+
+    cd build/native/default_cpu1/psp/unit-test-coverage/modules/eeprom_direct;ctest --verbose > ${results_dir}psp_ut_results.txt
+    cd ../eeprom_mmap_file;ctest --verbose >> ${results_dir}psp_ut_results.txt
+    cd ../eeprom_notimpl;ctest --verbose >> ${results_dir}psp_ut_results.txt
+    cd ../port_direct;ctest --verbose >> ${results_dir}psp_ut_results.txt
+    cd ../port_notimpl;ctest --verbose >> ${results_dir}psp_ut_results.txt
+    cd ../ram_direct;ctest --verbose >> ${results_dir}psp_ut_results.txt
+    cd ../ram_notimpl;ctest --verbose >> ${results_dir}psp_ut_results.txt
+    cd ../timebase_vxworks;ctest --verbose >> ${results_dir}psp_ut_results.txt
+    cd ../vxworks_sysmon;ctest --verbose >> ${results_dir}psp_ut_results.txt
+    cd ../../../../../../..
+fi
 
 # capture initial lcov and run test
 lcov --capture --initial --directory build --output-file "${results_dir}${app}_coverage_base.info"
