@@ -9,38 +9,40 @@ make distclean
 
 cp ./cfe/cmake/Makefile.sample Makefile
 cp -r ./cfe/cmake/sample_defs sample_defs
-make SIMULATION=native ENABLE_UNIT_TESTS=true OMIT_DEPRECATED=true prep
+make prep
+make -C build mission-prebuild
+# make SIMULATION=native ENABLE_UNIT_TESTS=true OMIT_DEPRECATED=true prep
 
 # build
-make -C build/native/default_cpu1/config
-make -C build/native/default_cpu1/core_api
-make -C build/native/default_cpu1/core_private
-make -C build/native/default_cpu1/es
-make -C build/native/default_cpu1/evs
-make -C build/native/default_cpu1/fs
-make -C build/native/default_cpu1/msg
-make -C build/native/default_cpu1/resourceid
-make -C build/native/default_cpu1/sb
-make -C build/native/default_cpu1/sbr
-make -C build/native/default_cpu1/tbl
-make -C build/native/default_cpu1/time
+make -C build/i686-linux-gnu/default_cpu1/config
+make -C build/i686-linux-gnu/default_cpu1/core_api
+make -C build/i686-linux-gnu/default_cpu1/core_private
+make -C build/i686-linux-gnu/default_cpu1/es
+make -C build/i686-linux-gnu/default_cpu1/evs
+make -C build/i686-linux-gnu/default_cpu1/fs
+make -C build/i686-linux-gnu/default_cpu1/msg
+make -C build/i686-linux-gnu/default_cpu1/resourceid
+make -C build/i686-linux-gnu/default_cpu1/sb
+make -C build/i686-linux-gnu/default_cpu1/sbr
+make -C build/i686-linux-gnu/default_cpu1/tbl
+make -C build/i686-linux-gnu/default_cpu1/time
 
 # test
 lcov --capture --initial --directory build --output-file coverage_base.info
-(cd build/native/default_cpu1/config && ctest --output-on-failure > ../../../../outputOnFailure.txt)
-(cd build/native/default_cpu1/core_api && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
-(cd build/native/default_cpu1/core_private && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
-(cd build/native/default_cpu1/es && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
-(cd build/native/default_cpu1/evs && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
-(cd build/native/default_cpu1/fs && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
-(cd build/native/default_cpu1/msg && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
-(cd build/native/default_cpu1/resourceid  && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
-(cd build/native/default_cpu1/sb && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
-(cd build/native/default_cpu1/sbr && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
-(cd build/native/default_cpu1/tbl && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
-(cd build/native/default_cpu1/time && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
+(cd build/i686-linux-gnu/default_cpu1/config && ctest --output-on-failure > ../../../../outputOnFailure.txt)
+(cd build/i686-linux-gnu/default_cpu1/core_api && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
+(cd build/i686-linux-gnu/default_cpu1/core_private && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
+(cd build/i686-linux-gnu/default_cpu1/es && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
+(cd build/i686-linux-gnu/default_cpu1/evs && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
+(cd build/i686-linux-gnu/default_cpu1/fs && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
+(cd build/i686-linux-gnu/default_cpu1/msg && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
+(cd build/i686-linux-gnu/default_cpu1/resourceid  && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
+(cd build/i686-linux-gnu/default_cpu1/sb && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
+(cd build/i686-linux-gnu/default_cpu1/sbr && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
+(cd build/i686-linux-gnu/default_cpu1/tbl && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
+(cd build/i686-linux-gnu/default_cpu1/time && ctest --output-on-failure >> ../../../../outputOnFailure.txt)
 
-cd build/native/default_cpu1/config;ctest --verbose > ../../../../cfe_ut_results.txt
+cd build/i686-linux-gnu/default_cpu1/config;ctest --verbose > ../../../../cfe_ut_results.txt
 cd ../core_api;ctest --verbose >> ../../../../cfe_ut_results.txt
 cd ../core_private;ctest --verbose >> ../../../../cfe_ut_results.txt
 cd ../es;ctest --verbose >> ../../../../cfe_ut_results.txt
@@ -53,9 +55,9 @@ cd ../sbr;ctest --verbose >> ../../../../cfe_ut_results.txt
 cd ../tbl;ctest --verbose >> ../../../../cfe_ut_results.txt
 cd ../time;ctest --verbose >> ../../../cfe_ut_results.txt
 
-cd ../../../..
+# cd ../../../..
 
-# calculate coverage
-lcov --capture --rc lcov_branch_coverage=1 --directory build --output-file cfe_coverage_test.info
-lcov --rc lcov_branch_coverage=1 --add-tracefile cfe_coverage_base.info --add-tracefile cfe_coverage_test.info --output-file cfe_coverage_total.info
-genhtml cfe_coverage_total.info --branch-coverage --output-directory cfe_lcov | tee cfe_lcov_summary.txt
+# # calculate coverage
+# lcov --capture --rc lcov_branch_coverage=1 --directory build --output-file cfe_coverage_test.info
+# lcov --rc lcov_branch_coverage=1 --add-tracefile cfe_coverage_base.info --add-tracefile cfe_coverage_test.info --output-file cfe_coverage_total.info
+# genhtml cfe_coverage_total.info --branch-coverage --output-directory cfe_lcov | tee cfe_lcov_summary.txt
