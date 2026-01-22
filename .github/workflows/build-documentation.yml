@@ -2,7 +2,15 @@ name: cFS Documentation and Guides
 
 on:
   push:
+    branches:
+      - dev
+      - main
   pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+  workflow_dispatch:
 
 # Force bash to apply pipefail option so pipeline failures aren't masked
 defaults:
