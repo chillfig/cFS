@@ -3,7 +3,15 @@ name: Build, Test, and Run [OMIT_DEPRECATED = true]
 # Run every time a new commit pushed or for pull requests
 on:
   push:
+    branches:
+      - dev
+      - main
   pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+  workflow_dispatch:
 
 env:
   SIMULATION: native
