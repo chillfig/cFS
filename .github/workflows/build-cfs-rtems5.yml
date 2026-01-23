@@ -68,6 +68,7 @@ jobs:
         run: |
           cp ./cfe/cmake/Makefile.sample Makefile
           cp -r ./cfe/cmake/sample_defs sample_defs
+          ln -s /root/rtems-5 /opt/rtems-5
 
       # Setup the build system
       - name: Make Prep
@@ -109,6 +110,7 @@ jobs:
         run: |
           cp ./cfe/cmake/Makefile.sample Makefile
           cp -r ./cfe/cmake/sample_defs sample_defs
+          ln -s /root/rtems-5 /opt/rtems-5
 
       # Setup the build system
       - name: Make
