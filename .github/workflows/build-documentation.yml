@@ -57,7 +57,7 @@ jobs:
     name: Build cFS documents
     uses: nasa/cFS/.github/workflows/build-deploy-doc.yml@main
     with:
-      target: "[\"cfe-usersguide\", \"osal-apiguide\", \"mission-doc\"]"
+      target: "[\"cfe-usersguide\", \"osal-apiguide\"]"
       cache-key: cfs-doc-${{ github.run_id }}-${{ github.run_attempt }}
       deploy: false
 
