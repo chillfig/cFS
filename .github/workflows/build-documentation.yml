@@ -2,7 +2,15 @@ name: cFS Documentation and Guides
 
 on:
   push:
+    branches:
+      - dev
+      - main
   pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+  workflow_dispatch:
 
 # Force bash to apply pipefail option so pipeline failures aren't masked
 defaults:
@@ -42,15 +50,15 @@ jobs:
         uses: actions/cache@v4
         with:
           path: /home/runner/work/${{ github.event.repository.name }}/${{ github.event.repository.name }}/*
-          key: cfs-doc-${{ github.run_number }}
+          key: cfs-doc-${{ github.run_id }}-${{ github.run_attempt }}
 
   build-cfs-documentation:
     needs: checkout-and-cache
     name: Build cFS documents
     uses: nasa/cFS/.github/workflows/build-deploy-doc.yml@main
     with:
-      target: "[\"cfe-usersguide\", \"osal-apiguide\", \"mission-doc\"]"
-      cache-key: cfs-doc-${{ github.run_number }}
+      target: "[\"cfe-usersguide\", \"osal-apiguide\"]"
+      cache-key: cfs-doc-${{ github.run_id }}-${{ github.run_attempt }}
       deploy: false
 
   deploy-documentation:

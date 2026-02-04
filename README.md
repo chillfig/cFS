@@ -40,7 +40,6 @@ More information is available on the [cFS Website](<https://cfs.gsfc.nasa.gov>).
 
 - [cFE User's Guide](<https://github.com/nasa/cFS/blob/gh-pages/cfe-usersguide.pdf>)
 - [OSAL User's Guide](<https://github.com/nasa/cFS/blob/gh-pages/osal-apiguide.pdf>)
-- [Combined Mission documentation](<https://github.com/nasa/cFS/blob/gh-pages/mission-doc.pdf>)
 - [cFE App Developer's Guide](<https://github.com/nasa/cFE/blob/main/docs/cFE%20Application%20Developers%20Guide.md>)
 - [Training documentation](<https://ntrs.nasa.gov/citations/20240000217>)
 - [cFS Overview](<https://cfs.gsfc.nasa.gov/cFS-OviewBGSlideDeck-ExportControl-Final.pdf>)
@@ -49,52 +48,18 @@ More information is available on the [cFS Website](<https://cfs.gsfc.nasa.gov>).
 
 See [releases](<https://github.com/nasa/cFS/releases>) for release history and associated artifacts related to the cFS BUNDLE.
 
-**Aquila: OFFICIAL RELEASE**:
+**v7.0.0 (Draco): OFFICIAL RELEASE**:
 
+- **Note: The cFS bundle structure and build system will be updated in a coming release to include all open source apps and new build commands. An evaluation version of this bundle is available in the [techdev-multitarget-bundle](https://github.com/nasa/cFS/tree/techdev-multitarget-bundle) branch for feedback.**
 - Released under Apache 2.0
-- Includes cFE 6.7.0 (cFE, PSP, framework apps, and framework tools as marked) and OSAL 5.0.0
-- [Version description document, including release notes](<https://github.com/nasa/cFS/blob/v6.7.0a/VDD-Aquila.md>)
-- [Release artifacts](<https://github.com/nasa/cFS/releases/tag/v6.7.0a>)
+- Includes cFE 7.0.0 (cFE, PSP, framework apps, and framework tools as marked) and OSAL 7.0.0
+- [Release artifacts, including Version Description Document](https://github.com/nasa/cFS/releases/tag/v7.0.0)
 
 Other elements listed in [Related Capability](#related-capability) are released under a variety of licenses as detailed in their respective repositories.
 
-## Open-Source Roadmap
+## Upcoming Releases
 
-The following is a list of features and updates planned for cFS (in no particular order). Have other ideas? Want to partner with us? Please let us know at [cfs-program@lists.nasa.gov](<mailto:cfs-program@lists.nasa.gov>).
-
-- "Bundler" tool to create custom bundles from known capability developed across the community (essentially an interactive catalog of apps that have been verified against a particular version of cFS)
-- VxWorks 7 support, including running applications as real-time processes (RTPs)
-- RTEMS 6 support
-- Automated build verification execution framework for emulated targets
-- Time services refactor/simplication
-- Symmetric multi-processing (SMP) APIs
-- Electronic Data Sheet (EDS) integration option and improvements to packet layouts for portability/consistency
-
-## Upcoming Release
-
-Note: Official releases will be created through the NASA software release process. The cFS team plans to return to a more regular official release cadence in the near future.
-
-### Next major release development features
-
-- Certification framework with automated build verification tests of framework requirements
-  - Executable on real/emulated/simulated/ or dockerized targets
-  - Add PSP coverage testing framework (nasa/psp#184, nasa/psp#174)
-  - Add PSP and cFE functional testing framework for APIs  (nasa/cfe#779)
-  - Scrub OSAL coverage and functional tests
-  - Scrub cFE coverage tests
-  - Add cFE API functional tests
-  - NOTE: Command verification pending tool open source release
-- Documentation (updated traceability, APIs/ICDs, general update)
-- Framework for mission customization of core services
-  - Header customization support (nasa/cFE#726)
-- Remove deprecated code
-- Cmd/Tlm structure scrub for alignment/padding/consistency
-- Library query and reporting and ES resource management (nasa/cFE#28, nasa/cFE#797)
-- Type safety enhancements
-- Added abstract configuration registry
-- RTEMS 5/6 support updates
-- Added support for fractional seconds in epoch
-- Bug fixes
+Note: Official releases will be created through the NASA software release process.
   
 ### Known Issues
 
@@ -183,6 +148,7 @@ See the [cFE Application Developer's Guide](https://github.com/nasa/cFE/blob/mai
 - Other Ground station software
   - cFS-EDS-GroundStation: Ground station implemented via EDS at <https://github.com/nasa/cFS-EDS-GroundStation>
 - Other Apps
+  - BP: DTN Bundle Protocol application at <https://github.com/nasa/bp>
   - CS: Checksum application at <https://github.com/nasa/CS>
   - CF: CFDP application at <https://github.com/nasa/CF>
   - DS: Data Store application at <https://github.com/nasa/DS>
@@ -197,10 +163,13 @@ See the [cFE Application Developer's Guide](https://github.com/nasa/cFE/blob/mai
   - SCA: Stored Command Absolute application at <https://github.com/nasa/SCA>
   - Skeleton App: A bare-bones application to which you can add your business logic at <https://github.com/nasa/skeleton_app>
 - Other Interfaces
+  - cFS COSMOS Plugin: COSMOS plugin for testing cFS <https://github.com/nasa/cfs-cosmos-plugin>
+  - cFS Command Line Tools: Simple command line utilities to send a command or view telemery on the console <https://github.com/nasa/cfs-commandline-tools>
   - SIL: Simulink Interface Layer at <https://github.com/nasa/SIL>
   - ECI: External Code Interface at <https://github.com/nasa/ECI>
   - SBN-Client: External code interface to SBN at <https://github.com/nasa/SBN-Client>
 - Other Libraries
+  - BPLib: DTN Bundle Protocol library at <https://github.com/nasa/bplib>
   - cFS_IO_LIB: IO library at <https://github.com/nasa/CFS_IO_LIB>
   - cFS_LIB: at <https://github.com/nasa/cfs_lib>
   - EdsLib: CCSDS SOIS Electronic Data Sheet Tool and Library at <https://github.com/nasa/EdsLib>

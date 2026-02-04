@@ -2,9 +2,11 @@ name: Format Check
 
 # Run on all push and pull requests
 on:
-  push:
   pull_request:
-  workflow_call:
+    types:
+      - opened
+      - reopened
+      - synchronize
 
 # Force bash to apply pipefail option so pipeline failures aren't masked
 defaults:
