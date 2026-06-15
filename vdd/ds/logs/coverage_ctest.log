@@ -1,0 +1,2198 @@
+$ ctest --verbose
+# cwd: /tmp/vdd_ds_coverage_eom3aa5k/cFS/build/native/default_cpu1/apps/ds
+
+UpdateCTestConfiguration  from :/tmp/vdd_ds_coverage_eom3aa5k/cFS/build/native/default_cpu1/apps/ds/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/tmp/vdd_ds_coverage_eom3aa5k/cFS/build/native/default_cpu1/apps/ds/DartConfiguration.tcl
+Test project /tmp/vdd_ds_coverage_eom3aa5k/cFS/build/native/default_cpu1/apps/ds
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: coverage-ds-ds_table
+
+1: Test command: /tmp/vdd_ds_coverage_eom3aa5k/cFS/build/native/default_cpu1/apps/ds/unit-test/coverage-ds-ds_table-testrunner
+1: Working Directory: /tmp/vdd_ds_coverage_eom3aa5k/cFS/build/native/default_cpu1/apps/ds/unit-test
+1: Test timeout computed to be: 10000000
+1: 
+1: [BEGIN] UNIT TEST
+1: 
+1: [BEGIN] 01 SETUP
+1: [  END] No test cases
+1: 
+1: [BEGIN] 01 DS_TableInit_Test_Nominal
+1: [ PASS] 01.001 ds_table_tests.c:56 - DS_TableInit() (0) == CFE_SUCCESS (0)
+1: [ PASS] 01.002 ds_table_tests.c:58 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 01 DS_TableInit_Test_Nominal TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 02 DS_TableInit_Test_TableInfoRecovered
+1: [ PASS] 02.001 ds_table_tests.c:70 - DS_TableInit() (0) == CFE_SUCCESS (0)
+1: [ PASS] 02.002 ds_table_tests.c:73 - CallCount: CFE_EVS_SendEvent() (2) == 2 (2)
+1: [ PASS] 02.003 ds_table_tests.c:74 - context_CFE_EVS_SendEvent[0].EventID (7) == DS_INIT_TBL_CDS_EID (7)
+1: [ PASS] 02.004 ds_table_tests.c:75 - context_CFE_EVS_SendEvent[0].EventType (1) == CFE_EVS_EventType_DEBUG (1)
+1: [ PASS] 02.005 ds_table_tests.c:76 - context_CFE_EVS_SendEvent[1].EventID (7) == DS_INIT_TBL_CDS_EID (7)
+1: [ PASS] 02.006 ds_table_tests.c:77 - context_CFE_EVS_SendEvent[1].EventType (1) == CFE_EVS_EventType_DEBUG (1)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 02 DS_TableInit_Test_TableInfoRecovered TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 03 DS_TableInit_Test_RegisterDestTableErro
+1: [ PASS] 03.001 ds_table_tests.c:89 - DS_TableInit() (153) == 0x99 (153)
+1: [ PASS] 03.002 ds_table_tests.c:92 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 03.003 ds_table_tests.c:93 - context_CFE_EVS_SendEvent[0].EventID (8) == DS_INIT_TBL_ERR_EID (8)
+1: [ PASS] 03.004 ds_table_tests.c:94 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 03 DS_TableInit_Test_RegisterDestTableErro TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 04 DS_TableInit_Test_RegisterFilterTableEr
+1: [ PASS] 04.001 ds_table_tests.c:106 - DS_TableInit() (153) == 0x99 (153)
+1: [ PASS] 04.002 ds_table_tests.c:109 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 04.003 ds_table_tests.c:110 - context_CFE_EVS_SendEvent[0].EventID (8) == DS_INIT_TBL_ERR_EID (8)
+1: [ PASS] 04.004 ds_table_tests.c:111 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 04 DS_TableInit_Test_RegisterFilterTableEr TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 05 DS_TableInit_Test_LoadDestTableError
+1: [ PASS] 05.001 ds_table_tests.c:120 - DS_TableInit() (0) == CFE_SUCCESS (0)
+1: [ PASS] 05.002 ds_table_tests.c:123 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 05.003 ds_table_tests.c:124 - context_CFE_EVS_SendEvent[0].EventID (8) == DS_INIT_TBL_ERR_EID (8)
+1: [ PASS] 05.004 ds_table_tests.c:125 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 05 DS_TableInit_Test_LoadDestTableError TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 06 DS_TableInit_Test_LoadFilterTableError
+1: [ PASS] 06.001 ds_table_tests.c:138 - DS_TableInit() (0) == CFE_SUCCESS (0)
+1: [ PASS] 06.002 ds_table_tests.c:141 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 06.003 ds_table_tests.c:142 - context_CFE_EVS_SendEvent[0].EventID (8) == DS_INIT_TBL_ERR_EID (8)
+1: [ PASS] 06.004 ds_table_tests.c:143 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 06 DS_TableInit_Test_LoadFilterTableError TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 07 DS_TableManageDestFile_Test_TableInfoUp
+1: [ PASS] 07.001 ds_table_tests.c:165 - DS_AppData.DestTblLoadCounter (1) == 1 (1)
+1: [ PASS] 07.002 ds_table_tests.c:167 - DS_AppData.FileStatus[0].FileState (0) == 0 (0)
+1: [ PASS] 07.003 ds_table_tests.c:168 - DS_AppData.FileStatus[0].FileCount (0) == 0 (0)
+1: [ PASS] 07.004 ds_table_tests.c:170 - DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileState (8) == DS_DEST_FILE_CNT / 2 (8)
+1: [ PASS] 07.005 ds_table_tests.c:171 - DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileCount (8) == DS_DEST_FILE_CNT / 2 (8)
+1: [ PASS] 07.006 ds_table_tests.c:173 - DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileState (15) == DS_DEST_FILE_CNT - 1 (15)
+1: [ PASS] 07.007 ds_table_tests.c:174 - DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileCount (15) == DS_DEST_FILE_CNT - 1 (15)
+1: [ PASS] 07.008 ds_table_tests.c:176 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 07 DS_TableManageDestFile_Test_TableInfoUp TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 08 DS_TableManageDestFile_Test_TableNeverL
+1: [ PASS] 08.001 ds_table_tests.c:188 - DS_AppData.DestTblErrCounter (1) == 1 (1)
+1: [ PASS] 08.002 ds_table_tests.c:189 - DS_AppData.DestFileTblPtr (0x0) == NULL (0x0)
+1: [ PASS] 08.003 ds_table_tests.c:191 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 08 DS_TableManageDestFile_Test_TableNeverL TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 09 DS_TableManageDestFile_Test_TableInfoDu
+1: [ PASS] 09.001 ds_table_tests.c:203 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 09 DS_TableManageDestFile_Test_TableInfoDu TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 10 DS_TableManageDestFile_Test_TableInfoVa
+1: [ PASS] 10.001 ds_table_tests.c:215 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 10 DS_TableManageDestFile_Test_TableInfoVa TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 11 DS_TableManageDestFile_Test_TableInfoUp
+1: [ PASS] 11.001 ds_table_tests.c:235 - DS_AppData.DestTblLoadCounter (1) == 1 (1)
+1: [ PASS] 11.002 ds_table_tests.c:237 - DS_AppData.FileStatus[0].FileState (0) == 0 (0)
+1: [ PASS] 11.003 ds_table_tests.c:238 - DS_AppData.FileStatus[0].FileCount (0) == 0 (0)
+1: [ PASS] 11.004 ds_table_tests.c:240 - DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileState (8) == DS_DEST_FILE_CNT / 2 (8)
+1: [ PASS] 11.005 ds_table_tests.c:241 - DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileCount (8) == DS_DEST_FILE_CNT / 2 (8)
+1: [ PASS] 11.006 ds_table_tests.c:243 - DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileState (15) == DS_DEST_FILE_CNT - 1 (15)
+1: [ PASS] 11.007 ds_table_tests.c:244 - DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileCount (15) == DS_DEST_FILE_CNT - 1 (15)
+1: [ PASS] 11.008 ds_table_tests.c:246 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 11 DS_TableManageDestFile_Test_TableInfoUp TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 12 DS_TableManageDestFile_Test_TableSucces
+1: [ PASS] 12.001 ds_table_tests.c:266 - DS_AppData.DestTblLoadCounter (0) == 0 (0)
+1: [ PASS] 12.002 ds_table_tests.c:268 - DS_AppData.FileStatus[0].FileState (0) == 0 (0)
+1: [ PASS] 12.003 ds_table_tests.c:269 - DS_AppData.FileStatus[0].FileCount (0) == 0 (0)
+1: [ PASS] 12.004 ds_table_tests.c:271 - DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileState (0) == 0 (0)
+1: [ PASS] 12.005 ds_table_tests.c:272 - DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileCount (0) == 0 (0)
+1: [ PASS] 12.006 ds_table_tests.c:274 - DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileState (0) == 0 (0)
+1: [ PASS] 12.007 ds_table_tests.c:275 - DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileCount (0) == 0 (0)
+1: [ PASS] 12.008 ds_table_tests.c:277 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 12 DS_TableManageDestFile_Test_TableSucces TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 13 DS_TableManageFilter_Test_TableInfoUpda
+1: [ PASS] 13.001 ds_table_tests.c:291 - DS_AppData.FilterTblLoadCounter (1) == 1 (1)
+1: [ PASS] 13.002 ds_table_tests.c:293 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 13 DS_TableManageFilter_Test_TableInfoUpda TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 14 DS_TableManageFilter_Test_TableNeverLoa
+1: [ PASS] 14.001 ds_table_tests.c:306 - DS_AppData.FilterTblErrCounter (1) == 1 (1)
+1: [ PASS] 14.002 ds_table_tests.c:307 - DS_AppData.FilterTblPtr (0x0) == NULL (0x0)
+1: [ PASS] 14.003 ds_table_tests.c:309 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 14 DS_TableManageFilter_Test_TableNeverLoa TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 15 DS_TableManageFilter_Test_TableInfoDump
+1: [ PASS] 15.001 ds_table_tests.c:321 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 15 DS_TableManageFilter_Test_TableInfoDump TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 16 DS_TableManageFilter_Test_TableInfoVali
+1: [ PASS] 16.001 ds_table_tests.c:333 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 16 DS_TableManageFilter_Test_TableInfoVali TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 17 DS_TableManageFilter_Test_TableInfoUpda
+1: [ PASS] 17.001 ds_table_tests.c:345 - DS_AppData.FilterTblLoadCounter (1) == 1 (1)
+1: [ PASS] 17.002 ds_table_tests.c:347 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 17 DS_TableManageFilter_Test_TableInfoUpda TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 18 DS_TableManageFilter_Test_TableSuccess
+1: [ PASS] 18.001 ds_table_tests.c:362 - DS_AppData.FilterTblLoadCounter (0) == 0 (0)
+1: [ PASS] 18.002 ds_table_tests.c:364 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 18 DS_TableManageFilter_Test_TableSuccess TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 19 DS_TableVerifyDestFile_Test_Nominal
+1: [ PASS] 19.001 ds_table_tests.c:384 - DS_TableVerifyDestFile(&DestFileTable) (0) == CFE_SUCCESS (0)
+1: [ PASS] 19.002 ds_table_tests.c:387 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 19.003 ds_table_tests.c:388 - context_CFE_EVS_SendEvent[0].EventID (10) == DS_FIL_TBL_EID (10)
+1: [ PASS] 19.004 ds_table_tests.c:389 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 19 DS_TableVerifyDestFile_Test_Nominal TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 20 DS_TableVerifyDestFile_Test_CountBad
+1: [ PASS] 20.001 ds_table_tests.c:447 - DS_TableVerifyDestFile(&DestFileTable) (-1) == DS_TABLE_VERIFY_ERR (-1)
+1: [ PASS] 20.002 ds_table_tests.c:450 - CallCount: CFE_EVS_SendEvent() (2) == 2 (2)
+1: [ PASS] 20.003 ds_table_tests.c:452 - context_CFE_EVS_SendEvent[1].EventID (10) == DS_FIL_TBL_EID (10)
+1: [ PASS] 20.004 ds_table_tests.c:453 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 20 DS_TableVerifyDestFile_Test_CountBad TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 21 DS_TableVerifyDestFileEntry_Test_Nomina
+1: [ PASS] 21.001 ds_table_tests.c:473 - DS_TableVerifyDestFileEntry(&DestFileEntry, TableIndex, ErrorCount) (1) == true (1)
+1: [ PASS] 21.002 ds_table_tests.c:476 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 21 DS_TableVerifyDestFileEntry_Test_Nomina TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 22 DS_TableVerifyDestFileEntry_Test_Invali
+1: [ PASS] 22.001 ds_table_tests.c:546 - DS_TableVerifyDestFileEntry(&DestFileEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 22.002 ds_table_tests.c:549 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 22.003 ds_table_tests.c:550 - context_CFE_EVS_SendEvent[0].EventID (11) == DS_FIL_TBL_ERR_EID (11)
+1: [ PASS] 22.004 ds_table_tests.c:551 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 22 DS_TableVerifyDestFileEntry_Test_Invali TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 23 DS_TableVerifyDestFileEntry_Test_Invali
+1: [ PASS] 23.001 ds_table_tests.c:571 - DS_TableVerifyDestFileEntry(&DestFileEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 23.002 ds_table_tests.c:574 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 23.003 ds_table_tests.c:575 - context_CFE_EVS_SendEvent[0].EventID (11) == DS_FIL_TBL_ERR_EID (11)
+1: [ PASS] 23.004 ds_table_tests.c:576 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 23 DS_TableVerifyDestFileEntry_Test_Invali TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 24 DS_TableVerifyDestFileEntry_Test_Invali
+1: [ PASS] 24.001 ds_table_tests.c:596 - DS_TableVerifyDestFileEntry(&DestFileEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 24.002 ds_table_tests.c:599 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 24.003 ds_table_tests.c:600 - context_CFE_EVS_SendEvent[0].EventID (11) == DS_FIL_TBL_ERR_EID (11)
+1: [ PASS] 24.004 ds_table_tests.c:601 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 24 DS_TableVerifyDestFileEntry_Test_Invali TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 25 DS_TableVerifyDestFileEntry_Test_Invali
+1: [ PASS] 25.001 ds_table_tests.c:621 - DS_TableVerifyDestFileEntry(&DestFileEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 25.002 ds_table_tests.c:624 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 25.003 ds_table_tests.c:625 - context_CFE_EVS_SendEvent[0].EventID (11) == DS_FIL_TBL_ERR_EID (11)
+1: [ PASS] 25.004 ds_table_tests.c:626 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 25 DS_TableVerifyDestFileEntry_Test_Invali TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 26 DS_TableVerifyDestFileEntry_Test_Invali
+1: [ PASS] 26.001 ds_table_tests.c:646 - DS_TableVerifyDestFileEntry(&DestFileEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 26.002 ds_table_tests.c:649 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 26.003 ds_table_tests.c:650 - context_CFE_EVS_SendEvent[0].EventID (11) == DS_FIL_TBL_ERR_EID (11)
+1: [ PASS] 26.004 ds_table_tests.c:651 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 26 DS_TableVerifyDestFileEntry_Test_Invali TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 27 DS_TableVerifyDestFileEntry_Test_Invali
+1: [ PASS] 27.001 ds_table_tests.c:671 - DS_TableVerifyDestFileEntry(&DestFileEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 27.002 ds_table_tests.c:674 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 27 DS_TableVerifyDestFileEntry_Test_Invali TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 28 DS_TableVerifyDestFileEntry_Test_Invali
+1: [ PASS] 28.001 ds_table_tests.c:694 - DS_TableVerifyDestFileEntry(&DestFileEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 28.002 ds_table_tests.c:697 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 28 DS_TableVerifyDestFileEntry_Test_Invali TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 29 DS_TableVerifyDestFileEntry_Test_Invali
+1: [ PASS] 29.001 ds_table_tests.c:717 - DS_TableVerifyDestFileEntry(&DestFileEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 29.002 ds_table_tests.c:720 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 29 DS_TableVerifyDestFileEntry_Test_Invali TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 30 DS_TableVerifyDestFileEntry_Test_Invali
+1: [ PASS] 30.001 ds_table_tests.c:740 - DS_TableVerifyDestFileEntry(&DestFileEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 30.002 ds_table_tests.c:743 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 30 DS_TableVerifyDestFileEntry_Test_Invali TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 31 DS_TableVerifyDestFileEntry_Test_Invali
+1: [ PASS] 31.001 ds_table_tests.c:763 - DS_TableVerifyDestFileEntry(&DestFileEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 31.002 ds_table_tests.c:766 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 31 DS_TableVerifyDestFileEntry_Test_Invali TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 32 DS_TableVerifyFilter_Test_Nominal
+1: [ PASS] 32.001 ds_table_tests.c:792 - DS_TableVerifyFilter(&FilterTable) (0) == CFE_SUCCESS (0)
+1: [ PASS] 32.002 ds_table_tests.c:795 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 32.003 ds_table_tests.c:796 - context_CFE_EVS_SendEvent[0].EventID (12) == DS_FLT_TBL_EID (12)
+1: [ PASS] 32.004 ds_table_tests.c:797 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 32 DS_TableVerifyFilter_Test_Nominal TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 33 DS_TableVerifyFilter_Test_FilterTableVe
+1: [ PASS] 33.001 ds_table_tests.c:827 - DS_TableVerifyFilter(&FilterTable) (-1) == DS_TABLE_VERIFY_ERR (-1)
+1: [ PASS] 33.002 ds_table_tests.c:830 - CallCount: CFE_EVS_SendEvent() (2) == 2 (2)
+1: [ PASS] 33.003 ds_table_tests.c:831 - context_CFE_EVS_SendEvent[0].EventID (13) == DS_FLT_TBL_ERR_EID (13)
+1: [ PASS] 33.004 ds_table_tests.c:832 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 33.005 ds_table_tests.c:833 - context_CFE_EVS_SendEvent[1].EventID (12) == DS_FLT_TBL_EID (12)
+1: [ PASS] 33.006 ds_table_tests.c:834 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 33 DS_TableVerifyFilter_Test_FilterTableVe TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 34 DS_TableVerifyFilter_Test_CountBad
+1: [ PASS] 34.001 ds_table_tests.c:860 - DS_TableVerifyFilter(&FilterTable) (-1) == DS_TABLE_VERIFY_ERR (-1)
+1: [ PASS] 34.002 ds_table_tests.c:863 - CallCount: CFE_EVS_SendEvent() (2) == 2 (2)
+1: [ PASS] 34.003 ds_table_tests.c:865 - context_CFE_EVS_SendEvent[1].EventID (12) == DS_FLT_TBL_EID (12)
+1: [ PASS] 34.004 ds_table_tests.c:866 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 34 DS_TableVerifyFilter_Test_CountBad TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 35 DS_TableVerifyFilterEntry_Test_Nominal
+1: [ PASS] 35.001 ds_table_tests.c:909 - DS_TableVerifyFilterEntry(&PacketEntry, TableIndex, ErrorCount) (1) == true (1)
+1: [ PASS] 35.002 ds_table_tests.c:912 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 35 DS_TableVerifyFilterEntry_Test_Nominal TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 36 DS_TableVerifyFilterEntry_Test_Unused
+1: [ PASS] 36.001 ds_table_tests.c:886 - DS_TableVerifyFilterEntry(&PacketEntry, TableIndex, ErrorCount) (1) == true (1)
+1: [ PASS] 36.002 ds_table_tests.c:889 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 36 DS_TableVerifyFilterEntry_Test_Unused TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 37 DS_TableVerifyFilterEntry_Test_InvalidF
+1: [ PASS] 37.001 ds_table_tests.c:932 - DS_TableVerifyFilterEntry(&PacketEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 37.002 ds_table_tests.c:935 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 37.003 ds_table_tests.c:936 - context_CFE_EVS_SendEvent[0].EventID (13) == DS_FLT_TBL_ERR_EID (13)
+1: [ PASS] 37.004 ds_table_tests.c:937 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 37 DS_TableVerifyFilterEntry_Test_InvalidF TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 38 DS_TableVerifyFilterEntry_Test_InvalidF
+1: [ PASS] 38.001 ds_table_tests.c:957 - DS_TableVerifyFilterEntry(&PacketEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 38.002 ds_table_tests.c:960 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 38.003 ds_table_tests.c:961 - context_CFE_EVS_SendEvent[0].EventID (13) == DS_FLT_TBL_ERR_EID (13)
+1: [ PASS] 38.004 ds_table_tests.c:962 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 38 DS_TableVerifyFilterEntry_Test_InvalidF TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 39 DS_TableVerifyFilterEntry_Test_InvalidF
+1: [ PASS] 39.001 ds_table_tests.c:982 - DS_TableVerifyFilterEntry(&PacketEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 39.002 ds_table_tests.c:985 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 39.003 ds_table_tests.c:986 - context_CFE_EVS_SendEvent[0].EventID (13) == DS_FLT_TBL_ERR_EID (13)
+1: [ PASS] 39.004 ds_table_tests.c:987 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 39 DS_TableVerifyFilterEntry_Test_InvalidF TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 40 DS_TableVerifyFilterEntry_Test_InvalidF
+1: [ PASS] 40.001 ds_table_tests.c:1007 - DS_TableVerifyFilterEntry(&PacketEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 40.002 ds_table_tests.c:1010 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 40 DS_TableVerifyFilterEntry_Test_InvalidF TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 41 DS_TableVerifyFilterEntry_Test_InvalidF
+1: [ PASS] 41.001 ds_table_tests.c:1030 - DS_TableVerifyFilterEntry(&PacketEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 41.002 ds_table_tests.c:1033 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 41 DS_TableVerifyFilterEntry_Test_InvalidF TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 42 DS_TableVerifyFilterEntry_Test_InvalidF
+1: [ PASS] 42.001 ds_table_tests.c:1053 - DS_TableVerifyFilterEntry(&PacketEntry, TableIndex, ErrorCount) (0) == false (0)
+1: [ PASS] 42.002 ds_table_tests.c:1056 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 42 DS_TableVerifyFilterEntry_Test_InvalidF TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 43 DS_TableEntryUnused_Test_Nominal
+1: [ PASS] 43.001 ds_table_tests.c:1066 - DS_TableEntryUnused(&DestFileEntry, sizeof(DestFileEntry)) (1) == true (1)
+1: [ PASS] 43.002 ds_table_tests.c:1069 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 43 DS_TableEntryUnused_Test_Nominal TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 44 DS_TableEntryUnused_Test_Fail
+1: [ PASS] 44.001 ds_table_tests.c:1079 - DS_TableEntryUnused(&DestFileEntry, sizeof(DestFileEntry)) (0) == false (0)
+1: [ PASS] 44.002 ds_table_tests.c:1082 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 44 DS_TableEntryUnused_Test_Fail TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 45 DS_TableVerifyFileIndex_Test_Nominal
+1: [ PASS] 45.001 ds_table_tests.c:1090 - DS_TableVerifyFileIndex(FileTableIndex) (1) == true (1)
+1: [ PASS] 45.002 ds_table_tests.c:1093 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 45 DS_TableVerifyFileIndex_Test_Nominal TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 46 DS_TableVerifyFileIndex_Test_Fail
+1: [ PASS] 46.001 ds_table_tests.c:1101 - DS_TableVerifyFileIndex(FileTableIndex) (0) == false (0)
+1: [ PASS] 46.002 ds_table_tests.c:1104 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 46 DS_TableVerifyFileIndex_Test_Fail TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 47 DS_TableVerifyParms_Test_NominalOnlyXNo
+1: [ PASS] 47.001 ds_table_tests.c:1114 - DS_TableVerifyParms(Algorithm_N, Algorithm_X, Algorithm_O) (1) == true (1)
+1: [ PASS] 47.002 ds_table_tests.c:1117 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 47 DS_TableVerifyParms_Test_NominalOnlyXNo TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 48 DS_TableVerifyParms_Test_NGreaterThanXO
+1: [ PASS] 48.001 ds_table_tests.c:1127 - DS_TableVerifyParms(Algorithm_N, Algorithm_X, Algorithm_O) (0) == false (0)
+1: [ PASS] 48.002 ds_table_tests.c:1130 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 48 DS_TableVerifyParms_Test_NGreaterThanXO TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 49 DS_TableVerifyParms_Test_OGreaterThanXO
+1: [ PASS] 49.001 ds_table_tests.c:1140 - DS_TableVerifyParms(Algorithm_N, Algorithm_X, Algorithm_O) (0) == false (0)
+1: [ PASS] 49.002 ds_table_tests.c:1143 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 49 DS_TableVerifyParms_Test_OGreaterThanXO TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 50 DS_TableVerifyParms_Test_AllZero
+1: [ PASS] 50.001 ds_table_tests.c:1153 - DS_TableVerifyParms(Algorithm_N, Algorithm_X, Algorithm_O) (1) == true (1)
+1: [ PASS] 50.002 ds_table_tests.c:1156 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 50 DS_TableVerifyParms_Test_AllZero TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 51 DS_TableVerifyType_Test_Nominal
+1: [ PASS] 51.001 ds_table_tests.c:1164 - DS_TableVerifyType(TimeVsCount) (1) == true (1)
+1: [ PASS] 51.002 ds_table_tests.c:1167 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 51 DS_TableVerifyType_Test_Nominal TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 52 DS_TableVerifyType_Test_Fail
+1: [ PASS] 52.001 ds_table_tests.c:1175 - DS_TableVerifyType(TimeVsCount) (0) == false (0)
+1: [ PASS] 52.002 ds_table_tests.c:1178 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 52 DS_TableVerifyType_Test_Fail TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 53 DS_TableVerifyState_Test_NominalEnabled
+1: [ PASS] 53.001 ds_table_tests.c:1186 - DS_TableVerifyState(EnableState) (1) == true (1)
+1: [ PASS] 53.002 ds_table_tests.c:1189 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 53 DS_TableVerifyState_Test_NominalEnabled TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 54 DS_TableVerifyState_Test_NominalDisable
+1: [ PASS] 54.001 ds_table_tests.c:1197 - DS_TableVerifyState(EnableState) (1) == true (1)
+1: [ PASS] 54.002 ds_table_tests.c:1200 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 54 DS_TableVerifyState_Test_NominalDisable TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 55 DS_TableVerifyState_Test_Fail
+1: [ PASS] 55.001 ds_table_tests.c:1208 - DS_TableVerifyState(EnableState) (0) == false (0)
+1: [ PASS] 55.002 ds_table_tests.c:1211 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 55 DS_TableVerifyState_Test_Fail TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 56 DS_TableVerifySize_Test_Nominal
+1: [ PASS] 56.001 ds_table_tests.c:1219 - DS_TableVerifySize(MaxFileSize) (1) == true (1)
+1: [ PASS] 56.002 ds_table_tests.c:1222 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 56 DS_TableVerifySize_Test_Nominal TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 57 DS_TableVerifySize_Test_Fail
+1: [ PASS] 57.001 ds_table_tests.c:1230 - DS_TableVerifySize(MaxFileSize) (0) == false (0)
+1: [ PASS] 57.002 ds_table_tests.c:1233 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 57 DS_TableVerifySize_Test_Fail TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 58 DS_TableVerifyAge_Test_Nominal
+1: [ PASS] 58.001 ds_table_tests.c:1241 - DS_TableVerifyAge(MaxFileAge) (1) == true (1)
+1: [ PASS] 58.002 ds_table_tests.c:1244 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 58 DS_TableVerifyAge_Test_Nominal TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 59 DS_TableVerifyAge_Test_Fail
+1: [ PASS] 59.001 ds_table_tests.c:1252 - DS_TableVerifyAge(MaxFileAge) (0) == false (0)
+1: [ PASS] 59.002 ds_table_tests.c:1255 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 59 DS_TableVerifyAge_Test_Fail TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 60 DS_TableVerifyCount_Test_Nominal
+1: [ PASS] 60.001 ds_table_tests.c:1263 - DS_TableVerifyCount(SequenceCount) (1) == true (1)
+1: [ PASS] 60.002 ds_table_tests.c:1266 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 60 DS_TableVerifyCount_Test_Nominal TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 61 DS_TableVerifyCount_Test_Fail
+1: [ PASS] 61.001 ds_table_tests.c:1274 - DS_TableVerifyCount(SequenceCount) (0) == false (0)
+1: [ PASS] 61.002 ds_table_tests.c:1277 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 61 DS_TableVerifyCount_Test_Fail TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 62 DS_TableSubscribe_Test_Unused
+1: [ PASS] 62.001 ds_table_tests.c:1286 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ PASS] 62.002 ds_table_tests.c:1287 - CallCount: CFE_SB_SubscribeEx() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 62 DS_TableSubscribe_Test_Unused TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 63 DS_TableSubscribe_Test_Cmd
+1: [ PASS] 63.001 ds_table_tests.c:1298 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ PASS] 63.002 ds_table_tests.c:1299 - CallCount: CFE_SB_SubscribeEx() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 63 DS_TableSubscribe_Test_Cmd TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 64 DS_TableSubscribe_Test_SendHk
+1: [ PASS] 64.001 ds_table_tests.c:1310 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ PASS] 64.002 ds_table_tests.c:1311 - CallCount: CFE_SB_SubscribeEx() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 64 DS_TableSubscribe_Test_SendHk TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 65 DS_TableSubscribe_Test_Data
+1: [ PASS] 65.001 ds_table_tests.c:1322 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ PASS] 65.002 ds_table_tests.c:1323 - CallCount: CFE_SB_SubscribeEx() (1) == 1 (1)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 65 DS_TableSubscribe_Test_Data TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 66 DS_TableUnsubscribe_Test_Unused
+1: [ PASS] 66.001 ds_table_tests.c:1332 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ PASS] 66.002 ds_table_tests.c:1333 - CallCount: CFE_SB_Unsubscribe() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 66 DS_TableUnsubscribe_Test_Unused TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 67 DS_TableUnsubscribe_Test_Cmd
+1: [ PASS] 67.001 ds_table_tests.c:1344 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ PASS] 67.002 ds_table_tests.c:1345 - CallCount: CFE_SB_Unsubscribe() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 67 DS_TableUnsubscribe_Test_Cmd TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 68 DS_TableUnsubscribe_Test_SendHk
+1: [ PASS] 68.001 ds_table_tests.c:1356 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ PASS] 68.002 ds_table_tests.c:1357 - CallCount: CFE_SB_Unsubscribe() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 68 DS_TableUnsubscribe_Test_SendHk TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 69 DS_TableUnsubscribe_Test_Data
+1: [ PASS] 69.001 ds_table_tests.c:1368 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ PASS] 69.002 ds_table_tests.c:1369 - CallCount: CFE_SB_Unsubscribe() (1) == 1 (1)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 69 DS_TableUnsubscribe_Test_Data TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 70 DS_TableCreateCDS_Test_NewCDSArea
+1: [ PASS] 70.001 ds_table_tests.c:1375 - DS_TableCreateCDS() (0) == CFE_SUCCESS (0)
+1: [ PASS] 70.002 ds_table_tests.c:1378 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 70 DS_TableCreateCDS_Test_NewCDSArea TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 71 DS_TableCreateCDS_Test_PreExistingCDSAr
+1: [ PASS] 71.001 ds_table_tests.c:1388 - DS_TableCreateCDS() (0) == CFE_SUCCESS (0)
+1: [ PASS] 71.002 ds_table_tests.c:1392 - DS_AppData.FileStatus[0].FileCount (0) == 0 (0)
+1: [ PASS] 71.003 ds_table_tests.c:1393 - DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileCount (0) == 0 (0)
+1: [ PASS] 71.004 ds_table_tests.c:1394 - DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileCount (0) == 0 (0)
+1: [ PASS] 71.005 ds_table_tests.c:1399 - DS_AppData.AppEnableState (0) == 0 (0)
+1: [ PASS] 71.006 ds_table_tests.c:1402 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 71 DS_TableCreateCDS_Test_PreExistingCDSAr TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 72 DS_TableCreateCDS_Test_RestoreFail
+1: [ PASS] 72.001 ds_table_tests.c:1413 - DS_TableCreateCDS() (0) == CFE_SUCCESS (0)
+1: [ PASS] 72.002 ds_table_tests.c:1416 - CFE_RESOURCEID_TEST_EQUAL(DS_AppData.DataStoreHandle, CFE_ES_CDS_BAD_HANDLE) (1) == true (1)
+1: [ PASS] 72.003 ds_table_tests.c:1418 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 72.004 ds_table_tests.c:1419 - context_CFE_EVS_SendEvent[0].EventID (6) == DS_INIT_CDS_ERR_EID (6)
+1: [ PASS] 72.005 ds_table_tests.c:1420 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 72 DS_TableCreateCDS_Test_RestoreFail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 73 DS_TableCreateCDS_Test_Error
+1: [ PASS] 73.001 ds_table_tests.c:1429 - DS_TableCreateCDS() (0) == CFE_SUCCESS (0)
+1: [ PASS] 73.002 ds_table_tests.c:1432 - CFE_RESOURCEID_TEST_EQUAL(DS_AppData.DataStoreHandle, CFE_ES_CDS_BAD_HANDLE) (1) == true (1)
+1: [ PASS] 73.003 ds_table_tests.c:1434 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 73.004 ds_table_tests.c:1435 - context_CFE_EVS_SendEvent[0].EventID (6) == DS_INIT_CDS_ERR_EID (6)
+1: [ PASS] 73.005 ds_table_tests.c:1436 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 73 DS_TableCreateCDS_Test_Error TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 74 DS_TableUpdateCDS_Test_Nominal
+1: [ PASS] 74.001 ds_table_tests.c:1447 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 74 DS_TableUpdateCDS_Test_Nominal TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 75 DS_TableUpdateCDS_Test_Error
+1: [ PASS] 75.001 ds_table_tests.c:1461 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+1: [ PASS] 75.002 ds_table_tests.c:1462 - context_CFE_EVS_SendEvent[0].EventID (6) == DS_INIT_CDS_ERR_EID (6)
+1: [ PASS] 75.003 ds_table_tests.c:1463 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 75 DS_TableUpdateCDS_Test_Error TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 76 DS_TableHashFunction_Test
+1: [ PASS] 76.001 ds_table_tests.c:1471 - DS_TableHashFunction(MessageID) (1) < DS_HASH_TABLE_ENTRIES (256)
+1: [ PASS] 76.002 ds_table_tests.c:1473 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 76 DS_TableHashFunction_Test TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 77 DS_TableCreateHash_Test_Nominal
+1: [ PASS] 77.001 ds_table_tests.c:1487 - DS_AppData.HashLinks[0].Index (0) == 0 (0)
+1: [ PASS] 77.002 ds_table_tests.c:1488 - CFE_SB_MsgId_Equal(DS_AppData.HashLinks[0].MessageID, DS_UT_MID_1) (1) == true (1)
+1: [ PASS] 77.003 ds_table_tests.c:1489 - DS_AppData.HashTable[HashIndex] (0xaaaad06d3520) == &DS_AppData.HashLinks[0] (0xaaaad06d3520)
+1: [ PASS] 77.004 ds_table_tests.c:1491 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 77 DS_TableCreateHash_Test_Nominal TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 78 DS_TableFindMsgID_Test
+1: [ PASS] 78.001 ds_table_tests.c:1506 - DS_TableFindMsgID(MessageID) (1) == HashLink.Index (1)
+1: [ PASS] 78.002 ds_table_tests.c:1509 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 78 DS_TableFindMsgID_Test TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 79 DS_TableFindMsgID_Test_NullTable
+1: [ PASS] 79.001 ds_table_tests.c:1522 - DS_TableFindMsgID(MessageID) (-1) == DS_INDEX_NONE (-1)
+1: [ PASS] 79.002 ds_table_tests.c:1525 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 79 DS_TableFindMsgID_Test_NullTable TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 80 DS_TableFindMsgID_Test_Mismatch
+1: [ PASS] 80.001 ds_table_tests.c:1543 - DS_TableFindMsgID(MessageID) (-1) == DS_INDEX_NONE (-1)
+1: [ PASS] 80.002 ds_table_tests.c:1546 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 80 DS_TableFindMsgID_Test_Mismatch TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 80 SUMMARY              TOTAL::228   PASS::228   FAIL::0     MIR::0     TSF::0     TTF::0   
+1: COMPLETE: 80 tests Segment(s) executed
+1: 
+1/5 Test #1: coverage-ds-ds_table .............   Passed    0.00 sec
+test 2
+    Start 2: coverage-ds-ds_cmds
+
+2: Test command: /tmp/vdd_ds_coverage_eom3aa5k/cFS/build/native/default_cpu1/apps/ds/unit-test/coverage-ds-ds_cmds-testrunner
+2: Working Directory: /tmp/vdd_ds_coverage_eom3aa5k/cFS/build/native/default_cpu1/apps/ds/unit-test
+2: Test timeout computed to be: 10000000
+2: 
+2: [BEGIN] UNIT TEST
+2: 
+2: [BEGIN] 01 SETUP
+2: [  END] No test cases
+2: 
+2: [BEGIN] 01 DS_NoopCmd_Test_Nominal
+2: [ PASS] 01.001 ds_cmds_tests.c:59 - DS_NoopCmd(&UT_CmdBuf.NoopCmd)
+2: [ PASS] 01.002 ds_cmds_tests.c:62 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 01.003 ds_cmds_tests.c:64 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 01.004 ds_cmds_tests.c:65 - context_CFE_EVS_SendEvent[0].EventID (31) == DS_NOOP_INF_EID (31)
+2: [ PASS] 01.005 ds_cmds_tests.c:66 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 01.006 ds_cmds_tests.c:69 - DS_NoopCmd_t is 32-bit aligned
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 01 DS_NoopCmd_Test_Nominal TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 02 DS_ResetCountersCmd_Test_Nominal
+2: [ PASS] 02.001 ds_cmds_tests.c:75 - DS_ResetCountersCmd(&UT_CmdBuf.ResetCountersCmd)
+2: [ PASS] 02.002 ds_cmds_tests.c:78 - DS_AppData.CmdAcceptedCounter (0) == ZERO (0)
+2: [ PASS] 02.003 ds_cmds_tests.c:79 - DS_AppData.CmdRejectedCounter (0) == ZERO (0)
+2: [ PASS] 02.004 ds_cmds_tests.c:80 - DS_AppData.DisabledPktCounter (0) == ZERO (0)
+2: [ PASS] 02.005 ds_cmds_tests.c:81 - DS_AppData.IgnoredPktCounter (0) == ZERO (0)
+2: [ PASS] 02.006 ds_cmds_tests.c:82 - DS_AppData.FilteredPktCounter (0) == ZERO (0)
+2: [ PASS] 02.007 ds_cmds_tests.c:83 - DS_AppData.PassedPktCounter (0) == ZERO (0)
+2: [ PASS] 02.008 ds_cmds_tests.c:84 - DS_AppData.FileWriteCounter (0) == ZERO (0)
+2: [ PASS] 02.009 ds_cmds_tests.c:85 - DS_AppData.FileWriteErrCounter (0) == ZERO (0)
+2: [ PASS] 02.010 ds_cmds_tests.c:86 - DS_AppData.FileUpdateCounter (0) == ZERO (0)
+2: [ PASS] 02.011 ds_cmds_tests.c:87 - DS_AppData.FileUpdateErrCounter (0) == ZERO (0)
+2: [ PASS] 02.012 ds_cmds_tests.c:88 - DS_AppData.DestTblLoadCounter (0) == ZERO (0)
+2: [ PASS] 02.013 ds_cmds_tests.c:89 - DS_AppData.DestTblErrCounter (0) == ZERO (0)
+2: [ PASS] 02.014 ds_cmds_tests.c:90 - DS_AppData.FilterTblLoadCounter (0) == ZERO (0)
+2: [ PASS] 02.015 ds_cmds_tests.c:91 - DS_AppData.FilterTblErrCounter (0) == ZERO (0)
+2: [ PASS] 02.016 ds_cmds_tests.c:93 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 02.017 ds_cmds_tests.c:94 - context_CFE_EVS_SendEvent[0].EventID (33) == DS_RESET_INF_EID (33)
+2: [ PASS] 02.018 ds_cmds_tests.c:95 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 02.019 ds_cmds_tests.c:98 - DS_ResetCountersCmd_t is 32-bit aligned
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 02 DS_ResetCountersCmd_Test_Nominal TOTAL::19    PASS::19    FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 03 DS_SetAppStateCmd_Test_Nominal
+2: [ PASS] 03.001 ds_cmds_tests.c:110 - DS_SetAppStateCmd(&UT_CmdBuf.AppStateCmd)
+2: [ PASS] 03.002 ds_cmds_tests.c:113 - DS_AppData.CmdRejectedCounter (0) == 0 (0)
+2: [ PASS] 03.003 ds_cmds_tests.c:114 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 03.004 ds_cmds_tests.c:115 - DS_AppData.AppEnableState == true
+2: [ PASS] 03.005 ds_cmds_tests.c:117 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 03.006 ds_cmds_tests.c:118 - context_CFE_EVS_SendEvent[0].EventID (35) == DS_ENADIS_CMD_EID (35)
+2: [ PASS] 03.007 ds_cmds_tests.c:119 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 03 DS_SetAppStateCmd_Test_Nominal TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 04 DS_SetAppStateCmd_Test_InvalidAppState
+2: [ PASS] 04.001 ds_cmds_tests.c:129 - DS_SetAppStateCmd(&UT_CmdBuf.AppStateCmd)
+2: [ PASS] 04.002 ds_cmds_tests.c:132 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 04.003 ds_cmds_tests.c:134 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 04.004 ds_cmds_tests.c:135 - context_CFE_EVS_SendEvent[0].EventID (36) == DS_ENADIS_CMD_ERR_EID (36)
+2: [ PASS] 04.005 ds_cmds_tests.c:136 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 04 DS_SetAppStateCmd_Test_InvalidAppState TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 05 DS_SetFilterFileCmd_Test_Nominal
+2: [ PASS] 05.001 ds_cmds_tests.c:155 - DS_SetFilterFileCmd(&UT_CmdBuf.FilterFileCmd)
+2: [ PASS] 05.002 ds_cmds_tests.c:158 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 05.003 ds_cmds_tests.c:160 - DS_AppData.FilterTblPtr->Packet[forced_FilterTableIndex].Filter[CmdPayload->FilterParmsIndex].FileTableIndex == CmdPayload->FileTableIndex
+2: [ PASS] 05.004 ds_cmds_tests.c:166 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 05.005 ds_cmds_tests.c:167 - context_CFE_EVS_SendEvent[0].EventID (37) == DS_FILE_CMD_EID (37)
+2: [ PASS] 05.006 ds_cmds_tests.c:168 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 05.007 ds_cmds_tests.c:171 - DS_FilterFileCmd_t is 32-bit aligned
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 05 DS_SetFilterFileCmd_Test_Nominal TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 06 DS_SetFilterFileCmd_Test_InvalidMessage
+2: [ PASS] 06.001 ds_cmds_tests.c:181 - DS_SetFilterFileCmd(&UT_CmdBuf.FilterFileCmd)
+2: [ PASS] 06.002 ds_cmds_tests.c:184 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 06.003 ds_cmds_tests.c:186 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 06.004 ds_cmds_tests.c:187 - context_CFE_EVS_SendEvent[0].EventID (38) == DS_FILE_CMD_ERR_EID (38)
+2: [ PASS] 06.005 ds_cmds_tests.c:188 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 06 DS_SetFilterFileCmd_Test_InvalidMessage TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 07 DS_SetFilterFileCmd_Test_InvalidFilterP
+2: [ PASS] 07.001 ds_cmds_tests.c:199 - DS_SetFilterFileCmd(&UT_CmdBuf.FilterFileCmd)
+2: [ PASS] 07.002 ds_cmds_tests.c:202 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 07.003 ds_cmds_tests.c:204 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 07.004 ds_cmds_tests.c:205 - context_CFE_EVS_SendEvent[0].EventID (38) == DS_FILE_CMD_ERR_EID (38)
+2: [ PASS] 07.005 ds_cmds_tests.c:206 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 07 DS_SetFilterFileCmd_Test_InvalidFilterP TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 08 DS_SetFilterFileCmd_Test_InvalidFileTab
+2: [ PASS] 08.001 ds_cmds_tests.c:218 - DS_SetFilterFileCmd(&UT_CmdBuf.FilterFileCmd)
+2: [ PASS] 08.002 ds_cmds_tests.c:221 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 08.003 ds_cmds_tests.c:223 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 08.004 ds_cmds_tests.c:224 - context_CFE_EVS_SendEvent[0].EventID (38) == DS_FILE_CMD_ERR_EID (38)
+2: [ PASS] 08.005 ds_cmds_tests.c:225 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 08 DS_SetFilterFileCmd_Test_InvalidFileTab TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 09 DS_SetFilterFileCmd_Test_FilterTableNot
+2: [ PASS] 09.001 ds_cmds_tests.c:242 - DS_SetFilterFileCmd(&UT_CmdBuf.FilterFileCmd)
+2: [ PASS] 09.002 ds_cmds_tests.c:245 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 09.003 ds_cmds_tests.c:247 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 09.004 ds_cmds_tests.c:248 - context_CFE_EVS_SendEvent[0].EventID (38) == DS_FILE_CMD_ERR_EID (38)
+2: [ PASS] 09.005 ds_cmds_tests.c:249 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 09 DS_SetFilterFileCmd_Test_FilterTableNot TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 10 DS_SetFilterFileCmd_Test_MessageIDNotIn
+2: [ PASS] 10.001 ds_cmds_tests.c:266 - DS_SetFilterFileCmd(&UT_CmdBuf.FilterFileCmd)
+2: [ PASS] 10.002 ds_cmds_tests.c:269 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 10.003 ds_cmds_tests.c:271 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 10.004 ds_cmds_tests.c:272 - context_CFE_EVS_SendEvent[0].EventID (38) == DS_FILE_CMD_ERR_EID (38)
+2: [ PASS] 10.005 ds_cmds_tests.c:273 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 10 DS_SetFilterFileCmd_Test_MessageIDNotIn TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 11 DS_SetFilterTypeCmd_Test_Nominal
+2: [ PASS] 11.001 ds_cmds_tests.c:289 - DS_SetFilterTypeCmd(&UT_CmdBuf.FilterTypeCmd)
+2: [ PASS] 11.002 ds_cmds_tests.c:292 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 11.003 ds_cmds_tests.c:294 - DS_AppData.FilterTblPtr->Packet[0].Filter[CmdPayload->FilterParmsIndex].FilterType (1) == 1 (1)
+2: [ PASS] 11.004 ds_cmds_tests.c:296 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 11.005 ds_cmds_tests.c:297 - context_CFE_EVS_SendEvent[0].EventID (39) == DS_FTYPE_CMD_EID (39)
+2: [ PASS] 11.006 ds_cmds_tests.c:298 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 11.007 ds_cmds_tests.c:301 - DS_FilterTypeCmd_t is 32-bit aligned
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 11 DS_SetFilterTypeCmd_Test_Nominal TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 12 DS_SetFilterTypeCmd_Test_InvalidMessage
+2: [ PASS] 12.001 ds_cmds_tests.c:311 - DS_SetFilterTypeCmd(&UT_CmdBuf.FilterTypeCmd)
+2: [ PASS] 12.002 ds_cmds_tests.c:314 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 12.003 ds_cmds_tests.c:316 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 12.004 ds_cmds_tests.c:317 - context_CFE_EVS_SendEvent[0].EventID (40) == DS_FTYPE_CMD_ERR_EID (40)
+2: [ PASS] 12.005 ds_cmds_tests.c:318 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 12 DS_SetFilterTypeCmd_Test_InvalidMessage TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 13 DS_SetFilterTypeCmd_Test_InvalidFilterP
+2: [ PASS] 13.001 ds_cmds_tests.c:329 - DS_SetFilterTypeCmd(&UT_CmdBuf.FilterTypeCmd)
+2: [ PASS] 13.002 ds_cmds_tests.c:332 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 13.003 ds_cmds_tests.c:334 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 13.004 ds_cmds_tests.c:335 - context_CFE_EVS_SendEvent[0].EventID (40) == DS_FTYPE_CMD_ERR_EID (40)
+2: [ PASS] 13.005 ds_cmds_tests.c:336 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 13 DS_SetFilterTypeCmd_Test_InvalidFilterP TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 14 DS_SetFilterTypeCmd_Test_InvalidFilterT
+2: [ PASS] 14.001 ds_cmds_tests.c:348 - DS_SetFilterTypeCmd(&UT_CmdBuf.FilterTypeCmd)
+2: [ PASS] 14.002 ds_cmds_tests.c:351 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 14.003 ds_cmds_tests.c:353 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 14.004 ds_cmds_tests.c:354 - context_CFE_EVS_SendEvent[0].EventID (40) == DS_FTYPE_CMD_ERR_EID (40)
+2: [ PASS] 14.005 ds_cmds_tests.c:355 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 14 DS_SetFilterTypeCmd_Test_InvalidFilterT TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 15 DS_SetFilterTypeCmd_Test_FilterTableNot
+2: [ PASS] 15.001 ds_cmds_tests.c:372 - DS_SetFilterTypeCmd(&UT_CmdBuf.FilterTypeCmd)
+2: [ PASS] 15.002 ds_cmds_tests.c:375 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 15.003 ds_cmds_tests.c:377 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 15.004 ds_cmds_tests.c:378 - context_CFE_EVS_SendEvent[0].EventID (40) == DS_FTYPE_CMD_ERR_EID (40)
+2: [ PASS] 15.005 ds_cmds_tests.c:379 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 15 DS_SetFilterTypeCmd_Test_FilterTableNot TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 16 DS_SetFilterTypeCmd_Test_MessageIDNotIn
+2: [ PASS] 16.001 ds_cmds_tests.c:394 - DS_SetFilterTypeCmd(&UT_CmdBuf.FilterTypeCmd)
+2: [ PASS] 16.002 ds_cmds_tests.c:397 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 16.003 ds_cmds_tests.c:399 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 16.004 ds_cmds_tests.c:400 - context_CFE_EVS_SendEvent[0].EventID (40) == DS_FTYPE_CMD_ERR_EID (40)
+2: [ PASS] 16.005 ds_cmds_tests.c:401 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 16 DS_SetFilterTypeCmd_Test_MessageIDNotIn TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 17 DS_SetFilterParmsCmd_Test_Nominal
+2: [ PASS] 17.001 ds_cmds_tests.c:417 - DS_SetFilterParmsCmd(&UT_CmdBuf.FilterParmsCmd)
+2: [ PASS] 17.002 ds_cmds_tests.c:420 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 17.003 ds_cmds_tests.c:422 - DS_AppData.FilterTblPtr->Packet[0].Filter[CmdPayload->FilterParmsIndex].Algorithm_N (0) == ZERO (0)
+2: [ PASS] 17.004 ds_cmds_tests.c:423 - DS_AppData.FilterTblPtr->Packet[0].Filter[CmdPayload->FilterParmsIndex].Algorithm_X (0) == ZERO (0)
+2: [ PASS] 17.005 ds_cmds_tests.c:424 - DS_AppData.FilterTblPtr->Packet[0].Filter[CmdPayload->FilterParmsIndex].Algorithm_O (0) == ZERO (0)
+2: [ PASS] 17.006 ds_cmds_tests.c:426 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 17.007 ds_cmds_tests.c:427 - context_CFE_EVS_SendEvent[0].EventID (41) == DS_PARMS_CMD_EID (41)
+2: [ PASS] 17.008 ds_cmds_tests.c:428 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 17.009 ds_cmds_tests.c:431 - DS_FilterParmsCmd_t is 32-bit aligned
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 17 DS_SetFilterParmsCmd_Test_Nominal TOTAL::9     PASS::9     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 18 DS_SetFilterParmsCmd_Test_InvalidMessag
+2: [ PASS] 18.001 ds_cmds_tests.c:441 - DS_SetFilterParmsCmd(&UT_CmdBuf.FilterParmsCmd)
+2: [ PASS] 18.002 ds_cmds_tests.c:444 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 18.003 ds_cmds_tests.c:446 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 18.004 ds_cmds_tests.c:447 - context_CFE_EVS_SendEvent[0].EventID (42) == DS_PARMS_CMD_ERR_EID (42)
+2: [ PASS] 18.005 ds_cmds_tests.c:448 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 18 DS_SetFilterParmsCmd_Test_InvalidMessag TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 19 DS_SetFilterParmsCmd_Test_InvalidFilter
+2: [ PASS] 19.001 ds_cmds_tests.c:459 - DS_SetFilterParmsCmd(&UT_CmdBuf.FilterParmsCmd)
+2: [ PASS] 19.002 ds_cmds_tests.c:462 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 19.003 ds_cmds_tests.c:464 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 19.004 ds_cmds_tests.c:465 - context_CFE_EVS_SendEvent[0].EventID (42) == DS_PARMS_CMD_ERR_EID (42)
+2: [ PASS] 19.005 ds_cmds_tests.c:466 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 19 DS_SetFilterParmsCmd_Test_InvalidFilter TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 20 DS_SetFilterParmsCmd_Test_InvalidFilter
+2: [ PASS] 20.001 ds_cmds_tests.c:482 - DS_SetFilterParmsCmd(&UT_CmdBuf.FilterParmsCmd)
+2: [ PASS] 20.002 ds_cmds_tests.c:485 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 20.003 ds_cmds_tests.c:487 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 20.004 ds_cmds_tests.c:488 - context_CFE_EVS_SendEvent[0].EventID (42) == DS_PARMS_CMD_ERR_EID (42)
+2: [ PASS] 20.005 ds_cmds_tests.c:489 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 20 DS_SetFilterParmsCmd_Test_InvalidFilter TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 21 DS_SetFilterParmsCmd_Test_FilterTableNo
+2: [ PASS] 21.001 ds_cmds_tests.c:505 - DS_SetFilterParmsCmd(&UT_CmdBuf.FilterParmsCmd)
+2: [ PASS] 21.002 ds_cmds_tests.c:508 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 21.003 ds_cmds_tests.c:510 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 21.004 ds_cmds_tests.c:511 - context_CFE_EVS_SendEvent[0].EventID (42) == DS_PARMS_CMD_ERR_EID (42)
+2: [ PASS] 21.005 ds_cmds_tests.c:512 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 21 DS_SetFilterParmsCmd_Test_FilterTableNo TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 22 DS_SetFilterParmsCmd_Test_MessageIDNotI
+2: [ PASS] 22.001 ds_cmds_tests.c:528 - DS_SetFilterParmsCmd(&UT_CmdBuf.FilterParmsCmd)
+2: [ PASS] 22.002 ds_cmds_tests.c:531 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 22.003 ds_cmds_tests.c:533 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 22.004 ds_cmds_tests.c:534 - context_CFE_EVS_SendEvent[0].EventID (42) == DS_PARMS_CMD_ERR_EID (42)
+2: [ PASS] 22.005 ds_cmds_tests.c:535 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 22 DS_SetFilterParmsCmd_Test_MessageIDNotI TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 23 DS_SetDestTypeCmd_Test_Nominal
+2: [ PASS] 23.001 ds_cmds_tests.c:549 - DS_SetDestTypeCmd(&UT_CmdBuf.DestTypeCmd)
+2: [ PASS] 23.002 ds_cmds_tests.c:552 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 23.003 ds_cmds_tests.c:554 - DS_AppData.DestFileTblPtr->File[CmdPayload->FileTableIndex].FileNameType (2) == 2 (2)
+2: [ PASS] 23.004 ds_cmds_tests.c:556 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 23.005 ds_cmds_tests.c:557 - context_CFE_EVS_SendEvent[0].EventID (43) == DS_NTYPE_CMD_EID (43)
+2: [ PASS] 23.006 ds_cmds_tests.c:558 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 23.007 ds_cmds_tests.c:561 - DS_DestTypeCmd_t is 32-bit aligned
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 23 DS_SetDestTypeCmd_Test_Nominal TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 24 DS_SetDestTypeCmd_Test_InvalidFileTable
+2: [ PASS] 24.001 ds_cmds_tests.c:571 - DS_SetDestTypeCmd(&UT_CmdBuf.DestTypeCmd)
+2: [ PASS] 24.002 ds_cmds_tests.c:574 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 24.003 ds_cmds_tests.c:576 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 24.004 ds_cmds_tests.c:577 - context_CFE_EVS_SendEvent[0].EventID (44) == DS_NTYPE_CMD_ERR_EID (44)
+2: [ PASS] 24.005 ds_cmds_tests.c:578 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 24 DS_SetDestTypeCmd_Test_InvalidFileTable TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 25 DS_SetDestTypeCmd_Test_InvalidFilenameT
+2: [ PASS] 25.001 ds_cmds_tests.c:591 - DS_SetDestTypeCmd(&UT_CmdBuf.DestTypeCmd)
+2: [ PASS] 25.002 ds_cmds_tests.c:594 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 25.003 ds_cmds_tests.c:596 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 25.004 ds_cmds_tests.c:597 - context_CFE_EVS_SendEvent[0].EventID (44) == DS_NTYPE_CMD_ERR_EID (44)
+2: [ PASS] 25.005 ds_cmds_tests.c:598 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 25 DS_SetDestTypeCmd_Test_InvalidFilenameT TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 26 DS_SetDestTypeCmd_Test_FileTableNotLoad
+2: [ PASS] 26.001 ds_cmds_tests.c:614 - DS_SetDestTypeCmd(&UT_CmdBuf.DestTypeCmd)
+2: [ PASS] 26.002 ds_cmds_tests.c:617 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 26.003 ds_cmds_tests.c:619 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 26.004 ds_cmds_tests.c:620 - context_CFE_EVS_SendEvent[0].EventID (44) == DS_NTYPE_CMD_ERR_EID (44)
+2: [ PASS] 26.005 ds_cmds_tests.c:621 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 26 DS_SetDestTypeCmd_Test_FileTableNotLoad TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 27 DS_SetDestStateCmd_Test_Nominal
+2: [ PASS] 27.001 ds_cmds_tests.c:635 - DS_SetDestStateCmd(&UT_CmdBuf.DestStateCmd)
+2: [ PASS] 27.002 ds_cmds_tests.c:638 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 27.003 ds_cmds_tests.c:640 - DS_AppData.DestFileTblPtr->File[CmdPayload->FileTableIndex].EnableState == CmdPayload->EnableState
+2: [ PASS] 27.004 ds_cmds_tests.c:644 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 27.005 ds_cmds_tests.c:645 - context_CFE_EVS_SendEvent[0].EventID (45) == DS_STATE_CMD_EID (45)
+2: [ PASS] 27.006 ds_cmds_tests.c:646 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 27.007 ds_cmds_tests.c:649 - DS_DestStateCmd_t is 32-bit aligned
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 27 DS_SetDestStateCmd_Test_Nominal TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 28 DS_SetDestStateCmd_Test_InvalidFileTabl
+2: [ PASS] 28.001 ds_cmds_tests.c:659 - DS_SetDestStateCmd(&UT_CmdBuf.DestStateCmd)
+2: [ PASS] 28.002 ds_cmds_tests.c:662 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 28.003 ds_cmds_tests.c:664 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 28.004 ds_cmds_tests.c:665 - context_CFE_EVS_SendEvent[0].EventID (46) == DS_STATE_CMD_ERR_EID (46)
+2: [ PASS] 28.005 ds_cmds_tests.c:666 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 28 DS_SetDestStateCmd_Test_InvalidFileTabl TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 29 DS_SetDestStateCmd_Test_InvalidFileStat
+2: [ PASS] 29.001 ds_cmds_tests.c:679 - DS_SetDestStateCmd(&UT_CmdBuf.DestStateCmd)
+2: [ PASS] 29.002 ds_cmds_tests.c:682 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 29.003 ds_cmds_tests.c:684 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 29.004 ds_cmds_tests.c:685 - context_CFE_EVS_SendEvent[0].EventID (46) == DS_STATE_CMD_ERR_EID (46)
+2: [ PASS] 29.005 ds_cmds_tests.c:686 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 29 DS_SetDestStateCmd_Test_InvalidFileStat TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 30 DS_SetDestStateCmd_Test_FileTableNotLoa
+2: [ PASS] 30.001 ds_cmds_tests.c:701 - DS_SetDestStateCmd(&UT_CmdBuf.DestStateCmd)
+2: [ PASS] 30.002 ds_cmds_tests.c:704 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 30.003 ds_cmds_tests.c:706 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 30.004 ds_cmds_tests.c:707 - context_CFE_EVS_SendEvent[0].EventID (46) == DS_STATE_CMD_ERR_EID (46)
+2: [ PASS] 30.005 ds_cmds_tests.c:708 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 30 DS_SetDestStateCmd_Test_FileTableNotLoa TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 31 DS_SetDestPathCmd_Test_Nominal
+2: [ PASS] 31.001 ds_cmds_tests.c:721 - DS_SetDestPathCmd(&UT_CmdBuf.DestPathCmd)
+2: [ PASS] 31.002 ds_cmds_tests.c:724 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 31.003 ds_cmds_tests.c:726 - strncmp (DS_AppData.DestFileTblPtr->File[CmdPayload->FileTableIndex].Pathname, 'pathname', sizeof(DestFileTable.File[0].Pathname) - 1) == 0
+2: [ PASS] 31.004 ds_cmds_tests.c:733 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 31.005 ds_cmds_tests.c:734 - context_CFE_EVS_SendEvent[0].EventID (47) == DS_PATH_CMD_EID (47)
+2: [ PASS] 31.006 ds_cmds_tests.c:735 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 31 DS_SetDestPathCmd_Test_Nominal TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 32 DS_SetDestPathCmd_Test_InvalidFileTable
+2: [ PASS] 32.001 ds_cmds_tests.c:745 - DS_SetDestPathCmd(&UT_CmdBuf.DestPathCmd)
+2: [ PASS] 32.002 ds_cmds_tests.c:748 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 32.003 ds_cmds_tests.c:750 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 32.004 ds_cmds_tests.c:751 - context_CFE_EVS_SendEvent[0].EventID (48) == DS_PATH_CMD_ERR_EID (48)
+2: [ PASS] 32.005 ds_cmds_tests.c:752 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 32 DS_SetDestPathCmd_Test_InvalidFileTable TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 33 DS_SetDestPathCmd_Test_FileTableNotLoad
+2: [ PASS] 33.001 ds_cmds_tests.c:767 - DS_SetDestPathCmd(&UT_CmdBuf.DestPathCmd)
+2: [ PASS] 33.002 ds_cmds_tests.c:770 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 33.003 ds_cmds_tests.c:772 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 33.004 ds_cmds_tests.c:773 - context_CFE_EVS_SendEvent[0].EventID (48) == DS_PATH_CMD_ERR_EID (48)
+2: [ PASS] 33.005 ds_cmds_tests.c:774 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 33 DS_SetDestPathCmd_Test_FileTableNotLoad TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 34 DS_SetDestBaseCmd_Test_Nominal
+2: [ PASS] 34.001 ds_cmds_tests.c:787 - DS_SetDestBaseCmd(&UT_CmdBuf.DestBaseCmd)
+2: [ PASS] 34.002 ds_cmds_tests.c:790 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 34.003 ds_cmds_tests.c:792 - strncmp (DS_AppData.DestFileTblPtr->File[CmdPayload->FileTableIndex].Basename, 'base', sizeof(DestFileTable.File[0].Basename)) == 0
+2: [ PASS] 34.004 ds_cmds_tests.c:799 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 34.005 ds_cmds_tests.c:800 - context_CFE_EVS_SendEvent[0].EventID (49) == DS_BASE_CMD_EID (49)
+2: [ PASS] 34.006 ds_cmds_tests.c:801 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 34 DS_SetDestBaseCmd_Test_Nominal TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 35 DS_SetDestBaseCmd_Test_InvalidFileTable
+2: [ PASS] 35.001 ds_cmds_tests.c:811 - DS_SetDestBaseCmd(&UT_CmdBuf.DestBaseCmd)
+2: [ PASS] 35.002 ds_cmds_tests.c:814 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 35.003 ds_cmds_tests.c:816 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 35.004 ds_cmds_tests.c:817 - context_CFE_EVS_SendEvent[0].EventID (50) == DS_BASE_CMD_ERR_EID (50)
+2: [ PASS] 35.005 ds_cmds_tests.c:818 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 35 DS_SetDestBaseCmd_Test_InvalidFileTable TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 36 DS_SetDestBaseCmd_Test_FileTableNotLoad
+2: [ PASS] 36.001 ds_cmds_tests.c:833 - DS_SetDestBaseCmd(&UT_CmdBuf.DestBaseCmd)
+2: [ PASS] 36.002 ds_cmds_tests.c:836 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 36.003 ds_cmds_tests.c:838 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 36.004 ds_cmds_tests.c:839 - context_CFE_EVS_SendEvent[0].EventID (50) == DS_BASE_CMD_ERR_EID (50)
+2: [ PASS] 36.005 ds_cmds_tests.c:840 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 36 DS_SetDestBaseCmd_Test_FileTableNotLoad TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 37 DS_SetDestExtCmd_Test_Nominal
+2: [ PASS] 37.001 ds_cmds_tests.c:853 - DS_SetDestExtCmd(&UT_CmdBuf.DestExtCmd)
+2: [ PASS] 37.002 ds_cmds_tests.c:856 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 37.003 ds_cmds_tests.c:858 - strncmp (DS_AppData.DestFileTblPtr->File[CmdPayload->FileTableIndex].Extension, 'txt', DS_EXTENSION_BUFSIZE) == 0
+2: [ PASS] 37.004 ds_cmds_tests.c:865 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 37.005 ds_cmds_tests.c:866 - context_CFE_EVS_SendEvent[0].EventID (51) == DS_EXT_CMD_EID (51)
+2: [ PASS] 37.006 ds_cmds_tests.c:867 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 37 DS_SetDestExtCmd_Test_Nominal TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 38 DS_SetDestExtCmd_Test_InvalidFileTableI
+2: [ PASS] 38.001 ds_cmds_tests.c:877 - DS_SetDestExtCmd(&UT_CmdBuf.DestExtCmd)
+2: [ PASS] 38.002 ds_cmds_tests.c:880 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 38.003 ds_cmds_tests.c:882 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 38.004 ds_cmds_tests.c:883 - context_CFE_EVS_SendEvent[0].EventID (52) == DS_EXT_CMD_ERR_EID (52)
+2: [ PASS] 38.005 ds_cmds_tests.c:884 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 38 DS_SetDestExtCmd_Test_InvalidFileTableI TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 39 DS_SetDestExtCmd_Test_FileTableNotLoade
+2: [ PASS] 39.001 ds_cmds_tests.c:899 - DS_SetDestExtCmd(&UT_CmdBuf.DestExtCmd)
+2: [ PASS] 39.002 ds_cmds_tests.c:902 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 39.003 ds_cmds_tests.c:904 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 39.004 ds_cmds_tests.c:905 - context_CFE_EVS_SendEvent[0].EventID (52) == DS_EXT_CMD_ERR_EID (52)
+2: [ PASS] 39.005 ds_cmds_tests.c:906 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 39 DS_SetDestExtCmd_Test_FileTableNotLoade TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 40 DS_SetDestSizeCmd_Test_Nominal
+2: [ PASS] 40.001 ds_cmds_tests.c:920 - DS_SetDestSizeCmd(&UT_CmdBuf.DestSizeCmd)
+2: [ PASS] 40.002 ds_cmds_tests.c:923 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 40.003 ds_cmds_tests.c:925 - DS_AppData.DestFileTblPtr->File[CmdPayload->FileTableIndex].MaxFileSize (100000000) == 100000000 (100000000)
+2: [ PASS] 40.004 ds_cmds_tests.c:927 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 40.005 ds_cmds_tests.c:928 - context_CFE_EVS_SendEvent[0].EventID (53) == DS_SIZE_CMD_EID (53)
+2: [ PASS] 40.006 ds_cmds_tests.c:929 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 40.007 ds_cmds_tests.c:932 - DS_DestSizeCmd_t is 32-bit aligned
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 40 DS_SetDestSizeCmd_Test_Nominal TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 41 DS_SetDestSizeCmd_Test_InvalidFileTable
+2: [ PASS] 41.001 ds_cmds_tests.c:943 - DS_SetDestSizeCmd(&UT_CmdBuf.DestSizeCmd)
+2: [ PASS] 41.002 ds_cmds_tests.c:946 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 41.003 ds_cmds_tests.c:948 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 41.004 ds_cmds_tests.c:949 - context_CFE_EVS_SendEvent[0].EventID (54) == DS_SIZE_CMD_ERR_EID (54)
+2: [ PASS] 41.005 ds_cmds_tests.c:950 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 41 DS_SetDestSizeCmd_Test_InvalidFileTable TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 42 DS_SetDestSizeCmd_Test_InvalidFileSizeL
+2: [ PASS] 42.001 ds_cmds_tests.c:965 - DS_SetDestSizeCmd(&UT_CmdBuf.DestSizeCmd)
+2: [ PASS] 42.002 ds_cmds_tests.c:968 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 42.003 ds_cmds_tests.c:970 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 42.004 ds_cmds_tests.c:971 - context_CFE_EVS_SendEvent[0].EventID (54) == DS_SIZE_CMD_ERR_EID (54)
+2: [ PASS] 42.005 ds_cmds_tests.c:972 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 42 DS_SetDestSizeCmd_Test_InvalidFileSizeL TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 43 DS_SetDestSizeCmd_Test_FileTableNotLoad
+2: [ PASS] 43.001 ds_cmds_tests.c:988 - DS_SetDestSizeCmd(&UT_CmdBuf.DestSizeCmd)
+2: [ PASS] 43.002 ds_cmds_tests.c:991 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 43.003 ds_cmds_tests.c:993 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 43.004 ds_cmds_tests.c:994 - context_CFE_EVS_SendEvent[0].EventID (54) == DS_SIZE_CMD_ERR_EID (54)
+2: [ PASS] 43.005 ds_cmds_tests.c:995 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 43 DS_SetDestSizeCmd_Test_FileTableNotLoad TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 44 DS_SetDestAgeCmd_Test_Nominal
+2: [ PASS] 44.001 ds_cmds_tests.c:1009 - DS_SetDestAgeCmd(&UT_CmdBuf.DestAgeCmd)
+2: [ PASS] 44.002 ds_cmds_tests.c:1012 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 44.003 ds_cmds_tests.c:1014 - DS_AppData.DestFileTblPtr->File[CmdPayload->FileTableIndex].MaxFileAge (1000) == 1000 (1000)
+2: [ PASS] 44.004 ds_cmds_tests.c:1016 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 44.005 ds_cmds_tests.c:1017 - context_CFE_EVS_SendEvent[0].EventID (55) == DS_AGE_CMD_EID (55)
+2: [ PASS] 44.006 ds_cmds_tests.c:1018 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 44.007 ds_cmds_tests.c:1021 - DS_DestAgeCmd_t is 32-bit aligned
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 44 DS_SetDestAgeCmd_Test_Nominal TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 45 DS_SetDestAgeCmd_Test_InvalidFileTableI
+2: [ PASS] 45.001 ds_cmds_tests.c:1032 - DS_SetDestAgeCmd(&UT_CmdBuf.DestAgeCmd)
+2: [ PASS] 45.002 ds_cmds_tests.c:1035 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 45.003 ds_cmds_tests.c:1037 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 45.004 ds_cmds_tests.c:1038 - context_CFE_EVS_SendEvent[0].EventID (56) == DS_AGE_CMD_ERR_EID (56)
+2: [ PASS] 45.005 ds_cmds_tests.c:1039 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 45 DS_SetDestAgeCmd_Test_InvalidFileTableI TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 46 DS_SetDestAgeCmd_Test_InvalidFileAgeLim
+2: [ PASS] 46.001 ds_cmds_tests.c:1054 - DS_SetDestAgeCmd(&UT_CmdBuf.DestAgeCmd)
+2: [ PASS] 46.002 ds_cmds_tests.c:1057 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 46.003 ds_cmds_tests.c:1059 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 46.004 ds_cmds_tests.c:1060 - context_CFE_EVS_SendEvent[0].EventID (56) == DS_AGE_CMD_ERR_EID (56)
+2: [ PASS] 46.005 ds_cmds_tests.c:1061 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 46 DS_SetDestAgeCmd_Test_InvalidFileAgeLim TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 47 DS_SetDestAgeCmd_Test_FileTableNotLoade
+2: [ PASS] 47.001 ds_cmds_tests.c:1077 - DS_SetDestAgeCmd(&UT_CmdBuf.DestAgeCmd)
+2: [ PASS] 47.002 ds_cmds_tests.c:1080 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 47.003 ds_cmds_tests.c:1082 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 47.004 ds_cmds_tests.c:1083 - context_CFE_EVS_SendEvent[0].EventID (56) == DS_AGE_CMD_ERR_EID (56)
+2: [ PASS] 47.005 ds_cmds_tests.c:1084 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 47 DS_SetDestAgeCmd_Test_FileTableNotLoade TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 48 DS_SetDestCountCmd_Test_Nominal
+2: [ PASS] 48.001 ds_cmds_tests.c:1098 - DS_SetDestCountCmd(&UT_CmdBuf.DestCountCmd)
+2: [ PASS] 48.002 ds_cmds_tests.c:1101 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 48.003 ds_cmds_tests.c:1103 - DS_AppData.DestFileTblPtr->File[CmdPayload->FileTableIndex].SequenceCount (1) == 1 (1)
+2: [ PASS] 48.004 ds_cmds_tests.c:1104 - DS_AppData.FileStatus[CmdPayload->FileTableIndex].FileCount (1) == 1 (1)
+2: [ PASS] 48.005 ds_cmds_tests.c:1106 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 48.006 ds_cmds_tests.c:1107 - context_CFE_EVS_SendEvent[0].EventID (57) == DS_SEQ_CMD_EID (57)
+2: [ PASS] 48.007 ds_cmds_tests.c:1108 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 48.008 ds_cmds_tests.c:1111 - DS_DestCountCmd_t is 32-bit aligned
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 48 DS_SetDestCountCmd_Test_Nominal TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 49 DS_SetDestCountCmd_Test_InvalidFileTabl
+2: [ PASS] 49.001 ds_cmds_tests.c:1122 - DS_SetDestCountCmd(&UT_CmdBuf.DestCountCmd)
+2: [ PASS] 49.002 ds_cmds_tests.c:1125 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 49.003 ds_cmds_tests.c:1127 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 49.004 ds_cmds_tests.c:1128 - context_CFE_EVS_SendEvent[0].EventID (58) == DS_SEQ_CMD_ERR_EID (58)
+2: [ PASS] 49.005 ds_cmds_tests.c:1129 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 49 DS_SetDestCountCmd_Test_InvalidFileTabl TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 50 DS_SetDestCountCmd_Test_InvalidFileSequ
+2: [ PASS] 50.001 ds_cmds_tests.c:1144 - DS_SetDestCountCmd(&UT_CmdBuf.DestCountCmd)
+2: [ PASS] 50.002 ds_cmds_tests.c:1147 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 50.003 ds_cmds_tests.c:1149 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 50.004 ds_cmds_tests.c:1150 - context_CFE_EVS_SendEvent[0].EventID (58) == DS_SEQ_CMD_ERR_EID (58)
+2: [ PASS] 50.005 ds_cmds_tests.c:1151 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 50 DS_SetDestCountCmd_Test_InvalidFileSequ TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 51 DS_SetDestCountCmd_Test_FileTableNotLoa
+2: [ PASS] 51.001 ds_cmds_tests.c:1167 - DS_SetDestCountCmd(&UT_CmdBuf.DestCountCmd)
+2: [ PASS] 51.002 ds_cmds_tests.c:1170 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 51.003 ds_cmds_tests.c:1172 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 51.004 ds_cmds_tests.c:1173 - context_CFE_EVS_SendEvent[0].EventID (58) == DS_SEQ_CMD_ERR_EID (58)
+2: [ PASS] 51.005 ds_cmds_tests.c:1174 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 51 DS_SetDestCountCmd_Test_FileTableNotLoa TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 52 DS_CloseFileCmd_Test_Nominal
+2: [ PASS] 52.001 ds_cmds_tests.c:1196 - DS_CloseFileCmd(&UT_CmdBuf.CloseFileCmd)
+2: [ PASS] 52.002 ds_cmds_tests.c:1199 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 52.003 ds_cmds_tests.c:1201 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 52.004 ds_cmds_tests.c:1202 - context_CFE_EVS_SendEvent[0].EventID (59) == DS_CLOSE_CMD_EID (59)
+2: [ PASS] 52.005 ds_cmds_tests.c:1203 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 52.006 ds_cmds_tests.c:1205 - CallCount: DS_FileUpdateHeader() (1) == 1 (1)
+2: [ PASS] 52.007 ds_cmds_tests.c:1206 - CallCount: DS_FileCloseDest() (1) == 1 (1)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 52 DS_CloseFileCmd_Test_Nominal TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 53 DS_CloseFileCmd_Test_NominalAlreadyClos
+2: [ PASS] 53.001 ds_cmds_tests.c:1226 - DS_CloseFileCmd(&UT_CmdBuf.CloseFileCmd)
+2: [ PASS] 53.002 ds_cmds_tests.c:1229 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 53.003 ds_cmds_tests.c:1231 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 53.004 ds_cmds_tests.c:1232 - context_CFE_EVS_SendEvent[0].EventID (59) == DS_CLOSE_CMD_EID (59)
+2: [ PASS] 53.005 ds_cmds_tests.c:1233 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 53.006 ds_cmds_tests.c:1235 - CallCount: DS_FileUpdateHeader() (0) == 0 (0)
+2: [ PASS] 53.007 ds_cmds_tests.c:1236 - CallCount: DS_FileCloseDest() (0) == 0 (0)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 53 DS_CloseFileCmd_Test_NominalAlreadyClos TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 54 DS_CloseFileCmd_Test_InvalidFileTableIn
+2: [ PASS] 54.001 ds_cmds_tests.c:1248 - DS_CloseFileCmd(&UT_CmdBuf.CloseFileCmd)
+2: [ PASS] 54.002 ds_cmds_tests.c:1251 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 54.003 ds_cmds_tests.c:1253 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 54.004 ds_cmds_tests.c:1254 - context_CFE_EVS_SendEvent[0].EventID (60) == DS_CLOSE_CMD_ERR_EID (60)
+2: [ PASS] 54.005 ds_cmds_tests.c:1255 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 54 DS_CloseFileCmd_Test_InvalidFileTableIn TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 55 DS_CloseAllCmd_Test_Nominal
+2: [ PASS] 55.001 ds_cmds_tests.c:1271 - DS_CloseAllCmd(&UT_CmdBuf.CloseAllCmd)
+2: [ PASS] 55.002 ds_cmds_tests.c:1274 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 55.003 ds_cmds_tests.c:1276 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 55.004 ds_cmds_tests.c:1277 - context_CFE_EVS_SendEvent[0].EventID (66) == DS_CLOSE_ALL_CMD_EID (66)
+2: [ PASS] 55.005 ds_cmds_tests.c:1278 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 55.006 ds_cmds_tests.c:1281 - DS_CloseAllCmd_t is 32-bit aligned
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 55 DS_CloseAllCmd_Test_Nominal TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 56 DS_CloseAllCmd_Test_CloseAll
+2: [ PASS] 56.001 ds_cmds_tests.c:1294 - DS_CloseAllCmd(&UT_CmdBuf.CloseAllCmd)
+2: [ PASS] 56.002 ds_cmds_tests.c:1297 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 56.003 ds_cmds_tests.c:1298 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 56.004 ds_cmds_tests.c:1299 - CallCount: DS_FileUpdateHeader() (16) == DS_DEST_FILE_CNT (16)
+2: [ PASS] 56.005 ds_cmds_tests.c:1300 - CallCount: DS_FileCloseDest() (16) == DS_DEST_FILE_CNT (16)
+2: [ PASS] 56.006 ds_cmds_tests.c:1301 - context_CFE_EVS_SendEvent[0].EventID (66) == DS_CLOSE_ALL_CMD_EID (66)
+2: [ PASS] 56.007 ds_cmds_tests.c:1302 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 56.008 ds_cmds_tests.c:1305 - CMD_STRUCT_DATA_IS_32_ALIGNED(DS_CloseAllCmd_t) (1) == true (1)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 56 DS_CloseAllCmd_Test_CloseAll TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 57 DS_GetFileInfoCmd_Test_EnabledOpen
+2: [ PASS] 57.001 ds_cmds_tests.c:1324 - DS_GetFileInfoCmd(&UT_CmdBuf.GetFileInfoCmd)
+2: [ PASS] 57.002 ds_cmds_tests.c:1327 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 57.003 ds_cmds_tests.c:1330 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 57.004 ds_cmds_tests.c:1331 - context_CFE_EVS_SendEvent[0].EventID (62) == DS_GET_FILE_INFO_CMD_EID (62)
+2: [ PASS] 57.005 ds_cmds_tests.c:1332 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 57.006 ds_cmds_tests.c:1335 - DS_FileInfoPkt_t is 32-bit aligned
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 57 DS_GetFileInfoCmd_Test_EnabledOpen TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 58 DS_GetFileInfoCmd_Test_DisabledClosed
+2: [ PASS] 58.001 ds_cmds_tests.c:1357 - DS_GetFileInfoCmd(&UT_CmdBuf.GetFileInfoCmd)
+2: [ PASS] 58.002 ds_cmds_tests.c:1360 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 58.003 ds_cmds_tests.c:1361 - context_CFE_EVS_SendEvent[0].EventID (62) == DS_GET_FILE_INFO_CMD_EID (62)
+2: [ PASS] 58.004 ds_cmds_tests.c:1362 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 58.005 ds_cmds_tests.c:1364 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 58 DS_GetFileInfoCmd_Test_DisabledClosed TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 59 DS_AddMIDCmd_Test_Nominal
+2: [ PASS] 59.001 ds_cmds_tests.c:1375 - DS_AddMidCmd_t is 32-bit aligned
+2: [ PASS] 59.002 ds_cmds_tests.c:1391 - DS_AddMidCmd(&UT_CmdBuf.AddMidCmd)
+2: [ PASS] 59.003 ds_cmds_tests.c:1394 - DS_AppData.CmdAcceptedCounter (1) == 1 (1)
+2: [ PASS] 59.004 ds_cmds_tests.c:1396 - CFE_SB_MsgId_Equal(DS_AppData.FilterTblPtr->Packet[FilterTableIndex].MessageID, DS_UT_MID_1) (1) == true (1)
+2: [ PASS] 59.005 ds_cmds_tests.c:1399 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[0].FileTableIndex (0) == ZERO (0)
+2: [ PASS] 59.006 ds_cmds_tests.c:1400 - uint8: DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[0].FilterType (1) == DS_BY_COUNT (1)
+2: [ PASS] 59.007 ds_cmds_tests.c:1401 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[0].Algorithm_N (0) == ZERO (0)
+2: [ PASS] 59.008 ds_cmds_tests.c:1402 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[0].Algorithm_X (0) == ZERO (0)
+2: [ PASS] 59.009 ds_cmds_tests.c:1403 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[0].Algorithm_O (0) == ZERO (0)
+2: [ PASS] 59.010 ds_cmds_tests.c:1406 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET / 2].FileTableIndex (0) == ZERO (0)
+2: [ PASS] 59.011 ds_cmds_tests.c:1407 - uint8: DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET / 2].FilterType (1) == DS_BY_COUNT (1)
+2: [ PASS] 59.012 ds_cmds_tests.c:1409 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET / 2].Algorithm_N (0) == ZERO (0)
+2: [ PASS] 59.013 ds_cmds_tests.c:1410 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET / 2].Algorithm_X (0) == ZERO (0)
+2: [ PASS] 59.014 ds_cmds_tests.c:1411 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET / 2].Algorithm_O (0) == ZERO (0)
+2: [ PASS] 59.015 ds_cmds_tests.c:1414 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET - 1].FileTableIndex (0) == ZERO (0)
+2: [ PASS] 59.016 ds_cmds_tests.c:1415 - uint8: DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET - 1].FilterType (1) == DS_BY_COUNT (1)
+2: [ PASS] 59.017 ds_cmds_tests.c:1417 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET - 1].Algorithm_N (0) == ZERO (0)
+2: [ PASS] 59.018 ds_cmds_tests.c:1418 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET - 1].Algorithm_X (0) == ZERO (0)
+2: [ PASS] 59.019 ds_cmds_tests.c:1419 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET - 1].Algorithm_O (0) == ZERO (0)
+2: [ PASS] 59.020 ds_cmds_tests.c:1421 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 59.021 ds_cmds_tests.c:1422 - context_CFE_EVS_SendEvent[0].EventID (64) == DS_ADD_MID_CMD_EID (64)
+2: [ PASS] 59.022 ds_cmds_tests.c:1423 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 59 DS_AddMIDCmd_Test_Nominal TOTAL::22    PASS::22    FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 60 DS_AddMIDCmd_Test_InvalidMessageID
+2: [ PASS] 60.001 ds_cmds_tests.c:1433 - DS_AddMidCmd(&UT_CmdBuf.AddMidCmd)
+2: [ PASS] 60.002 ds_cmds_tests.c:1436 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 60.003 ds_cmds_tests.c:1438 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 60.004 ds_cmds_tests.c:1439 - context_CFE_EVS_SendEvent[0].EventID (65) == DS_ADD_MID_CMD_ERR_EID (65)
+2: [ PASS] 60.005 ds_cmds_tests.c:1440 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 60 DS_AddMIDCmd_Test_InvalidMessageID TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 61 DS_AddMIDCmd_Test_FilterTableNotLoaded
+2: [ PASS] 61.001 ds_cmds_tests.c:1453 - DS_AddMidCmd(&UT_CmdBuf.AddMidCmd)
+2: [ PASS] 61.002 ds_cmds_tests.c:1456 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 61.003 ds_cmds_tests.c:1458 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 61.004 ds_cmds_tests.c:1459 - context_CFE_EVS_SendEvent[0].EventID (65) == DS_ADD_MID_CMD_ERR_EID (65)
+2: [ PASS] 61.005 ds_cmds_tests.c:1460 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 61 DS_AddMIDCmd_Test_FilterTableNotLoaded TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 62 DS_AddMIDCmd_Test_MIDAlreadyInFilterTab
+2: [ PASS] 62.001 ds_cmds_tests.c:1473 - DS_AddMidCmd(&UT_CmdBuf.AddMidCmd)
+2: [ PASS] 62.002 ds_cmds_tests.c:1476 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 62.003 ds_cmds_tests.c:1478 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 62.004 ds_cmds_tests.c:1479 - context_CFE_EVS_SendEvent[0].EventID (65) == DS_ADD_MID_CMD_ERR_EID (65)
+2: [ PASS] 62.005 ds_cmds_tests.c:1480 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 62 DS_AddMIDCmd_Test_MIDAlreadyInFilterTab TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 63 DS_AddMIDCmd_Test_FilterTableFull
+2: [ PASS] 63.001 ds_cmds_tests.c:1493 - DS_AddMidCmd(&UT_CmdBuf.AddMidCmd)
+2: [ PASS] 63.002 ds_cmds_tests.c:1496 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 63.003 ds_cmds_tests.c:1498 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 63.004 ds_cmds_tests.c:1499 - context_CFE_EVS_SendEvent[0].EventID (65) == DS_ADD_MID_CMD_ERR_EID (65)
+2: [ PASS] 63.005 ds_cmds_tests.c:1500 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 63 DS_AddMIDCmd_Test_FilterTableFull TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 64 DS_RemoveMIDCmd_Test_Nominal
+2: [ PASS] 64.001 ds_cmds_tests.c:1511 - DS_RemoveMidCmd_t is 32-bit aligned
+2: [ PASS] 64.002 ds_cmds_tests.c:1519 - DS_RemoveMidCmd(&UT_CmdBuf.RemoveMidCmd)
+2: [ PASS] 64.003 ds_cmds_tests.c:1522 - CFE_SB_MsgIdToValue(DS_AppData.FilterTblPtr->Packet[FilterTableIndex].MessageID) (0) == CFE_SB_MsgIdToValue(CFE_SB_INVALID_MSG_ID) (0)
+2: [ PASS] 64.004 ds_cmds_tests.c:1524 - CFE_SB_MsgIdToValue(DS_AppData.HashLinks[HashTableIndex].MessageID) (0) == CFE_SB_MsgIdToValue(CFE_SB_INVALID_MSG_ID) (0)
+2: [ PASS] 64.005 ds_cmds_tests.c:1528 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[0].FileTableIndex (0) == ZERO (0)
+2: [ PASS] 64.006 ds_cmds_tests.c:1529 - uint8: DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[0].FilterType (1) == DS_BY_COUNT (1)
+2: [ PASS] 64.007 ds_cmds_tests.c:1530 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[0].Algorithm_N (0) == ZERO (0)
+2: [ PASS] 64.008 ds_cmds_tests.c:1531 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[0].Algorithm_X (0) == ZERO (0)
+2: [ PASS] 64.009 ds_cmds_tests.c:1532 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[0].Algorithm_O (0) == ZERO (0)
+2: [ PASS] 64.010 ds_cmds_tests.c:1535 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET / 2].FileTableIndex (0) == ZERO (0)
+2: [ PASS] 64.011 ds_cmds_tests.c:1536 - uint8: DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET / 2].FilterType (1) == DS_BY_COUNT (1)
+2: [ PASS] 64.012 ds_cmds_tests.c:1538 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET / 2].Algorithm_N (0) == ZERO (0)
+2: [ PASS] 64.013 ds_cmds_tests.c:1539 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET / 2].Algorithm_X (0) == ZERO (0)
+2: [ PASS] 64.014 ds_cmds_tests.c:1540 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET / 2].Algorithm_O (0) == ZERO (0)
+2: [ PASS] 64.015 ds_cmds_tests.c:1543 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET - 1].FileTableIndex (0) == ZERO (0)
+2: [ PASS] 64.016 ds_cmds_tests.c:1544 - uint8: DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET - 1].FilterType (1) == DS_BY_COUNT (1)
+2: [ PASS] 64.017 ds_cmds_tests.c:1546 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET - 1].Algorithm_N (0) == ZERO (0)
+2: [ PASS] 64.018 ds_cmds_tests.c:1547 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET - 1].Algorithm_X (0) == ZERO (0)
+2: [ PASS] 64.019 ds_cmds_tests.c:1548 - DS_AppData.FilterTblPtr->Packet[FilterTableIndex].Filter[DS_FILTERS_PER_PACKET - 1].Algorithm_O (0) == ZERO (0)
+2: [ PASS] 64.020 ds_cmds_tests.c:1550 - CallCount: CFE_SB_IsValidMsgId() (1) == 1 (1)
+2: [ PASS] 64.021 ds_cmds_tests.c:1551 - CallCount: DS_TableHashFunction() (1) == 1 (1)
+2: [ PASS] 64.022 ds_cmds_tests.c:1552 - CallCount: DS_TableCreateHash() (1) == 1 (1)
+2: [ PASS] 64.023 ds_cmds_tests.c:1553 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 64.024 ds_cmds_tests.c:1554 - context_CFE_EVS_SendEvent[0].EventID (71) == DS_REMOVE_MID_CMD_EID (71)
+2: [ PASS] 64.025 ds_cmds_tests.c:1555 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 64 DS_RemoveMIDCmd_Test_Nominal TOTAL::25    PASS::25    FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 65 DS_RemoveMIDCmd_Test_InvalidMessageID
+2: [ PASS] 65.001 ds_cmds_tests.c:1565 - DS_RemoveMidCmd(&UT_CmdBuf.RemoveMidCmd)
+2: [ PASS] 65.002 ds_cmds_tests.c:1568 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 65.003 ds_cmds_tests.c:1570 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 65.004 ds_cmds_tests.c:1571 - context_CFE_EVS_SendEvent[0].EventID (72) == DS_REMOVE_MID_CMD_ERR_EID (72)
+2: [ PASS] 65.005 ds_cmds_tests.c:1572 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 65 DS_RemoveMIDCmd_Test_InvalidMessageID TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 66 DS_RemoveMIDCmd_Test_FilterTableNotLoad
+2: [ PASS] 66.001 ds_cmds_tests.c:1585 - DS_RemoveMidCmd(&UT_CmdBuf.RemoveMidCmd)
+2: [ PASS] 66.002 ds_cmds_tests.c:1588 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 66.003 ds_cmds_tests.c:1590 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 66.004 ds_cmds_tests.c:1591 - context_CFE_EVS_SendEvent[0].EventID (72) == DS_REMOVE_MID_CMD_ERR_EID (72)
+2: [ PASS] 66.005 ds_cmds_tests.c:1592 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 66 DS_RemoveMIDCmd_Test_FilterTableNotLoad TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 67 DS_RemoveMIDCmd_Test_MessageIDNotAdded
+2: [ PASS] 67.001 ds_cmds_tests.c:1604 - DS_RemoveMidCmd(&UT_CmdBuf.RemoveMidCmd)
+2: [ PASS] 67.002 ds_cmds_tests.c:1607 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+2: [ PASS] 67.003 ds_cmds_tests.c:1609 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 67.004 ds_cmds_tests.c:1610 - context_CFE_EVS_SendEvent[0].EventID (72) == DS_REMOVE_MID_CMD_ERR_EID (72)
+2: [ PASS] 67.005 ds_cmds_tests.c:1611 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 67 DS_RemoveMIDCmd_Test_MessageIDNotAdded TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 68 DS_AppSendHkCmd_Test
+2: [ PASS] 68.001 ds_cmds_tests.c:1626 - DS_SendHkCmd(&UT_CmdBuf.SendHkCmd)
+2: [ PASS] 68.002 ds_cmds_tests.c:1629 - DS_AppData.FileStatus[0].FileRate (24) == 99 / DS_SECS_PER_HK_CYCLE (24)
+2: [ PASS] 68.003 ds_cmds_tests.c:1630 - DS_AppData.FileStatus[0].FileGrowth (0) == 0 (0)
+2: [ PASS] 68.004 ds_cmds_tests.c:1632 - DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileRate (24) == 99 / DS_SECS_PER_HK_CYCLE (24)
+2: [ PASS] 68.005 ds_cmds_tests.c:1633 - DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileGrowth (0) == 0 (0)
+2: [ PASS] 68.006 ds_cmds_tests.c:1635 - DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileRate (24) == 99 / DS_SECS_PER_HK_CYCLE (24)
+2: [ PASS] 68.007 ds_cmds_tests.c:1636 - DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileGrowth (0) == 0 (0)
+2: [ PASS] 68.008 ds_cmds_tests.c:1638 - CallCount: CFE_SB_TransmitMsg() (1) == 1 (1)
+2: [ PASS] 68.009 ds_cmds_tests.c:1641 - TLM_STRUCT_DATA_IS_32_ALIGNED(DS_HkPacket_t) (1) == true (1)
+2: [ PASS] 68.010 ds_cmds_tests.c:1643 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 68 DS_AppSendHkCmd_Test TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 69 DS_AppSendHkCmd_Test_SnprintfFail
+2: [ PASS] 69.001 ds_cmds_tests.c:1660 - DS_SendHkCmd(&UT_CmdBuf.SendHkCmd)
+2: [ PASS] 69.002 ds_cmds_tests.c:1663 - DS_AppData.FileStatus[0].FileRate (24) == 99 / DS_SECS_PER_HK_CYCLE (24)
+2: [ PASS] 69.003 ds_cmds_tests.c:1664 - DS_AppData.FileStatus[0].FileGrowth (0) == 0 (0)
+2: [ PASS] 69.004 ds_cmds_tests.c:1666 - DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileRate (24) == 99 / DS_SECS_PER_HK_CYCLE (24)
+2: [ PASS] 69.005 ds_cmds_tests.c:1667 - DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileGrowth (0) == 0 (0)
+2: [ PASS] 69.006 ds_cmds_tests.c:1669 - DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileRate (24) == 99 / DS_SECS_PER_HK_CYCLE (24)
+2: [ PASS] 69.007 ds_cmds_tests.c:1670 - DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileGrowth (0) == 0 (0)
+2: [ PASS] 69.008 ds_cmds_tests.c:1672 - CallCount: CFE_SB_TransmitMsg() (1) == 1 (1)
+2: [ PASS] 69.009 ds_cmds_tests.c:1675 - TLM_STRUCT_DATA_IS_32_ALIGNED(DS_HkPacket_t) (1) == true (1)
+2: [ PASS] 69.010 ds_cmds_tests.c:1677 - context_CFE_EVS_SendEvent[0].EventID (70) == DS_APPHK_FILTER_TBL_PRINT_ERR_EID (70)
+2: [ PASS] 69.011 ds_cmds_tests.c:1679 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 69 DS_AppSendHkCmd_Test_SnprintfFail TOTAL::11    PASS::11    FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 70 DS_AppSendHkCmd_Test_TblFail
+2: [ PASS] 70.001 ds_cmds_tests.c:1696 - DS_SendHkCmd(&UT_CmdBuf.SendHkCmd)
+2: [ PASS] 70.002 ds_cmds_tests.c:1699 - DS_AppData.FileStatus[0].FileRate (24) == 99 / DS_SECS_PER_HK_CYCLE (24)
+2: [ PASS] 70.003 ds_cmds_tests.c:1700 - DS_AppData.FileStatus[0].FileGrowth (0) == 0 (0)
+2: [ PASS] 70.004 ds_cmds_tests.c:1702 - DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileRate (24) == 99 / DS_SECS_PER_HK_CYCLE (24)
+2: [ PASS] 70.005 ds_cmds_tests.c:1703 - DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileGrowth (0) == 0 (0)
+2: [ PASS] 70.006 ds_cmds_tests.c:1705 - DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileRate (24) == 99 / DS_SECS_PER_HK_CYCLE (24)
+2: [ PASS] 70.007 ds_cmds_tests.c:1706 - DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileGrowth (0) == 0 (0)
+2: [ PASS] 70.008 ds_cmds_tests.c:1708 - CallCount: CFE_SB_TransmitMsg() (1) == 1 (1)
+2: [ PASS] 70.009 ds_cmds_tests.c:1711 - TLM_STRUCT_DATA_IS_32_ALIGNED(DS_HkPacket_t) (1) == true (1)
+2: [ PASS] 70.010 ds_cmds_tests.c:1713 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 70 DS_AppSendHkCmd_Test_TblFail TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 70 SUMMARY              TOTAL::451   PASS::451   FAIL::0     MIR::0     TSF::0     TTF::0   
+2: COMPLETE: 70 tests Segment(s) executed
+2: 
+2/5 Test #2: coverage-ds-ds_cmds ..............   Passed    0.00 sec
+test 3
+    Start 3: coverage-ds-ds_app
+
+3: Test command: /tmp/vdd_ds_coverage_eom3aa5k/cFS/build/native/default_cpu1/apps/ds/unit-test/coverage-ds-ds_app-testrunner
+3: Working Directory: /tmp/vdd_ds_coverage_eom3aa5k/cFS/build/native/default_cpu1/apps/ds/unit-test
+3: Test timeout computed to be: 10000000
+3: 
+3: [BEGIN] UNIT TEST
+3: 
+3: [BEGIN] 01 SETUP
+3: [  END] No test cases
+3: 
+3: [BEGIN] 01 DS_AppMain_Test_Nominal
+3: [ PASS] 01.001 ds_app_tests.c:77 - DS_AppMain()
+3: [ PASS] 01.002 ds_app_tests.c:80 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+3: [ PASS] 01.003 ds_app_tests.c:81 - CallCount: CFE_ES_WriteToSysLog() (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 01 DS_AppMain_Test_Nominal TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 02 DS_AppMain_Test_AppInitializeError
+3: [ PASS] 02.001 ds_app_tests.c:97 - DS_AppMain()
+3: [ PASS] 02.002 ds_app_tests.c:100 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+3: [ PASS] 02.003 ds_app_tests.c:101 - context_CFE_EVS_SendEvent[0].EventID (3) == DS_EXIT_ERR_EID (3)
+3: [ PASS] 02.004 ds_app_tests.c:102 - context_CFE_EVS_SendEvent[0].EventType (4) == CFE_EVS_EventType_CRITICAL (4)
+3: [ PASS] 02.005 ds_app_tests.c:103 - CallCount: CFE_ES_ExitApp() (1) == 1 (1)
+3: [ PASS] 02.006 ds_app_tests.c:104 - CallCount: CFE_ES_WriteToSysLog() (2) == 2 (2)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 02 DS_AppMain_Test_AppInitializeError TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 03 DS_AppMain_Test_SBError
+3: [ PASS] 03.001 ds_app_tests.c:117 - DS_AppMain()
+3: [ PASS] 03.002 ds_app_tests.c:120 - CallCount: CFE_EVS_SendEvent() (2) == 2 (2)
+3: [ PASS] 03.003 ds_app_tests.c:121 - context_CFE_EVS_SendEvent[1].EventID (3) == DS_EXIT_ERR_EID (3)
+3: [ PASS] 03.004 ds_app_tests.c:122 - context_CFE_EVS_SendEvent[1].EventType (4) == CFE_EVS_EventType_CRITICAL (4)
+3: [ PASS] 03.005 ds_app_tests.c:123 - CallCount: CFE_ES_ExitApp() (1) == 1 (1)
+3: [ PASS] 03.006 ds_app_tests.c:124 - CallCount: CFE_ES_WriteToSysLog() (1) == 1 (1)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 03 DS_AppMain_Test_SBError TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 04 DS_AppMain_Test_SBTimeout
+3: [ PASS] 04.001 ds_app_tests.c:137 - DS_AppMain()
+3: [ PASS] 04.002 ds_app_tests.c:140 - CallCount: CFE_EVS_SendEvent() (2) == 2 (2)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 04 DS_AppMain_Test_SBTimeout TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 05 DS_AppInitialize_Test_Nominal
+3: [ PASS] 05.001 ds_app_tests.c:148 - DS_AppInitialize() (0) == CFE_SUCCESS (0)
+3: [ PASS] 05.002 ds_app_tests.c:151 - DS_AppData.AppEnableState (1) == DS_DEF_ENABLE_STATE (1)
+3: [ PASS] 05.003 ds_app_tests.c:153 - OS_ObjectIdDefined(DS_AppData.FileStatus[0].FileHandle) (0) == false (0)
+3: [ PASS] 05.004 ds_app_tests.c:154 - OS_ObjectIdDefined(DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileHandle) (0) == false (0)
+3: [ PASS] 05.005 ds_app_tests.c:155 - OS_ObjectIdDefined(DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileHandle) (0) == false (0)
+3: [ PASS] 05.006 ds_app_tests.c:160 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+3: [ PASS] 05.007 ds_app_tests.c:161 - context_CFE_EVS_SendEvent[0].EventID (1) == DS_INIT_INF_EID (1)
+3: [ PASS] 05.008 ds_app_tests.c:162 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 05 DS_AppInitialize_Test_Nominal TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 06 DS_AppInitialize_Test_EVSRegisterError
+3: [ PASS] 06.001 ds_app_tests.c:171 - DS_AppInitialize() (-1) == -1 (-1)
+3: [ PASS] 06.002 ds_app_tests.c:174 - DS_AppData.AppEnableState (1) == DS_DEF_ENABLE_STATE (1)
+3: [ PASS] 06.003 ds_app_tests.c:176 - OS_ObjectIdDefined(DS_AppData.FileStatus[0].FileHandle) (0) == false (0)
+3: [ PASS] 06.004 ds_app_tests.c:177 - OS_ObjectIdDefined(DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileHandle) (0) == false (0)
+3: [ PASS] 06.005 ds_app_tests.c:178 - OS_ObjectIdDefined(DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileHandle) (0) == false (0)
+3: [ PASS] 06.006 ds_app_tests.c:180 - CallCount: CFE_ES_WriteToSysLog() (1) == 1 (1)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 06 DS_AppInitialize_Test_EVSRegisterError TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 07 DS_AppInitialize_Test_SBCreatePipeError
+3: [ PASS] 07.001 ds_app_tests.c:189 - DS_AppInitialize() (-1) == -1 (-1)
+3: [ PASS] 07.002 ds_app_tests.c:192 - DS_AppData.AppEnableState (1) == DS_DEF_ENABLE_STATE (1)
+3: [ PASS] 07.003 ds_app_tests.c:194 - OS_ObjectIdDefined(DS_AppData.FileStatus[0].FileHandle) (0) == false (0)
+3: [ PASS] 07.004 ds_app_tests.c:195 - OS_ObjectIdDefined(DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileHandle) (0) == false (0)
+3: [ PASS] 07.005 ds_app_tests.c:196 - OS_ObjectIdDefined(DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileHandle) (0) == false (0)
+3: [ PASS] 07.006 ds_app_tests.c:200 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+3: [ PASS] 07.007 ds_app_tests.c:201 - context_CFE_EVS_SendEvent[0].EventID (2) == DS_INIT_ERR_EID (2)
+3: [ PASS] 07.008 ds_app_tests.c:202 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 07 DS_AppInitialize_Test_SBCreatePipeError TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 08 DS_AppInitialize_Test_SBSubscribeHKErro
+3: [ PASS] 08.001 ds_app_tests.c:211 - DS_AppInitialize() (-1) == -1 (-1)
+3: [ PASS] 08.002 ds_app_tests.c:214 - DS_AppData.AppEnableState (1) == DS_DEF_ENABLE_STATE (1)
+3: [ PASS] 08.003 ds_app_tests.c:216 - OS_ObjectIdDefined(DS_AppData.FileStatus[0].FileHandle) (0) == false (0)
+3: [ PASS] 08.004 ds_app_tests.c:217 - OS_ObjectIdDefined(DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileHandle) (0) == false (0)
+3: [ PASS] 08.005 ds_app_tests.c:218 - OS_ObjectIdDefined(DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileHandle) (0) == false (0)
+3: [ PASS] 08.006 ds_app_tests.c:222 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+3: [ PASS] 08.007 ds_app_tests.c:223 - context_CFE_EVS_SendEvent[0].EventID (2) == DS_INIT_ERR_EID (2)
+3: [ PASS] 08.008 ds_app_tests.c:224 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 08 DS_AppInitialize_Test_SBSubscribeHKErro TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 09 DS_AppInitialize_Test_SBSubscribeDSErro
+3: [ PASS] 09.001 ds_app_tests.c:233 - DS_AppInitialize() (-1) == -1 (-1)
+3: [ PASS] 09.002 ds_app_tests.c:236 - DS_AppData.AppEnableState (1) == DS_DEF_ENABLE_STATE (1)
+3: [ PASS] 09.003 ds_app_tests.c:238 - OS_ObjectIdDefined(DS_AppData.FileStatus[0].FileHandle) (0) == false (0)
+3: [ PASS] 09.004 ds_app_tests.c:239 - OS_ObjectIdDefined(DS_AppData.FileStatus[DS_DEST_FILE_CNT / 2].FileHandle) (0) == false (0)
+3: [ PASS] 09.005 ds_app_tests.c:240 - OS_ObjectIdDefined(DS_AppData.FileStatus[DS_DEST_FILE_CNT - 1].FileHandle) (0) == false (0)
+3: [ PASS] 09.006 ds_app_tests.c:244 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+3: [ PASS] 09.007 ds_app_tests.c:245 - context_CFE_EVS_SendEvent[0].EventID (2) == DS_INIT_ERR_EID (2)
+3: [ PASS] 09.008 ds_app_tests.c:246 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 09 DS_AppInitialize_Test_SBSubscribeDSErro TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 10 DS_AppStorePacket_Test_Nominal
+3: [ PASS] 10.001 ds_app_tests.c:263 - DS_AppStorePacket(MessageID, &UT_CmdBuf.Buf)
+3: [ PASS] 10.002 ds_app_tests.c:266 - DS_AppData.IgnoredPktCounter (0) == 0 (0)
+3: [ PASS] 10.003 ds_app_tests.c:267 - DS_AppData.DisabledPktCounter (0) == 0 (0)
+3: [ PASS] 10.004 ds_app_tests.c:269 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+3: [ PASS] 10.005 ds_app_tests.c:270 - CallCount: DS_FileStorePacket() (1) == 1 (1)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 10 DS_AppStorePacket_Test_Nominal TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 11 DS_AppStorePacket_Test_DSDisabled
+3: [ PASS] 11.001 ds_app_tests.c:287 - DS_AppStorePacket(MessageID, &UT_CmdBuf.Buf)
+3: [ PASS] 11.002 ds_app_tests.c:290 - DS_AppData.DisabledPktCounter (1) == 1 (1)
+3: [ PASS] 11.003 ds_app_tests.c:292 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 11 DS_AppStorePacket_Test_DSDisabled TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 12 DS_AppStorePacket_Test_FilterTableNotLo
+3: [ PASS] 12.001 ds_app_tests.c:310 - DS_AppStorePacket(MessageID, &UT_CmdBuf.Buf)
+3: [ PASS] 12.002 ds_app_tests.c:313 - DS_AppData.IgnoredPktCounter (1) == 1 (1)
+3: [ PASS] 12.003 ds_app_tests.c:315 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 12 DS_AppStorePacket_Test_FilterTableNotLo TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 13 DS_AppStorePacket_Test_DestFileTableNot
+3: [ PASS] 13.001 ds_app_tests.c:333 - DS_AppStorePacket(MessageID, &UT_CmdBuf.Buf)
+3: [ PASS] 13.002 ds_app_tests.c:336 - DS_AppData.IgnoredPktCounter (1) == 1 (1)
+3: [ PASS] 13.003 ds_app_tests.c:338 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 13 DS_AppStorePacket_Test_DestFileTableNot TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 13 SUMMARY              TOTAL::69    PASS::69    FAIL::0     MIR::0     TSF::0     TTF::0   
+3: COMPLETE: 13 tests Segment(s) executed
+3: 
+3/5 Test #3: coverage-ds-ds_app ...............   Passed    0.00 sec
+test 4
+    Start 4: coverage-ds-ds_file
+
+4: Test command: /tmp/vdd_ds_coverage_eom3aa5k/cFS/build/native/default_cpu1/apps/ds/unit-test/coverage-ds-ds_file-testrunner
+4: Working Directory: /tmp/vdd_ds_coverage_eom3aa5k/cFS/build/native/default_cpu1/apps/ds/unit-test
+4: Test timeout computed to be: 10000000
+4: 
+4: [BEGIN] UNIT TEST
+4: 
+4: [BEGIN] 01 SETUP
+4: [  END] No test cases
+4: 
+4: [BEGIN] 01 DS_FileStorePacket_Test_Nominal
+4: [ PASS] 01.001 cfe_msg_handlers.c:249 - UT_DefaultHandler_CFE_MSG_GetSequenceCount: Check for get value provided by test
+4: [ PASS] 01.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.003 ds_file_tests.c:99 - DS_FileStorePacket(MessageID, &UT_CmdBuf.Buf)
+4: [ PASS] 01.004 ds_file_tests.c:102 - DS_AppData.PassedPktCounter (1) == 1 (1)
+4: [ PASS] 01.005 ds_file_tests.c:103 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 01 DS_FileStorePacket_Test_Nominal TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 02 DS_FileStorePacket_Test_PacketNotInTabl
+4: [ PASS] 02.001 ds_file_tests.c:127 - DS_FileStorePacket(MessageID, &UT_CmdBuf.Buf)
+4: [ PASS] 02.002 ds_file_tests.c:130 - DS_AppData.IgnoredPktCounter (1) == 1 (1)
+4: [ PASS] 02.003 ds_file_tests.c:131 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 02 DS_FileStorePacket_Test_PacketNotInTabl TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 03 DS_FileStorePacket_Test_PassedFilterFal
+4: [ PASS] 03.001 cfe_msg_handlers.c:249 - UT_DefaultHandler_CFE_MSG_GetSequenceCount: Check for get value provided by test
+4: [ PASS] 03.002 ds_file_tests.c:160 - DS_FileStorePacket(MessageID, &UT_CmdBuf.Buf)
+4: [ PASS] 03.003 ds_file_tests.c:163 - DS_AppData.FilteredPktCounter (1) == 1 (1)
+4: [ PASS] 03.004 ds_file_tests.c:164 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 03 DS_FileStorePacket_Test_PassedFilterFal TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 04 DS_FileStorePacket_Test_DisabledDest
+4: [ PASS] 04.001 ds_file_tests.c:191 - DS_FileStorePacket(MessageID, &UT_CmdBuf.Buf)
+4: [ PASS] 04.002 ds_file_tests.c:194 - DS_AppData.FilteredPktCounter (1) == 1 (1)
+4: [ PASS] 04.003 ds_file_tests.c:195 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 04 DS_FileStorePacket_Test_DisabledDest TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 05 DS_FileStorePacket_Test_InvalidIndex
+4: [ PASS] 05.001 ds_file_tests.c:223 - DS_FileStorePacket(MessageID, &UT_CmdBuf.Buf)
+4: [ PASS] 05.002 ds_file_tests.c:226 - DS_AppData.FilteredPktCounter (1) == 1 (1)
+4: [ PASS] 05.003 ds_file_tests.c:227 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 05 DS_FileStorePacket_Test_InvalidIndex TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 06 DS_FileSetupWrite_Test_Nominal
+4: [ PASS] 06.001 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 06.002 ds_file_tests.c:252 - DS_FileSetupWrite(FileIndex, &UT_CmdBuf.Buf)
+4: [ PASS] 06.003 ds_file_tests.c:255 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 06 DS_FileSetupWrite_Test_Nominal TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 07 DS_FileSetupWrite_Test_FileHandleClosed
+4: [ PASS] 07.001 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 07.002 ds_file_tests.c:284 - DS_FileSetupWrite(FileIndex, &UT_CmdBuf.Buf)
+4: [ PASS] 07.003 ds_file_tests.c:287 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 07.004 ds_file_tests.c:288 - CallCount: OS_write() (0) == 0 (0)
+4: [ PASS] 07.005 ds_file_tests.c:289 - CallCount: OS_OpenCreate() (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 07 DS_FileSetupWrite_Test_FileHandleClosed TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 08 DS_FileSetupWrite_Test_MaxFileSizeExcee
+4: [ PASS] 08.001 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 08.002 ds_file_tests.c:317 - DS_FileSetupWrite(FileIndex, &UT_CmdBuf.Buf)
+4: [ PASS] 08.003 ds_file_tests.c:320 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 08 DS_FileSetupWrite_Test_MaxFileSizeExcee TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 09 DS_FileWriteData_Test_Nominal
+4: [ PASS] 09.001 ds_file_tests.c:341 - DS_AppData.FileWriteCounter (1) == 1 (1)
+4: [ PASS] 09.002 ds_file_tests.c:342 - StatusPtr->FileSize (16) == sizeof(UT_CmdBuf.Buf) (16)
+4: [ PASS] 09.003 ds_file_tests.c:343 - StatusPtr->FileGrowth (16) == sizeof(UT_CmdBuf.Buf) (16)
+4: [ PASS] 09.004 ds_file_tests.c:345 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 09 DS_FileWriteData_Test_Nominal TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 10 DS_FileWriteData_Test_Error
+4: [ PASS] 10.001 ds_file_tests.c:376 - DS_FileWriteData(FileIndex, &UT_CmdBuf.Buf, DataLength)
+4: [ PASS] 10.002 ds_file_tests.c:379 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 10.003 ds_file_tests.c:380 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 10.004 ds_file_tests.c:381 - context_CFE_EVS_SendEvent[0].EventID (16) == DS_WRITE_FILE_ERR_EID (16)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 10 DS_FileWriteData_Test_Error TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 11 DS_FileWriteHeader_Test_PlatformConfigC
+4: [ PASS] 11.001 ds_file_tests.c:396 - DS_FileWriteHeader(FileIndex)
+4: [ PASS] 11.002 ds_file_tests.c:399 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ PASS] 11.003 ds_file_tests.c:401 - DS_AppData.FileWriteCounter (2) == 2 (2)
+4: [ PASS] 11.004 ds_file_tests.c:402 - StatusPtr->FileSize (140) == sizeof(CFE_FS_Header_t) + sizeof(DS_FileHeader_t) (140)
+4: [ PASS] 11.005 ds_file_tests.c:403 - StatusPtr->FileGrowth (140) == sizeof(CFE_FS_Header_t) + sizeof(DS_FileHeader_t) (140)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 11 DS_FileWriteHeader_Test_PlatformConfigC TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 12 DS_FileWriteHeader_Test_PrimaryHeaderEr
+4: [ PASS] 12.001 ds_file_tests.c:424 - DS_FileWriteHeader(FileIndex)
+4: [ PASS] 12.002 ds_file_tests.c:427 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 12 DS_FileWriteHeader_Test_PrimaryHeaderEr TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 13 DS_FileWriteHeader_Test_SecondaryHeader
+4: [ PASS] 13.001 ds_file_tests.c:448 - UT_SetDefaultReturnValue(UT_KEY(OS_write), -1)
+4: [ PASS] 13.002 ds_file_tests.c:454 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 13 DS_FileWriteHeader_Test_SecondaryHeader TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 14 DS_FileWriteError_Test
+4: [ PASS] 14.001 ds_file_tests.c:478 - DS_FileWriteError(FileIndex, DataLength, WriteResult)
+4: [ PASS] 14.002 ds_file_tests.c:481 - DS_AppData.FileWriteErrCounter (1) == 1 (1)
+4: [ PASS] 14.003 ds_file_tests.c:482 - StatusPtr->FileState (0) == DS_DISABLED (0)
+4: [ PASS] 14.004 ds_file_tests.c:483 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 14.005 ds_file_tests.c:484 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 14.006 ds_file_tests.c:485 - context_CFE_EVS_SendEvent[0].EventID (16) == DS_WRITE_FILE_ERR_EID (16)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 14 DS_FileWriteError_Test TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 15 DS_FileCreateDest_Test_Nominal
+4: [ PASS] 15.001 ds_file_tests.c:509 - DS_FileCreateDest(FileIndex)
+4: [ PASS] 15.002 ds_file_tests.c:514 - DS_AppData.FileWriteCounter (3) == 3 (3)
+4: [ PASS] 15.003 ds_file_tests.c:522 - OS_ObjectIdEqual(StatusPtr->FileHandle, DS_UT_OBJID_1) (0) == false (0)
+4: [ PASS] 15.004 ds_file_tests.c:523 - OS_ObjectIdDefined(StatusPtr->FileHandle) (1) == true (1)
+4: [ PASS] 15.005 ds_file_tests.c:525 - StatusPtr->FileCount (2) == 2 (2)
+4: [ PASS] 15.006 ds_file_tests.c:527 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ PASS] 15.007 ds_file_tests.c:528 - CallCount: DS_TableUpdateCDS() (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 15 DS_FileCreateDest_Test_Nominal TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 16 DS_FileCreateDest_Test_StringTerminate
+4: [ PASS] 16.001 ds_file_tests.c:536 - DS_FileCreateDest(FileIndex)
+4: [ PASS] 16.002 ds_file_tests.c:539 - CallCount: OS_OpenCreate() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 16 DS_FileCreateDest_Test_StringTerminate TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 17 DS_FileCreateDest_Test_NominalRollover
+4: [ PASS] 17.001 ds_file_tests.c:563 - DS_FileCreateDest(FileIndex)
+4: [ PASS] 17.002 ds_file_tests.c:568 - DS_AppData.FileWriteCounter (3) == 3 (3)
+4: [ PASS] 17.003 ds_file_tests.c:576 - OS_ObjectIdEqual(StatusPtr->FileHandle, DS_UT_OBJID_1) (0) == false (0)
+4: [ PASS] 17.004 ds_file_tests.c:577 - OS_ObjectIdDefined(StatusPtr->FileHandle) (1) == true (1)
+4: [ PASS] 17.005 ds_file_tests.c:579 - StatusPtr->FileCount (3) == 3 (3)
+4: [ PASS] 17.006 ds_file_tests.c:581 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ PASS] 17.007 ds_file_tests.c:582 - CallCount: DS_TableUpdateCDS() (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 17 DS_FileCreateDest_Test_NominalRollover TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 18 DS_FileCreateDest_Test_Error
+4: [ PASS] 18.001 ds_file_tests.c:604 - DS_FileCreateDest(FileIndex)
+4: [ PASS] 18.002 ds_file_tests.c:607 - DS_AppData.FileWriteErrCounter (1) == 1 (1)
+4: [ PASS] 18.003 ds_file_tests.c:608 - StatusPtr->FileName[0] (0) == 0 (0)
+4: [ PASS] 18.004 ds_file_tests.c:609 - StatusPtr->FileState (0) == DS_DISABLED (0)
+4: [ PASS] 18.005 ds_file_tests.c:610 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 18.006 ds_file_tests.c:611 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 18.007 ds_file_tests.c:612 - context_CFE_EVS_SendEvent[0].EventID (15) == DS_CREATE_FILE_ERR_EID (15)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 18 DS_FileCreateDest_Test_Error TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 19 DS_FileCreateDest_Test_ClosedFileHandle
+4: [ PASS] 19.001 ds_file_tests.c:641 - DS_FileCreateDest(FileIndex)
+4: [ PASS] 19.002 ds_file_tests.c:644 - DS_AppData.FileWriteCounter (1) == 1 (1)
+4: [ PASS] 19.003 ds_file_tests.c:645 - OS_ObjectIdDefined(StatusPtr->FileHandle) (0) == false (0)
+4: [ PASS] 19.004 ds_file_tests.c:646 - StatusPtr->FileCount (1) == 1 (1)
+4: [ PASS] 19.005 ds_file_tests.c:647 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 19 DS_FileCreateDest_Test_ClosedFileHandle TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 20 DS_FileCreateName_Test_Nominal
+4: [ PASS] 20.001 ds_file_tests.c:670 - DS_FileCreateName(FileIndex)
+4: [ PASS] 20.002 ds_file_tests.c:673 - String: 'path/base00000001.ext' == 'path/base00000001.ext'
+4: [ PASS] 20.003 ds_file_tests.c:675 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 20 DS_FileCreateName_Test_Nominal TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 21 DS_FileCreateName_Test_NominalWithSepar
+4: [ PASS] 21.001 ds_file_tests.c:699 - DS_FileCreateName(FileIndex)
+4: [ PASS] 21.002 ds_file_tests.c:702 - String: 'path/base00000001.ext' == 'path/base00000001.ext'
+4: [ PASS] 21.003 ds_file_tests.c:704 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 21 DS_FileCreateName_Test_NominalWithSepar TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 22 DS_FileCreateName_Test_NominalWithPerio
+4: [ PASS] 22.001 ds_file_tests.c:728 - DS_FileCreateName(FileIndex)
+4: [ PASS] 22.002 ds_file_tests.c:731 - String: 'path/base00000001.ext' == 'path/base00000001.ext'
+4: [ PASS] 22.003 ds_file_tests.c:733 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 22 DS_FileCreateName_Test_NominalWithPerio TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 23 DS_FileCreateName_Test_EmptyPath
+4: [ PASS] 23.001 ds_file_tests.c:752 - DS_FileCreateName(FileIndex)
+4: [ PASS] 23.002 ds_file_tests.c:755 - StatusPtr->FileState (0) == DS_DISABLED (0)
+4: [ PASS] 23.003 ds_file_tests.c:756 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 23.004 ds_file_tests.c:757 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 23.005 ds_file_tests.c:758 - context_CFE_EVS_SendEvent[0].EventID (68) == DS_FILE_CREATE_EMPTY_PATH_ERR_EID (68)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 23 DS_FileCreateName_Test_EmptyPath TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 24 DS_FileCreateName_Test_Error
+4: [ PASS] 24.001 ds_file_tests.c:788 - DS_FileCreateName(FileIndex)
+4: [ PASS] 24.002 ds_file_tests.c:791 - StatusPtr->FileState (0) == DS_DISABLED (0)
+4: [ PASS] 24.003 ds_file_tests.c:792 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 24.004 ds_file_tests.c:793 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 24.005 ds_file_tests.c:794 - context_CFE_EVS_SendEvent[0].EventID (14) == DS_FILE_NAME_ERR_EID (14)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 24 DS_FileCreateName_Test_Error TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 25 DS_FileCreateName_Test_PathBaseSeqTooLa
+4: [ PASS] 25.001 ds_file_tests.c:816 - DS_FileCreateName(FileIndex)
+4: [ PASS] 25.002 ds_file_tests.c:819 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 25.003 ds_file_tests.c:820 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 25.004 ds_file_tests.c:821 - context_CFE_EVS_SendEvent[0].EventID (14) == DS_FILE_NAME_ERR_EID (14)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 25 DS_FileCreateName_Test_PathBaseSeqTooLa TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 26 DS_FileCreateName_Test_PathBaseSeqExtTo
+4: [ PASS] 26.001 ds_file_tests.c:844 - DS_FileCreateName(FileIndex)
+4: [ PASS] 26.002 ds_file_tests.c:847 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 26.003 ds_file_tests.c:848 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 26.004 ds_file_tests.c:849 - context_CFE_EVS_SendEvent[0].EventID (14) == DS_FILE_NAME_ERR_EID (14)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 26 DS_FileCreateName_Test_PathBaseSeqExtTo TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 27 DS_FileCreateName_Test_ExtensionZero
+4: [ PASS] 27.001 ds_file_tests.c:875 - DS_FileCreateName(FileIndex)
+4: [ PASS] 27.002 ds_file_tests.c:878 - String: 'path/base00000001' == 'path/base00000001'
+4: [ PASS] 27.003 ds_file_tests.c:879 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 27 DS_FileCreateName_Test_ExtensionZero TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 28 DS_FileCreateSequence_Test_ByCount
+4: [ PASS] 28.001 ds_file_tests.c:895 - DS_FileCreateSequence(Sequence, DS_BY_COUNT, Count)
+4: [ PASS] 28.002 ds_file_tests.c:898 - String: '00000001' == '00000001'
+4: [ PASS] 28.003 ds_file_tests.c:899 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 28 DS_FileCreateSequence_Test_ByCount TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 29 DS_FileCreateSequence_Test_ByTime
+4: [ PASS] 29.001 ds_file_tests.c:925 - DS_FileCreateSequence(Sequence, DestPtr->FileNameType, StatusPtr->FileCount)
+4: [ PASS] 29.002 ds_file_tests.c:928 - strncmp(Sequence, "1980001000000", sizeof(Sequence)) (0) == 0 (0)
+4: [ PASS] 29.003 ds_file_tests.c:930 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 29 DS_FileCreateSequence_Test_ByTime TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 30 DS_FileCreateSequence_Test_BadFilenameT
+4: [ PASS] 30.001 ds_file_tests.c:951 - DS_FileCreateSequence(Sequence, 99, StatusPtr->FileCount)
+4: [ PASS] 30.002 ds_file_tests.c:954 - strncmp(Sequence, "", sizeof(Sequence)) (0) == 0 (0)
+4: [ PASS] 30.003 ds_file_tests.c:955 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 30 DS_FileCreateSequence_Test_BadFilenameT TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 31 DS_FileUpdateHeader_Test_PlatformConfig
+4: [ PASS] 31.001 ds_file_tests.c:963 - DS_FileUpdateHeader(FileIndex)
+4: [ PASS] 31.002 ds_file_tests.c:966 - DS_AppData.FileUpdateCounter (1) == 1 (1)
+4: [ PASS] 31.003 ds_file_tests.c:967 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 31 DS_FileUpdateHeader_Test_PlatformConfig TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 32 DS_FileUpdateHeader_Test_WriteError
+4: [ PASS] 32.001 ds_file_tests.c:978 - DS_FileUpdateHeader(FileIndex)
+4: [ PASS] 32.002 ds_file_tests.c:981 - DS_AppData.FileUpdateErrCounter (1) == 1 (1)
+4: [ PASS] 32.003 ds_file_tests.c:982 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 32 DS_FileUpdateHeader_Test_WriteError TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 33 DS_FileUpdateHeader_Test_PlatformConfig
+4: [ PASS] 33.001 ds_file_tests.c:993 - DS_FileUpdateHeader(FileIndex)
+4: [ PASS] 33.002 ds_file_tests.c:996 - DS_AppData.FileUpdateErrCounter (1) == 1 (1)
+4: [ PASS] 33.003 ds_file_tests.c:997 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 33 DS_FileUpdateHeader_Test_PlatformConfig TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 34 DS_FileCloseDest_Test_PlatformConfigMov
+4: [ PASS] 34.001 ds_file_tests.c:1017 - DS_FileCloseDest(FileIndex)
+4: [ PASS] 34.002 ds_file_tests.c:1020 - OS_ObjectIdDefined(StatusPtr->FileHandle) (0) == false (0)
+4: [ PASS] 34.003 ds_file_tests.c:1021 - StatusPtr->FileAge (0) == 0 (0)
+4: [ PASS] 34.004 ds_file_tests.c:1022 - StatusPtr->FileSize (0) == 0 (0)
+4: [ PASS] 34.005 ds_file_tests.c:1023 - StatusPtr->FileName[0] (0) == 0 (0)
+4: [ PASS] 34.006 ds_file_tests.c:1024 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 34 DS_FileCloseDest_Test_PlatformConfigMov TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 35 DS_FileCloseDest_Test_PlatformConfigMov
+4: [ PASS] 35.001 ds_file_tests.c:1047 - DS_FileCloseDest(FileIndex)
+4: [ PASS] 35.002 ds_file_tests.c:1049 - StatusPtr->FileAge (0) == 0 (0)
+4: [ PASS] 35.003 ds_file_tests.c:1050 - StatusPtr->FileSize (0) == 0 (0)
+4: [ PASS] 35.004 ds_file_tests.c:1051 - StatusPtr->FileName[0] (0) == 0 (0)
+4: [ PASS] 35.005 ds_file_tests.c:1052 - context_CFE_EVS_SendEvent[0].EventID (61) == DS_MOVE_FILE_ERR_EID (61)
+4: [ PASS] 35.006 ds_file_tests.c:1053 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 35.007 ds_file_tests.c:1054 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 35 DS_FileCloseDest_Test_PlatformConfigMov TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 36 DS_FileCloseDest_Test_PlatformConfigMov
+4: [ PASS] 36.001 ds_file_tests.c:1078 - DS_FileCloseDest(FileIndex)
+4: [ PASS] 36.002 ds_file_tests.c:1080 - StatusPtr->FileAge (0) == 0 (0)
+4: [ PASS] 36.003 ds_file_tests.c:1081 - StatusPtr->FileSize (0) == 0 (0)
+4: [ PASS] 36.004 ds_file_tests.c:1082 - StatusPtr->FileName[0] (0) == 0 (0)
+4: [ PASS] 36.005 ds_file_tests.c:1083 - context_CFE_EVS_SendEvent[0].EventID (61) == DS_MOVE_FILE_ERR_EID (61)
+4: [ PASS] 36.006 ds_file_tests.c:1084 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 36.007 ds_file_tests.c:1085 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 36 DS_FileCloseDest_Test_PlatformConfigMov TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 37 DS_FileCloseDest_Test_PlatformConfigMov
+4: [ PASS] 37.001 ds_file_tests.c:1104 - DS_FileCloseDest(FileIndex)
+4: [ PASS] 37.002 ds_file_tests.c:1107 - OS_ObjectIdDefined(StatusPtr->FileHandle) (0) == false (0)
+4: [ PASS] 37.003 ds_file_tests.c:1108 - StatusPtr->FileAge (0) == 0 (0)
+4: [ PASS] 37.004 ds_file_tests.c:1109 - StatusPtr->FileSize (0) == 0 (0)
+4: [ PASS] 37.005 ds_file_tests.c:1110 - StatusPtr->FileName[0] (0) == 0 (0)
+4: [ PASS] 37.006 ds_file_tests.c:1111 - context_CFE_EVS_SendEvent[0].EventID (61) == DS_MOVE_FILE_ERR_EID (61)
+4: [ PASS] 37.007 ds_file_tests.c:1112 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 37.008 ds_file_tests.c:1113 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 37 DS_FileCloseDest_Test_PlatformConfigMov TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 38 DS_FileCloseDest_Test_PlatformConfigMov
+4: [ PASS] 38.001 ds_file_tests.c:1132 - DS_FileCloseDest(FileIndex)
+4: [ PASS] 38.002 ds_file_tests.c:1135 - CallCount: CFE_SB_MessageStringGet() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 38 DS_FileCloseDest_Test_PlatformConfigMov TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 39 DS_FileCloseDest_Test_PlatformConfigMov
+4: [ PASS] 39.001 ds_file_tests.c:1150 - DS_FileCloseDest(FileIndex)
+4: [ PASS] 39.002 ds_file_tests.c:1153 - OS_ObjectIdDefined(StatusPtr->FileHandle) (0) == false (0)
+4: [ PASS] 39.003 ds_file_tests.c:1154 - StatusPtr->FileAge (0) == 0 (0)
+4: [ PASS] 39.004 ds_file_tests.c:1155 - StatusPtr->FileSize (0) == 0 (0)
+4: [ PASS] 39.005 ds_file_tests.c:1156 - StatusPtr->FileName[0] (0) == 0 (0)
+4: [ PASS] 39.006 ds_file_tests.c:1157 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 39 DS_FileCloseDest_Test_PlatformConfigMov TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 40 DS_FileTestAge_Test_Nominal
+4: [ PASS] 40.001 ds_file_tests.c:1183 - DS_FileTestAge(ElapsedSeconds)
+4: [ PASS] 40.002 ds_file_tests.c:1186 - StatusPtr->FileAge (2) == 2 (2)
+4: [ PASS] 40.003 ds_file_tests.c:1187 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 40 DS_FileTestAge_Test_Nominal TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 41 DS_FileTestAge_Test_ExceedMaxAge
+4: [ PASS] 41.001 ds_file_tests.c:1219 - DS_FileTestAge(ElapsedSeconds)
+4: [ PASS] 41.002 ds_file_tests.c:1222 - StatusPtr->FileAge (0) == 0 (0)
+4: [ PASS] 41.003 ds_file_tests.c:1223 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 41 DS_FileTestAge_Test_ExceedMaxAge TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 42 DS_FileTestAge_Test_NullTable
+4: [ PASS] 42.001 ds_file_tests.c:1196 - DS_FileTestAge(ElapsedSeconds)
+4: [ PASS] 42.002 ds_file_tests.c:1199 - CallCount: OS_close() (0) == 0 (0)
+4: [ PASS] 42.003 ds_file_tests.c:1200 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 42 DS_FileTestAge_Test_NullTable TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 43 DS_IsPacketFiltered_Test_AlgX0
+4: [ PASS] 43.001 ds_file_tests.c:1235 - DS_IsPacketFiltered(&Message, FilterType, Alg_N, Alg_X, Alg_O) (1) == true (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 43 DS_IsPacketFiltered_Test_AlgX0 TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 44 DS_IsPacketFiltered_Test_AlgN0
+4: [ PASS] 44.001 ds_file_tests.c:1247 - DS_IsPacketFiltered(&Message, FilterType, Alg_N, Alg_X, Alg_O) (1) == true (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 44 DS_IsPacketFiltered_Test_AlgN0 TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 45 DS_IsPacketFiltered_Test_AlgNGreaterX
+4: [ PASS] 45.001 ds_file_tests.c:1259 - DS_IsPacketFiltered(&Message, FilterType, Alg_N, Alg_X, Alg_O) (1) == true (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 45 DS_IsPacketFiltered_Test_AlgNGreaterX TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 46 DS_IsPacketFiltered_Test_Alg0GreaterX
+4: [ PASS] 46.001 ds_file_tests.c:1271 - DS_IsPacketFiltered(&Message, FilterType, Alg_N, Alg_X, Alg_O) (1) == true (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 46 DS_IsPacketFiltered_Test_Alg0GreaterX TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 47 DS_IsPacketFiltered_Test_Alg0EqualX
+4: [ PASS] 47.001 ds_file_tests.c:1283 - DS_IsPacketFiltered(&Message, FilterType, Alg_N, Alg_X, Alg_O) (1) == true (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 47 DS_IsPacketFiltered_Test_Alg0EqualX TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 48 DS_IsPacketFiltered_Test_InvalidFilterT
+4: [ PASS] 48.001 ds_file_tests.c:1295 - DS_IsPacketFiltered(&Message, FilterType, Alg_N, Alg_X, Alg_O) (1) == true (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 48 DS_IsPacketFiltered_Test_InvalidFilterT TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 49 DS_IsPacketFiltered_Test_SeqFilter
+4: [ PASS] 49.001 cfe_msg_handlers.c:249 - UT_DefaultHandler_CFE_MSG_GetSequenceCount: Check for get value provided by test
+4: [ PASS] 49.002 ds_file_tests.c:1312 - DS_IsPacketFiltered(&Message, FilterType, Alg_N, Alg_X, Alg_O) (0) == false (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 49 DS_IsPacketFiltered_Test_SeqFilter TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 50 DS_IsPacketFiltered_Test_TimeFilter1
+4: [ PASS] 50.001 cfe_msg_handlers.c:191 - UT_DefaultHandler_CFE_MSG_GetMsgTime: Check for get value provided by test
+4: [ PASS] 50.002 ds_file_tests.c:1333 - DS_IsPacketFiltered(&Message, FilterType, Alg_N, Alg_X, Alg_O) (0) == false (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 50 DS_IsPacketFiltered_Test_TimeFilter1 TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 51 DS_IsPacketFiltered_Test_TimeFilter2
+4: [ PASS] 51.001 cfe_msg_handlers.c:191 - UT_DefaultHandler_CFE_MSG_GetMsgTime: Check for get value provided by test
+4: [ PASS] 51.002 ds_file_tests.c:1354 - DS_IsPacketFiltered(&Message, FilterType, Alg_N, Alg_X, Alg_O) (1) == true (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 51 DS_IsPacketFiltered_Test_TimeFilter2 TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 52 DS_IsPacketFiltered_Test_TimeFilter3
+4: [ PASS] 52.001 cfe_msg_handlers.c:191 - UT_DefaultHandler_CFE_MSG_GetMsgTime: Check for get value provided by test
+4: [ PASS] 52.002 ds_file_tests.c:1375 - DS_IsPacketFiltered(&Message, FilterType, Alg_N, Alg_X, Alg_O) (1) == true (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 52 DS_IsPacketFiltered_Test_TimeFilter3 TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 53 DS_FileTransmit_Test_Nominal
+4: [ PASS] 53.001 ds_file_tests.c:1388 - DS_FileTransmit(&DS_AppData.FileStatus[0])
+4: [ PASS] 53.002 ds_file_tests.c:1391 - CallCount: CFE_SB_AllocateMessageBuffer() (1) == 1 (1)
+4: [ PASS] 53.003 ds_file_tests.c:1392 - CallCount: CFE_MSG_Init() (1) == 1 (1)
+4: [ PASS] 53.004 ds_file_tests.c:1393 - CallCount: CFE_SB_TransmitBuffer() (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 53 DS_FileTransmit_Test_Nominal TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 54 DS_FileTransmit_Test_NoBuf
+4: [ PASS] 54.001 ds_file_tests.c:1399 - DS_FileTransmit(&DS_AppData.FileStatus[0])
+4: [ PASS] 54.002 ds_file_tests.c:1402 - CallCount: CFE_SB_AllocateMessageBuffer() (1) == 1 (1)
+4: [ PASS] 54.003 ds_file_tests.c:1403 - CallCount: CFE_MSG_Init() (0) == 0 (0)
+4: [ PASS] 54.004 ds_file_tests.c:1404 - CallCount: CFE_SB_TransmitBuffer() (0) == 0 (0)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 54 DS_FileTransmit_Test_NoBuf TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 54 SUMMARY              TOTAL::195   PASS::195   FAIL::0     MIR::0     TSF::0     TTF::0   
+4: COMPLETE: 54 tests Segment(s) executed
+4: 
+4/5 Test #4: coverage-ds-ds_file ..............   Passed    0.00 sec
+test 5
+    Start 5: coverage-ds-ds_dispatch
+
+5: Test command: /tmp/vdd_ds_coverage_eom3aa5k/cFS/build/native/default_cpu1/apps/ds/unit-test/coverage-ds-ds_dispatch-testrunner
+5: Working Directory: /tmp/vdd_ds_coverage_eom3aa5k/cFS/build/native/default_cpu1/apps/ds/unit-test
+5: Test timeout computed to be: 10000000
+5: 
+5: [BEGIN] UNIT TEST
+5: 
+5: [BEGIN] 01 SETUP
+5: [  END] No test cases
+5: 
+5: [BEGIN] 01 DS_AppPipe_Test_CmdStore
+5: [ PASS] 01.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+5: [ PASS] 01.002 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 01.003 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 01.004 ds_dispatch_tests.c:70 - DS_AppPipe(&UT_CmdBuf.Buf)
+5: [ PASS] 01.005 ds_dispatch_tests.c:73 - CallCount: DS_AppStorePacket() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 01 DS_AppPipe_Test_CmdStore TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 02 DS_AppPipe_Test_CmdNoStore
+5: [ PASS] 02.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+5: [ PASS] 02.002 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 02.003 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 02.004 ds_dispatch_tests.c:86 - DS_AppPipe(&UT_CmdBuf.Buf)
+5: [ PASS] 02.005 ds_dispatch_tests.c:89 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+5: [ PASS] 02.006 ds_dispatch_tests.c:92 - CallCount: DS_AppStorePacket() (0) == 0 (0)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 02 DS_AppPipe_Test_CmdNoStore TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 03 DS_AppPipe_Test_HKStore
+5: [ PASS] 03.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+5: [ PASS] 03.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 03.003 ds_dispatch_tests.c:105 - DS_AppPipe(&UT_CmdBuf.Buf)
+5: [ PASS] 03.004 ds_dispatch_tests.c:107 - CallCount: DS_SendHkCmd() (1) == 1 (1)
+5: [ PASS] 03.005 ds_dispatch_tests.c:110 - CallCount: DS_AppStorePacket() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 03 DS_AppPipe_Test_HKStore TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 04 DS_AppPipe_Test_HKNoStore
+5: [ PASS] 04.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+5: [ PASS] 04.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 04.003 ds_dispatch_tests.c:123 - DS_AppPipe(&UT_CmdBuf.Buf)
+5: [ PASS] 04.004 ds_dispatch_tests.c:125 - CallCount: DS_SendHkCmd() (1) == 1 (1)
+5: [ PASS] 04.005 ds_dispatch_tests.c:128 - CallCount: DS_AppStorePacket() (0) == 0 (0)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 04 DS_AppPipe_Test_HKNoStore TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 05 DS_AppPipe_Test_HKInvalidRequest
+5: [ PASS] 05.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+5: [ PASS] 05.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 05.003 ds_dispatch_tests.c:136 - DS_AppPipe(&UT_CmdBuf.Buf)
+5: [ PASS] 05.004 ds_dispatch_tests.c:139 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+5: [ PASS] 05.005 ds_dispatch_tests.c:140 - context_CFE_EVS_SendEvent[0].EventID (22) == DS_HKREQ_LEN_ERR_EID (22)
+5: [ PASS] 05.006 ds_dispatch_tests.c:141 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 05 DS_AppPipe_Test_HKInvalidRequest TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 06 DS_AppPipe_Test_UnknownMID
+5: [ PASS] 06.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+5: [ PASS] 06.002 ds_dispatch_tests.c:149 - DS_AppPipe(&UT_CmdBuf.Buf)
+5: [ PASS] 06.003 ds_dispatch_tests.c:152 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+5: [ PASS] 06.004 ds_dispatch_tests.c:155 - CallCount: DS_AppStorePacket() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 06 DS_AppPipe_Test_UnknownMID TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 07 DS_AppProcessCmd_Test_Noop
+5: [ PASS] 07.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 07.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 07.003 ds_dispatch_tests.c:163 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 07.004 ds_dispatch_tests.c:166 - CallCount: DS_NoopCmd() (1) == 1 (1)
+5: [ PASS] 07.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 07.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 07.007 ds_dispatch_tests.c:172 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 07.008 ds_dispatch_tests.c:175 - CallCount: DS_NoopCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 07 DS_AppProcessCmd_Test_Noop TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 08 DS_AppProcessCmd_Test_Reset
+5: [ PASS] 08.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 08.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 08.003 ds_dispatch_tests.c:183 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 08.004 ds_dispatch_tests.c:186 - CallCount: DS_ResetCountersCmd() (1) == 1 (1)
+5: [ PASS] 08.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 08.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 08.007 ds_dispatch_tests.c:192 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 08.008 ds_dispatch_tests.c:195 - CallCount: DS_ResetCountersCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 08 DS_AppProcessCmd_Test_Reset TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 09 DS_AppProcessCmd_Test_SetAppState
+5: [ PASS] 09.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 09.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 09.003 ds_dispatch_tests.c:203 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 09.004 ds_dispatch_tests.c:206 - CallCount: DS_SetAppStateCmd() (1) == 1 (1)
+5: [ PASS] 09.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 09.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 09.007 ds_dispatch_tests.c:212 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 09.008 ds_dispatch_tests.c:215 - CallCount: DS_SetAppStateCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 09 DS_AppProcessCmd_Test_SetAppState TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 10 DS_AppProcessCmd_Test_SetFilterFile
+5: [ PASS] 10.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 10.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 10.003 ds_dispatch_tests.c:223 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 10.004 ds_dispatch_tests.c:226 - CallCount: DS_SetFilterFileCmd() (1) == 1 (1)
+5: [ PASS] 10.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 10.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 10.007 ds_dispatch_tests.c:232 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 10.008 ds_dispatch_tests.c:235 - CallCount: DS_SetFilterFileCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 10 DS_AppProcessCmd_Test_SetFilterFile TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 11 DS_AppProcessCmd_Test_SetFilterType
+5: [ PASS] 11.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 11.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 11.003 ds_dispatch_tests.c:243 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 11.004 ds_dispatch_tests.c:246 - CallCount: DS_SetFilterTypeCmd() (1) == 1 (1)
+5: [ PASS] 11.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 11.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 11.007 ds_dispatch_tests.c:252 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 11.008 ds_dispatch_tests.c:255 - CallCount: DS_SetFilterTypeCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 11 DS_AppProcessCmd_Test_SetFilterType TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 12 DS_AppProcessCmd_Test_SetFilterParms
+5: [ PASS] 12.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 12.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 12.003 ds_dispatch_tests.c:263 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 12.004 ds_dispatch_tests.c:266 - CallCount: DS_SetFilterParmsCmd() (1) == 1 (1)
+5: [ PASS] 12.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 12.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 12.007 ds_dispatch_tests.c:272 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 12.008 ds_dispatch_tests.c:275 - CallCount: DS_SetFilterParmsCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 12 DS_AppProcessCmd_Test_SetFilterParms TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 13 DS_AppProcessCmd_Test_SetDestType
+5: [ PASS] 13.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 13.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 13.003 ds_dispatch_tests.c:283 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 13.004 ds_dispatch_tests.c:286 - CallCount: DS_SetDestTypeCmd() (1) == 1 (1)
+5: [ PASS] 13.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 13.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 13.007 ds_dispatch_tests.c:292 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 13.008 ds_dispatch_tests.c:295 - CallCount: DS_SetDestTypeCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 13 DS_AppProcessCmd_Test_SetDestType TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 14 DS_AppProcessCmd_Test_SetDestState
+5: [ PASS] 14.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 14.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 14.003 ds_dispatch_tests.c:303 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 14.004 ds_dispatch_tests.c:306 - CallCount: DS_SetDestStateCmd() (1) == 1 (1)
+5: [ PASS] 14.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 14.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 14.007 ds_dispatch_tests.c:312 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 14.008 ds_dispatch_tests.c:315 - CallCount: DS_SetDestStateCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 14 DS_AppProcessCmd_Test_SetDestState TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 15 DS_AppProcessCmd_Test_SetDestPath
+5: [ PASS] 15.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 15.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 15.003 ds_dispatch_tests.c:323 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 15.004 ds_dispatch_tests.c:326 - CallCount: DS_SetDestPathCmd() (1) == 1 (1)
+5: [ PASS] 15.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 15.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 15.007 ds_dispatch_tests.c:332 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 15.008 ds_dispatch_tests.c:335 - CallCount: DS_SetDestPathCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 15 DS_AppProcessCmd_Test_SetDestPath TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 16 DS_AppProcessCmd_Test_SetDestBase
+5: [ PASS] 16.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 16.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 16.003 ds_dispatch_tests.c:343 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 16.004 ds_dispatch_tests.c:346 - CallCount: DS_SetDestBaseCmd() (1) == 1 (1)
+5: [ PASS] 16.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 16.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 16.007 ds_dispatch_tests.c:352 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 16.008 ds_dispatch_tests.c:355 - CallCount: DS_SetDestBaseCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 16 DS_AppProcessCmd_Test_SetDestBase TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 17 DS_AppProcessCmd_Test_SetDestExt
+5: [ PASS] 17.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 17.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 17.003 ds_dispatch_tests.c:363 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 17.004 ds_dispatch_tests.c:366 - CallCount: DS_SetDestExtCmd() (1) == 1 (1)
+5: [ PASS] 17.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 17.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 17.007 ds_dispatch_tests.c:372 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 17.008 ds_dispatch_tests.c:375 - CallCount: DS_SetDestExtCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 17 DS_AppProcessCmd_Test_SetDestExt TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 18 DS_AppProcessCmd_Test_SetDestSize
+5: [ PASS] 18.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 18.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 18.003 ds_dispatch_tests.c:383 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 18.004 ds_dispatch_tests.c:386 - CallCount: DS_SetDestSizeCmd() (1) == 1 (1)
+5: [ PASS] 18.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 18.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 18.007 ds_dispatch_tests.c:392 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 18.008 ds_dispatch_tests.c:395 - CallCount: DS_SetDestSizeCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 18 DS_AppProcessCmd_Test_SetDestSize TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 19 DS_AppProcessCmd_Test_SetDestAge
+5: [ PASS] 19.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 19.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 19.003 ds_dispatch_tests.c:403 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 19.004 ds_dispatch_tests.c:406 - CallCount: DS_SetDestAgeCmd() (1) == 1 (1)
+5: [ PASS] 19.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 19.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 19.007 ds_dispatch_tests.c:412 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 19.008 ds_dispatch_tests.c:415 - CallCount: DS_SetDestAgeCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 19 DS_AppProcessCmd_Test_SetDestAge TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 20 DS_AppProcessCmd_Test_SetDestCount
+5: [ PASS] 20.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 20.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 20.003 ds_dispatch_tests.c:423 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 20.004 ds_dispatch_tests.c:426 - CallCount: DS_SetDestCountCmd() (1) == 1 (1)
+5: [ PASS] 20.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 20.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 20.007 ds_dispatch_tests.c:432 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 20.008 ds_dispatch_tests.c:435 - CallCount: DS_SetDestCountCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 20 DS_AppProcessCmd_Test_SetDestCount TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 21 DS_AppProcessCmd_Test_CloseFile
+5: [ PASS] 21.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 21.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 21.003 ds_dispatch_tests.c:443 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 21.004 ds_dispatch_tests.c:446 - CallCount: DS_CloseFileCmd() (1) == 1 (1)
+5: [ PASS] 21.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 21.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 21.007 ds_dispatch_tests.c:452 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 21.008 ds_dispatch_tests.c:455 - CallCount: DS_CloseFileCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 21 DS_AppProcessCmd_Test_CloseFile TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 22 DS_AppProcessCmd_Test_GetFileInfo
+5: [ PASS] 22.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 22.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 22.003 ds_dispatch_tests.c:463 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 22.004 ds_dispatch_tests.c:466 - CallCount: DS_GetFileInfoCmd() (1) == 1 (1)
+5: [ PASS] 22.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 22.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 22.007 ds_dispatch_tests.c:472 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 22.008 ds_dispatch_tests.c:475 - CallCount: DS_GetFileInfoCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 22 DS_AppProcessCmd_Test_GetFileInfo TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 23 DS_AppProcessCmd_Test_AddMID
+5: [ PASS] 23.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 23.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 23.003 ds_dispatch_tests.c:483 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 23.004 ds_dispatch_tests.c:486 - CallCount: DS_AddMidCmd() (1) == 1 (1)
+5: [ PASS] 23.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 23.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 23.007 ds_dispatch_tests.c:492 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 23.008 ds_dispatch_tests.c:495 - CallCount: DS_AddMidCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 23 DS_AppProcessCmd_Test_AddMID TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 24 DS_AppProcessCmd_Test_RemoveMID
+5: [ PASS] 24.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 24.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 24.003 ds_dispatch_tests.c:503 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 24.004 ds_dispatch_tests.c:506 - CallCount: DS_RemoveMidCmd() (1) == 1 (1)
+5: [ PASS] 24.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 24.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 24.007 ds_dispatch_tests.c:512 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 24.008 ds_dispatch_tests.c:515 - CallCount: DS_RemoveMidCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 24 DS_AppProcessCmd_Test_RemoveMID TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 25 DS_AppProcessCmd_Test_CloseAll
+5: [ PASS] 25.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 25.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 25.003 ds_dispatch_tests.c:523 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 25.004 ds_dispatch_tests.c:526 - CallCount: DS_CloseAllCmd() (1) == 1 (1)
+5: [ PASS] 25.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 25.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+5: [ PASS] 25.007 ds_dispatch_tests.c:532 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 25.008 ds_dispatch_tests.c:535 - CallCount: DS_CloseAllCmd() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 25 DS_AppProcessCmd_Test_CloseAll TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 26 DS_AppProcessCmd_Test_InvalidCommandCod
+5: [ PASS] 26.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+5: [ PASS] 26.002 ds_dispatch_tests.c:543 - DS_AppProcessCmd(&UT_CmdBuf.Buf)
+5: [ PASS] 26.003 ds_dispatch_tests.c:546 - DS_AppData.CmdRejectedCounter (1) == 1 (1)
+5: [ PASS] 26.004 ds_dispatch_tests.c:548 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 26 DS_AppProcessCmd_Test_InvalidCommandCod TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 26 SUMMARY              TOTAL::187   PASS::187   FAIL::0     MIR::0     TSF::0     TTF::0   
+5: COMPLETE: 26 tests Segment(s) executed
+5: 
+5/5 Test #5: coverage-ds-ds_dispatch ..........   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 5
+
+Total Test time (real) =   0.01 sec

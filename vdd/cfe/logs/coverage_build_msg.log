@@ -1,0 +1,77 @@
+$ make -C build/native/default_cpu1/msg
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS
+
+make: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/msg'
+make[1]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  0%] Building C object msg/CMakeFiles/msg.dir/fsw/src/cfe_msg_ccsdspri.c.o
+[  0%] Building C object msg/CMakeFiles/msg.dir/fsw/src/cfe_msg_init.c.o
+[  0%] Building C object msg/CMakeFiles/msg.dir/fsw/src/cfe_msg_integrity.c.o
+[  0%] Building C object msg/CMakeFiles/msg.dir/fsw/src/cfe_msg_msgid_shared.c.o
+[  0%] Building C object msg/CMakeFiles/msg.dir/fsw/src/cfe_msg_sechdr_checksum.c.o
+[  0%] Building C object msg/CMakeFiles/msg.dir/fsw/src/cfe_msg_sechdr_fc.c.o
+[  8%] Building C object msg/CMakeFiles/msg.dir/fsw/src/cfe_msg_sechdr_time.c.o
+[  8%] Building C object msg/CMakeFiles/msg.dir/fsw/src/cfe_msg_objtab.c.o
+[  8%] Building C object msg/CMakeFiles/msg.dir/fsw/src/cfe_msg_initdefaulthdr_pri.c.o
+[  8%] Building C object msg/CMakeFiles/msg.dir/fsw/src/cfe_msg_msgid_v1.c.o
+[  8%] Linking C static library libmsg.a
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  8%] Built target msg
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  8%] Built target osal_generic-linux_impl
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  8%] Built target osal_bsp
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  8%] Built target ut_assert
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  8%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_ccsdspri.c.o
+[  8%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_init.c.o
+[  8%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_integrity.c.o
+[  8%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_msgid_shared.c.o
+[  8%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_sechdr_checksum.c.o
+[  8%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_sechdr_fc.c.o
+[ 16%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_sechdr_time.c.o
+[ 16%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_objtab.c.o
+[ 16%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_initdefaulthdr_pri.c.o
+[ 16%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_msgid_v1.c.o
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 16%] Built target coverage-msg-ALL-object
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 50%] Built target ut_osapi_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 66%] Built target ut_psp_api_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 83%] Built target ut_core_api_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 91%] Built target ut_core_private_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 91%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-testrunner.dir/msg_UT.c.o
+[ 91%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-testrunner.dir/test_msg_not.c.o
+[ 91%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-testrunner.dir/test_msg_pri_not.c.o
+[ 91%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-testrunner.dir/test_cfe_msg_init.c.o
+[ 91%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-testrunner.dir/test_cfe_msg_integrity.c.o
+[ 91%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-testrunner.dir/test_cfe_msg_ccsdspri.c.o
+[ 91%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-testrunner.dir/test_cfe_msg_msgid_shared.c.o
+[ 91%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-testrunner.dir/test_cfe_msg_checksum.c.o
+[100%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-testrunner.dir/test_cfe_msg_fc.c.o
+[100%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-testrunner.dir/test_cfe_msg_time.c.o
+[100%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-testrunner.dir/test_msg_prionly.c.o
+[100%] Building C object msg/ut-coverage/CMakeFiles/coverage-msg-ALL-testrunner.dir/test_cfe_msg_msgid_v1.c.o
+[100%] Linking C executable coverage-msg-ALL-testrunner
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[100%] Built target coverage-msg-ALL-testrunner
+make[1]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/msg'

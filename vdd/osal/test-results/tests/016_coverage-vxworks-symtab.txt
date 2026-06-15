@@ -1,0 +1,23 @@
+name: coverage-vxworks-symtab
+classname: coverage-vxworks-symtab
+time_seconds: 0.000911625
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_SymTableIterator_Impl
+[ PASS] 01.001 coveragetest-symtab.c:71 - UT_SymTabTest_CallIteratorFunc("ut", &Data, 100, 1000) (1) == true (1)
+[ PASS] 01.002 coveragetest-symtab.c:72 - UT_SymTabTest_GetIteratorStatus() (0) == OS_SUCCESS (0)
+[ PASS] 01.003 coveragetest-symtab.c:76 - UT_SymTabTest_CallIteratorFunc("ut", &Data, 100, 1000) (1) == true (1)
+[ PASS] 01.004 coveragetest-symtab.c:77 - UT_SymTabTest_GetIteratorStatus() (0) == OS_SUCCESS (0)
+[ PASS] 01.005 coveragetest-symtab.c:81 - UT_SymTabTest_CallIteratorFunc("ut", &Data, 100, 101) (0) == false (0)
+[ PASS] 01.006 coveragetest-symtab.c:82 - UT_SymTabTest_GetIteratorStatus() (-41) == OS_ERR_OUTPUT_TOO_LARGE (-41)
+[ PASS] 01.007 coveragetest-symtab.c:86 - UT_SymTabTest_CallIteratorFunc("ut", &Data, 100, 1000) (0) == false (0)
+[ PASS] 01.008 coveragetest-symtab.c:87 - UT_SymTabTest_GetIteratorStatus() (-1) == OS_ERROR (-1)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0   ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

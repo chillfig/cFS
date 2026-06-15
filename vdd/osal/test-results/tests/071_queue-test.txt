@@ -1,0 +1,60 @@
+name: queue-test
+classname: queue-test
+time_seconds: 12.9518
+status: failed
+message: Failed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 QueueTimeoutTest
+[ PASS] 01.001 queue-test.c:149 - MsgQ create Id=20001 Rc=0
+[  TSF] 01.002 queue-test.c:161 - Task 1 create Id=0 Rc=-1
+[ PASS] 01.003 queue-test.c:167 - Timer 1 create Id=90001 Rc=0
+[ INFO] queue-test.c:168:Timer Accuracy = 10000 microseconds 
+[ PASS] 01.004 queue-test.c:174 - Timer 1 set Rc=0
+[ PASS] 01.005 queue-test.c:111 - Timer delete Rc=0
+[ FAIL] 01.006 queue-test.c:113 - Task 1 delete Rc=-16
+[ PASS] 01.007 queue-test.c:115 - Queue 1 delete Rc=0
+[ PASS] 01.008 queue-test.c:118 - Task 1 failures = 0
+[ PASS] 01.009 queue-test.c:124 - Task 1 messages = 0
+[ PASS] 01.010 queue-test.c:127 - Task 1 timeouts 0 <= 10
+[ FAIL] 01.011 queue-test.c:133 - Task 1 timeouts 0 >= 6
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 QueueTimeoutTest     TOTAL::11    PASS::8     FAIL::2     MIR::0     TSF::1     TTF::0   
+
+[BEGIN] 02 QueueMessageCheck
+[ PASS] 02.001 queue-test.c:214 - MsgQ create Id=20002 Rc=0
+[  TSF] 02.002 queue-test.c:226 - Task 1 create Id=0 Rc=-1
+[ PASS] 02.003 queue-test.c:232 - Timer 1 create Id=90002 Rc=0
+[ INFO] queue-test.c:233:Timer Accuracy = 10000 microseconds 
+[ PASS] 02.004 queue-test.c:239 - Timer 1 set Rc=0
+[ PASS] 02.005 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.006 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.007 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.008 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.009 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.010 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.011 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.012 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.013 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.014 queue-test.c:252 - OS Queue Put Rc=0
+Delay for half a second before checking
+[ PASS] 02.015 queue-test.c:191 - Timer delete Rc=0
+[ FAIL] 02.016 queue-test.c:193 - Task 1 delete Rc=-16
+[ PASS] 02.017 queue-test.c:195 - Queue 1 delete Rc=0
+[ PASS] 02.018 queue-test.c:198 - Task 1 failures = 0
+[ FAIL] 02.019 queue-test.c:199 - Task 1 messages = 0
+[ PASS] 02.020 queue-test.c:200 - Task 1 timeouts = 0
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 02 QueueMessageCheck    TOTAL::20    PASS::17    FAIL::2     MIR::0     TSF::1     TTF::0   
+
+[BEGIN] 03 Cleanup
+[  END] No test cases
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 02 SUMMARY              TOTAL::31    PASS::25    FAIL::4     MIR::0     TSF::2     TTF::0   
+COMPLETE: 2 tests Segment(s) executed

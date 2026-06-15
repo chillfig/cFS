@@ -1,0 +1,24 @@
+name: coverage-vxworks-posix-files
+classname: coverage-vxworks-posix-files
+time_seconds: 0.000924583
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_FileOpen_Impl
+[ PASS] 01.001 coveragetest-posix-files.c:48 - OS_FileOpen_Impl(&token, "local", OS_FILE_FLAG_TRUNCATE, OS_WRITE_ONLY) (0) == OS_SUCCESS (0)
+[ PASS] 01.002 coveragetest-posix-files.c:49 - OS_FileOpen_Impl(&token, "local", 0, OS_READ_ONLY) (0) == OS_SUCCESS (0)
+[ PASS] 01.003 coveragetest-posix-files.c:50 - OS_FileOpen_Impl(&token, "local", OS_FILE_FLAG_CREATE, OS_READ_WRITE) (0) == OS_SUCCESS (0)
+[ PASS] 01.004 coveragetest-posix-files.c:51 - OS_FileOpen_Impl(&token, "local", 0, -1234) (-1) == OS_ERROR (-1)
+[ PASS] 01.005 coveragetest-posix-files.c:55 - OS_FileOpen_Impl(&token, "local", 0, OS_READ_ONLY) (-1) == OS_ERROR (-1)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_FileOpen_Impl     TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_FileStat_Impl
+[ PASS] 02.001 coveragetest-posix-files.c:69 - OS_FileStat_Impl("local", &FileStat...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

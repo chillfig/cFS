@@ -1,0 +1,36 @@
+$ lcov --capture --rc lcov_branch_coverage=1 --directory build --output-file coverage_test.info
+# cwd: /tmp/vdd_sc_coverage_ldj9pgew/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Capturing coverage data from build
+geninfo cmd: '/usr/bin/geninfo build --output-filename coverage_test.info --rc lcov_branch_coverage=1 --memory 0 --branch-coverage'
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+geninfo: WARNING: RC option 'lcov_branch_coverage' is deprecated.  Consider using 'branch_coverage. instead.  (Backward-compatible support will be removed in the future
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_datvACQ
+Scanning build for .gcda files ...
+Found 8 data files in build
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_loads-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_loads.c.gcda
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_atsrq-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_atsrq.c.gcda
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_rtsrq-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_rtsrq.c.gcda
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_cmds-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_cmds.c.gcda
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_app-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_app.c.gcda
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_state-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_state.c.gcda
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_dispatch-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_dispatch.c.gcda
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_utils-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_utils.c.gcda
+Finished .info-file creation

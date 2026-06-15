@@ -1,0 +1,20 @@
+name: count-sem-timeout-test
+classname: count-sem-timeout-test
+time_seconds: 60.002
+status: failed
+message: Timeout
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 CountSemTest
+[ PASS] 01.001 count-sem-timeout-test.c:204 - CountSem1 create Id=30001 Rc=0
+[ PASS] 01.002 count-sem-timeout-test.c:215 - CountSem1 take Rc=0
+[ PASS] 01.003 count-sem-timeout-test.c:215 - CountSem1 take Rc=0
+[  TSF] 01.004 count-sem-timeout-test.c:228 - Task 1 create Id=0 Rc=-1
+[  TSF] 01.005 count-sem-timeout-test.c:237 - Task 2 create Id=0 Rc=-1
+[  TSF] 01.006 count-sem-timeout-test.c:246 - Task 3 create Id=0 Rc=-1

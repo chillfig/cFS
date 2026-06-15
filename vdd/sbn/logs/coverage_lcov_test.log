@@ -1,0 +1,47 @@
+$ lcov --capture --rc lcov_branch_coverage=1 --directory build --output-file coverage_test.info
+# cwd: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Capturing coverage data from build
+geninfo cmd: '/usr/bin/geninfo build --output-filename coverage_test.info --rc lcov_branch_coverage=1 --memory 0 --branch-coverage'
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+geninfo: WARNING: RC option 'lcov_branch_coverage' is deprecated.  Consider using 'branch_coverage. instead.  (Backward-compatible support will be removed in the future
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_datyiQn
+Scanning build for .gcda files ...
+Found 16 data files in build
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_cmds_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_pack.c.gcda
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_cmds_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_app.c.gcda
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_cmds_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_cmds.c.gcda
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_cmds_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_subs.c.gcda
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_app_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_pack.c.gcda
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_app_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_app.c.gcda
+geninfo: WARNING: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_app.c:522: unexecuted block on non-branch line with non-zero hit count.  Use "geninfo --rc geninfo_unexecuted_blocks=1 to set count to zero.
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_app_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_cmds.c.gcda
+geninfo: WARNING: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_cmds.c:608: unexecuted block on non-branch line with non-zero hit count.  Use "geninfo --rc geninfo_unexecuted_blocks=1 to set count to zero.
+	(use "geninfo --ignore-errors gcov,gcov ..." to suppress this warning)
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_app_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_subs.c.gcda
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_subs_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_pack.c.gcda
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_subs_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_app.c.gcda
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_subs_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_cmds.c.gcda
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_subs_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_subs.c.gcda
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_pack_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_pack.c.gcda
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_pack_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_app.c.gcda
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_pack_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_cmds.c.gcda
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_pack_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_subs.c.gcda
+Finished .info-file creation

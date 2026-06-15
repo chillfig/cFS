@@ -1,6 +1,6 @@
 #!/bin/bash
 
-applist="cf cs ds fm hk hs lc md mm sc sbn"
+applist="cf cs ds fm hk hs lc md mm sc"
 app=$1
 config="native_std"
 build_dir="build-${config}"
@@ -14,14 +14,29 @@ if [[ " $applist " =~ " $app " ]]; then
     rm -rf ${app}_doc_logs
 
     # setup build
-    make ${config}.distclean
+    # make ${config}.distclean
     make ${config}.prep
+    prep_status=$?
+    if [[ ${prep_status} -ne 0 ]]; then
+        exit ${prep_status}
+    fi
+
+    make -C ${build_dir} osal_public_api_headerlist
+    headerlist_status=$?
+    if [[ ${headerlist_status} -ne 0 ]]; then
+        exit ${headerlist_status}
+    fi
 
     # dir
     mkdir ${app}_doc_logs
 
     # build document with logs
     make -C ${build_dir} ${target} 2>&1 > ${app}_doc_logs/${target}_stdout.txt | tee ${app}_doc_logs/${target}_stderr.txt
+    doc_status=${PIPESTATUS[0]}
+    if [[ ${doc_status} -ne 0 ]]; then
+        exit ${doc_status}
+    fi
+
     mv ${build_dir}/docs/${target}/${target}-warnings.log ${app}_doc_logs/
 
     # generate pdf

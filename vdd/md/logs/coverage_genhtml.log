@@ -1,0 +1,32 @@
+$ genhtml coverage_total.info --branch-coverage --output-directory lcov
+# cwd: /tmp/vdd_md_coverage_oscs5ja5/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found 7 entries.
+Found common filename prefix "/tmp/vdd_md_coverage_oscs5ja5/cFS/apps/md/fsw"
+Generating output.
+Processing file src/md_dwell_pkt.c
+  lines=74 hit=74 functions=4 hit=4 branches=26 hit=26
+Processing file src/md_utils.c
+  lines=67 hit=67 functions=9 hit=9 branches=38 hit=38
+Processing file src/md_app.c
+  lines=175 hit=175 functions=7 hit=7 branches=82 hit=82
+Processing file src/md_dwell_tbl.c
+  lines=145 hit=145 functions=8 hit=8 branches=66 hit=66
+Processing file /tmp/vdd_md_coverage_oscs5ja5/cFS/cfe/modules/core_api/fsw/inc/cfe_sb.h
+  lines=7 hit=7 functions=3 hit=3
+Processing file src/md_cmds.c
+  lines=179 hit=179 functions=6 hit=6 branches=70 hit=70
+Processing file src/md_dispatch.c
+  lines=64 hit=64 functions=3 hit=3 branches=29 hit=29
+Overall coverage rate:
+  lines......: 100.0% (711 of 711 lines)
+  functions......: 100.0% (40 of 40 functions)
+  branches......: 100.0% (311 of 311 branches)

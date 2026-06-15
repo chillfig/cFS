@@ -1,0 +1,24 @@
+name: osal_loader_UT
+classname: osal_loader_UT
+time_seconds: 0.0663702
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_ModuleLoad
+[ PASS] 01.001 ut_osloader_module_test.c:85 - OS_ModuleLoad(0, "TestModule", UT_OS_GENERIC_MODULE_NAME1, OS_MODULE_FLAG_LOCAL_SYMBOLS) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.002 ut_osloader_module_test.c:91 - OS_ModuleLoad(&module_id, 0, UT_OS_GENERIC_MODULE_NAME1, OS_MODULE_FLAG_LOCAL_SYMBOLS) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.003 ut_osloader_module_test.c:97 - OS_ModuleLoad(&module_id, "TestModule", 0, OS_MODULE_FLAG_LOCAL_SYMBOLS) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.004 ut_osloader_module_test.c:104 - OS_ModuleLoad(&module_id, module_name, UT_OS_GENERIC_MODULE_NAME1, OS_MODULE_FLAG_LOCAL_SYMBOLS) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+[ PASS] 01.005 ut_osloader_module_test.c:112 - OS_ModuleLoad(&module_id, "TestModule", module_file_name, OS_MODULE_FLAG_LOCAL_SYMBOLS) (-108) == OS_FS_ERR_PATH_INVALID (-108)
+
+**BUG** OS_ModuleLoad():199:check '(module_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_M...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

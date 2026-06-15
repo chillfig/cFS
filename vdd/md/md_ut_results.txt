@@ -1,0 +1,1468 @@
+$ ctest --verbose
+# cwd: /tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md
+
+UpdateCTestConfiguration  from :/tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md/DartConfiguration.tcl
+Test project /tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: coverage-md-md_dwell_tbl
+
+1: Test command: /tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md/unit-test/coverage-md-md_dwell_tbl-testrunner
+1: Working Directory: /tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md/unit-test
+1: Test timeout computed to be: 10000000
+1: 
+1: [BEGIN] UNIT TEST
+1: 
+1: [BEGIN] 01 SETUP
+1: [  END] No test cases
+1: 
+1: [BEGIN] 01 MD_TableValidationFunc_Test_InvalidEnab
+1: [ PASS] 01.001 md_dwell_tbl_tests.c:66 - Result == MD_TBL_ENA_FLAG_ERROR
+1: [ PASS] 01.002 md_dwell_tbl_tests.c:68 - context_CFE_EVS_SendEvent[0].EventID (44) == MD_TBL_ENA_FLAG_EID (44)
+1: [ PASS] 01.003 md_dwell_tbl_tests.c:69 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 01.004 md_dwell_tbl_tests.c:73 - Event string matched expected result, 'Dwell Table rejected because value of enable flag (%d) is invalid'
+1: [ PASS] 01.005 md_dwell_tbl_tests.c:77 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 01 MD_TableValidationFunc_Test_InvalidEnab TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 02 MD_TableValidationFunc_Test_InvalidSign
+1: [ PASS] 02.001 md_dwell_tbl_tests.c:101 - Result == MD_SIG_LEN_TBL_ERROR
+1: [ PASS] 02.002 md_dwell_tbl_tests.c:103 - context_CFE_EVS_SendEvent[0].EventID (50) == MD_TBL_SIG_LEN_ERR_EID (50)
+1: [ PASS] 02.003 md_dwell_tbl_tests.c:104 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 02.004 md_dwell_tbl_tests.c:108 - Event string matched expected result, 'Dwell Table rejected because Signature length was invalid'
+1: [ PASS] 02.005 md_dwell_tbl_tests.c:112 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 02 MD_TableValidationFunc_Test_InvalidSign TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 03 MD_TableValidationFunc_Test_ResolveErro
+1: [ PASS] 03.001 md_dwell_tbl_tests.c:148 - Result == MD_RESOLVE_ERROR
+1: [ PASS] 03.002 md_dwell_tbl_tests.c:150 - context_CFE_EVS_SendEvent[2].EventID (41) == MD_RESOLVE_ERR_EID (41)
+1: [ PASS] 03.003 md_dwell_tbl_tests.c:151 - context_CFE_EVS_SendEvent[2].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 03.004 md_dwell_tbl_tests.c:155 - Event string matched expected result, 'Dwell Table rejected because address (sym='%s'/offset=0x%08X) in entry #%d couldn't be resolved'
+1: [ PASS] 03.005 md_dwell_tbl_tests.c:160 - CFE_EVS_SendEvent was called 3 time(s), expected 3
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 03 MD_TableValidationFunc_Test_ResolveErro TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 04 MD_TableValidationFunc_Test_InvalidAddr
+1: [ PASS] 04.001 md_dwell_tbl_tests.c:202 - Result == MD_INVALID_ADDR_ERROR
+1: [ PASS] 04.002 md_dwell_tbl_tests.c:204 - context_CFE_EVS_SendEvent[2].EventID (42) == MD_RANGE_ERR_EID (42)
+1: [ PASS] 04.003 md_dwell_tbl_tests.c:205 - context_CFE_EVS_SendEvent[2].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 04.004 md_dwell_tbl_tests.c:209 - Event string matched expected result, 'Dwell Table rejected because address (sym='%s'/offset=0x%08X) in entry #%d was out of range'
+1: [ PASS] 04.005 md_dwell_tbl_tests.c:214 - CFE_EVS_SendEvent was called 3 time(s), expected 3
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 04 MD_TableValidationFunc_Test_InvalidAddr TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 05 MD_TableValidationFunc_Test_NullPtr
+1: [ PASS] 05.001 md_dwell_tbl_tests.c:244 - Result == MD_INVALID_ADDR_ERROR
+1: [ PASS] 05.002 md_dwell_tbl_tests.c:246 - context_CFE_EVS_SendEvent[0].EventID (63) == MD_TBL_VAL_NULL_PTR_ERR_EID (63)
+1: [ PASS] 05.003 md_dwell_tbl_tests.c:247 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 05.004 md_dwell_tbl_tests.c:251 - Event string matched expected result, 'Dwell Table rejected because of null table pointer'
+1: [ PASS] 05.005 md_dwell_tbl_tests.c:256 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 05 MD_TableValidationFunc_Test_NullPtr TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 06 MD_TableValidationFunc_Test_InvalidLeng
+1: [ PASS] 06.001 md_dwell_tbl_tests.c:293 - Result == MD_INVALID_LEN_ERROR
+1: [ PASS] 06.002 md_dwell_tbl_tests.c:295 - context_CFE_EVS_SendEvent[2].EventID (43) == MD_TBL_HAS_LEN_ERR_EID (43)
+1: [ PASS] 06.003 md_dwell_tbl_tests.c:296 - context_CFE_EVS_SendEvent[2].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 06.004 md_dwell_tbl_tests.c:300 - Event string matched expected result, 'Dwell Table rejected because length (%d) in entry #%d was invalid'
+1: [ PASS] 06.005 md_dwell_tbl_tests.c:305 - CFE_EVS_SendEvent was called 3 time(s), expected 3
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 06 MD_TableValidationFunc_Test_InvalidLeng TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 07 MD_TableValidationFunc_Test_NotAligned
+1: [ PASS] 07.001 md_dwell_tbl_tests.c:344 - Result == MD_NOT_ALIGNED_ERROR
+1: [ PASS] 07.002 md_dwell_tbl_tests.c:346 - context_CFE_EVS_SendEvent[2].EventID (45) == MD_TBL_ALIGN_ERR_EID (45)
+1: [ PASS] 07.003 md_dwell_tbl_tests.c:347 - context_CFE_EVS_SendEvent[2].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 07.004 md_dwell_tbl_tests.c:351 - Event string matched expected result, 'Dwell Table rejected because address (sym='%s'/offset=0x%08X) in entry #%d not properly aligned for %d-byte dwell'
+1: [ PASS] 07.005 md_dwell_tbl_tests.c:356 - CFE_EVS_SendEvent was called 3 time(s), expected 3
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 07 MD_TableValidationFunc_Test_NotAligned TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 08 MD_TableValidationFunc_Test_ZeroRate
+1: [ PASS] 08.001 md_dwell_tbl_tests.c:397 - Result == CFE_SUCCESS
+1: [ PASS] 08.002 md_dwell_tbl_tests.c:399 - context_CFE_EVS_SendEvent[1].EventID (40) == MD_ZERO_RATE_TBL_INF_EID (40)
+1: [ PASS] 08.003 md_dwell_tbl_tests.c:400 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+1: [ PASS] 08.004 md_dwell_tbl_tests.c:405 - Event string matched expected result, 'Dwell Table is enabled but no processing will occur for table being loaded (rate is zero)'
+1: [ PASS] 08.005 md_dwell_tbl_tests.c:410 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 08 MD_TableValidationFunc_Test_ZeroRate TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 09 MD_TableValidationFunc_Test_SuccessStre
+1: [ PASS] 09.001 md_dwell_tbl_tests.c:445 - Result == CFE_SUCCESS
+1: [ PASS] 09.002 md_dwell_tbl_tests.c:450 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 09 MD_TableValidationFunc_Test_SuccessStre TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 10 MD_TableValidationFunc_Test_Success
+1: [ PASS] 10.001 md_dwell_tbl_tests.c:485 - Result == CFE_SUCCESS
+1: [ PASS] 10.002 md_dwell_tbl_tests.c:490 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 10 MD_TableValidationFunc_Test_Success TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 11 MD_ReadDwellTable_Test
+1: [ PASS] 11.001 md_dwell_tbl_tests.c:514 - ActiveAddrCount == MD_INTERFACE_DWELL_TABLE_SIZE
+1: [ PASS] 11.002 md_dwell_tbl_tests.c:515 - Size == MD_INTERFACE_DWELL_TABLE_SIZE
+1: [ PASS] 11.003 md_dwell_tbl_tests.c:516 - Rate == MD_INTERFACE_DWELL_TABLE_SIZE
+1: [ PASS] 11.004 md_dwell_tbl_tests.c:518 - Result == CFE_SUCCESS
+1: [ PASS] 11.005 md_dwell_tbl_tests.c:522 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 11 MD_ReadDwellTable_Test TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 12 MD_CheckTableEntries_Test_Error
+1: [ PASS] 12.001 md_dwell_tbl_tests.c:560 - Result == MD_INVALID_ADDR_ERROR
+1: [ PASS] 12.002 md_dwell_tbl_tests.c:562 - context_CFE_EVS_SendEvent[1].EventID (52) == MD_DWELL_TBL_INF_EID (52)
+1: [ PASS] 12.003 md_dwell_tbl_tests.c:563 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+1: [ PASS] 12.004 md_dwell_tbl_tests.c:564 - ErrorEntryArg (1) == 1 (1)
+1: [ PASS] 12.005 md_dwell_tbl_tests.c:567 - Event string matched expected result, 'MD Dwell Tbl verify results: good = %d, bad = %d, unused = %d'
+1: [ PASS] 12.006 md_dwell_tbl_tests.c:571 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 12 MD_CheckTableEntries_Test_Error TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 13 MD_CheckTableEntries_Test_MultiError
+1: [ PASS] 13.001 md_dwell_tbl_tests.c:599 - ErrorEntryArg == 0
+1: [ PASS] 13.002 md_dwell_tbl_tests.c:601 - Result == MD_RESOLVE_ERROR
+1: [ PASS] 13.003 md_dwell_tbl_tests.c:603 - context_CFE_EVS_SendEvent[1].EventID (52) == MD_DWELL_TBL_INF_EID (52)
+1: [ PASS] 13.004 md_dwell_tbl_tests.c:604 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+1: [ PASS] 13.005 md_dwell_tbl_tests.c:608 - Event string matched expected result, 'MD Dwell Tbl verify results: good = %d, bad = %d, unused = %d'
+1: [ PASS] 13.006 md_dwell_tbl_tests.c:612 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 13 MD_CheckTableEntries_Test_MultiError TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 14 MD_CheckTableEntries_Test_Success
+1: [ PASS] 14.001 md_dwell_tbl_tests.c:651 - ErrorEntryArg == 0
+1: [ PASS] 14.002 md_dwell_tbl_tests.c:653 - Result == CFE_SUCCESS
+1: [ PASS] 14.003 md_dwell_tbl_tests.c:655 - context_CFE_EVS_SendEvent[0].EventID (52) == MD_DWELL_TBL_INF_EID (52)
+1: [ PASS] 14.004 md_dwell_tbl_tests.c:656 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+1: [ PASS] 14.005 md_dwell_tbl_tests.c:660 - Event string matched expected result, 'MD Dwell Tbl verify results: good = %d, bad = %d, unused = %d'
+1: [ PASS] 14.006 md_dwell_tbl_tests.c:664 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 14 MD_CheckTableEntries_Test_Success TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 15 MD_ValidTableEntry_Test_SuccessDwellLen
+1: [ PASS] 15.001 md_dwell_tbl_tests.c:680 - Result == CFE_SUCCESS
+1: [ PASS] 15.002 md_dwell_tbl_tests.c:684 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 15 MD_ValidTableEntry_Test_SuccessDwellLen TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 16 MD_ValidTableEntry_Test_ResolveError
+1: [ PASS] 16.001 md_dwell_tbl_tests.c:703 - Result == MD_RESOLVE_ERROR
+1: [ PASS] 16.002 md_dwell_tbl_tests.c:707 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 16 MD_ValidTableEntry_Test_ResolveError TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 17 MD_ValidTableEntry_Test_InvalidAddress
+1: [ PASS] 17.001 md_dwell_tbl_tests.c:727 - Result == MD_INVALID_ADDR_ERROR
+1: [ PASS] 17.002 md_dwell_tbl_tests.c:731 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 17 MD_ValidTableEntry_Test_InvalidAddress TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 18 MD_ValidTableEntry_Test_InvalidLength
+1: [ PASS] 18.001 md_dwell_tbl_tests.c:751 - Result (-1073741819) == MD_INVALID_LEN_ERROR (-1073741819)
+1: [ PASS] 18.002 md_dwell_tbl_tests.c:755 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 18 MD_ValidTableEntry_Test_InvalidLength TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 19 MD_ValidTableEntry_Test_NotAligned16Dwe
+1: [ PASS] 19.001 md_dwell_tbl_tests.c:776 - Result == MD_NOT_ALIGNED_ERROR
+1: [ PASS] 19.002 md_dwell_tbl_tests.c:780 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 19 MD_ValidTableEntry_Test_NotAligned16Dwe TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 20 MD_ValidTableEntry_Test_Aligned32
+1: [ PASS] 20.001 md_dwell_tbl_tests.c:803 - Result == CFE_SUCCESS
+1: [ PASS] 20.002 md_dwell_tbl_tests.c:807 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 20 MD_ValidTableEntry_Test_Aligned32 TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 21 MD_ValidTableEntry_Test_NotAligned32
+1: [ PASS] 21.001 md_dwell_tbl_tests.c:830 - Result == MD_NOT_ALIGNED_ERROR
+1: [ PASS] 21.002 md_dwell_tbl_tests.c:834 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 21 MD_ValidTableEntry_Test_NotAligned32 TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 22 MD_ValidTableEntry_Test_NotAligned16Dwe
+1: [ PASS] 22.001 md_dwell_tbl_tests.c:856 - Result (-1073741818) == MD_NOT_ALIGNED_ERROR (-1073741818)
+1: [ PASS] 22.002 md_dwell_tbl_tests.c:860 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 22 MD_ValidTableEntry_Test_NotAligned16Dwe TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 23 MD_ValidTableEntry_Test_ElseSuccess
+1: [ PASS] 23.001 md_dwell_tbl_tests.c:882 - Result == CFE_SUCCESS
+1: [ PASS] 23.002 md_dwell_tbl_tests.c:886 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 23 MD_ValidTableEntry_Test_ElseSuccess TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 24 MD_CopyUpdatedTbl_Test
+1: [ PASS] 24.001 md_dwell_tbl_tests.c:906 - MD_AppData.MD_DwellTables[TblIndex].Enabled == 1
+1: [ PASS] 24.002 md_dwell_tbl_tests.c:909 - strncmp(MD_AppData.MD_DwellTables[TblIndex].Signature, 'signature', MD_INTERFACE_SIGNATURE_FIELD_LENGTH) == 0
+1: [ PASS] 24.003 md_dwell_tbl_tests.c:914 - MD_AppData.MD_DwellTables[TblIndex].Signature[MD_INTERFACE_SIGNATURE_FIELD_LENGTH - 1] == ''
+1: [ PASS] 24.004 md_dwell_tbl_tests.c:920 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 24 MD_CopyUpdatedTbl_Test TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 25 MD_UpdateTableEnabledField_Test_DwellSt
+1: [ PASS] 25.001 md_dwell_tbl_tests.c:943 - LoadTblPtr->Enabled == MD_Dwell_States_ENABLED
+1: [ PASS] 25.002 md_dwell_tbl_tests.c:947 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 25 MD_UpdateTableEnabledField_Test_DwellSt TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 26 MD_UpdateTableEnabledField_Test_DwellSt
+1: [ PASS] 26.001 md_dwell_tbl_tests.c:968 - LoadTblPtr->Enabled == MD_Dwell_States_DISABLED
+1: [ PASS] 26.002 md_dwell_tbl_tests.c:972 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 26 MD_UpdateTableEnabledField_Test_DwellSt TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 27 MD_UpdateTableEnabledField_Test_Error
+1: [ PASS] 27.001 md_dwell_tbl_tests.c:995 - context_CFE_EVS_SendEvent[0].EventID (53) == MD_UPDATE_TBL_EN_ERR_EID (53)
+1: [ PASS] 27.002 md_dwell_tbl_tests.c:996 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 27.003 md_dwell_tbl_tests.c:1000 - Event string matched expected result, 'MD_UpdateTableEnabledField, TableIndex %d: CFE_TBL_GetAddress Returned 0x%08x'
+1: [ PASS] 27.004 md_dwell_tbl_tests.c:1004 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 27 MD_UpdateTableEnabledField_Test_Error TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 28 MD_UpdateTableDwellEntry_Test
+1: [ PASS] 28.001 md_dwell_tbl_tests.c:1030 - LoadTblPtr->Entry[EntryIndex].Length == 1
+1: [ PASS] 28.002 md_dwell_tbl_tests.c:1031 - LoadTblPtr->Entry[EntryIndex].Delay == 1
+1: [ PASS] 28.003 md_dwell_tbl_tests.c:1032 - LoadTablePtr->Entry[EntryIndex].DwellAddress.Offset == 1
+1: [ PASS] 28.004 md_dwell_tbl_tests.c:1035 - strcmp(LoadTblPtr->Entry[EntryIndex].DwellAddress.SymName, 'symname') == 0
+1: [ PASS] 28.005 md_dwell_tbl_tests.c:1040 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 28 MD_UpdateTableDwellEntry_Test TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 29 MD_UpdateTableDwellEntry_Test_Updated
+1: [ PASS] 29.001 md_dwell_tbl_tests.c:1068 - LoadTblPtr->Entry[EntryIndex].Length == 1
+1: [ PASS] 29.002 md_dwell_tbl_tests.c:1069 - LoadTblPtr->Entry[EntryIndex].Delay == 1
+1: [ PASS] 29.003 md_dwell_tbl_tests.c:1070 - LoadTablePtr->Entry[EntryIndex].DwellAddress.Offset == 1
+1: [ PASS] 29.004 md_dwell_tbl_tests.c:1073 - strcmp(LoadTblPtr->Entry[EntryIndex].DwellAddress.SymName, 'symname') == 0
+1: [ PASS] 29.005 md_dwell_tbl_tests.c:1078 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 29 MD_UpdateTableDwellEntry_Test_Updated TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 30 MD_UpdateTableDwellEntry_Test_Error
+1: [ PASS] 30.001 md_dwell_tbl_tests.c:1108 - context_CFE_EVS_SendEvent[0].EventID (54) == MD_UPDATE_TBL_DWELL_ERR_EID (54)
+1: [ PASS] 30.002 md_dwell_tbl_tests.c:1109 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 30.003 md_dwell_tbl_tests.c:1113 - Event string matched expected result, 'MD_UpdateTableDwellEntry, TableIndex %d: CFE_TBL_GetAddress Returned 0x%08x'
+1: [ PASS] 30.004 md_dwell_tbl_tests.c:1117 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 30 MD_UpdateTableDwellEntry_Test_Error TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 31 MD_UpdateTableSignature_Test
+1: [ PASS] 31.001 md_dwell_tbl_tests.c:1137 - strncmp(LoadTblPtr->Signature, 'newsignature', 15) == 0
+1: [ PASS] 31.002 md_dwell_tbl_tests.c:1142 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 31 MD_UpdateTableSignature_Test TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 32 MD_UpdateTableSignature_Test_Updated
+1: [ PASS] 32.001 md_dwell_tbl_tests.c:1163 - strncmp(LoadTblPtr->Signature, 'newsignature', 15) == 0
+1: [ PASS] 32.002 md_dwell_tbl_tests.c:1168 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 32 MD_UpdateTableSignature_Test_Updated TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 33 MD_UpdateTableSignature_Test_Error
+1: [ PASS] 33.001 md_dwell_tbl_tests.c:1191 - context_CFE_EVS_SendEvent[0].EventID (55) == MD_UPDATE_TBL_SIG_ERR_EID (55)
+1: [ PASS] 33.002 md_dwell_tbl_tests.c:1192 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 33.003 md_dwell_tbl_tests.c:1196 - Event string matched expected result, 'MD_UpdateTableSignature, TableIndex %d: CFE_TBL_GetAddress Returned 0x%08x'
+1: [ PASS] 33.004 md_dwell_tbl_tests.c:1200 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 33 MD_UpdateTableSignature_Test_Error TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 33 SUMMARY              TOTAL::119   PASS::119   FAIL::0     MIR::0     TSF::0     TTF::0   
+1: COMPLETE: 33 tests Segment(s) executed
+1: 
+1/6 Test #1: coverage-md-md_dwell_tbl .........   Passed    0.00 sec
+test 2
+    Start 2: coverage-md-md_utils
+
+2: Test command: /tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md/unit-test/coverage-md-md_utils-testrunner
+2: Working Directory: /tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md/unit-test
+2: Test timeout computed to be: 10000000
+2: 
+2: [BEGIN] UNIT TEST
+2: 
+2: [BEGIN] 01 SETUP
+2: [  END] No test cases
+2: 
+2: [BEGIN] 01 MD_TableIsInMask_Test_ShiftOddResult
+2: [ PASS] 01.001 md_utils_tests.c:54 - Result == true
+2: [ PASS] 01.002 md_utils_tests.c:58 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 01 MD_TableIsInMask_Test_ShiftOddResult TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 02 MD_TableIsInMask_Test_ShiftEvenResult
+2: [ PASS] 02.001 md_utils_tests.c:73 - Result == false
+2: [ PASS] 02.002 md_utils_tests.c:77 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 02 MD_TableIsInMask_Test_ShiftEvenResult TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 03 MD_TableIsInMask_Test_TableNotInMask
+2: [ PASS] 03.001 md_utils_tests.c:92 - Result == false
+2: [ PASS] 03.002 md_utils_tests.c:96 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 03 MD_TableIsInMask_Test_TableNotInMask TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 04 MD_UpdateDwellControlInfo_Test
+2: [ PASS] 04.001 md_utils_tests.c:112 - MD_AppData.MD_DwellTables[TableIndex].AddrCount == 1
+2: [ PASS] 04.002 md_utils_tests.c:114 - MD_AppData.MD_DwellTables[TableIndex].DataSize  == 1
+2: [ PASS] 04.003 md_utils_tests.c:116 - MD_AppData.MD_DwellTables[TableIndex].Rate      == 2
+2: [ PASS] 04.004 md_utils_tests.c:121 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 04 MD_UpdateDwellControlInfo_Test TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 05 MD_UpdateDwellControlInfo_TestAllTableE
+2: [ PASS] 05.001 md_utils_tests.c:141 - MD_AppData.MD_DwellTables[TableIndex].AddrCount == 25
+2: [ PASS] 05.002 md_utils_tests.c:143 - MD_AppData.MD_DwellTables[TableIndex].DataSize  == 25
+2: [ PASS] 05.003 md_utils_tests.c:145 - MD_AppData.MD_DwellTables[TableIndex].Rate      == 50
+2: [ PASS] 05.004 md_utils_tests.c:150 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 05 MD_UpdateDwellControlInfo_TestAllTableE TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 06 MD_ValidEntryId_Test_Valid
+2: [ PASS] 06.001 md_utils_tests.c:164 - Result == true
+2: [ PASS] 06.002 md_utils_tests.c:168 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 06 MD_ValidEntryId_Test_Valid TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 07 MD_ValidEntryId_Test_Invalid
+2: [ PASS] 07.001 md_utils_tests.c:182 - Result == false
+2: [ PASS] 07.002 md_utils_tests.c:186 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 07 MD_ValidEntryId_Test_Invalid TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 08 MD_ValidEntryId_Test_RangeError
+2: [ PASS] 08.001 md_utils_tests.c:200 - Result == false
+2: [ PASS] 08.002 md_utils_tests.c:204 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 08 MD_ValidEntryId_Test_RangeError TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 09 MD_ValidAddrRange_Test_Valid
+2: [ PASS] 09.001 md_utils_tests.c:219 - Result == true
+2: [ PASS] 09.002 md_utils_tests.c:223 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 09 MD_ValidAddrRange_Test_Valid TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 10 MD_ValidAddrRange_Test_Invalid
+2: [ PASS] 10.001 md_utils_tests.c:241 - Result == false
+2: [ PASS] 10.002 md_utils_tests.c:245 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 10 MD_ValidAddrRange_Test_Invalid TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 11 MD_ValidTableId_Test_Valid
+2: [ PASS] 11.001 md_utils_tests.c:259 - Result == true
+2: [ PASS] 11.002 md_utils_tests.c:263 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 11 MD_ValidTableId_Test_Valid TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 12 MD_ValidTableId_Test_Invalid
+2: [ PASS] 12.001 md_utils_tests.c:277 - Result == false
+2: [ PASS] 12.002 md_utils_tests.c:281 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 12 MD_ValidTableId_Test_Invalid TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 13 MD_ValidTableId_Test_RangeError
+2: [ PASS] 13.001 md_utils_tests.c:295 - Result == false
+2: [ PASS] 13.002 md_utils_tests.c:299 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 13 MD_ValidTableId_Test_RangeError TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 14 MD_ValidFieldLength_Test_ValidFieldLeng
+2: [ PASS] 14.001 md_utils_tests.c:313 - Result == true
+2: [ PASS] 14.002 md_utils_tests.c:317 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 14 MD_ValidFieldLength_Test_ValidFieldLeng TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 15 MD_ValidFieldLength_Test_ValidFieldLeng
+2: [ PASS] 15.001 md_utils_tests.c:331 - Result == true
+2: [ PASS] 15.002 md_utils_tests.c:335 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 15 MD_ValidFieldLength_Test_ValidFieldLeng TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 16 MD_ValidFieldLength_Test_ValidFieldLeng
+2: [ PASS] 16.001 md_utils_tests.c:349 - Result == true
+2: [ PASS] 16.002 md_utils_tests.c:353 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 16 MD_ValidFieldLength_Test_ValidFieldLeng TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 17 MD_ValidFieldLength_Test_ValidFieldLeng
+2: [ PASS] 17.001 md_utils_tests.c:367 - Result == true
+2: [ PASS] 17.002 md_utils_tests.c:371 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 17 MD_ValidFieldLength_Test_ValidFieldLeng TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 18 MD_ValidFieldLength_Test_Invalid
+2: [ PASS] 18.001 md_utils_tests.c:385 - Result == false
+2: [ PASS] 18.002 md_utils_tests.c:389 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 18 MD_ValidFieldLength_Test_Invalid TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 19 MD_Verify32Aligned_Test
+2: [ PASS] 19.001 md_utils_tests.c:407 - Result == true
+2: [ PASS] 19.002 md_utils_tests.c:416 - Result == false
+2: [ PASS] 19.003 md_utils_tests.c:425 - Result == false
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 19 MD_Verify32Aligned_Test TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 20 MD_Verify16Aligned_Test
+2: [ PASS] 20.001 md_utils_tests.c:441 - Result == true
+2: [ PASS] 20.002 md_utils_tests.c:450 - Result == false
+2: [ PASS] 20.003 md_utils_tests.c:459 - Result == false
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 20 MD_Verify16Aligned_Test TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 21 MD_ResolveSymAddr_Test
+2: [ PASS] 21.001 md_utils_tests.c:476 - Result == true
+2: [ PASS] 21.002 md_utils_tests.c:477 - ResolvedAddr == SymAddr.Offset
+2: [ PASS] 21.003 md_utils_tests.c:489 - Result == true
+2: [ PASS] 21.004 md_utils_tests.c:490 - ResolvedAddr == SymAddr.Offset
+2: [ PASS] 21.005 md_utils_tests.c:498 - Result == false
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 21 MD_ResolveSymAddr_Test TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 21 SUMMARY              TOTAL::51    PASS::51    FAIL::0     MIR::0     TSF::0     TTF::0   
+2: COMPLETE: 21 tests Segment(s) executed
+2: 
+2/6 Test #2: coverage-md-md_utils .............   Passed    0.00 sec
+test 3
+    Start 3: coverage-md-md_dwell_pkt
+
+3: Test command: /tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md/unit-test/coverage-md-md_dwell_pkt-testrunner
+3: Working Directory: /tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md/unit-test
+3: Test timeout computed to be: 10000000
+3: 
+3: [BEGIN] UNIT TEST
+3: 
+3: [BEGIN] 01 SETUP
+3: [  END] No test cases
+3: 
+3: [BEGIN] 01 MD_DwellLoop_Test_PacketAlreadyFull
+3: [ PASS] 01.001 md_dwell_pkt_tests.c:72 - MD_AppData.MD_DwellTables[0].CurrentEntry == 0
+3: [ PASS] 01.002 md_dwell_pkt_tests.c:73 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].CurrentEntry == 0
+3: [ PASS] 01.003 md_dwell_pkt_tests.c:75 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].CurrentEntry == 0
+3: [ PASS] 01.004 md_dwell_pkt_tests.c:78 - MD_AppData.MD_DwellTables[0].PktOffset == 0
+3: [ PASS] 01.005 md_dwell_pkt_tests.c:79 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].PktOffset == 0
+3: [ PASS] 01.006 md_dwell_pkt_tests.c:81 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].PktOffset == 0
+3: [ PASS] 01.007 md_dwell_pkt_tests.c:84 - MD_AppData.MD_DwellTables[0].Countdown == 2
+3: [ PASS] 01.008 md_dwell_pkt_tests.c:85 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].Countdown == 2
+3: [ PASS] 01.009 md_dwell_pkt_tests.c:87 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].Countdown == 2
+3: [ PASS] 01.010 md_dwell_pkt_tests.c:92 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 01 MD_DwellLoop_Test_PacketAlreadyFull TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 02 MD_DwellLoop_Test_SendDwellPacket
+3: [ PASS] 02.001 md_dwell_pkt_tests.c:139 - MD_AppData.MD_DwellTables[0].CurrentEntry == 0
+3: [ PASS] 02.002 md_dwell_pkt_tests.c:140 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].CurrentEntry == 0
+3: [ PASS] 02.003 md_dwell_pkt_tests.c:142 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].CurrentEntry == 0
+3: [ PASS] 02.004 md_dwell_pkt_tests.c:145 - MD_AppData.MD_DwellTables[0].PktOffset == 0
+3: [ PASS] 02.005 md_dwell_pkt_tests.c:146 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].PktOffset == 0
+3: [ PASS] 02.006 md_dwell_pkt_tests.c:148 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].PktOffset == 0
+3: [ PASS] 02.007 md_dwell_pkt_tests.c:151 - MD_AppData.MD_DwellTables[0].Countdown == 2
+3: [ PASS] 02.008 md_dwell_pkt_tests.c:152 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].Countdown == 2
+3: [ PASS] 02.009 md_dwell_pkt_tests.c:154 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].Countdown == 2
+3: [ PASS] 02.010 md_dwell_pkt_tests.c:159 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 02 MD_DwellLoop_Test_SendDwellPacket TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 03 MD_DwellLoop_Test_MoreAddressesToRead
+3: [ PASS] 03.001 md_dwell_pkt_tests.c:206 - MD_AppData.MD_DwellTables[0].Countdown == 2
+3: [ PASS] 03.002 md_dwell_pkt_tests.c:207 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].Countdown == 2
+3: [ PASS] 03.003 md_dwell_pkt_tests.c:209 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].Countdown == 2
+3: [ PASS] 03.004 md_dwell_pkt_tests.c:212 - MD_AppData.MD_DwellTables[0].CurrentEntry == 1
+3: [ PASS] 03.005 md_dwell_pkt_tests.c:213 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].CurrentEntry == 1
+3: [ PASS] 03.006 md_dwell_pkt_tests.c:215 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].CurrentEntry == 1
+3: [ PASS] 03.007 md_dwell_pkt_tests.c:220 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 03 MD_DwellLoop_Test_MoreAddressesToRead TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 04 MD_DwellLoop_Test_ZeroRate
+3: [ PASS] 04.001 md_dwell_pkt_tests.c:267 - MD_AppData.MD_DwellTables[0].CurrentEntry == 0
+3: [ PASS] 04.002 md_dwell_pkt_tests.c:268 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].CurrentEntry == 0
+3: [ PASS] 04.003 md_dwell_pkt_tests.c:270 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].CurrentEntry == 0
+3: [ PASS] 04.004 md_dwell_pkt_tests.c:273 - MD_AppData.MD_DwellTables[0].PktOffset == 0
+3: [ PASS] 04.005 md_dwell_pkt_tests.c:274 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].PktOffset == 0
+3: [ PASS] 04.006 md_dwell_pkt_tests.c:276 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].PktOffset == 0
+3: [ PASS] 04.007 md_dwell_pkt_tests.c:279 - MD_AppData.MD_DwellTables[0].Countdown == 1
+3: [ PASS] 04.008 md_dwell_pkt_tests.c:280 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].Countdown == 1
+3: [ PASS] 04.009 md_dwell_pkt_tests.c:282 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].Countdown == 1
+3: [ PASS] 04.010 md_dwell_pkt_tests.c:287 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 04 MD_DwellLoop_Test_ZeroRate TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 05 MD_DwellLoop_Test_DataError
+3: [ PASS] 05.001 md_dwell_pkt_tests.c:341 - MD_AppData.MD_DwellTables[0].CurrentEntry == 0
+3: [ PASS] 05.002 md_dwell_pkt_tests.c:342 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].CurrentEntry == 0
+3: [ PASS] 05.003 md_dwell_pkt_tests.c:344 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].CurrentEntry == 0
+3: [ PASS] 05.004 md_dwell_pkt_tests.c:347 - MD_AppData.MD_DwellTables[0].PktOffset == 0
+3: [ PASS] 05.005 md_dwell_pkt_tests.c:348 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].PktOffset == 0
+3: [ PASS] 05.006 md_dwell_pkt_tests.c:350 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].PktOffset == 0
+3: [ PASS] 05.007 md_dwell_pkt_tests.c:353 - MD_AppData.MD_DwellTables[0].Countdown == 2
+3: [ PASS] 05.008 md_dwell_pkt_tests.c:354 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].Countdown == 2
+3: [ PASS] 05.009 md_dwell_pkt_tests.c:356 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].Countdown == 2
+3: [ PASS] 05.010 md_dwell_pkt_tests.c:359 - context_CFE_EVS_SendEvent[0].EventID (70) == MD_DWELL_LOOP_GET_DWELL_DATA_ERR_EID (70)
+3: [ PASS] 05.011 md_dwell_pkt_tests.c:360 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 05.012 md_dwell_pkt_tests.c:364 - Event string matched expected result, 'Dwell Table failed to read entry %d in table %d '
+3: [ PASS] 05.013 md_dwell_pkt_tests.c:366 - CallCount: CFE_EVS_SendEvent() (3) == 3 (3)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 05 MD_DwellLoop_Test_DataError TOTAL::13    PASS::13    FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 06 MD_GetDwellData_Test_MemRead8Error
+3: [ PASS] 06.001 md_dwell_pkt_tests.c:385 - MD_AppData.MD_DwellTables[TblIndex].PktOffset == 1
+3: [ PASS] 06.002 md_dwell_pkt_tests.c:388 - Result == -1
+3: [ PASS] 06.003 md_dwell_pkt_tests.c:392 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 06 MD_GetDwellData_Test_MemRead8Error TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 07 MD_GetDwellData_Test_MemRead16Error
+3: [ PASS] 07.001 md_dwell_pkt_tests.c:413 - MD_AppData.MD_DwellTables[TblIndex].PktOffset == 2
+3: [ PASS] 07.002 md_dwell_pkt_tests.c:416 - Result == -2
+3: [ PASS] 07.003 md_dwell_pkt_tests.c:420 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 07 MD_GetDwellData_Test_MemRead16Error TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 08 MD_GetDwellData_Test_MemRead32Error
+3: [ PASS] 08.001 md_dwell_pkt_tests.c:441 - MD_AppData.MD_DwellTables[TblIndex].PktOffset == 4
+3: [ PASS] 08.002 md_dwell_pkt_tests.c:444 - Result == -3
+3: [ PASS] 08.003 md_dwell_pkt_tests.c:448 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 08 MD_GetDwellData_Test_MemRead32Error TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 09 MD_GetDwellData_Test_InvalidDwellLength
+3: [ PASS] 09.001 md_dwell_pkt_tests.c:466 - MD_AppData.MD_DwellTables[TblIndex].PktOffset == 5
+3: [ PASS] 09.002 md_dwell_pkt_tests.c:469 - Result == -4
+3: [ PASS] 09.003 md_dwell_pkt_tests.c:473 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 09 MD_GetDwellData_Test_InvalidDwellLength TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 10 MD_GetDwellData_Test_Success
+3: [ PASS] 10.001 md_dwell_pkt_tests.c:491 - MD_AppData.MD_DwellTables[TblIndex].PktOffset == 1
+3: [ PASS] 10.002 md_dwell_pkt_tests.c:494 - Result == CFE_SUCCESS
+3: [ PASS] 10.003 md_dwell_pkt_tests.c:498 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 10 MD_GetDwellData_Test_Success TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 11 MD_SendDwellPkt_Test
+3: [ PASS] 11.001 md_dwell_pkt_tests.c:518 - MD_AppData.MD_DwellPkt[TableIndex].Payload.TableId == 2
+3: [ PASS] 11.002 md_dwell_pkt_tests.c:520 - MD_AppData.MD_DwellPkt[TableIndex].Payload.AddrCount == 3
+3: [ PASS] 11.003 md_dwell_pkt_tests.c:522 - MD_AppData.MD_DwellPkt[TableIndex].Payload.Rate == 4
+3: [ PASS] 11.004 md_dwell_pkt_tests.c:526 - MD_AppData.MD_DwellTables[TableIndex].Payload.Signature, 'signature', MD_INTERFACE_SIGNATURE_FIELD_LENGTH - 1) == 0
+3: [ PASS] 11.005 md_dwell_pkt_tests.c:532 - MD_AppData.MD_DwellTables[TableIndex].Payload.Signature[MD_INTERFACE_SIGNATURE_FIELD_LENGTH - 1] == ''
+3: [ PASS] 11.006 md_dwell_pkt_tests.c:537 - MD_AppData.MD_DwellTables[TableIndex].DataSize == 5
+3: [ PASS] 11.007 md_dwell_pkt_tests.c:542 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 11 MD_SendDwellPkt_Test TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 12 MD_NoDwellRate_Test
+3: [ PASS] 12.001 md_dwell_pkt_tests.c:562 - MD_AppData.MD_DwellPkt[TableIndex].Payload.TableId == 2
+3: [ PASS] 12.002 md_dwell_pkt_tests.c:564 - MD_AppData.MD_DwellPkt[TableIndex].Payload.AddrCount == 3
+3: [ PASS] 12.003 md_dwell_pkt_tests.c:566 - MD_AppData.MD_DwellPkt[TableIndex].Payload.Rate == 0
+3: [ PASS] 12.004 md_dwell_pkt_tests.c:570 - MD_AppData.MD_DwellTables[TableIndex].Payload.Signature, 'signature', MD_INTERFACE_SIGNATURE_FIELD_LENGTH - 1) == 0
+3: [ PASS] 12.005 md_dwell_pkt_tests.c:576 - MD_AppData.MD_DwellTables[TableIndex].Payload.Signature[MD_INTERFACE_SIGNATURE_FIELD_LENGTH - 1] == ''
+3: [ PASS] 12.006 md_dwell_pkt_tests.c:581 - MD_AppData.MD_DwellTables[TableIndex].DataSize == 5
+3: [ PASS] 12.007 md_dwell_pkt_tests.c:586 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 12 MD_NoDwellRate_Test  TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 13 MD_StartDwellStream_Test
+3: [ PASS] 13.001 md_dwell_pkt_tests.c:599 - MD_AppData.MD_DwellTables[TableIndex].Countdown == 1
+3: [ PASS] 13.002 md_dwell_pkt_tests.c:601 - MD_AppData.MD_DwellTables[TableIndex].CurrentEntry == 0
+3: [ PASS] 13.003 md_dwell_pkt_tests.c:603 - MD_AppData.MD_DwellTables[TableIndex].PktOffset == 0
+3: [ PASS] 13.004 md_dwell_pkt_tests.c:608 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 13 MD_StartDwellStream_Test TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 13 SUMMARY              TOTAL::83    PASS::83    FAIL::0     MIR::0     TSF::0     TTF::0   
+3: COMPLETE: 13 tests Segment(s) executed
+3: 
+3/6 Test #3: coverage-md-md_dwell_pkt .........   Passed    0.00 sec
+test 4
+    Start 4: coverage-md-md_cmds
+
+4: Test command: /tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md/unit-test/coverage-md-md_cmds-testrunner
+4: Working Directory: /tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md/unit-test
+4: Test timeout computed to be: 10000000
+4: 
+4: [BEGIN] UNIT TEST
+4: 
+4: [BEGIN] 01 SETUP
+4: [  END] No test cases
+4: 
+4: [BEGIN] 01 MD_NoopCmd_Test
+4: [ PASS] 01.001 md_cmds_tests.c:95 - uint8: MD_AppData.CommandCounter (2) == 2 (2)
+4: [ PASS] 01.002 md_cmds_tests.c:98 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 01.003 md_cmds_tests.c:99 - context_CFE_EVS_SendEvent[0].EventID (10) == MD_NOOP_INF_EID (10)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 01 MD_NoopCmd_Test      TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 02 MD_ResetCountersCmd_Test
+4: [ PASS] 02.001 md_cmds_tests.c:112 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+4: [ PASS] 02.002 md_cmds_tests.c:113 - uint8: MD_AppData.CommandErrorCounter (0) == 0 (0)
+4: [ PASS] 02.003 md_cmds_tests.c:116 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 02.004 md_cmds_tests.c:117 - context_CFE_EVS_SendEvent[0].EventID (11) == MD_RESET_INF_EID (11)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 02 MD_ResetCountersCmd_Test TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 03 MD_ProcessStartCmd_Test_ZeroRate
+4: [ PASS] 03.001 md_cmds_tests.c:154 - MD_AppData.MD_DwellTables[0].Enabled == MD_Dwell_States_ENABLED
+4: [ PASS] 03.002 md_cmds_tests.c:156 - MD_AppData.MD_DwellTables[0].Countdown == 1
+4: [ PASS] 03.003 md_cmds_tests.c:157 - MD_AppData.MD_DwellTables[0].CurrentEntry == 0
+4: [ PASS] 03.004 md_cmds_tests.c:158 - MD_AppData.MD_DwellTables[0].PktOffset == 0
+4: [ PASS] 03.005 md_cmds_tests.c:160 - MD_AppData.CommandCounter == 1
+4: [ PASS] 03.006 md_cmds_tests.c:162 - context_CFE_EVS_SendEvent[0].EventID (51) == MD_ZERO_RATE_CMD_INF_EID (51)
+4: [ PASS] 03.007 md_cmds_tests.c:163 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+4: [ PASS] 03.008 md_cmds_tests.c:168 - Event string matched expected result, 'Dwell Table %d is enabled with a delay of zero so no processing will occur'
+4: [ PASS] 03.009 md_cmds_tests.c:170 - context_CFE_EVS_SendEvent[1].EventID (12) == MD_START_DWELL_INF_EID (12)
+4: [ PASS] 03.010 md_cmds_tests.c:171 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+4: [ PASS] 03.011 md_cmds_tests.c:176 - Event string matched expected result, 'Start Dwell Table command processed successfully for table mask 0x%04X'
+4: [ PASS] 03.012 md_cmds_tests.c:180 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 03 MD_ProcessStartCmd_Test_ZeroRate TOTAL::12    PASS::12    FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 04 MD_ProcessStartCmd_Test_Success
+4: [ PASS] 04.001 md_cmds_tests.c:215 - MD_AppData.MD_DwellTables[0].Enabled == MD_Dwell_States_ENABLED
+4: [ PASS] 04.002 md_cmds_tests.c:217 - MD_AppData.MD_DwellTables[0].Countdown == 1
+4: [ PASS] 04.003 md_cmds_tests.c:218 - MD_AppData.MD_DwellTables[0].CurrentEntry == 0
+4: [ PASS] 04.004 md_cmds_tests.c:219 - MD_AppData.MD_DwellTables[0].PktOffset == 0
+4: [ PASS] 04.005 md_cmds_tests.c:221 - MD_AppData.CommandCounter == 1
+4: [ PASS] 04.006 md_cmds_tests.c:223 - context_CFE_EVS_SendEvent[0].EventID (12) == MD_START_DWELL_INF_EID (12)
+4: [ PASS] 04.007 md_cmds_tests.c:224 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+4: [ PASS] 04.008 md_cmds_tests.c:228 - Event string matched expected result, 'Start Dwell Table command processed successfully for table mask 0x%04X'
+4: [ PASS] 04.009 md_cmds_tests.c:232 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 04 MD_ProcessStartCmd_Test_Success TOTAL::9     PASS::9     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 05 MD_ProcessStartCmd_Test_EmptyTableMask
+4: [ PASS] 05.001 md_cmds_tests.c:256 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 05.002 md_cmds_tests.c:258 - context_CFE_EVS_SendEvent[0].EventID (14) == MD_EMPTY_TBLMASK_ERR_EID (14)
+4: [ PASS] 05.003 md_cmds_tests.c:259 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 05.004 md_cmds_tests.c:263 - Event string matched expected result, '%s command rejected because no tables were specified in table mask (0x%04X)'
+4: [ PASS] 05.005 md_cmds_tests.c:267 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 05 MD_ProcessStartCmd_Test_EmptyTableMask TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 06 MD_ProcessStartCmd_Test_NoUpdateTableEn
+4: [ PASS] 06.001 md_cmds_tests.c:302 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 06.002 md_cmds_tests.c:304 - context_CFE_EVS_SendEvent[0].EventID (56) == MD_START_DWELL_ERR_EID (56)
+4: [ PASS] 06.003 md_cmds_tests.c:305 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 06.004 md_cmds_tests.c:309 - Event string matched expected result, 'Start Dwell Table for mask 0x%04X failed for %d of %d tables'
+4: [ PASS] 06.005 md_cmds_tests.c:313 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 06 MD_ProcessStartCmd_Test_NoUpdateTableEn TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 07 MD_ProcessStopCmd_Test_Success
+4: [ PASS] 07.001 md_cmds_tests.c:346 - MD_AppData.MD_DwellTables[0].Enabled == MD_Dwell_States_ENABLED
+4: [ PASS] 07.002 md_cmds_tests.c:348 - MD_AppData.MD_DwellTables[0].Countdown == 0
+4: [ PASS] 07.003 md_cmds_tests.c:349 - MD_AppData.MD_DwellTables[0].CurrentEntry == 0
+4: [ PASS] 07.004 md_cmds_tests.c:350 - MD_AppData.MD_DwellTables[0].PktOffset == 0
+4: [ PASS] 07.005 md_cmds_tests.c:352 - MD_AppData.CommandCounter == 1
+4: [ PASS] 07.006 md_cmds_tests.c:354 - context_CFE_EVS_SendEvent[0].EventID (13) == MD_STOP_DWELL_INF_EID (13)
+4: [ PASS] 07.007 md_cmds_tests.c:355 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+4: [ PASS] 07.008 md_cmds_tests.c:359 - Event string matched expected result, 'Stop Dwell Table command processed successfully for table mask 0x%04X'
+4: [ PASS] 07.009 md_cmds_tests.c:363 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 07 MD_ProcessStopCmd_Test_Success TOTAL::9     PASS::9     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 08 MD_ProcessStopCmd_Test_EmptyTableMask
+4: [ PASS] 08.001 md_cmds_tests.c:387 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 08.002 md_cmds_tests.c:389 - context_CFE_EVS_SendEvent[0].EventID (14) == MD_EMPTY_TBLMASK_ERR_EID (14)
+4: [ PASS] 08.003 md_cmds_tests.c:390 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 08.004 md_cmds_tests.c:394 - Event string matched expected result, '%s command rejected because no tables were specified in table mask (0x%04X)'
+4: [ PASS] 08.005 md_cmds_tests.c:398 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 08 MD_ProcessStopCmd_Test_EmptyTableMask TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 09 MD_ProcessStopCmd_Test_NoUpdateTableEna
+4: [ PASS] 09.001 md_cmds_tests.c:432 - MD_AppData.MD_DwellTables[0].Enabled == MD_Dwell_States_ENABLED
+4: [ PASS] 09.002 md_cmds_tests.c:434 - MD_AppData.MD_DwellTables[0].Countdown == 0
+4: [ PASS] 09.003 md_cmds_tests.c:435 - MD_AppData.MD_DwellTables[0].CurrentEntry == 0
+4: [ PASS] 09.004 md_cmds_tests.c:436 - MD_AppData.MD_DwellTables[0].PktOffset == 0
+4: [ PASS] 09.005 md_cmds_tests.c:438 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 09.006 md_cmds_tests.c:440 - context_CFE_EVS_SendEvent[0].EventID (57) == MD_STOP_DWELL_ERR_EID (57)
+4: [ PASS] 09.007 md_cmds_tests.c:441 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 09.008 md_cmds_tests.c:445 - Event string matched expected result, 'Stop Dwell Table for mask 0x%04X failed for %d of %d tables'
+4: [ PASS] 09.009 md_cmds_tests.c:449 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 09 MD_ProcessStopCmd_Test_NoUpdateTableEna TOTAL::9     PASS::9     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 10 MD_ProcessJamCmd_Test_InvalidJamTable
+4: [ PASS] 10.001 md_cmds_tests.c:474 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 10.002 md_cmds_tests.c:476 - context_CFE_EVS_SendEvent[0].EventID (32) == MD_INVALID_JAM_TABLE_ERR_EID (32)
+4: [ PASS] 10.003 md_cmds_tests.c:477 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 10.004 md_cmds_tests.c:481 - Event string matched expected result, 'Jam Cmd rejected due to invalid Tbl Id arg = %d (Expect 1.. %d)'
+4: [ PASS] 10.005 md_cmds_tests.c:485 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 10 MD_ProcessJamCmd_Test_InvalidJamTable TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 11 MD_ProcessJamCmd_Test_InvalidEntryArg
+4: [ PASS] 11.001 md_cmds_tests.c:512 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 11.002 md_cmds_tests.c:514 - context_CFE_EVS_SendEvent[0].EventID (33) == MD_INVALID_ENTRY_ARG_ERR_EID (33)
+4: [ PASS] 11.003 md_cmds_tests.c:515 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 11.004 md_cmds_tests.c:519 - Event string matched expected result, 'Jam Cmd rejected due to invalid Entry Id arg = %d (Expect 1.. %d)'
+4: [ PASS] 11.005 md_cmds_tests.c:523 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 11 MD_ProcessJamCmd_Test_InvalidEntryArg TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 12 MD_ProcessJamCmd_Test_SuccessNullZeroRa
+4: [ PASS] 12.001 md_cmds_tests.c:566 - MD_AppData.MD_DwellTables[0].Entry[1].ResolvedAddress == 0
+4: [ PASS] 12.002 md_cmds_tests.c:568 - MD_AppData.MD_DwellTables[0].Entry[1].Length == 0
+4: [ PASS] 12.003 md_cmds_tests.c:570 - MD_AppData.MD_DwellTables[0].Entry[1].Delay == 0
+4: [ PASS] 12.004 md_cmds_tests.c:572 - MD_AppData.CommandCounter == 1
+4: [ PASS] 12.005 md_cmds_tests.c:574 - context_CFE_EVS_SendEvent[0].EventID (31) == MD_JAM_NULL_DWELL_INF_EID (31)
+4: [ PASS] 12.006 md_cmds_tests.c:575 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+4: [ PASS] 12.007 md_cmds_tests.c:580 - Event string matched expected result, 'Successful Jam of a Null Dwell Entry to Dwell Tbl#%d Entry #%d'
+4: [ PASS] 12.008 md_cmds_tests.c:582 - context_CFE_EVS_SendEvent[1].EventID (51) == MD_ZERO_RATE_CMD_INF_EID (51)
+4: [ PASS] 12.009 md_cmds_tests.c:583 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+4: [ PASS] 12.010 md_cmds_tests.c:588 - Event string matched expected result, 'Dwell Table %d is enabled with a delay of zero so no processing will occur'
+4: [ PASS] 12.011 md_cmds_tests.c:592 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 12 MD_ProcessJamCmd_Test_SuccessNullZeroRa TOTAL::11    PASS::11    FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 13 MD_ProcessJamCmd_Test_NullTableDwell
+4: [ PASS] 13.001 md_cmds_tests.c:627 - MD_AppData.MD_DwellTables[0].Entry[1].ResolvedAddress == 0
+4: [ PASS] 13.002 md_cmds_tests.c:629 - MD_AppData.MD_DwellTables[0].Entry[1].Length == 0
+4: [ PASS] 13.003 md_cmds_tests.c:632 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 13.004 md_cmds_tests.c:634 - context_CFE_EVS_SendEvent[0].EventID (60) == MD_JAM_NULL_DWELL_ERR_EID (60)
+4: [ PASS] 13.005 md_cmds_tests.c:635 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 13.006 md_cmds_tests.c:639 - Event string matched expected result, 'Failed Jam of a Null Dwell Entry to Dwell Tbl#%d Entry #%d'
+4: [ PASS] 13.007 md_cmds_tests.c:643 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 13 MD_ProcessJamCmd_Test_NullTableDwell TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 14 MD_ProcessJamCmd_Test_NoUpdateTableDwel
+4: [ PASS] 14.001 md_cmds_tests.c:676 - MD_AppData.MD_DwellTables[0].Entry[1].ResolvedAddress == 0
+4: [ PASS] 14.002 md_cmds_tests.c:678 - MD_AppData.MD_DwellTables[0].Entry[1].Length == 1
+4: [ PASS] 14.003 md_cmds_tests.c:681 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 14.004 md_cmds_tests.c:683 - context_CFE_EVS_SendEvent[0].EventID (59) == MD_JAM_DWELL_ERR_EID (59)
+4: [ PASS] 14.005 md_cmds_tests.c:684 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 14.006 md_cmds_tests.c:688 - Event string matched expected result, 'Failed Jam to Dwell Tbl#%d Entry #%d'
+4: [ PASS] 14.007 md_cmds_tests.c:692 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 14 MD_ProcessJamCmd_Test_NoUpdateTableDwel TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 15 MD_ProcessJamCmd_Test_CantResolveJamAdd
+4: [ PASS] 15.001 md_cmds_tests.c:728 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 15.002 md_cmds_tests.c:730 - context_CFE_EVS_SendEvent[0].EventID (35) == MD_CANT_RESOLVE_JAM_ADDR_ERR_EID (35)
+4: [ PASS] 15.003 md_cmds_tests.c:731 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 15.004 md_cmds_tests.c:735 - Event string matched expected result, 'Jam Cmd rejected because symbolic address '%s' couldn't be resolved'
+4: [ PASS] 15.005 md_cmds_tests.c:739 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 15 MD_ProcessJamCmd_Test_CantResolveJamAdd TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 16 MD_ProcessJamCmd_Test_InvalidLenArg
+4: [ PASS] 16.001 md_cmds_tests.c:772 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 16.002 md_cmds_tests.c:774 - context_CFE_EVS_SendEvent[0].EventID (34) == MD_INVALID_LEN_ARG_ERR_EID (34)
+4: [ PASS] 16.003 md_cmds_tests.c:775 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 16.004 md_cmds_tests.c:779 - Event string matched expected result, 'Jam Cmd rejected due to invalid Field Length arg = %d (Expect 0,1,2,or 4)'
+4: [ PASS] 16.005 md_cmds_tests.c:783 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 16 MD_ProcessJamCmd_Test_InvalidLenArg TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 17 MD_ProcessJamCmd_Test_InvalidJamAddr
+4: [ PASS] 17.001 md_cmds_tests.c:817 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 17.002 md_cmds_tests.c:819 - context_CFE_EVS_SendEvent[0].EventID (36) == MD_INVALID_JAM_ADDR_ERR_EID (36)
+4: [ PASS] 17.003 md_cmds_tests.c:820 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 17.004 md_cmds_tests.c:824 - Event string matched expected result, 'Jam Cmd rejected because address 0x%08X is not in a valid range'
+4: [ PASS] 17.005 md_cmds_tests.c:828 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 17 MD_ProcessJamCmd_Test_InvalidJamAddr TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 18 MD_ProcessJamCmd_Test_JamAddrNot32Bit
+4: [ PASS] 18.001 md_cmds_tests.c:912 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 18.002 md_cmds_tests.c:914 - context_CFE_EVS_SendEvent[0].EventID (37) == MD_JAM_ADDR_NOT_32BIT_ERR_EID (37)
+4: [ PASS] 18.003 md_cmds_tests.c:915 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 18.004 md_cmds_tests.c:919 - Event string matched expected result, 'Jam Cmd rejected because address 0x%08X is not 32-bit aligned'
+4: [ PASS] 18.005 md_cmds_tests.c:923 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 18 MD_ProcessJamCmd_Test_JamAddrNot32Bit TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 19 MD_ProcessJamCmd_Test_JamAddrNot16BitFi
+4: [ PASS] 19.001 md_cmds_tests.c:959 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 19.002 md_cmds_tests.c:961 - context_CFE_EVS_SendEvent[0].EventID (38) == MD_JAM_ADDR_NOT_16BIT_ERR_EID (38)
+4: [ PASS] 19.003 md_cmds_tests.c:962 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 19.004 md_cmds_tests.c:966 - Event string matched expected result, 'Jam Cmd rejected because address 0x%08X is not 16-bit aligned'
+4: [ PASS] 19.005 md_cmds_tests.c:970 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 19 MD_ProcessJamCmd_Test_JamAddrNot16BitFi TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 20 MD_ProcessJamCmd_Test_JamAddrNot16BitNo
+4: [ PASS] 20.001 md_cmds_tests.c:1006 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 20.002 md_cmds_tests.c:1008 - context_CFE_EVS_SendEvent[0].EventID (37) == MD_JAM_ADDR_NOT_32BIT_ERR_EID (37)
+4: [ PASS] 20.003 md_cmds_tests.c:1009 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 20.004 md_cmds_tests.c:1013 - Event string matched expected result, 'Jam Cmd rejected because address 0x%08X is not 32-bit aligned'
+4: [ PASS] 20.005 md_cmds_tests.c:1017 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 20 MD_ProcessJamCmd_Test_JamAddrNot16BitNo TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 21 MD_ProcessJamCmd_Test_JamFieldLength4Ad
+4: [ PASS] 21.001 md_cmds_tests.c:1051 - MD_AppData.CommandCounter == 1
+4: [ PASS] 21.002 md_cmds_tests.c:1053 - context_CFE_EVS_SendEvent[0].EventID (30) == MD_JAM_DWELL_INF_EID (30)
+4: [ PASS] 21.003 md_cmds_tests.c:1054 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+4: [ PASS] 21.004 md_cmds_tests.c:1058 - Event string matched expected result, 'Successful Jam to Dwell Tbl#%d Entry #%d'
+4: [ PASS] 21.005 md_cmds_tests.c:1062 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 21 MD_ProcessJamCmd_Test_JamFieldLength4Ad TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 22 MD_ProcessJamCmd_Test_SuccessNonNullZer
+4: [ PASS] 22.001 md_cmds_tests.c:1104 - MD_AppData.MD_DwellTables[0].Entry[1].ResolvedAddress == 0
+4: [ PASS] 22.002 md_cmds_tests.c:1106 - MD_AppData.MD_DwellTables[0].Entry[1].Length == 2
+4: [ PASS] 22.003 md_cmds_tests.c:1108 - MD_AppData.MD_DwellTables[0].Entry[1].Delay  == 3
+4: [ PASS] 22.004 md_cmds_tests.c:1111 - MD_AppData.CommandCounter == 1
+4: [ PASS] 22.005 md_cmds_tests.c:1113 - context_CFE_EVS_SendEvent[0].EventID (30) == MD_JAM_DWELL_INF_EID (30)
+4: [ PASS] 22.006 md_cmds_tests.c:1114 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+4: [ PASS] 22.007 md_cmds_tests.c:1119 - Event string matched expected result, 'Successful Jam to Dwell Tbl#%d Entry #%d'
+4: [ PASS] 22.008 md_cmds_tests.c:1121 - context_CFE_EVS_SendEvent[1].EventID (51) == MD_ZERO_RATE_CMD_INF_EID (51)
+4: [ PASS] 22.009 md_cmds_tests.c:1122 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+4: [ PASS] 22.010 md_cmds_tests.c:1127 - Event string matched expected result, 'Dwell Table %d is enabled with a delay of zero so no processing will occur'
+4: [ PASS] 22.011 md_cmds_tests.c:1131 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 22 MD_ProcessJamCmd_Test_SuccessNonNullZer TOTAL::11    PASS::11    FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 23 MD_ProcessJamCmd_Test_SuccessZeroRateSt
+4: [ PASS] 23.001 md_cmds_tests.c:1167 - MD_AppData.MD_DwellTables[0].Entry[1].ResolvedAddress == 0
+4: [ PASS] 23.002 md_cmds_tests.c:1169 - MD_AppData.MD_DwellTables[0].Entry[1].Length == 2
+4: [ PASS] 23.003 md_cmds_tests.c:1171 - MD_AppData.MD_DwellTables[0].Entry[1].Delay  == 3
+4: [ PASS] 23.004 md_cmds_tests.c:1174 - MD_AppData.CommandCounter == 1
+4: [ PASS] 23.005 md_cmds_tests.c:1176 - context_CFE_EVS_SendEvent[0].EventID (30) == MD_JAM_DWELL_INF_EID (30)
+4: [ PASS] 23.006 md_cmds_tests.c:1177 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+4: [ PASS] 23.007 md_cmds_tests.c:1181 - Event string matched expected result, 'Successful Jam to Dwell Tbl#%d Entry #%d'
+4: [ PASS] 23.008 md_cmds_tests.c:1185 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 23 MD_ProcessJamCmd_Test_SuccessZeroRateSt TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 24 MD_ProcessJamCmd_Test_SuccessRateNotZer
+4: [ PASS] 24.001 md_cmds_tests.c:1223 - MD_AppData.MD_DwellTables[0].Entry[1].ResolvedAddress == 0
+4: [ PASS] 24.002 md_cmds_tests.c:1225 - MD_AppData.MD_DwellTables[0].Entry[1].Length == 2
+4: [ PASS] 24.003 md_cmds_tests.c:1227 - MD_AppData.MD_DwellTables[0].Entry[1].Delay  == 3
+4: [ PASS] 24.004 md_cmds_tests.c:1230 - MD_AppData.CommandCounter == 1
+4: [ PASS] 24.005 md_cmds_tests.c:1232 - context_CFE_EVS_SendEvent[0].EventID (30) == MD_JAM_DWELL_INF_EID (30)
+4: [ PASS] 24.006 md_cmds_tests.c:1233 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+4: [ PASS] 24.007 md_cmds_tests.c:1237 - Event string matched expected result, 'Successful Jam to Dwell Tbl#%d Entry #%d'
+4: [ PASS] 24.008 md_cmds_tests.c:1241 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 24 MD_ProcessJamCmd_Test_SuccessRateNotZer TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 25 MD_ProcessSignatureCmd_Test_InvalidSign
+4: [ PASS] 25.001 md_cmds_tests.c:1270 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 25.002 md_cmds_tests.c:1272 - context_CFE_EVS_SendEvent[0].EventID (49) == MD_INVALID_SIGNATURE_LENGTH_ERR_EID (49)
+4: [ PASS] 25.003 md_cmds_tests.c:1273 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 25.004 md_cmds_tests.c:1277 - Event string matched expected result, 'Set Signature cmd rejected due to invalid Signature length'
+4: [ PASS] 25.005 md_cmds_tests.c:1281 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 25 MD_ProcessSignatureCmd_Test_InvalidSign TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 26 MD_ProcessSignatureCmd_Test_InvalidSign
+4: [ PASS] 26.001 md_cmds_tests.c:1307 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 26.002 md_cmds_tests.c:1309 - context_CFE_EVS_SendEvent[0].EventID (47) == MD_INVALID_SIGNATURE_TABLE_ERR_EID (47)
+4: [ PASS] 26.003 md_cmds_tests.c:1310 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 26.004 md_cmds_tests.c:1314 - Event string matched expected result, 'Set Signature cmd rejected due to invalid Tbl Id arg = %d (Expect 1.. %d)'
+4: [ PASS] 26.005 md_cmds_tests.c:1318 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 26 MD_ProcessSignatureCmd_Test_InvalidSign TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 27 MD_ProcessSignatureCmd_Test_Success
+4: [ PASS] 27.001 md_cmds_tests.c:1352 - strncmp(MD_AppData.MD_DwellTables[0].Signature, 'signature', MD_INTERFACE_SIGNATURE_FIELD_LENGTH) == 0
+4: [ PASS] 27.002 md_cmds_tests.c:1356 - MD_AppData.CommandCounter == 1
+4: [ PASS] 27.003 md_cmds_tests.c:1358 - context_CFE_EVS_SendEvent[0].EventID (46) == MD_SET_SIGNATURE_INF_EID (46)
+4: [ PASS] 27.004 md_cmds_tests.c:1359 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+4: [ PASS] 27.005 md_cmds_tests.c:1363 - Event string matched expected result, 'Successfully set signature for Dwell Tbl#%d to '%s''
+4: [ PASS] 27.006 md_cmds_tests.c:1367 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 27 MD_ProcessSignatureCmd_Test_Success TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 28 MD_ProcessSignatureCmd_Test_NoUpdateTab
+4: [ PASS] 28.001 md_cmds_tests.c:1402 - strncmp(MD_AppData.MD_DwellTables[0].Signature, 'signature', MD_INTERFACE_SIGNATURE_FIELD_LENGTH) == 0
+4: [ PASS] 28.002 md_cmds_tests.c:1406 - MD_AppData.CommandErrorCounter == 1
+4: [ PASS] 28.003 md_cmds_tests.c:1408 - context_CFE_EVS_SendEvent[0].EventID (58) == MD_SET_SIGNATURE_ERR_EID (58)
+4: [ PASS] 28.004 md_cmds_tests.c:1409 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 28.005 md_cmds_tests.c:1413 - Event string matched expected result, 'Failed to set signature for Dwell Tbl#%d. Update returned 0x%08X'
+4: [ PASS] 28.006 md_cmds_tests.c:1417 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 28 MD_ProcessSignatureCmd_Test_NoUpdateTab TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 28 SUMMARY              TOTAL::180   PASS::180   FAIL::0     MIR::0     TSF::0     TTF::0   
+4: COMPLETE: 28 tests Segment(s) executed
+4: 
+4/6 Test #4: coverage-md-md_cmds ..............   Passed    0.00 sec
+test 5
+    Start 5: coverage-md-md_app
+
+5: Test command: /tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md/unit-test/coverage-md-md_app-testrunner
+5: Working Directory: /tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md/unit-test
+5: Test timeout computed to be: 10000000
+5: 
+5: [BEGIN] UNIT TEST
+5: 
+5: [BEGIN] 01 SETUP
+5: [  END] No test cases
+5: 
+5: [BEGIN] 01 MD_AppMain_Test_AppInitError
+5: [ PASS] 01.001 md_app_tests.c:67 - MD_AppData.RunStatus == CFE_ES_APP_ERROR
+5: [ PASS] 01.002 md_app_tests.c:71 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 01 MD_AppMain_Test_AppInitError TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 02 MD_AppMain_Test_RcvMsgError
+5: [ PASS] 02.001 md_app_tests.c:91 - MD_AppData.RunStatus == CFE_ES_RunStatus_APP_ERROR
+5: [ PASS] 02.002 md_app_tests.c:94 - context_CFE_EVS_SendEvent[2].EventID (2) == MD_PIPE_ERR_EID (2)
+5: [ PASS] 02.003 md_app_tests.c:95 - context_CFE_EVS_SendEvent[2].EventType (3) == CFE_EVS_EventType_ERROR (3)
+5: [ PASS] 02.004 md_app_tests.c:100 - CFE_EVS_SendEvent was called 3 time(s), expected 3
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 02 MD_AppMain_Test_RcvMsgError TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 03 MD_AppMain_Test_RcvMsgTimeout
+5: [ PASS] 03.001 md_app_tests.c:120 - MD_AppData.RunStatus == CFE_ES_RunStatus_APP_RUN
+5: [ PASS] 03.002 md_app_tests.c:125 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 03 MD_AppMain_Test_RcvMsgTimeout TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 04 MD_AppMain_Test_RcvMsgNullBuffer
+5: [ PASS] 04.001 md_app_tests.c:148 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 04 MD_AppMain_Test_RcvMsgNullBuffer TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 05 MD_AppInit_Test_Nominal
+5: [ PASS] 05.001 md_app_tests.c:168 - Result == CFE_SUCCESS
+5: [ PASS] 05.002 md_app_tests.c:170 - context_CFE_EVS_SendEvent[1].EventID (1) == MD_INIT_INF_EID (1)
+5: [ PASS] 05.003 md_app_tests.c:171 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+5: [ PASS] 05.004 md_app_tests.c:175 - Event string matched expected result, 'MD Initialized.  Version %d.%d.%d.%d'
+5: [ PASS] 05.005 md_app_tests.c:180 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+5: [ PASS] 05.006 md_app_tests.c:184 - MD_AppData.CommandCounter (0) == 0 (0)
+5: [ PASS] 05.007 md_app_tests.c:185 - MD_AppData.CommandErrorCounter (0) == 0 (0)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 05 MD_AppInit_Test_Nominal TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 06 MD_AppInit_Test_EvsRegisterNotSuccess
+5: [ PASS] 06.001 md_app_tests.c:204 - Result == -1
+5: [ PASS] 06.002 md_app_tests.c:208 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+5: [ PASS] 06.003 md_app_tests.c:214 - Sys Log string matched expected result, 'MD_APP:Call to CFE_EVS_Register Failed:RC=%d
+5: '
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 06 MD_AppInit_Test_EvsRegisterNotSuccess TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 07 MD_AppInit_Test_InitSoftwareBusServices
+5: [ PASS] 07.001 md_app_tests.c:228 - Result == -1
+5: [ PASS] 07.002 md_app_tests.c:233 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 07 MD_AppInit_Test_InitSoftwareBusServices TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 08 MD_AppInit_Test_InitTableServicesNotSuc
+5: [ PASS] 08.001 md_app_tests.c:250 - Result == -1
+5: [ PASS] 08.002 md_app_tests.c:255 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 08 MD_AppInit_Test_InitTableServicesNotSuc TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 09 MD_InitControlStructures_Test
+5: [ PASS] 09.001 md_app_tests.c:266 - MD_AppData.MD_DwellTables[0].Enabled == 0
+5: [ PASS] 09.002 md_app_tests.c:267 - MD_AppData.MD_DwellTables[0].AddrCount == 0
+5: [ PASS] 09.003 md_app_tests.c:268 - MD_AppData.MD_DwellTables[0].Rate == 0
+5: [ PASS] 09.004 md_app_tests.c:269 - MD_AppData.MD_DwellTables[0].Countdown == 1
+5: [ PASS] 09.005 md_app_tests.c:270 - MD_AppData.MD_DwellTables[0].PktOffset == 0
+5: [ PASS] 09.006 md_app_tests.c:271 - MD_AppData.MD_DwellTables[0].CurrentEntry == 0
+5: [ PASS] 09.007 md_app_tests.c:272 - MD_AppData.MD_DwellTables[0].DataSize == 0
+5: [ PASS] 09.008 md_app_tests.c:273 - MD_AppData.MD_DwellTables[0].Filler == 0
+5: [ PASS] 09.009 md_app_tests.c:275 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].Enabled == 0
+5: [ PASS] 09.010 md_app_tests.c:277 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].AddrCount == 0
+5: [ PASS] 09.011 md_app_tests.c:279 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].Rate == 0
+5: [ PASS] 09.012 md_app_tests.c:281 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].Countdown == 1
+5: [ PASS] 09.013 md_app_tests.c:283 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].PktOffset == 0
+5: [ PASS] 09.014 md_app_tests.c:285 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].CurrentEntry == 0
+5: [ PASS] 09.015 md_app_tests.c:287 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].DataSize == 0
+5: [ PASS] 09.016 md_app_tests.c:289 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].Filler == 0
+5: [ PASS] 09.017 md_app_tests.c:292 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].Enabled == 0
+5: [ PASS] 09.018 md_app_tests.c:294 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].AddrCount == 0
+5: [ PASS] 09.019 md_app_tests.c:296 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].Rate == 0
+5: [ PASS] 09.020 md_app_tests.c:298 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].Countdown == 1
+5: [ PASS] 09.021 md_app_tests.c:300 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].PktOffset == 0
+5: [ PASS] 09.022 md_app_tests.c:302 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].CurrentEntry == 0
+5: [ PASS] 09.023 md_app_tests.c:304 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].DataSize == 0
+5: [ PASS] 09.024 md_app_tests.c:306 - MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].Filler == 0
+5: [ PASS] 09.025 md_app_tests.c:309 - MD_AppData.MD_DwellTables[0].Entry[0].Length == 0
+5: [ PASS] 09.026 md_app_tests.c:311 - MD_AppData.MD_DwellTables[0].Entry[0].Delay == 0
+5: [ PASS] 09.027 md_app_tests.c:312 - MD_AppData.MD_DwellTables[0].Entry[0].ResolvedAddress == 0
+5: [ PASS] 09.028 md_app_tests.c:315 - MD_AppData.MD_DwellTables[0].Entry[MD_INTERFACE_DWELL_TABLE_SIZE / 2].Length == 0
+5: [ PASS] 09.029 md_app_tests.c:317 - MD_AppData.MD_DwellTables[0].Entry[MD_INTERFACE_DWELL_TABLE_SIZE / 2].Delay == 0
+5: [ PASS] 09.030 md_app_tests.c:319 - MD_AppData.MD_DwellTables[0].Entry[MD_INTERFACE_DWELL_TABLE_SIZE / 2].ResolvedAddress == 0
+5: [ PASS] 09.031 md_app_tests.c:322 - MD_AppData.MD_DwellTables[0].Entry[MD_INTERFACE_DWELL_TABLE_SIZE - 1].Length == 0
+5: [ PASS] 09.032 md_app_tests.c:324 - MD_AppData.MD_DwellTables[0].Entry[MD_INTERFACE_DWELL_TABLE_SIZE - 1].Delay == 0
+5: [ PASS] 09.033 md_app_tests.c:326 - MD_AppData.MD_DwellTables[0].Entry[MD_INTERFACE_DWELL_TABLE_SIZE - 1].ResolvedAddress == 0
+5: [ PASS] 09.034 md_app_tests.c:330 - strncmp(MD_AppData.MD_DwellTables[0].Signature, , MD_INTERFACE_SIGNATURE_FIELD_LENGTH) == 0
+5: [ PASS] 09.035 md_app_tests.c:333 - strncmp(MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES / 2].Signature, , MD_INTERFACE_SIGNATURE_FIELD_LENGTH) == 0
+5: [ PASS] 09.036 md_app_tests.c:339 - strncmp(MD_AppData.MD_DwellTables[MD_INTERFACE_NUM_DWELL_TABLES - 1].Signature, , MD_INTERFACE_SIGNATURE_FIELD_LENGTH) == 0
+5: [ PASS] 09.037 md_app_tests.c:349 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 09 MD_InitControlStructures_Test TOTAL::37    PASS::37    FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 10 MD_InitSoftwareBusServices_Test_Nominal
+5: [ PASS] 10.001 md_app_tests.c:363 - MD_AppData.MD_DwellPkt[0].Payload.Signature[0] == ''
+5: [ PASS] 10.002 md_app_tests.c:365 - MD_AppData.MD_DwellPkt[MD_INTERFACE_NUM_DWELL_TABLES/2].Payload.Signature[0] == ''
+5: [ PASS] 10.003 md_app_tests.c:367 - MD_AppData.MD_DwellPkt[MD_INTERFACE_NUM_DWELL_TABLES - 1].Payload.Signature[0] == ''
+5: [ PASS] 10.004 md_app_tests.c:371 - Result == CFE_SUCCESS
+5: [ PASS] 10.005 md_app_tests.c:375 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 10 MD_InitSoftwareBusServices_Test_Nominal TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 11 MD_InitSoftwareBusServices_Test_CreateP
+5: [ PASS] 11.001 md_app_tests.c:396 - MD_AppData.MD_DwellPkt[0].Payload.Signature[0] == ''
+5: [ PASS] 11.002 md_app_tests.c:398 - MD_AppData.MD_DwellPkt[MD_INTERFACE_NUM_DWELL_TABLES/2].Payload.Signature[0] == ''
+5: [ PASS] 11.003 md_app_tests.c:400 - MD_AppData.MD_DwellPkt[MD_INTERFACE_NUM_DWELL_TABLES - 1].Payload.Signature[0] == ''
+5: [ PASS] 11.004 md_app_tests.c:404 - Result == -1
+5: [ PASS] 11.005 md_app_tests.c:406 - context_CFE_EVS_SendEvent[0].EventID (71) == MD_CR_PIPE_ERR_EID (71)
+5: [ PASS] 11.006 md_app_tests.c:407 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+5: [ PASS] 11.007 md_app_tests.c:411 - Event string matched expected result, 'Failed to create pipe.  RC = %d'
+5: [ PASS] 11.008 md_app_tests.c:415 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 11 MD_InitSoftwareBusServices_Test_CreateP TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 12 MD_InitSoftwareBusServices_Test_Subscri
+5: [ PASS] 12.001 md_app_tests.c:436 - MD_AppData.MD_DwellPkt[0].Payload.Signature[0] == ''
+5: [ PASS] 12.002 md_app_tests.c:438 - MD_AppData.MD_DwellPkt[MD_INTERFACE_NUM_DWELL_TABLES/2].Payload.Signature[0] == ''
+5: [ PASS] 12.003 md_app_tests.c:440 - MD_AppData.MD_DwellPkt[MD_INTERFACE_NUM_DWELL_TABLES - 1].Payload.Signature[0] == ''
+5: [ PASS] 12.004 md_app_tests.c:444 - Result == -1
+5: [ PASS] 12.005 md_app_tests.c:446 - context_CFE_EVS_SendEvent[0].EventID (72) == MD_SUB_HK_ERR_EID (72)
+5: [ PASS] 12.006 md_app_tests.c:447 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+5: [ PASS] 12.007 md_app_tests.c:451 - Event string matched expected result, 'Failed to subscribe to HK requests  RC = %d'
+5: [ PASS] 12.008 md_app_tests.c:455 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 12 MD_InitSoftwareBusServices_Test_Subscri TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 13 MD_InitSoftwareBusServices_Test_Subscri
+5: [ PASS] 13.001 md_app_tests.c:476 - MD_AppData.MD_DwellPkt[0].Payload.Signature[0] == ''
+5: [ PASS] 13.002 md_app_tests.c:478 - MD_AppData.MD_DwellPkt[MD_INTERFACE_NUM_DWELL_TABLES/2].Payload.Signature[0] == ''
+5: [ PASS] 13.003 md_app_tests.c:480 - MD_AppData.MD_DwellPkt[MD_INTERFACE_NUM_DWELL_TABLES - 1].Payload.Signature[0] == ''
+5: [ PASS] 13.004 md_app_tests.c:484 - Result == -1
+5: [ PASS] 13.005 md_app_tests.c:486 - context_CFE_EVS_SendEvent[0].EventID (73) == MD_SUB_CMD_ERR_EID (73)
+5: [ PASS] 13.006 md_app_tests.c:487 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+5: [ PASS] 13.007 md_app_tests.c:491 - Event string matched expected result, 'Failed to subscribe to commands.  RC = %d'
+5: [ PASS] 13.008 md_app_tests.c:495 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 13 MD_InitSoftwareBusServices_Test_Subscri TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 14 MD_InitSoftwareBusServices_Test_Subscri
+5: [ PASS] 14.001 md_app_tests.c:512 - MD_AppData.MD_DwellPkt[0].Payload.Signature[0] == ''
+5: [ PASS] 14.002 md_app_tests.c:514 - MD_AppData.MD_DwellPkt[MD_INTERFACE_NUM_DWELL_TABLES/2].Payload.Signature[0] == ''
+5: [ PASS] 14.003 md_app_tests.c:516 - MD_AppData.MD_DwellPkt[MD_INTERFACE_NUM_DWELL_TABLES - 1].Payload.Signature[0] == ''
+5: [ PASS] 14.004 md_app_tests.c:520 - Result == -1
+5: [ PASS] 14.005 md_app_tests.c:522 - context_CFE_EVS_SendEvent[0].EventID (74) == MD_SUB_WAKEUP_ERR_EID (74)
+5: [ PASS] 14.006 md_app_tests.c:523 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+5: [ PASS] 14.007 md_app_tests.c:527 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 14 MD_InitSoftwareBusServices_Test_Subscri TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 15 MD_InitTableServices_Test_GetAddressErr
+5: [ PASS] 15.001 md_app_tests.c:568 - Result == -1
+5: [ PASS] 15.002 md_app_tests.c:570 - MD_AppData.MD_DwellTables[1].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 15.003 md_app_tests.c:572 - MD_AppData.MD_DwellTables[2].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 15.004 md_app_tests.c:574 - MD_AppData.MD_DwellTables[3].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 15.005 md_app_tests.c:577 - context_CFE_EVS_SendEvent[0].EventID (39) == MD_NO_TBL_COPY_ERR_EID (39)
+5: [ PASS] 15.006 md_app_tests.c:578 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+5: [ PASS] 15.007 md_app_tests.c:583 - Event string matched expected result, 'Didn't update MD tbl #%d due to unexpected CFE_TBL_GetAddress return: 0x%08X'
+5: [ PASS] 15.008 md_app_tests.c:585 - context_CFE_EVS_SendEvent[1].EventID (7) == MD_TBL_INIT_INF_EID (7)
+5: [ PASS] 15.009 md_app_tests.c:586 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+5: [ PASS] 15.010 md_app_tests.c:590 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 15 MD_InitTableServices_Test_GetAddressErr TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 16 MD_InitTableServices_Test_TblRecoveredV
+5: [ PASS] 16.001 md_app_tests.c:612 - Result == CFE_SUCCESS
+5: [ PASS] 16.002 md_app_tests.c:614 - MD_AppData.MD_DwellTables[1].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 16.003 md_app_tests.c:616 - MD_AppData.MD_DwellTables[2].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 16.004 md_app_tests.c:618 - MD_AppData.MD_DwellTables[3].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 16.005 md_app_tests.c:621 - context_CFE_EVS_SendEvent[1].EventID (7) == MD_TBL_INIT_INF_EID (7)
+5: [ PASS] 16.006 md_app_tests.c:622 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+5: [ PASS] 16.007 md_app_tests.c:626 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 16 MD_InitTableServices_Test_TblRecoveredV TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 17 MD_InitTableServices_Test_TblRecoveredN
+5: [ PASS] 17.001 md_app_tests.c:668 - Result == CFE_SUCCESS
+5: [ PASS] 17.002 md_app_tests.c:670 - MD_AppData.MD_DwellTables[1].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 17.003 md_app_tests.c:672 - MD_AppData.MD_DwellTables[2].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 17.004 md_app_tests.c:674 - MD_AppData.MD_DwellTables[3].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 17.005 md_app_tests.c:677 - context_CFE_EVS_SendEvent[0].EventID (3) == MD_RECOVERED_TBL_VALID_INF_EID (3)
+5: [ PASS] 17.006 md_app_tests.c:678 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+5: [ PASS] 17.007 md_app_tests.c:683 - Event string matched expected result, 'Recovered Dwell Table #%d is valid and has been copied to the MD App'
+5: [ PASS] 17.008 md_app_tests.c:685 - context_CFE_EVS_SendEvent[1].EventID (7) == MD_TBL_INIT_INF_EID (7)
+5: [ PASS] 17.009 md_app_tests.c:686 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+5: [ PASS] 17.010 md_app_tests.c:690 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 17 MD_InitTableServices_Test_TblRecoveredN TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 18 MD_InitTableServices_Test_DwellStreamEn
+5: [ PASS] 18.001 md_app_tests.c:730 - Result == CFE_SUCCESS
+5: [ PASS] 18.002 md_app_tests.c:732 - MD_AppData.MD_DwellTables[1].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 18.003 md_app_tests.c:734 - MD_AppData.MD_DwellTables[2].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 18.004 md_app_tests.c:736 - MD_AppData.MD_DwellTables[3].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 18.005 md_app_tests.c:739 - context_CFE_EVS_SendEvent[0].EventID (3) == MD_RECOVERED_TBL_VALID_INF_EID (3)
+5: [ PASS] 18.006 md_app_tests.c:740 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+5: [ PASS] 18.007 md_app_tests.c:745 - Event string matched expected result, 'Recovered Dwell Table #%d is valid and has been copied to the MD App'
+5: [ PASS] 18.008 md_app_tests.c:747 - context_CFE_EVS_SendEvent[1].EventID (7) == MD_TBL_INIT_INF_EID (7)
+5: [ PASS] 18.009 md_app_tests.c:748 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+5: [ PASS] 18.010 md_app_tests.c:752 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 18 MD_InitTableServices_Test_DwellStreamEn TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 19 MD_InitTableServices_Test_TblNotRecover
+5: [ PASS] 19.001 md_app_tests.c:790 - Result == CFE_SUCCESS
+5: [ PASS] 19.002 md_app_tests.c:792 - MD_AppData.MD_DwellTables[1].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 19.003 md_app_tests.c:794 - MD_AppData.MD_DwellTables[2].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 19.004 md_app_tests.c:796 - MD_AppData.MD_DwellTables[3].Enabled == MD_Dwell_States_DISABLED
+5: [ PASS] 19.005 md_app_tests.c:801 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+5: [ PASS] 19.006 md_app_tests.c:805 - context_CFE_EVS_SendEvent[0].EventID (4) == MD_RECOVERED_TBL_NOT_VALID_ERR_EID (4)
+5: [ PASS] 19.007 md_app_tests.c:806 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+5: [ PASS] 19.008 md_app_tests.c:811 - Event string matched expected result, 'MD App will reinitialize Dwell Table #%d because recovered table is not valid'
+5: [ PASS] 19.009 md_app_tests.c:813 - context_CFE_EVS_SendEvent[1].EventID (7) == MD_TBL_INIT_INF_EID (7)
+5: [ PASS] 19.010 md_app_tests.c:814 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 19 MD_InitTableServices_Test_TblNotRecover TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 20 MD_InitTableServices_Test_TblTooLarge
+5: [ PASS] 20.001 md_app_tests.c:841 - Result == CFE_TBL_ERR_INVALID_SIZE
+5: [ PASS] 20.002 md_app_tests.c:843 - context_CFE_EVS_SendEvent[0].EventID (5) == MD_DWELL_TBL_TOO_LARGE_CRIT_EID (5)
+5: [ PASS] 20.003 md_app_tests.c:844 - context_CFE_EVS_SendEvent[0].EventType (4) == CFE_EVS_EventType_CRITICAL (4)
+5: [ PASS] 20.004 md_app_tests.c:849 - Event string matched expected result, 'Dwell Table(s) are too large to register: %u bytes, %d entries'
+5: [ PASS] 20.005 md_app_tests.c:851 - context_CFE_EVS_SendEvent[1].EventID (7) == MD_TBL_INIT_INF_EID (7)
+5: [ PASS] 20.006 md_app_tests.c:852 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+5: [ PASS] 20.007 md_app_tests.c:856 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 20 MD_InitTableServices_Test_TblTooLarge TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 21 MD_InitTableServices_Test_TblRegisterCr
+5: [ PASS] 21.001 md_app_tests.c:875 - Result == -1
+5: [ PASS] 21.002 md_app_tests.c:878 - context_CFE_EVS_SendEvent[0].EventID (6) == MD_TBL_REGISTER_CRIT_EID (6)
+5: [ PASS] 21.003 md_app_tests.c:879 - context_CFE_EVS_SendEvent[0].EventType (4) == CFE_EVS_EventType_CRITICAL (4)
+5: [ PASS] 21.004 md_app_tests.c:881 - context_CFE_EVS_SendEvent[1].EventID (7) == MD_TBL_INIT_INF_EID (7)
+5: [ PASS] 21.005 md_app_tests.c:882 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+5: [ PASS] 21.006 md_app_tests.c:886 - CFE_EVS_SendEvent was called 2 time(s), expected 2
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 21 MD_InitTableServices_Test_TblRegisterCr TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 22 MD_InitTableServices_Test_TblNameError
+5: [ PASS] 22.001 md_app_tests.c:898 - MD_InitTableServices() (4294967295) == -1 (4294967295)
+5: [ PASS] 22.002 md_app_tests.c:900 - context_CFE_EVS_SendEvent[0].EventID (61) == MD_INIT_TBL_NAME_ERR_EID (61)
+5: [ PASS] 22.003 md_app_tests.c:901 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+5: [ PASS] 22.004 md_app_tests.c:903 - context_CFE_EVS_SendEvent[1].EventID (7) == MD_TBL_INIT_INF_EID (7)
+5: [ PASS] 22.005 md_app_tests.c:904 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+5: [ PASS] 22.006 md_app_tests.c:906 - CallCount: CFE_EVS_SendEvent() (2) == 2 (2)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 22 MD_InitTableServices_Test_TblNameError TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 23 MD_InitTableServices_Test_TblFileNameEr
+5: [ PASS] 23.001 md_app_tests.c:916 - MD_InitTableServices() (4294967295) == -1 (4294967295)
+5: [ PASS] 23.002 md_app_tests.c:918 - context_CFE_EVS_SendEvent[0].EventID (62) == MD_INIT_TBL_FILENAME_ERR_EID (62)
+5: [ PASS] 23.003 md_app_tests.c:919 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+5: [ PASS] 23.004 md_app_tests.c:921 - context_CFE_EVS_SendEvent[1].EventID (7) == MD_TBL_INIT_INF_EID (7)
+5: [ PASS] 23.005 md_app_tests.c:922 - context_CFE_EVS_SendEvent[1].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+5: [ PASS] 23.006 md_app_tests.c:924 - CallCount: CFE_EVS_SendEvent() (2) == 2 (2)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 23 MD_InitTableServices_Test_TblFileNameEr TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 24 MD_ManageDwellTable_Test_ValidationPend
+5: [ PASS] 24.001 md_app_tests.c:942 - Result == -1
+5: [ PASS] 24.002 md_app_tests.c:946 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 24 MD_ManageDwellTable_Test_ValidationPend TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 25 MD_ManageDwellTable_Test_UpdatePendingD
+5: [ PASS] 25.001 md_app_tests.c:973 - Result == CFE_SUCCESS
+5: [ PASS] 25.002 md_app_tests.c:977 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+5: [ PASS] 25.003 md_app_tests.c:982 - call_count_MD_StartDwellStream (1) == 1 (1)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 25 MD_ManageDwellTable_Test_UpdatePendingD TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 26 MD_ManageDwellTable_Test_UpdatePendingD
+5: [ PASS] 26.001 md_app_tests.c:1009 - Result == CFE_SUCCESS
+5: [ PASS] 26.002 md_app_tests.c:1013 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+5: [ PASS] 26.003 md_app_tests.c:1018 - call_count_MD_StartDwellStream (0) == 0 (0)
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 26 MD_ManageDwellTable_Test_UpdatePendingD TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 27 MD_ManageDwellTable_Test_TblNotUpdated
+5: [ PASS] 27.001 md_app_tests.c:1043 - Result == -1
+5: [ PASS] 27.002 md_app_tests.c:1047 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 27 MD_ManageDwellTable_Test_TblNotUpdated TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 28 MD_ManageDwellTable_Test_UpdatePendingT
+5: [ PASS] 28.001 md_app_tests.c:1067 - Result == CFE_SUCCESS
+5: [ PASS] 28.002 md_app_tests.c:1069 - context_CFE_EVS_SendEvent[0].EventID (39) == MD_NO_TBL_COPY_ERR_EID (39)
+5: [ PASS] 28.003 md_app_tests.c:1070 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+5: [ PASS] 28.004 md_app_tests.c:1074 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 28 MD_ManageDwellTable_Test_UpdatePendingT TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 29 MD_ManageDwellTable_Test_TblStatusErr
+5: [ PASS] 29.001 md_app_tests.c:1091 - Result == CFE_SEVERITY_BITMASK
+5: [ PASS] 29.002 md_app_tests.c:1093 - context_CFE_EVS_SendEvent[0].EventID (20) == MD_TBL_STATUS_ERR_EID (20)
+5: [ PASS] 29.003 md_app_tests.c:1094 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+5: [ PASS] 29.004 md_app_tests.c:1098 - CFE_EVS_SendEvent was called 1 time(s), expected 1
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 29 MD_ManageDwellTable_Test_TblStatusErr TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 30 MD_ManageDwellTable_Test_OtherStatus
+5: [ PASS] 30.001 md_app_tests.c:1115 - Result == 99
+5: [ PASS] 30.002 md_app_tests.c:1119 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 30 MD_ManageDwellTable_Test_OtherStatus TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+5: 
+5: [BEGIN] 31 MD_HkStatus_Test
+5: [ PASS] 31.001 md_app_tests.c:1158 - MD_AppData.HkPkt.Payload.ValidCmdCntr == 1
+5: [ PASS] 31.002 md_app_tests.c:1159 - MD_AppData.HkPkt.Payload.InvalidCmdCntr == 2
+5: [ PASS] 31.003 md_app_tests.c:1161 - MD_AppData.HkPkt.Payload.DwellTblAddrCount[0] == 1
+5: [ PASS] 31.004 md_app_tests.c:1163 - MD_AppData.HkPkt.Payload.NumWaitsPerPkt[0]    == 2
+5: [ PASS] 31.005 md_app_tests.c:1165 - MD_AppData.HkPkt.Payload.DwellPktOffset[0]    == 3
+5: [ PASS] 31.006 md_app_tests.c:1167 - MD_AppData.HkPkt.Payload.ByteCount[0]         == 4
+5: [ PASS] 31.007 md_app_tests.c:1168 - MD_AppData.HkPkt.Payload.DwellTblEntry[0]     == 5
+5: [ PASS] 31.008 md_app_tests.c:1169 - MD_AppData.HkPkt.Payload.Countdown[0]         == 6
+5: [ PASS] 31.009 md_app_tests.c:1171 - MD_AppData.HkPkt.Payload.DwellTblAddrCount[MD_INTERFACE_NUM_DWELL_TABLES / 2] == 7
+5: [ PASS] 31.010 md_app_tests.c:1173 - MD_AppData.HkPkt.Payload.NumWaitsPerPkt[MD_INTERFACE_NUM_DWELL_TABLES / 2]    == 8
+5: [ PASS] 31.011 md_app_tests.c:1175 - MD_AppData.HkPkt.Payload.DwellPktOffset[MD_INTERFACE_NUM_DWELL_TABLES / 2]    == 9
+5: [ PASS] 31.012 md_app_tests.c:1177 - MD_AppData.HkPkt.Payload.ByteCount[MD_INTERFACE_NUM_DWELL_TABLES / 2]         == 10
+5: [ PASS] 31.013 md_app_tests.c:1179 - MD_AppData.HkPkt.Payload.DwellTblEntry[MD_INTERFACE_NUM_DWELL_TABLES / 2]     == 11
+5: [ PASS] 31.014 md_app_tests.c:1181 - MD_AppData.HkPkt.Payload.Countdown[MD_INTERFACE_NUM_DWELL_TABLES / 2]         == 12
+5: [ PASS] 31.015 md_app_tests.c:1184 - MD_AppData.HkPkt.Payload.DwellTblAddrCount[MD_INTERFACE_NUM_DWELL_TABLES - 1] == 13
+5: [ PASS] 31.016 md_app_tests.c:1186 - MD_AppData.HkPkt.Payload.NumWaitsPerPkt[MD_INTERFACE_NUM_DWELL_TABLES - 1]    == 14
+5: [ PASS] 31.017 md_app_tests.c:1188 - MD_AppData.HkPkt.Payload.DwellPktOffset[MD_INTERFACE_NUM_DWELL_TABLES - 1]    == 15
+5: [ PASS] 31.018 md_app_tests.c:1190 - MD_AppData.HkPkt.Payload.ByteCount[MD_INTERFACE_NUM_DWELL_TABLES - 1]         == 16
+5: [ PASS] 31.019 md_app_tests.c:1192 - MD_AppData.HkPkt.Payload.DwellTblEntry[MD_INTERFACE_NUM_DWELL_TABLES - 1]     == 17
+5: [ PASS] 31.020 md_app_tests.c:1194 - MD_AppData.HkPkt.Payload.Countdown[MD_INTERFACE_NUM_DWELL_TABLES - 1]         == 18
+5: [ PASS] 31.021 md_app_tests.c:1197 - MD_AppData.HkPkt.Payload.DwellEnabledMask == 1
+5: [ PASS] 31.022 md_app_tests.c:1201 - CFE_EVS_SendEvent was called 0 time(s), expected 0
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 31 MD_HkStatus_Test     TOTAL::22    PASS::22    FAIL::0     MIR::0     TSF::0     TTF::0   
+5: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+5: [  END] 31 SUMMARY              TOTAL::210   PASS::210   FAIL::0     MIR::0     TSF::0     TTF::0   
+5: COMPLETE: 31 tests Segment(s) executed
+5: 
+5/6 Test #5: coverage-md-md_app ...............   Passed    0.00 sec
+test 6
+    Start 6: coverage-md-md_dispatch
+
+6: Test command: /tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md/unit-test/coverage-md-md_dispatch-testrunner
+6: Working Directory: /tmp/vdd_md_coverage_oscs5ja5/cFS/build/native/default_cpu1/apps/md/unit-test
+6: Test timeout computed to be: 10000000
+6: 
+6: [BEGIN] UNIT TEST
+6: 
+6: [BEGIN] 01 SETUP
+6: [  END] No test cases
+6: 
+6: [BEGIN] 01 MD_VerifyCmdLength_Nominal
+6: [ PASS] 01.001 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 01.002 md_dispatch_tests.c:60 - Result (1) == true (1)
+6: [ PASS] 01.003 md_dispatch_tests.c:62 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 01.004 md_dispatch_tests.c:63 - uint8: MD_AppData.CommandErrorCounter (0) == 0 (0)
+6: [ PASS] 01.005 md_dispatch_tests.c:65 - CallCount: CFE_EVS_SendEvent() (0) == 0 (0)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 01 MD_VerifyCmdLength_Nominal TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 02 MD_VerifyCmdLength_InvalidSize
+6: [ PASS] 02.001 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 02.002 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+6: [ PASS] 02.003 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 02.004 md_dispatch_tests.c:88 - Result (0) == false (0)
+6: [ PASS] 02.005 md_dispatch_tests.c:90 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 02.006 md_dispatch_tests.c:91 - uint8: MD_AppData.CommandErrorCounter (1) == 1 (1)
+6: [ PASS] 02.007 md_dispatch_tests.c:93 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+6: [ PASS] 02.008 md_test_utils.c:85 - context_CFE_EVS_SendEvent[IssuedOrder].EventID (21) == EventId (21)
+6: [ PASS] 02.009 md_test_utils.c:86 - context_CFE_EVS_SendEvent[IssuedOrder].EventType (3) == EventType (3)
+6: [ PASS] 02.010 md_test_utils.c:88 - Event string expected: 'Invalid Msg length: ID = 0x%X, CC = %u, Len = %u, Expected = %u'
+6: Event string received: 'Invalid Msg length: ID = 0x%X, CC = %u, Len = %u, Expected = %u'
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 02 MD_VerifyCmdLength_InvalidSize TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 03 MD_ProcessGroundCommand_NoopCmd
+6: [ PASS] 03.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 03.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 03.003 md_dispatch_tests.c:114 - MD_ProcessGroundCommand(NULL)
+6: [ PASS] 03.004 md_dispatch_tests.c:117 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 03.005 md_dispatch_tests.c:118 - uint8: MD_AppData.CommandErrorCounter (0) == 0 (0)
+6: [ PASS] 03.006 md_dispatch_tests.c:120 - CallCount: MD_NoopCmd() (1) == 1 (1)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 03 MD_ProcessGroundCommand_NoopCmd TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 04 MD_ProcessGroundCommand_NoopCmdErr
+6: [ PASS] 04.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 04.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 04.003 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+6: [ PASS] 04.004 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 04.005 md_dispatch_tests.c:143 - MD_ProcessGroundCommand(NULL)
+6: [ PASS] 04.006 md_dispatch_tests.c:146 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 04.007 md_dispatch_tests.c:147 - uint8: MD_AppData.CommandErrorCounter (1) == 1 (1)
+6: [ PASS] 04.008 md_dispatch_tests.c:149 - CallCount: MD_NoopCmd() (0) == 0 (0)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 04 MD_ProcessGroundCommand_NoopCmdErr TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 05 MD_ProcessGroundCommand_ResetCountersCm
+6: [ PASS] 05.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 05.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 05.003 md_dispatch_tests.c:166 - MD_ProcessGroundCommand(NULL)
+6: [ PASS] 05.004 md_dispatch_tests.c:169 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 05.005 md_dispatch_tests.c:170 - uint8: MD_AppData.CommandErrorCounter (0) == 0 (0)
+6: [ PASS] 05.006 md_dispatch_tests.c:172 - CallCount: MD_ResetCountersCmd() (1) == 1 (1)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 05 MD_ProcessGroundCommand_ResetCountersCm TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 06 MD_ProcessGroundCommand_ResetCountersCm
+6: [ PASS] 06.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 06.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 06.003 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+6: [ PASS] 06.004 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 06.005 md_dispatch_tests.c:195 - MD_ProcessGroundCommand(NULL)
+6: [ PASS] 06.006 md_dispatch_tests.c:198 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 06.007 md_dispatch_tests.c:199 - uint8: MD_AppData.CommandErrorCounter (1) == 1 (1)
+6: [ PASS] 06.008 md_dispatch_tests.c:201 - CallCount: MD_ResetCountersCmd() (0) == 0 (0)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 06 MD_ProcessGroundCommand_ResetCountersCm TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 07 MD_ProcessGroundCommand_StartDwellCmd
+6: [ PASS] 07.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 07.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 07.003 md_dispatch_tests.c:218 - MD_ProcessGroundCommand(NULL)
+6: [ PASS] 07.004 md_dispatch_tests.c:221 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 07.005 md_dispatch_tests.c:222 - uint8: MD_AppData.CommandErrorCounter (0) == 0 (0)
+6: [ PASS] 07.006 md_dispatch_tests.c:224 - CallCount: MD_StartDwellCmd() (1) == 1 (1)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 07 MD_ProcessGroundCommand_StartDwellCmd TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 08 MD_ProcessGroundCommand_StartDwellCmdEr
+6: [ PASS] 08.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 08.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 08.003 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+6: [ PASS] 08.004 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 08.005 md_dispatch_tests.c:246 - MD_ProcessGroundCommand(NULL)
+6: [ PASS] 08.006 md_dispatch_tests.c:249 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 08.007 md_dispatch_tests.c:250 - uint8: MD_AppData.CommandErrorCounter (1) == 1 (1)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 08 MD_ProcessGroundCommand_StartDwellCmdEr TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 09 MD_ProcessGroundCommand_StopDwellCmd
+6: [ PASS] 09.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 09.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 09.003 md_dispatch_tests.c:267 - MD_ProcessGroundCommand(NULL)
+6: [ PASS] 09.004 md_dispatch_tests.c:270 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 09.005 md_dispatch_tests.c:271 - uint8: MD_AppData.CommandErrorCounter (0) == 0 (0)
+6: [ PASS] 09.006 md_dispatch_tests.c:273 - CallCount: MD_StopDwellCmd() (1) == 1 (1)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 09 MD_ProcessGroundCommand_StopDwellCmd TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 10 MD_ProcessGroundCommand_StopDwellCmdErr
+6: [ PASS] 10.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 10.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 10.003 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+6: [ PASS] 10.004 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 10.005 md_dispatch_tests.c:295 - MD_ProcessGroundCommand(NULL)
+6: [ PASS] 10.006 md_dispatch_tests.c:298 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 10.007 md_dispatch_tests.c:299 - uint8: MD_AppData.CommandErrorCounter (1) == 1 (1)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 10 MD_ProcessGroundCommand_StopDwellCmdErr TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 11 MD_ProcessGroundCommand_JamDwellCmd
+6: [ PASS] 11.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 11.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 11.003 md_dispatch_tests.c:316 - MD_ProcessGroundCommand(NULL)
+6: [ PASS] 11.004 md_dispatch_tests.c:319 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 11.005 md_dispatch_tests.c:320 - uint8: MD_AppData.CommandErrorCounter (0) == 0 (0)
+6: [ PASS] 11.006 md_dispatch_tests.c:322 - CallCount: MD_JamDwellCmd() (1) == 1 (1)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 11 MD_ProcessGroundCommand_JamDwellCmd TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 12 MD_ProcessGroundCommand_JamDwellCmdErr
+6: [ PASS] 12.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 12.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 12.003 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+6: [ PASS] 12.004 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 12.005 md_dispatch_tests.c:344 - MD_ProcessGroundCommand(NULL)
+6: [ PASS] 12.006 md_dispatch_tests.c:347 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 12.007 md_dispatch_tests.c:348 - uint8: MD_AppData.CommandErrorCounter (1) == 1 (1)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 12 MD_ProcessGroundCommand_JamDwellCmdErr TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 13 MD_ProcessGroundCommand_SetSignatureCmd
+6: [ PASS] 13.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 13.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 13.003 md_dispatch_tests.c:367 - MD_ProcessGroundCommand(NULL)
+6: [ PASS] 13.004 md_dispatch_tests.c:370 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 13.005 md_dispatch_tests.c:371 - uint8: MD_AppData.CommandErrorCounter (0) == 0 (0)
+6: [ PASS] 13.006 md_dispatch_tests.c:373 - CallCount: MD_SetSignatureCmd() (1) == 1 (1)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 13 MD_ProcessGroundCommand_SetSignatureCmd TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 14 MD_ProcessGroundCommand_SetSignatureCmd
+6: [ PASS] 14.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 14.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 14.003 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+6: [ PASS] 14.004 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 14.005 md_dispatch_tests.c:395 - MD_ProcessGroundCommand(NULL)
+6: [ PASS] 14.006 md_dispatch_tests.c:398 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 14.007 md_dispatch_tests.c:399 - uint8: MD_AppData.CommandErrorCounter (1) == 1 (1)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 14 MD_ProcessGroundCommand_SetSignatureCmd TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 15 MD_ProcessGroundCommand_Err
+6: [ PASS] 15.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 15.002 md_dispatch_tests.c:413 - MD_ProcessGroundCommand(NULL)
+6: [ PASS] 15.003 md_dispatch_tests.c:416 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 15.004 md_dispatch_tests.c:417 - uint8: MD_AppData.CommandErrorCounter (1) == 1 (1)
+6: [ PASS] 15.005 md_test_utils.c:85 - context_CFE_EVS_SendEvent[IssuedOrder].EventID (16) == EventId (16)
+6: [ PASS] 15.006 md_test_utils.c:86 - context_CFE_EVS_SendEvent[IssuedOrder].EventType (3) == EventType (3)
+6: [ PASS] 15.007 md_test_utils.c:88 - Event string expected: 'Invalid ground command code %d'
+6: Event string received: 'Invalid ground command code %d'
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 15 MD_ProcessGroundCommand_Err TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 16 MD_TaskPipe_Test_Wakeup
+6: [ PASS] 16.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+6: [ PASS] 16.002 md_dispatch_tests.c:433 - MD_TaskPipe(NULL)
+6: [ PASS] 16.003 md_dispatch_tests.c:436 - CallCount: MD_DwellLoop() (1) == 1 (1)
+6: [ PASS] 16.004 md_dispatch_tests.c:437 - CallCount: MD_SendHkCmd() (0) == 0 (0)
+6: [ PASS] 16.005 md_dispatch_tests.c:438 - CallCount: MD_ProcessGroundCommand() (0) == 0 (0)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 16 MD_TaskPipe_Test_Wakeup TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 17 MD_TaskPipe_Test_SendHk
+6: [ PASS] 17.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+6: [ PASS] 17.002 md_dispatch_tests.c:452 - MD_TaskPipe(NULL)
+6: [ PASS] 17.003 md_dispatch_tests.c:455 - CallCount: MD_DwellLoop() (0) == 0 (0)
+6: [ PASS] 17.004 md_dispatch_tests.c:456 - CallCount: MD_SendHkCmd() (1) == 1 (1)
+6: [ PASS] 17.005 md_dispatch_tests.c:457 - CallCount: MD_ProcessGroundCommand() (0) == 0 (0)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 17 MD_TaskPipe_Test_SendHk TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 18 MD_TaskPipe_Test_Cmd
+6: [ PASS] 18.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+6: [ PASS] 18.002 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+6: [ PASS] 18.003 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+6: [ PASS] 18.004 md_dispatch_tests.c:483 - MD_TaskPipe(NULL)
+6: [ PASS] 18.005 md_dispatch_tests.c:486 - CallCount: MD_DwellLoop() (0) == 0 (0)
+6: [ PASS] 18.006 md_dispatch_tests.c:487 - CallCount: MD_SendHkCmd() (0) == 0 (0)
+6: [ PASS] 18.007 md_dispatch_tests.c:488 - CallCount: MD_NoopCmd() (1) == 1 (1)
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 18 MD_TaskPipe_Test_Cmd TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+6: 
+6: [BEGIN] 19 MD_TaskPipe_Test_InvalidMsgId
+6: [ PASS] 19.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+6: [ PASS] 19.002 md_dispatch_tests.c:502 - MD_TaskPipe(NULL)
+6: [ PASS] 19.003 md_dispatch_tests.c:505 - CallCount: MD_DwellLoop() (0) == 0 (0)
+6: [ PASS] 19.004 md_dispatch_tests.c:506 - CallCount: MD_SendHkCmd() (0) == 0 (0)
+6: [ PASS] 19.005 md_dispatch_tests.c:507 - CallCount: MD_ProcessGroundCommand() (0) == 0 (0)
+6: [ PASS] 19.006 md_dispatch_tests.c:509 - uint8: MD_AppData.CommandCounter (0) == 0 (0)
+6: [ PASS] 19.007 md_dispatch_tests.c:510 - uint8: MD_AppData.CommandErrorCounter (1) == 1 (1)
+6: [ PASS] 19.008 md_test_utils.c:85 - context_CFE_EVS_SendEvent[IssuedOrder].EventID (15) == EventId (15)
+6: [ PASS] 19.009 md_test_utils.c:86 - context_CFE_EVS_SendEvent[IssuedOrder].EventType (3) == EventType (3)
+6: [ PASS] 19.010 md_test_utils.c:88 - Event string expected: 'Invalid command pipe message ID: 0x%08lX'
+6: Event string received: 'Invalid command pipe message ID: 0x%08lX'
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 19 MD_TaskPipe_Test_InvalidMsgId TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+6: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+6: [  END] 19 SUMMARY              TOTAL::129   PASS::129   FAIL::0     MIR::0     TSF::0     TTF::0   
+6: COMPLETE: 19 tests Segment(s) executed
+6: 
+6/6 Test #6: coverage-md-md_dispatch ..........   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 6
+
+Total Test time (real) =   0.01 sec

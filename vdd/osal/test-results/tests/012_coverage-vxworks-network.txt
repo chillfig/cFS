@@ -1,0 +1,26 @@
+name: coverage-vxworks-network
+classname: coverage-vxworks-network
+time_seconds: 0.00142508
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_NetworkGetID_Impl
+[ PASS] 01.001 coveragetest-network.c:62 - OS_NetworkGetID_Impl(&IdBuf) (0) == OS_SUCCESS (0)
+[ PASS] 01.002 coveragetest-network.c:63 - IdBuf (1234) == 1234
+[ PASS] 01.003 coveragetest-network.c:66 - OS_NetworkGetID_Impl(&IdBuf) (-1) == OS_ERROR (-1)
+[ PASS] 01.004 coveragetest-network.c:69 - OS_NetworkGetID_Impl(&IdBuf) (-1) == OS_ERROR (-1)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_NetworkGetID_Impl TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_NetworkGetHostName_Impl
+[ PASS] 02.001 coveragetest-network.c:47 - OS_NetworkGetHostName_Impl(buffer, sizeof(buffer)) (0) == OS_SUCCESS (0)
+[ PASS] 02.002 coveragetest-network.c:49 - OS_NetworkGetHostName_Impl(buffer, sizeof(buffer)) (-1) == OS_ERROR (-1)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 02 OS_NetworkGetHostName...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

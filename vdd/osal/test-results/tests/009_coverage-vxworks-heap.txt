@@ -1,0 +1,18 @@
+name: coverage-vxworks-heap
+classname: coverage-vxworks-heap
+time_seconds: 0.000854583
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_HeapGetInfo_Impl
+[ PASS] 01.001 coveragetest-heap.c:39 - OS_HeapGetInfo_Impl(&heap_prop) (0) == OS_SUCCESS (0)
+[ PASS] 01.002 coveragetest-heap.c:42 - OS_HeapGetInfo_Impl(&heap_prop) (-1) == OS_ERROR (-1)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_HeapGetInfo_Impl  TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+COMPLETE: 1 tests Segment(s) executed

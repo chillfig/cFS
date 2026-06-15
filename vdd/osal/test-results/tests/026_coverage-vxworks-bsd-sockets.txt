@@ -1,0 +1,26 @@
+name: coverage-vxworks-bsd-sockets
+classname: coverage-vxworks-bsd-sockets
+time_seconds: 0.00112575
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_SocketOpen_Impl
+[ PASS] 01.001 coveragetest-bsd-sockets.c:85 - OS_SocketOpen_Impl(&token) (-28) == OS_ERR_NOT_IMPLEMENTED (-28)
+[ PASS] 01.002 coveragetest-bsd-sockets.c:90 - OS_SocketOpen_Impl(&token) (-28) == OS_ERR_NOT_IMPLEMENTED (-28)
+[ PASS] 01.003 coveragetest-bsd-sockets.c:95 - OS_SocketOpen_Impl(&token) (-1) == OS_ERROR (-1)
+[ PASS] 01.004 coveragetest-bsd-sockets.c:100 - OS_SocketOpen_Impl(&token) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_SocketOpen_Impl   TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_SetSocketDefaultFlags_Impl
+[ PASS] 02.001 coveragetest-bsd-sockets.c:111 - OS_SetSocketDefaultFlags_Impl(&token)
+[ PASS] 02.002 coveragetest-bsd-sockets.c:112 - CallCount: OCS_fcntl() (1) == 1 (1)
+[ PASS] 02.003 coveragetest-bsd-sockets.c:113 - Socket is selectable
+[ PASS] 02.004 coveragetest-bsd-sockets.c:11...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

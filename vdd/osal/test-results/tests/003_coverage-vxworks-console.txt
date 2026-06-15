@@ -1,0 +1,26 @@
+name: coverage-vxworks-console
+classname: coverage-vxworks-console
+time_seconds: 0.000879875
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_ConsoleCreate_Impl
+[ PASS] 01.001 coveragetest-console.c:62 - OS_ConsoleCreate_Impl(&token) (0) == OS_SUCCESS (0)
+[ PASS] 01.002 coveragetest-console.c:63 - CallCount: OCS_taskSpawn() (0) == 0 (0)
+[ PASS] 01.003 coveragetest-console.c:67 - OS_ConsoleCreate_Impl(&token) (0) == OS_SUCCESS (0)
+[ PASS] 01.004 coveragetest-console.c:68 - CallCount: OCS_taskSpawn() (1) == 1 (1)
+[ PASS] 01.005 coveragetest-console.c:71 - OS_ConsoleCreate_Impl(&token) (-6) == OS_SEM_FAILURE (-6)
+[ PASS] 01.006 coveragetest-console.c:75 - OS_ConsoleCreate_Impl(&token) (-1) == OS_ERROR (-1)
+[ PASS] 01.007 coveragetest-console.c:79 - OS_ConsoleCreate_Impl(&token) (-28) == OS_ERR_NOT_IMPLEMENTED (-28)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_ConsoleCreate_Impl TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_ConsoleWakeup_Impl
+[ PASS] 02.001 coveragetest-console.c:47 ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

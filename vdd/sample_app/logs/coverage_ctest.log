@@ -1,0 +1,224 @@
+$ ctest --verbose
+# cwd: /tmp/vdd_sample_app_coverage_1d7z8mhh/cFS/build/native/default_cpu1/apps/sample_app
+
+UpdateCTestConfiguration  from :/tmp/vdd_sample_app_coverage_1d7z8mhh/cFS/build/native/default_cpu1/apps/sample_app/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/tmp/vdd_sample_app_coverage_1d7z8mhh/cFS/build/native/default_cpu1/apps/sample_app/DartConfiguration.tcl
+Test project /tmp/vdd_sample_app_coverage_1d7z8mhh/cFS/build/native/default_cpu1/apps/sample_app
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: coverage-sample_app-sample_app
+
+1: Test command: /tmp/vdd_sample_app_coverage_1d7z8mhh/cFS/build/native/default_cpu1/apps/sample_app/unit-test/coverage-sample_app-sample_app-testrunner
+1: Working Directory: /tmp/vdd_sample_app_coverage_1d7z8mhh/cFS/build/native/default_cpu1/apps/sample_app/unit-test
+1: Test timeout computed to be: 10000000
+1: 
+1: [BEGIN] UNIT TEST
+1: 
+1: [BEGIN] 01 SETUP
+1: [  END] No test cases
+1: 
+1: [BEGIN] 01 SAMPLE_APP_Main
+1: [ PASS] 01.001 coveragetest_sample_app.c:71 - CallCount: CFE_ES_ExitApp() (1) == 1 (1)
+1: [ PASS] 01.002 coveragetest_sample_app.c:96 - SAMPLE_APP_Data.RunStatus (3) == CFE_ES_RunStatus_APP_ERROR (3)
+1: [ PASS] 01.003 coveragetest_sample_app.c:120 - CallCount: CFE_SB_ReceiveBuffer() (1) == 1 (1)
+1: [ INFO] eventcheck.c:124:CheckEvent will match: SAMPLE_APP_PIPE_ERR_EID(7), "SAMPLE APP: SB Pipe Read Error, App Will Exit"
+1: [ PASS] 01.004 coveragetest_sample_app.c:139 - EventTest.MatchCount (1) == 1 (1)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 01 SAMPLE_APP_Main      TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 02 SAMPLE_APP_Init
+1: [ PASS] 02.001 coveragetest_sample_app.c:150 - SAMPLE_APP_Init() (0) == CFE_SUCCESS (0)
+1: [ PASS] 02.002 coveragetest_sample_app.c:158 - SAMPLE_APP_Init() (-1040187384) == CFE_EVS_INVALID_PARAMETER (-1040187384)
+1: [ PASS] 02.003 coveragetest_sample_app.c:159 - CallCount: CFE_ES_WriteToSysLog() (1) == 1 (1)
+1: [ PASS] 02.004 coveragetest_sample_app.c:162 - SAMPLE_APP_Init() (-905969661) == CFE_SB_BAD_ARGUMENT (-905969661)
+1: [ PASS] 02.005 coveragetest_sample_app.c:163 - CallCount: CFE_EVS_SendEvent() (2) == 2 (2)
+1: [ PASS] 02.006 coveragetest_sample_app.c:166 - SAMPLE_APP_Init() (-905969661) == CFE_SB_BAD_ARGUMENT (-905969661)
+1: [ PASS] 02.007 coveragetest_sample_app.c:167 - CallCount: CFE_EVS_SendEvent() (3) == 3 (3)
+1: [ PASS] 02.008 coveragetest_sample_app.c:170 - SAMPLE_APP_Init() (-905969661) == CFE_SB_BAD_ARGUMENT (-905969661)
+1: [ PASS] 02.009 coveragetest_sample_app.c:171 - CallCount: CFE_EVS_SendEvent() (4) == 4 (4)
+1: [ PASS] 02.010 coveragetest_sample_app.c:174 - SAMPLE_APP_Init() (-872415195) == CFE_TBL_ERR_INVALID_OPTIONS (-872415195)
+1: [ PASS] 02.011 coveragetest_sample_app.c:175 - CallCount: CFE_EVS_SendEvent() (6) == 6 (6)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 02 SAMPLE_APP_Init      TOTAL::11    PASS::11    FAIL::0     MIR::0     TSF::0     TTF::0   
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 02 SUMMARY              TOTAL::15    PASS::15    FAIL::0     MIR::0     TSF::0     TTF::0   
+1: COMPLETE: 2 tests Segment(s) executed
+1: 
+1/4 Test #1: coverage-sample_app-sample_app ............   Passed    0.00 sec
+test 2
+    Start 2: coverage-sample_app-sample_app_cmds
+
+2: Test command: /tmp/vdd_sample_app_coverage_1d7z8mhh/cFS/build/native/default_cpu1/apps/sample_app/unit-test/coverage-sample_app-sample_app_cmds-testrunner
+2: Working Directory: /tmp/vdd_sample_app_coverage_1d7z8mhh/cFS/build/native/default_cpu1/apps/sample_app/unit-test
+2: Test timeout computed to be: 10000000
+2: 
+2: [BEGIN] UNIT TEST
+2: 
+2: [BEGIN] 01 SETUP
+2: [  END] No test cases
+2: 
+2: [BEGIN] 01 SAMPLE_APP_ReportHousekeeping
+2: [ PASS] 01.001 coveragetest_sample_app_cmds.c:70 - CallCount: CFE_SB_TransmitMsg() (1) == 1 (1)
+2: [ PASS] 01.002 coveragetest_sample_app_cmds.c:71 - MsgSend (0xaaaaac94f422) == &SAMPLE_APP_Data.HkTlm (0xaaaaac94f422)
+2: [ PASS] 01.003 coveragetest_sample_app_cmds.c:74 - CallCount: CFE_SB_TimeStampMsg() (1) == 1 (1)
+2: [ PASS] 01.004 coveragetest_sample_app_cmds.c:75 - MsgTimestamp (0xaaaaac94f422) == &SAMPLE_APP_Data.HkTlm (0xaaaaac94f422)
+2: [ PASS] 01.005 coveragetest_sample_app_cmds.c:80 - CallCount: CFE_TBL_Manage() (1) == 1 (1)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 01 SAMPLE_APP_ReportHousekeeping TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 02 SAMPLE_APP_NoopCmd
+2: [ INFO] eventcheck.c:120:CheckEvent will match: SAMPLE_APP_NOOP_INF_EID(3)
+2: [ PASS] 02.001 coveragetest_sample_app_cmds.c:97 - SAMPLE_APP_NoopCmd(&TestMsg) (0) == CFE_SUCCESS (0)
+2: [ PASS] 02.002 coveragetest_sample_app_cmds.c:102 - EventTest.MatchCount (1) == 1 (1)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 02 SAMPLE_APP_NoopCmd   TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 03 SAMPLE_APP_ResetCountersCmd
+2: [ INFO] eventcheck.c:124:CheckEvent will match: SAMPLE_APP_RESET_INF_EID(4), "SAMPLE: RESET command"
+2: [ PASS] 03.001 coveragetest_sample_app_cmds.c:118 - SAMPLE_APP_ResetCountersCmd(&TestMsg) (0) == CFE_SUCCESS (0)
+2: [ PASS] 03.002 coveragetest_sample_app_cmds.c:123 - EventTest.MatchCount (1) == 1 (1)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 03 SAMPLE_APP_ResetCountersCmd TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 04 SAMPLE_APP_ProcessCmd
+2: [ PASS] 04.001 coveragetest_sample_app_cmds.c:143 - SAMPLE_APP_ProcessCmd(&TestMsg) (0) == CFE_SUCCESS (0)
+2: [ PASS] 04.002 coveragetest_sample_app_cmds.c:150 - CallCount: CFE_ES_WriteToSysLog() (1) == 1 (1)
+2: [ PASS] 04.003 coveragetest_sample_app_cmds.c:155 - CallCount: CFE_TBL_GetAddress() (1) == 1 (1)
+2: [ PASS] 04.004 coveragetest_sample_app_cmds.c:161 - CallCount: SAMPLE_LIB_Function() (1) == 1 (1)
+2: [ PASS] 04.005 coveragetest_sample_app_cmds.c:170 - SAMPLE_APP_ProcessCmd(&TestMsg) (-872415223) == CFE_TBL_ERR_UNREGISTERED (-872415223)
+2: [ PASS] 04.006 coveragetest_sample_app_cmds.c:171 - CallCount: CFE_ES_WriteToSysLog() (2) == 2 (2)
+2: [ PASS] 04.007 coveragetest_sample_app_cmds.c:183 - SAMPLE_APP_ProcessCmd(&TestMsg) (-872415224) == CFE_TBL_ERR_NO_ACCESS (-872415224)
+2: [ PASS] 04.008 coveragetest_sample_app_cmds.c:184 - CallCount: CFE_ES_WriteToSysLog() (4) == 4 (4)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 04 SAMPLE_APP_ProcessCmd TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 05 SAMPLE_APP_DisplayParamCmd
+2: [ INFO] eventcheck.c:124:CheckEvent will match: SAMPLE_APP_VALUE_INF_EID(8), "SAMPLE_APP: ValU32=%lu, ValI16=%d, ValStr=%s"
+2: [ PASS] 05.001 coveragetest_sample_app_cmds.c:203 - SAMPLE_APP_DisplayParamCmd(&TestMsg) (0) == CFE_SUCCESS (0)
+2: [ PASS] 05.002 coveragetest_sample_app_cmds.c:207 - EventTest.MatchCount (1) == 1 (1)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 05 SAMPLE_APP_DisplayParamCmd TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 05 SUMMARY              TOTAL::19    PASS::19    FAIL::0     MIR::0     TSF::0     TTF::0   
+2: COMPLETE: 5 tests Segment(s) executed
+2: 
+2/4 Test #2: coverage-sample_app-sample_app_cmds .......   Passed    0.00 sec
+test 3
+    Start 3: coverage-sample_app-sample_app_utils
+
+3: Test command: /tmp/vdd_sample_app_coverage_1d7z8mhh/cFS/build/native/default_cpu1/apps/sample_app/unit-test/coverage-sample_app-sample_app_utils-testrunner
+3: Working Directory: /tmp/vdd_sample_app_coverage_1d7z8mhh/cFS/build/native/default_cpu1/apps/sample_app/unit-test
+3: Test timeout computed to be: 10000000
+3: 
+3: [BEGIN] UNIT TEST
+3: 
+3: [BEGIN] 01 SETUP
+3: [  END] No test cases
+3: 
+3: [BEGIN] 01 SAMPLE_APP_TblValidationFunc
+3: [ PASS] 01.001 coveragetest_sample_app_utils.c:58 - SAMPLE_APP_TblValidationFunc(&TestTblData) (0) == CFE_SUCCESS (0)
+3: [ PASS] 01.002 coveragetest_sample_app_utils.c:62 - SAMPLE_APP_TblValidationFunc(&TestTblData) (-1) == SAMPLE_APP_PLATFORM_TABLE_OUT_OF_RANGE_ERR_CODE (-1)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 01 SAMPLE_APP_TblValidationFunc TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 02 SAMPLE_APP_GetCrc
+3: [ PASS] 02.001 coveragetest_sample_app_utils.c:83 - CallCount: CFE_ES_WriteToSysLog() (1) == 1 (1)
+3: [ PASS] 02.002 coveragetest_sample_app_utils.c:87 - CallCount: CFE_ES_WriteToSysLog() (2) == 2 (2)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 02 SAMPLE_APP_GetCrc    TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 02 SUMMARY              TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: COMPLETE: 2 tests Segment(s) executed
+3: 
+3/4 Test #3: coverage-sample_app-sample_app_utils ......   Passed    0.00 sec
+test 4
+    Start 4: coverage-sample_app-sample_app_dispatch
+
+4: Test command: /tmp/vdd_sample_app_coverage_1d7z8mhh/cFS/build/native/default_cpu1/apps/sample_app/unit-test/coverage-sample_app-sample_app_dispatch-testrunner
+4: Working Directory: /tmp/vdd_sample_app_coverage_1d7z8mhh/cFS/build/native/default_cpu1/apps/sample_app/unit-test
+4: Test timeout computed to be: 10000000
+4: 
+4: [BEGIN] UNIT TEST
+4: 
+4: [BEGIN] 01 SETUP
+4: [  END] No test cases
+4: 
+4: [BEGIN] 01 SAMPLE_APP_TaskPipe
+4: [ INFO] eventcheck.c:124:CheckEvent will match: SAMPLE_APP_MID_ERR_EID(5), "SAMPLE: invalid command packet,MID = 0x%x"
+4: [ PASS] 01.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.002 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.003 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.004 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.005 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.006 coveragetest_sample_app_dispatch.c:92 - EventTest.MatchCount (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 01 SAMPLE_APP_TaskPipe  TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 02 SAMPLE_APP_ProcessGroundCommand
+4: [ INFO] eventcheck.c:124:CheckEvent will match: SAMPLE_APP_CMD_LEN_ERR_EID(6), "Invalid Msg length: ID = 0x%X,  CC = %u, Len = %u, Expected = %u"
+4: [ PASS] 02.001 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 02.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 02.003 coveragetest_sample_app_dispatch.c:139 - CallCount: SAMPLE_APP_NoopCmd() (1) == 1 (1)
+4: [ PASS] 02.004 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 02.005 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 02.006 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 02.007 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 02.008 coveragetest_sample_app_dispatch.c:150 - CallCount: SAMPLE_APP_NoopCmd() (1) == 1 (1)
+4: [ PASS] 02.009 coveragetest_sample_app_dispatch.c:151 - EventTest.MatchCount (1) == 1 (1)
+4: [ PASS] 02.010 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 02.011 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 02.012 coveragetest_sample_app_dispatch.c:161 - CallCount: SAMPLE_APP_ResetCountersCmd() (1) == 1 (1)
+4: [ PASS] 02.013 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 02.014 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 02.015 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 02.016 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 02.017 coveragetest_sample_app_dispatch.c:172 - CallCount: SAMPLE_APP_ResetCountersCmd() (1) == 1 (1)
+4: [ PASS] 02.018 coveragetest_sample_app_dispatch.c:173 - EventTest.MatchCount (2) == 2 (2)
+4: [ PASS] 02.019 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 02.020 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 02.021 coveragetest_sample_app_dispatch.c:186 - CallCount: SAMPLE_APP_ProcessCmd() (1) == 1 (1)
+4: [ PASS] 02.022 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 02.023 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 02.024 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 02.025 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 02.026 coveragetest_sample_app_dispatch.c:197 - CallCount: SAMPLE_APP_ProcessCmd() (1) == 1 (1)
+4: [ PASS] 02.027 coveragetest_sample_app_dispatch.c:198 - EventTest.MatchCount (3) == 3 (3)
+4: [ PASS] 02.028 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 02.029 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 02.030 coveragetest_sample_app_dispatch.c:208 - CallCount: SAMPLE_APP_DisplayParamCmd() (1) == 1 (1)
+4: [ PASS] 02.031 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 02.032 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 02.033 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 02.034 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 02.035 coveragetest_sample_app_dispatch.c:219 - CallCount: SAMPLE_APP_DisplayParamCmd() (1) == 1 (1)
+4: [ PASS] 02.036 coveragetest_sample_app_dispatch.c:220 - EventTest.MatchCount (4) == 4 (4)
+4: [ INFO] eventcheck.c:124:CheckEvent will match: SAMPLE_APP_CC_ERR_EID(2), "Invalid ground command code: CC = %d"
+4: [ PASS] 02.037 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 02.038 coveragetest_sample_app_dispatch.c:231 - EventTest.MatchCount (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 02 SAMPLE_APP_ProcessGroundCommand TOTAL::38    PASS::38    FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 03 SAMPLE_APP_VerifyCmdLength
+4: [ INFO] eventcheck.c:124:CheckEvent will match: SAMPLE_APP_CMD_LEN_ERR_EID(6), "Invalid Msg length: ID = 0x%X,  CC = %u, Len = %u, Expected = %u"
+4: [ PASS] 03.001 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 03.002 coveragetest_sample_app_dispatch.c:258 - EventTest.MatchCount (0) == 0 (0)
+4: [ PASS] 03.003 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 03.004 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 03.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 03.006 coveragetest_sample_app_dispatch.c:271 - EventTest.MatchCount (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 03 SAMPLE_APP_VerifyCmdLength TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 03 SUMMARY              TOTAL::50    PASS::50    FAIL::0     MIR::0     TSF::0     TTF::0   
+4: COMPLETE: 3 tests Segment(s) executed
+4: 
+4/4 Test #4: coverage-sample_app-sample_app_dispatch ...   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =   0.01 sec

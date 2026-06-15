@@ -1,0 +1,18 @@
+name: coverage-vxworks-console-bsp
+classname: coverage-vxworks-console-bsp
+time_seconds: 0.00100379
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_ConsoleOutput_Impl
+[ PASS] 01.001 coveragetest-console-bsp.c:55 - TestOutputBuffer (abcd) == abcd
+[ PASS] 01.002 coveragetest-console-bsp.c:59 - TestOutputBuffer (abcdefghijklmnopab) == abcdefghijklmnopab
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_ConsoleOutput_Impl TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+COMPLETE: 1 tests Segment(s) executed

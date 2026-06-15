@@ -1,0 +1,23 @@
+name: bin-sem-test
+classname: bin-sem-test
+time_seconds: 1.08407
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 Test_BinSem
+[ PASS] 01.001 bin-sem-test.c:86 - OS_BinSemGetInfo(OS_OBJECT_ID_UNDEFINED, &sem_prop) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 01.002 bin-sem-test.c:87 - OS_BinSemFlush(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 01.003 bin-sem-test.c:88 - OS_BinSemGive(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 01.004 bin-sem-test.c:89 - OS_BinSemTake(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 01.005 bin-sem-test.c:90 - OS_BinSemTimedWait(OS_OBJECT_ID_UNDEFINED, 0) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 01.006 bin-sem-test.c:91 - OS_BinSemDelete(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 01.007 bin-sem-test.c:94 - OS_BinSemCreate(NULL, "Test_Sem", 0, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.008 bin-sem-test.c:95 - OS_BinSemCreate(&sem_id[0], NULL, 0, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.009 bin-sem-test.c:96 - OS_BinSemGetInfo(sem_id[0], NUL...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

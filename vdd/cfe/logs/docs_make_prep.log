@@ -1,0 +1,201 @@
+$ make SIMULATION=native prep
+# cwd: /tmp/vdd_cfe_docs_azgfvx93/cFS
+
+mkdir -p "build"
+(cd "build" && cmake -DCMAKE_INSTALL_PREFIX=/exe -DCMAKE_BUILD_TYPE=debug "/tmp/vdd_cfe_docs_azgfvx93/cFS/cfe")
+-- The C compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- OMIT_DEPRECATED=false: Deprecated elements included in build
+-- Performing Test IS_OPTION_SUPPORTED
+-- Performing Test IS_OPTION_SUPPORTED - Success
+-- Performing Test IS_OPTION_SUPPORTED
+-- Performing Test IS_OPTION_SUPPORTED - Success
+-- Performing Test IS_OPTION_SUPPORTED
+-- Performing Test IS_OPTION_SUPPORTED - Success
+-- Performing Test IS_OPTION_SUPPORTED
+-- Performing Test IS_OPTION_SUPPORTED - Success
+-- Performing Test IS_OPTION_SUPPORTED
+-- Performing Test IS_OPTION_SUPPORTED - Success
+-- Performing Test IS_OPTION_SUPPORTED
+-- Performing Test IS_OPTION_SUPPORTED - Success
+-- Performing Test IS_OPTION_SUPPORTED
+-- Performing Test IS_OPTION_SUPPORTED - Success
+-- Search path for modules: apps;libs;psp/fsw/modules;cfe/modules
+-- Module 'core_api' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/core_api
+-- Module 'core_private' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/core_private
+-- Module 'ci_lab' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/ci_lab
+-- Module 'to_lab' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab
+-- Module 'config' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/config
+-- Module 'es' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/es
+-- Module 'evs' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/evs
+-- Module 'fs' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/fs
+-- Module 'sb' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/sb
+-- Module 'tbl' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/tbl
+-- Module 'time' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/time
+-- Module 'osal' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/osal
+-- Module 'psp' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/psp
+-- Module 'msg' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/msg
+-- Module 'sbr' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/sbr
+-- Module 'resourceid' found at /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/resourceid
+-- OSAL_SYSTEM_BSPTYPE not defined, no OSAL implementation will be compiled
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/core_api/config/default_cfe_core_api_interface_cfg_values.h for cfe_core_api_interface_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/core_api/config/default_cfe_core_api_msgid_mapping.h for cfe_core_api_msgid_mapping.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/core_api/config/default_cfe_mission_cfg.h for cfe_mission_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/sample_defs/cfe_perfids.h for cfe_perfids.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/ci_lab/config/default_ci_lab_fcncode_values.h for ci_lab_fcncode_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/ci_lab/config/default_ci_lab_interface_cfg_values.h for ci_lab_interface_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/ci_lab/config/default_ci_lab_mission_cfg.h for ci_lab_mission_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/ci_lab/config/default_ci_lab_perfids.h for ci_lab_perfids.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/ci_lab/config/default_ci_lab_msg.h for ci_lab_msg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/ci_lab/config/default_ci_lab_msgdefs.h for ci_lab_msgdefs.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/ci_lab/config/default_ci_lab_msgstruct.h for ci_lab_msgstruct.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/ci_lab/config/default_ci_lab_topicid_values.h for ci_lab_topicid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_fcncode_values.h for to_lab_fcncode_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_interface_cfg_values.h for to_lab_interface_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_mission_cfg.h for to_lab_mission_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_perfids.h for to_lab_perfids.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_msg.h for to_lab_msg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_msgdefs.h for to_lab_msgdefs.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_msgstruct.h for to_lab_msgstruct.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_tbl.h for to_lab_tbl.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_tbldefs.h for to_lab_tbldefs.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_tblstruct.h for to_lab_tblstruct.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_topicid_values.h for to_lab_topicid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/es/config/default_cfe_es_mission_cfg.h for cfe_es_mission_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/es/config/default_cfe_es_interface_cfg_values.h for cfe_es_interface_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/es/config/default_cfe_es_memaddress.h for cfe_es_memaddress.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/es/config/default_cfe_es_extern_typedefs.h for cfe_es_extern_typedefs.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/es/config/default_cfe_es_fcncode_values.h for cfe_es_fcncode_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/es/config/default_cfe_es_msgdefs.h for cfe_es_msgdefs.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/es/config/default_cfe_es_msg.h for cfe_es_msg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/es/config/default_cfe_es_msgstruct.h for cfe_es_msgstruct.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/es/config/default_cfe_es_topicid_values.h for cfe_es_topicid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/evs/config/default_cfe_evs_mission_cfg.h for cfe_evs_mission_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/evs/config/default_cfe_evs_interface_cfg_values.h for cfe_evs_interface_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/evs/config/default_cfe_evs_extern_typedefs.h for cfe_evs_extern_typedefs.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/evs/config/default_cfe_evs_fcncode_values.h for cfe_evs_fcncode_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/evs/config/default_cfe_evs_msgdefs.h for cfe_evs_msgdefs.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/evs/config/default_cfe_evs_msg.h for cfe_evs_msg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/evs/config/default_cfe_evs_msgstruct.h for cfe_evs_msgstruct.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/evs/config/default_cfe_evs_topicid_values.h for cfe_evs_topicid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/fs/config/default_cfe_fs_mission_cfg.h for cfe_fs_mission_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/fs/config/default_cfe_fs_interface_cfg_values.h for cfe_fs_interface_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/fs/config/default_cfe_fs_filedef.h for cfe_fs_filedef.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/fs/config/default_cfe_fs_extern_typedefs.h for cfe_fs_extern_typedefs.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/sb/config/default_cfe_sb_mission_cfg.h for cfe_sb_mission_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/sb/config/default_cfe_sb_interface_cfg_values.h for cfe_sb_interface_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/sb/config/default_cfe_sb_extern_typedefs.h for cfe_sb_extern_typedefs.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/sb/config/default_cfe_sb_fcncode_values.h for cfe_sb_fcncode_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/sb/config/default_cfe_sb_msgdefs.h for cfe_sb_msgdefs.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/sb/config/default_cfe_sb_msg.h for cfe_sb_msg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/sb/config/default_cfe_sb_msgstruct.h for cfe_sb_msgstruct.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/sb/config/default_cfe_sb_topicid_values.h for cfe_sb_topicid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/tbl/config/default_cfe_tbl_mission_cfg.h for cfe_tbl_mission_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/tbl/config/default_cfe_tbl_interface_cfg_values.h for cfe_tbl_interface_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/tbl/config/default_cfe_tbl_extern_typedefs.h for cfe_tbl_extern_typedefs.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/tbl/config/default_cfe_tbl_fcncode_values.h for cfe_tbl_fcncode_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/tbl/config/default_cfe_tbl_msgdefs.h for cfe_tbl_msgdefs.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/tbl/config/default_cfe_tbl_msg.h for cfe_tbl_msg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/tbl/config/default_cfe_tbl_msgstruct.h for cfe_tbl_msgstruct.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/tbl/config/default_cfe_tbl_topicid_values.h for cfe_tbl_topicid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/time/config/default_cfe_time_mission_cfg.h for cfe_time_mission_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/time/config/default_cfe_time_interface_cfg_values.h for cfe_time_interface_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/time/config/default_cfe_time_extern_typedefs.h for cfe_time_extern_typedefs.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/time/config/default_cfe_time_fcncode_values.h for cfe_time_fcncode_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/time/config/default_cfe_time_msgdefs.h for cfe_time_msgdefs.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/time/config/default_cfe_time_msg.h for cfe_time_msg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/time/config/default_cfe_time_msgstruct.h for cfe_time_msgstruct.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/time/config/default_cfe_time_topicid_values.h for cfe_time_topicid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/msg/option_inc/default_cfe_msg_hdr_pri.h for cfe_msg_hdr.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/msg/option_inc/default_cfe_msg_sechdr.h for cfe_msg_sechdr.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/resourceid/option_inc/cfe_resourceid_simple.h for cfe_resourceid_typedef.h
+-- Configuring for system arch: native/default_cpu1
+-- The C compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- OMIT_DEPRECATED=false: Deprecated elements included in build
+-- Performing Test IS_OPTION_SUPPORTED
+-- Performing Test IS_OPTION_SUPPORTED - Success
+-- Performing Test IS_OPTION_SUPPORTED
+-- Performing Test IS_OPTION_SUPPORTED - Success
+-- Performing Test IS_OPTION_SUPPORTED
+-- Performing Test IS_OPTION_SUPPORTED - Success
+-- Performing Test IS_OPTION_SUPPORTED
+-- Performing Test IS_OPTION_SUPPORTED - Success
+-- Performing Test IS_OPTION_SUPPORTED
+-- Performing Test IS_OPTION_SUPPORTED - Success
+-- Performing Test IS_OPTION_SUPPORTED
+-- Performing Test IS_OPTION_SUPPORTED - Success
+-- Performing Test IS_OPTION_SUPPORTED
+-- Performing Test IS_OPTION_SUPPORTED - Success
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/core_api/config/default_cfe_core_api_base_msgid_values.h for cfe_core_api_base_msgid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/core_api/config/default_cfe_msgids.h for cfe_msgids.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/core_private/config/default_cfe_platform_cfg.h for platform_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/core_private/config/default_cfe_core_private_internal_cfg.h for cfe_core_private_internal_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/ci_lab/config/default_ci_lab_internal_cfg_values.h for ci_lab_internal_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/ci_lab/config/default_ci_lab_platform_cfg.h for ci_lab_platform_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/ci_lab/config/default_ci_lab_perfids.h for ci_lab_perfids.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/ci_lab/config/default_ci_lab_msgids.h for ci_lab_msgids.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/ci_lab/config/default_ci_lab_msgid_values.h for ci_lab_msgid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_internal_cfg_values.h for to_lab_internal_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_platform_cfg.h for to_lab_platform_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_perfids.h for to_lab_perfids.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_msgids.h for to_lab_msgids.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/config/default_to_lab_msgid_values.h for to_lab_msgid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/es/config/default_cfe_es_internal_cfg_values.h for cfe_es_internal_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/es/config/default_cfe_es_msgid_values.h for cfe_es_msgid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/es/config/default_cfe_es_msgids.h for cfe_es_msgids.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/es/config/default_cfe_es_platform_cfg.h for cfe_es_platform_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/evs/config/default_cfe_evs_internal_cfg_values.h for cfe_evs_internal_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/evs/config/default_cfe_evs_msgid_values.h for cfe_evs_msgid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/evs/config/default_cfe_evs_msgids.h for cfe_evs_msgids.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/evs/config/default_cfe_evs_platform_cfg.h for cfe_evs_platform_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/sb/config/default_cfe_sb_internal_cfg_values.h for cfe_sb_internal_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/sb/config/default_cfe_sb_msgid_values.h for cfe_sb_msgid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/sb/config/default_cfe_sb_msgids.h for cfe_sb_msgids.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/sb/config/default_cfe_sb_platform_cfg.h for cfe_sb_platform_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/tbl/config/default_cfe_tbl_internal_cfg_values.h for cfe_tbl_internal_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/tbl/config/default_cfe_tbl_msgid_values.h for cfe_tbl_msgid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/tbl/config/default_cfe_tbl_msgids.h for cfe_tbl_msgids.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/tbl/config/default_cfe_tbl_platform_cfg.h for cfe_tbl_platform_cfg.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/time/config/default_cfe_time_internal_cfg_values.h for cfe_time_internal_cfg_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/time/config/default_cfe_time_msgid_values.h for cfe_time_msgid_values.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/time/config/default_cfe_time_msgids.h for cfe_time_msgids.h
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/cfe/modules/time/config/default_cfe_time_platform_cfg.h for cfe_time_platform_cfg.h
+-- BSP Selection: generic-linux at /tmp/vdd_cfe_docs_azgfvx93/cFS/osal/src/bsp/generic-linux
+-- OSAL Selection: posix at /tmp/vdd_cfe_docs_azgfvx93/cFS/osal/src/os/posix
+-- OSAL Compile Definitions: _XOPEN_SOURCE=600;_POSIX_OS_
+-- PSP Selection: pc-linux
+-- Building Core Module: core_api
+-- Building Core Module: core_private
+-- Building Core Module: config
+-- Building Core Module: es
+-- Building Core Module: evs
+-- Building Core Module: fs
+-- Building Core Module: sb
+-- Building Core Module: tbl
+-- Building Core Module: time
+-- Building Core Module: psp
+-- Building Core Module: msg
+-- CCSDS primary header included in message header (not including CCSDS extended header)
+-- Message Id version 1 in use (MsgId V1)
+-- Building Core Module: sbr
+-- Using hashed map software bus routing implementation
+-- Building Core Module: resourceid
+-- Building Dynamic App: ci_lab targets=cpu1
+-- Building Dynamic App: to_lab targets=cpu1
+-- Using file: /tmp/vdd_cfe_docs_azgfvx93/cFS/apps/to_lab/fsw/tables/to_lab_sub.c for to_lab_sub.c
+-- Configuring done (0.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /tmp/vdd_cfe_docs_azgfvx93/cFS/build/native/default_cpu1
+-- Configuring done (1.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/vdd_cfe_docs_azgfvx93/cFS/build
+echo "-DCMAKE_INSTALL_PREFIX=/exe -DCMAKE_BUILD_TYPE=debug" > "build/.prep"

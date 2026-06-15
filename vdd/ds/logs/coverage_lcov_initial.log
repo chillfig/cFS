@@ -1,0 +1,32 @@
+$ lcov --capture --initial --directory build --output-file coverage_base.info
+# cwd: /tmp/vdd_ds_coverage_eom3aa5k/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Capturing coverage data from build
+geninfo cmd: '/usr/bin/geninfo build --output-filename coverage_base.info --initial --memory 0'
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_dat4Q9p
+Scanning build for .gcno files ...
+Found 5 graph files in build
+Processing build/native/default_cpu1/apps/ds/unit-test/CMakeFiles/coverage-ds-ds_dispatch-object.dir/tmp/vdd_ds_coverage_eom3aa5k/cFS/apps/ds/fsw/src/ds_dispatch.c.gcno
+Processing build/native/default_cpu1/apps/ds/unit-test/CMakeFiles/coverage-ds-ds_table-object.dir/tmp/vdd_ds_coverage_eom3aa5k/cFS/apps/ds/fsw/src/ds_table.c.gcno
+Processing build/native/default_cpu1/apps/ds/unit-test/CMakeFiles/coverage-ds-ds_app-object.dir/tmp/vdd_ds_coverage_eom3aa5k/cFS/apps/ds/fsw/src/ds_app.c.gcno
+Processing build/native/default_cpu1/apps/ds/unit-test/CMakeFiles/coverage-ds-ds_file-object.dir/tmp/vdd_ds_coverage_eom3aa5k/cFS/apps/ds/fsw/src/ds_file.c.gcno
+Processing build/native/default_cpu1/apps/ds/unit-test/CMakeFiles/coverage-ds-ds_cmds-object.dir/tmp/vdd_ds_coverage_eom3aa5k/cFS/apps/ds/fsw/src/ds_cmds.c.gcno
+Finished .info-file creation

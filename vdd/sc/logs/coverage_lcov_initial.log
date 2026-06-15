@@ -1,0 +1,35 @@
+$ lcov --capture --initial --directory build --output-file coverage_base.info
+# cwd: /tmp/vdd_sc_coverage_ldj9pgew/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Capturing coverage data from build
+geninfo cmd: '/usr/bin/geninfo build --output-filename coverage_base.info --initial --memory 0'
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_datFwgI
+Scanning build for .gcno files ...
+Found 8 graph files in build
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_loads-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_loads.c.gcno
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_atsrq-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_atsrq.c.gcno
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_rtsrq-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_rtsrq.c.gcno
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_cmds-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_cmds.c.gcno
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_app-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_app.c.gcno
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_state-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_state.c.gcno
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_dispatch-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_dispatch.c.gcno
+Processing build/native/default_cpu1/apps/sc/unit-test/CMakeFiles/coverage-sc-sc_utils-object.dir/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw/src/sc_utils.c.gcno
+Finished .info-file creation

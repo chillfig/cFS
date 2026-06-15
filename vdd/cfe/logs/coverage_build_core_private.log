@@ -1,0 +1,28 @@
+$ make -C build/native/default_cpu1/core_private
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS
+
+make: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/core_private'
+make[1]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  0%] Built target osal_generic-linux_impl
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  0%] Built target osal_bsp
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  0%] Built target ut_assert
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 22%] Built target ut_psp_api_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 66%] Built target ut_osapi_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 88%] Built target ut_core_api_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[100%] Built target ut_core_private_stubs
+make[1]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/core_private'

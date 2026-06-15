@@ -1,0 +1,31 @@
+name: sem-speed-test
+classname: sem-speed-test
+time_seconds: 5.04313
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 SemSpeedTest
+[ PASS] 01.001 sem-speed-test.c:171 - Sem 1 create Id=30001 Rc=0
+[ PASS] 01.002 sem-speed-test.c:173 - Sem 2 create Id=30002 Rc=0
+[ PASS] 01.003 sem-speed-test.c:185 - Task 1 create Id=10001 Rc=0
+Starting task 1
+[ PASS] 01.004 sem-speed-test.c:194 - Task 2 create Id=10002 Rc=0
+Starting task 2
+[ PASS] 01.005 sem-speed-test.c:218 - Task 1 delete Rc=0
+[ PASS] 01.006 sem-speed-test.c:221 - Task 2 delete Rc=0
+[ PASS] 01.007 sem-speed-test.c:224 - Sem 1 delete Rc=0
+[ PASS] 01.008 sem-speed-test.c:226 - Sem 2 delete Rc=0
+[ PASS] 01.009 sem-speed-test.c:229 - Task 1 work counter = 195108
+[ PASS] 01.010 sem-speed-test.c:230 - Task 2 work counter = 195108
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 SemSpeedTest         TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 Cleanup
+[  END] No test cases
+COMPLETE: 1 tests Segment(s) executed

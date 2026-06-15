@@ -1,0 +1,26 @@
+name: coverage-shared-module
+classname: coverage-shared-module
+time_seconds: 0.001015
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_ModuleAPI_Init
+[ PASS] 01.001 coveragetest-module.c:64 - OS_ModuleAPI_Init() (0) == OS_SUCCESS
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_ModuleAPI_Init    TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_ModuleLoad
+[ PASS] 02.001 coveragetest-module.c:75 - OS_ModuleLoad(&objid, "UT", "File", OS_MODULE_FLAG_GLOBAL_SYMBOLS) (0) == OS_SUCCESS (0)
+[ PASS] 02.002 coveragetest-module.c:76 - CallCount: OS_ModuleLoad_Impl() (1) == 1 (1)
+[ PASS] 02.003 coveragetest-module.c:78 - objid (1074397185) != OS_OBJECT_ID_UNDEFINED (0)
+[ PASS] 02.004 coveragetest-module.c:81 - OS_ModuleLoad(&objid, "UTS", "File2", OS_MODULE_FLAG_GLOBAL_SYMBOLS) (0) == OS_SUCCESS (0)
+[ PASS] 02.005 coveragetest-module.c:82 - CallCount: OS_ModuleLoad_Impl() (0) == 0 (0)
+[ PASS] 02.006 coveragetest-module.c:83 - objid (1074397186) != OS_OBJECT_ID_UNDEFINED (0)
+[ PASS] 02.007 co...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

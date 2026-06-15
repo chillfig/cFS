@@ -1,0 +1,34 @@
+$ lcov --capture --initial --directory build --output-file coverage_base.info
+# cwd: /tmp/vdd_lc_coverage_34dcgrn9/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Capturing coverage data from build
+geninfo cmd: '/usr/bin/geninfo build --output-filename coverage_base.info --initial --memory 0'
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_datqIXu
+Scanning build for .gcno files ...
+Found 7 graph files in build
+Processing build/native/default_cpu1/apps/lc/unit-test/CMakeFiles/coverage-lc-lc_watch-object.dir/tmp/vdd_lc_coverage_34dcgrn9/cFS/apps/lc/fsw/src/lc_watch.c.gcno
+Processing build/native/default_cpu1/apps/lc/unit-test/CMakeFiles/coverage-lc-lc_cmds-object.dir/tmp/vdd_lc_coverage_34dcgrn9/cFS/apps/lc/fsw/src/lc_cmds.c.gcno
+Processing build/native/default_cpu1/apps/lc/unit-test/CMakeFiles/coverage-lc-lc_dispatch-object.dir/tmp/vdd_lc_coverage_34dcgrn9/cFS/apps/lc/fsw/src/lc_dispatch.c.gcno
+Processing build/native/default_cpu1/apps/lc/unit-test/CMakeFiles/coverage-lc-lc_action-object.dir/tmp/vdd_lc_coverage_34dcgrn9/cFS/apps/lc/fsw/src/lc_action.c.gcno
+Processing build/native/default_cpu1/apps/lc/unit-test/CMakeFiles/coverage-lc-lc_utils-object.dir/tmp/vdd_lc_coverage_34dcgrn9/cFS/apps/lc/fsw/src/lc_utils.c.gcno
+Processing build/native/default_cpu1/apps/lc/unit-test/CMakeFiles/coverage-lc-lc_custom-object.dir/tmp/vdd_lc_coverage_34dcgrn9/cFS/apps/lc/fsw/src/lc_custom.c.gcno
+Processing build/native/default_cpu1/apps/lc/unit-test/CMakeFiles/coverage-lc-lc_app-object.dir/tmp/vdd_lc_coverage_34dcgrn9/cFS/apps/lc/fsw/src/lc_app.c.gcno
+Finished .info-file creation

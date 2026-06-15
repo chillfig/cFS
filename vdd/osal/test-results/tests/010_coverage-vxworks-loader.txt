@@ -1,0 +1,27 @@
+name: coverage-vxworks-loader
+classname: coverage-vxworks-loader
+time_seconds: 0.00194017
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_VxWorks_ModuleAPI_Impl_Init
+[ PASS] 01.001 coveragetest-loader.c:43 - UT_Call_OS_VxWorks_ModuleAPI_Impl_Init() (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_VxWorks_ModuleAPI_Impl_Init TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_ModuleLoad_Impl
+[ PASS] 02.001 coveragetest-loader.c:53 - OS_ModuleLoad_Impl(&token, "local") (0) == OS_SUCCESS (0)
+[ PASS] 02.002 coveragetest-loader.c:55 - OS_ModuleLoad_Impl(&token, "local") (-1) == OS_ERROR (-1)
+[ PASS] 02.003 coveragetest-loader.c:58 - OS_ModuleLoad_Impl(&token, "local") (-1) == OS_ERROR (-1)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 02 OS_ModuleLoad_Impl   TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 03 OS_ModuleUnload_Impl
+[ PASS] 03.001 coveragetest-loader.c:69 - OS_ModuleUnload_I...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

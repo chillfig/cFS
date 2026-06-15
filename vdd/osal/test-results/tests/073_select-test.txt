@@ -1,0 +1,24 @@
+name: select-test
+classname: select-test
+time_seconds: 3.6072
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 TestSelectSingleRead
+[ PASS] 01.001 select-test.c:73 - OS_BinSemCreate(&bin_sem_id, "BinSem1", 0, 0) (0) == OS_SUCCESS (0)
+[ PASS] 01.002 select-test.c:74 - bin_sem_id (262145) != UNDEFINED
+[ PASS] 01.003 select-test.c:76 - OS_BinSemGetInfo(bin_sem_id, &bin_sem_prop) (0) == OS_SUCCESS (0)
+[ INFO] select-test.c:77:BinSem1 value=0
+[ PASS] 01.004 select-test.c:103 - OS_SocketOpen(s1_socketid_ptr, OS_SocketDomain_INET, OS_SocketType_STREAM) (0) == OS_SUCCESS
+[ PASS] 01.005 select-test.c:108 - OS_SocketOpen(client_sockid_ptr, OS_SocketDomain_INET, OS_SocketType_STREAM) (0) == OS_SUCCESS (0)
+[ PASS] 01.006 select-test.c:111 - OS_SocketAddrInit(&addr, OS_SocketDomain_INET) (0) == OS_SUCCESS (0)
+[ PASS] 01.007 select-test.c:114 - OS_SocketAddrSetPort(&addr, portnum) (0) == OS_SUCCESS (0)
+[ PASS] 01.008 select-test.c:117 - OS_SocketAddrFromString(&addr, "127.0.0.1") (0) == OS_SUCCESS (0)
+[ PASS] 01.009 select-test.c:120 - OS_SocketBind(*server_sock...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

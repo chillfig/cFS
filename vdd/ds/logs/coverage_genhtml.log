@@ -1,0 +1,34 @@
+$ genhtml coverage_total.info --branch-coverage --output-directory lcov
+# cwd: /tmp/vdd_ds_coverage_eom3aa5k/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found 8 entries.
+Found common filename prefix "/tmp/vdd_ds_coverage_eom3aa5k/cFS"
+Generating output.
+Processing file osal/src/os/inc/osapi-idmap.h
+  lines=4 hit=4 functions=2 hit=2
+Processing file cfe/modules/core_api/fsw/inc/cfe_sb.h
+  lines=7 hit=7 functions=3 hit=3
+Processing file apps/ds/fsw/src/ds_dispatch.c
+  lines=169 hit=169 functions=23 hit=23 branches=72 hit=72
+Processing file apps/ds/fsw/src/ds_table.c
+  lines=315 hit=315 functions=23 hit=23 branches=172 hit=172
+Processing file apps/ds/fsw/src/ds_app.c
+  lines=59 hit=59 functions=3 hit=3 branches=36 hit=36
+Processing file apps/ds/fsw/src/ds_file.c
+  lines=258 hit=258 functions=13 hit=13 branches=98 hit=98
+Processing file cfe/modules/core_api/fsw/inc/cfe_resourceid.h
+  lines=2 hit=2 functions=1 hit=1
+Processing file apps/ds/fsw/src/ds_cmds.c
+  lines=473 hit=473 functions=20 hit=20 branches=112 hit=112
+Overall coverage rate:
+  lines......: 100.0% (1287 of 1287 lines)
+  functions......: 100.0% (88 of 88 functions)
+  branches......: 100.0% (490 of 490 branches)

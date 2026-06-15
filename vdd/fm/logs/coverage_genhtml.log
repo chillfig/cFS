@@ -1,0 +1,36 @@
+$ genhtml coverage_total.info --branch-coverage --output-directory lcov
+# cwd: /tmp/vdd_fm_coverage_mq5f_3if/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found 9 entries.
+Found common filename prefix "/tmp/vdd_fm_coverage_mq5f_3if/cFS"
+Generating output.
+Processing file apps/fm/fsw/src/fm_dispatch.c
+  lines=109 hit=109 functions=3 hit=3 branches=63 hit=63
+Processing file apps/fm/fsw/src/fm_child.c
+  lines=606 hit=606 functions=21 hit=21 branches=182 hit=182
+Processing file osal/src/os/inc/osapi-idmap.h
+  lines=4 hit=4 functions=2 hit=2
+Processing file apps/fm/fsw/src/fm_cmd_utils.c
+  lines=200 hit=200 functions=18 hit=18 branches=105 hit=105
+Processing file apps/fm/fsw/src/fm_table_utils.c
+  lines=53 hit=53 functions=4 hit=4 branches=30 hit=30
+Processing file apps/fm/fsw/src/fm_cmds.c
+  lines=382 hit=382 functions=19 hit=19 branches=108 hit=108
+Processing file cfe/modules/core_api/fsw/inc/cfe_sb.h
+  lines=7 hit=7 functions=3 hit=3
+Processing file osal/src/os/inc/osapi-clock.h
+  lines=2 hit=2 functions=1 hit=1
+Processing file apps/fm/fsw/src/fm_app.c
+  lines=50 hit=50 functions=2 hit=2 branches=24 hit=24
+Overall coverage rate:
+  lines......: 100.0% (1413 of 1413 lines)
+  functions......: 100.0% (73 of 73 functions)
+  branches......: 100.0% (512 of 512 branches)

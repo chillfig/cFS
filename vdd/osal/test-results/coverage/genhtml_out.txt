@@ -1,0 +1,144 @@
+$ genhtml /home/cfs/opensource_cFS/cFS/osal/build/coverage.info --branch-coverage --output-directory /home/cfs/opensource_cFS/cFS/osal/build/lcov-html
+# cwd: /home/cfs/opensource_cFS/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found 63 entries.
+Found common filename prefix "/home/cfs/opensource_cFS/cFS/osal/src/os"
+Generating output.
+Processing file shared/src/osapi-countsem.c
+  lines=50 hit=50 functions=8 hit=8 branches=24 hit=24
+Processing file portable/os-impl-posix-gettime.c
+  lines=15 hit=15 functions=2 hit=2 branches=4 hit=4
+Processing file vxworks/src/os-impl-sockets.c
+  lines=6 hit=6 functions=1 hit=1
+Processing file shared/src/osapi-timebase.c
+  lines=125 hit=125 functions=9 hit=9 branches=72 hit=72
+Processing file portable/os-impl-bsd-sockets-no-dns.c
+  lines=28 hit=28 functions=2 hit=2 branches=10 hit=10
+Processing file shared/src/osapi-common.c
+  lines=152 hit=152 functions=10 hit=10 branches=64 hit=64
+Processing file vxworks/src/os-impl-symtab.c
+  lines=44 hit=44 functions=5 hit=5 branches=18 hit=18
+Processing file portable/os-impl-bsd-select.c
+  lines=96 hit=96 functions=5 hit=5 branches=78 hit=78
+Processing file vxworks/src/os-impl-heap.c
+  lines=8 hit=8 functions=1 hit=1 branches=2 hit=2
+Processing file shared/src/osapi-filesys.c
+  lines=193 hit=193 functions=15 hit=15 branches=152 hit=152
+Processing file vxworks/src/os-impl-console.c
+  lines=28 hit=28 functions=3 hit=3 branches=14 hit=14
+Processing file shared/src/osapi-errors.c
+  lines=23 hit=23 functions=2 hit=2 branches=18 hit=18
+Processing file shared/src/osapi-idmap.c
+  lines=374 hit=374 functions=37 hit=37 branches=200 hit=200
+Processing file shared/src/osapi-printf.c
+  lines=65 hit=65 functions=6 hit=6 branches=28 hit=28
+Processing file shared/src/osapi-version.c
+  lines=12 hit=12 functions=4 hit=4
+Processing file vxworks/src/os-impl-idmap.c
+  lines=27 hit=27 functions=4 hit=4 branches=10 hit=10
+Processing file portable/os-impl-console-bsp.c
+  lines=16 hit=16 functions=1 hit=1 branches=6 hit=6
+Processing file vxworks/src/os-impl-timebase.c
+  lines=129 hit=129 functions=11 hit=11 branches=58 hit=58
+Processing file portable/os-impl-no-network-gethostname.c
+  lines=2 hit=2 functions=1 hit=1
+Processing file vxworks/src/os-impl-network.c
+  lines=14 hit=14 functions=2 hit=2 branches=6 hit=6
+Processing file inc/osapi-clock.h
+  lines=27 hit=27 functions=11 hit=11
+Processing file vxworks/src/os-impl-shell.c
+  lines=18 hit=18 functions=1 hit=1 branches=8 hit=8
+Processing file shared/inc/os-shared-idmap.h
+  lines=14 hit=14 functions=6 hit=6 branches=4 hit=4
+Processing file shared/src/osapi-select.c
+  lines=36 hit=36 functions=8 hit=8 branches=18 hit=18
+Processing file shared/src/osapi-queue.c
+  lines=60 hit=60 functions=7 hit=7 branches=46 hit=46
+Processing file vxworks/src/os-impl-files.c
+  lines=5 hit=5 functions=1 hit=1 branches=2 hit=2
+Processing file shared/src/osapi-binsem.c
+  lines=55 hit=55 functions=9 hit=9 branches=26 hit=26
+Processing file shared/src/osapi-clock.c
+  lines=28 hit=28 functions=5 hit=5 branches=18 hit=18
+Processing file portable/os-impl-no-shell.c
+  lines=2 hit=2 functions=1 hit=1
+Processing file shared/src/osapi-condvar.c
+  lines=66 hit=66 functions=11 hit=11 branches=32 hit=32
+Processing file vxworks/src/os-impl-common.c
+  lines=54 hit=54 functions=5 hit=5 branches=22 hit=22
+Processing file portable/os-impl-no-symtab.c
+  lines=6 hit=6 functions=3 hit=3
+Processing file vxworks/src/os-impl-dirs-globals.c
+  lines=3 hit=3 functions=1 hit=1
+Processing file shared/src/osapi-rwlock.c
+  lines=66 hit=66 functions=9 hit=9 branches=30 hit=30
+Processing file portable/os-impl-no-network-gethostid.c
+  lines=2 hit=2 functions=1 hit=1
+Processing file shared/src/osapi-file.c
+  lines=177 hit=177 functions=23 hit=23 branches=110 hit=110
+Processing file vxworks/src/os-impl-queues.c
+  lines=48 hit=48 functions=6 hit=6 branches=20 hit=20
+Processing file portable/os-impl-posix-file-allocate.c
+  lines=12 hit=12 functions=1 hit=1 branches=12 hit=12
+Processing file portable/os-impl-posix-dirs.c
+  lines=36 hit=36 functions=6 hit=6 branches=14 hit=14
+Processing file vxworks/src/os-impl-countsem.c
+  lines=28 hit=28 functions=7 hit=7 branches=4 hit=4
+Processing file shared/src/osapi-network.c
+  lines=13 hit=13 functions=3 hit=3 branches=10 hit=10
+Processing file vxworks/src/os-impl-mutex.c
+  lines=22 hit=22 functions=6 hit=6 branches=2 hit=2
+Processing file portable/os-impl-bsd-sockets.c
+  lines=259 hit=259 functions=17 hit=17 branches=100 hit=100
+Processing file vxworks/src/os-impl-loader.c
+  lines=36 hit=36 functions=4 hit=4 branches=8 hit=8
+Processing file portable/os-impl-posix-files.c
+  lines=99 hit=99 functions=6 hit=6 branches=66 hit=66
+Processing file shared/src/osapi-task.c
+  lines=111 hit=111 functions=13 hit=13 branches=56 hit=56
+Processing file shared/src/osapi-dir.c
+  lines=42 hit=42 functions=7 hit=7 branches=18 hit=18
+Processing file vxworks/src/os-impl-filesys.c
+  lines=107 hit=107 functions=7 hit=7 branches=46 hit=46
+Processing file portable/os-impl-no-condvar.c
+  lines=18 hit=18 functions=9 hit=9
+Processing file shared/src/osapi-mutex.c
+  lines=52 hit=52 functions=7 hit=7 branches=24 hit=24
+Processing file portable/os-impl-no-loader.c
+  lines=6 hit=6 functions=3 hit=3
+Processing file inc/osapi-error.h
+  lines=2 hit=2 functions=1 hit=1
+Processing file shared/src/osapi-sockets.c
+  lines=212 hit=212 functions=23 hit=23 branches=146 hit=146
+Processing file shared/src/osapi-time.c
+  lines=137 hit=137 functions=9 hit=9 branches=80 hit=80
+Processing file portable/os-impl-posix-io.c
+  lines=52 hit=52 functions=4 hit=4 branches=28 hit=28
+Processing file portable/os-impl-no-file-allocate.c
+  lines=2 hit=2 functions=1 hit=1
+Processing file portable/os-impl-no-sockets.c
+  lines=32 hit=32 functions=16 hit=16
+Processing file vxworks/src/os-impl-binsem.c
+  lines=33 hit=33 functions=8 hit=8 branches=6 hit=6
+Processing file shared/src/osapi-module.c
+  lines=102 hit=102 functions=9 hit=9 branches=62 hit=62
+Processing file shared/src/osapi-heap.c
+  lines=3 hit=3 functions=1 hit=1 branches=2 hit=2
+Processing file vxworks/src/os-impl-tasks.c
+  lines=88 hit=88 functions=14 hit=14 branches=32 hit=32
+Processing file inc/osapi-idmap.h
+  lines=9 hit=9 functions=4 hit=4
+Processing file portable/os-impl-bsd-sockets-dns.c
+  lines=46 hit=46 functions=2 hit=2 branches=24 hit=24
+Overall coverage rate:
+  lines......: 100.0% (3633 of 3633 lines)
+  functions......: 100.0% (425 of 425 functions)
+  branches......: 100.0% (1840 of 1840 branches)

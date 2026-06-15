@@ -1,0 +1,24 @@
+name: coverage-shared-common
+classname: coverage-shared-common
+time_seconds: 0.000958
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_API_Init
+[ PASS] 01.001 coveragetest-common.c:107 - OS_API_Init() (-1) == OS_ERROR (-1)
+[ PASS] 01.002 coveragetest-common.c:108 - OS_SharedGlobalVars.GlobalState (2880291038) == OS_SHUTDOWN_MAGIC_NUMBER (2880291038)
+[ PASS] 01.003 coveragetest-common.c:114 - OS_API_Init() (-1) == OS_ERROR (-1)
+[ PASS] 01.004 coveragetest-common.c:115 - OS_SharedGlobalVars.GlobalState (2880291038) == OS_SHUTDOWN_MAGIC_NUMBER (2880291038)
+[ PASS] 01.005 coveragetest-common.c:120 - OS_API_Init() (0) == OS_SUCCESS (0)
+[ PASS] 01.006 coveragetest-common.c:125 - OS_API_Init() (0) == OS_SUCCESS (0)
+[ PASS] 01.007 coveragetest-common.c:126 - OS_SharedGlobalVars.GlobalState (3193422046) == OS_INIT_MAGIC_NUMBER (3193422046)
+[ PASS] 01.008 coveragetest-common.c:129 - OS_API_Init() (0) == OS_SUCCESS (0)
+[ PASS] 01.009 coveragetest-common.c:130 - OS_SharedGlobalVars.GlobalState (3193422046) == OS_INIT_MAGIC_NUMBER (3193422046)
+[ PASS] 01.010 coveragetest-common.c:1...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

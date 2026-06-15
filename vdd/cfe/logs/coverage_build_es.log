@@ -1,0 +1,82 @@
+$ make -C build/native/default_cpu1/es
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS
+
+make: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/es'
+make[1]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  0%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_api.c.o
+[  7%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_apps.c.o
+[  7%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_backgroundtask.c.o
+[  7%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_cds.c.o
+[  7%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_cds_mempool.c.o
+[  7%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_crc.c.o
+[  7%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_erlog.c.o
+[  7%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_generic_pool.c.o
+[  7%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_mempool.c.o
+[  7%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_objtab.c.o
+[  7%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_perf.c.o
+[  7%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_resource.c.o
+[  7%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_start.c.o
+[ 15%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_syslog.c.o
+[ 15%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_task.c.o
+[ 15%] Building C object es/CMakeFiles/es.dir/fsw/src/cfe_es_dispatch.c.o
+[ 15%] Linking C static library libes.a
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 15%] Built target es
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 15%] Built target osal_generic-linux_impl
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 15%] Built target osal_bsp
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 15%] Built target ut_assert
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 15%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_api.c.o
+[ 15%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_apps.c.o
+[ 15%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_backgroundtask.c.o
+[ 15%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_cds.c.o
+[ 15%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_cds_mempool.c.o
+[ 15%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_crc.c.o
+[ 15%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_erlog.c.o
+[ 15%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_generic_pool.c.o
+[ 15%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_mempool.c.o
+[ 23%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_objtab.c.o
+[ 23%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_perf.c.o
+[ 23%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_resource.c.o
+[ 23%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_start.c.o
+[ 23%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_syslog.c.o
+[ 23%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_task.c.o
+[ 23%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_dispatch.c.o
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 23%] Built target coverage-es-ALL-object
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 38%] Built target ut_psp_api_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 69%] Built target ut_osapi_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 84%] Built target ut_core_api_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 92%] Built target ut_core_private_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 92%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-testrunner.dir/es_ut_helpers.c.o
+[ 92%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-testrunner.dir/es_UT.c.o
+[ 92%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-testrunner.dir/es_UT_objtab.c.o
+[ 92%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-testrunner.dir/es_UT_static_module_list.c.o
+[ 92%] Building C object es/ut-coverage/CMakeFiles/coverage-es-ALL-testrunner.dir/es_ut_default_dispatch.c.o
+[100%] Linking C executable coverage-es-ALL-testrunner
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[100%] Built target coverage-es-ALL-testrunner
+make[1]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/es'

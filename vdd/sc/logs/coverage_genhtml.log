@@ -1,0 +1,40 @@
+$ genhtml coverage_total.info --branch-coverage --output-directory lcov
+# cwd: /tmp/vdd_sc_coverage_ldj9pgew/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found 11 entries.
+Found common filename prefix "/tmp/vdd_sc_coverage_ldj9pgew/cFS/apps/sc/fsw"
+Generating output.
+Processing file src/sc_app.h
+  lines=14 hit=14 functions=7 hit=7
+Processing file src/sc_index_types.h
+  lines=35 hit=35 functions=17 hit=17 branches=6 hit=6
+Processing file /tmp/vdd_sc_coverage_ldj9pgew/cFS/cfe/modules/core_api/fsw/inc/cfe_sb.h
+  lines=7 hit=7 functions=3 hit=3
+Processing file src/sc_loads.c
+  lines=265 hit=265 functions=15 hit=15 branches=118 hit=118
+Processing file src/sc_atsrq.c
+  lines=208 hit=208 functions=10 hit=10 branches=70 hit=70
+Processing file src/sc_state.c
+  lines=80 hit=80 functions=3 hit=3 branches=30 hit=30
+Processing file src/sc_utils.c
+  lines=38 hit=38 functions=7 hit=7 branches=8 hit=8
+Processing file src/sc_app.c
+  lines=202 hit=202 functions=10 hit=10 branches=92 hit=92
+Processing file src/sc_rtsrq.c
+  lines=175 hit=175 functions=10 hit=10 branches=52 hit=52
+Processing file src/sc_dispatch.c
+  lines=115 hit=115 functions=3 hit=3 branches=68 hit=68
+Processing file src/sc_cmds.c
+  lines=225 hit=225 functions=11 hit=11 branches=99 hit=99
+Overall coverage rate:
+  lines......: 100.0% (1364 of 1364 lines)
+  functions......: 100.0% (96 of 96 functions)
+  branches......: 100.0% (543 of 543 branches)

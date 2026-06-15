@@ -1,0 +1,38 @@
+$ lcov --capture --initial --directory build --output-file coverage_base.info
+# cwd: /tmp/vdd_cs_coverage_tifa03mx/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Capturing coverage data from build
+geninfo cmd: '/usr/bin/geninfo build --output-filename coverage_base.info --initial --memory 0'
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_datRkUS
+Scanning build for .gcno files ...
+Found 11 graph files in build
+Processing build/native/default_cpu1/apps/cs/unit-test/CMakeFiles/coverage-cs-cs_compute-object.dir/tmp/vdd_cs_coverage_tifa03mx/cFS/apps/cs/fsw/src/cs_compute.c.gcno
+Processing build/native/default_cpu1/apps/cs/unit-test/CMakeFiles/coverage-cs-cs_cmds-object.dir/tmp/vdd_cs_coverage_tifa03mx/cFS/apps/cs/fsw/src/cs_cmds.c.gcno
+Processing build/native/default_cpu1/apps/cs/unit-test/CMakeFiles/coverage-cs-cs_table_processing-object.dir/tmp/vdd_cs_coverage_tifa03mx/cFS/apps/cs/fsw/src/cs_table_processing.c.gcno
+Processing build/native/default_cpu1/apps/cs/unit-test/CMakeFiles/coverage-cs-cs_memory_cmds-object.dir/tmp/vdd_cs_coverage_tifa03mx/cFS/apps/cs/fsw/src/cs_memory_cmds.c.gcno
+Processing build/native/default_cpu1/apps/cs/unit-test/CMakeFiles/coverage-cs-cs_app-object.dir/tmp/vdd_cs_coverage_tifa03mx/cFS/apps/cs/fsw/src/cs_app.c.gcno
+Processing build/native/default_cpu1/apps/cs/unit-test/CMakeFiles/coverage-cs-cs_utils-object.dir/tmp/vdd_cs_coverage_tifa03mx/cFS/apps/cs/fsw/src/cs_utils.c.gcno
+Processing build/native/default_cpu1/apps/cs/unit-test/CMakeFiles/coverage-cs-cs_init-object.dir/tmp/vdd_cs_coverage_tifa03mx/cFS/apps/cs/fsw/src/cs_init.c.gcno
+Processing build/native/default_cpu1/apps/cs/unit-test/CMakeFiles/coverage-cs-cs_eeprom_cmds-object.dir/tmp/vdd_cs_coverage_tifa03mx/cFS/apps/cs/fsw/src/cs_eeprom_cmds.c.gcno
+Processing build/native/default_cpu1/apps/cs/unit-test/CMakeFiles/coverage-cs-cs_app_cmds-object.dir/tmp/vdd_cs_coverage_tifa03mx/cFS/apps/cs/fsw/src/cs_app_cmds.c.gcno
+Processing build/native/default_cpu1/apps/cs/unit-test/CMakeFiles/coverage-cs-cs_dispatch-object.dir/tmp/vdd_cs_coverage_tifa03mx/cFS/apps/cs/fsw/src/cs_dispatch.c.gcno
+Processing build/native/default_cpu1/apps/cs/unit-test/CMakeFiles/coverage-cs-cs_table_cmds-object.dir/tmp/vdd_cs_coverage_tifa03mx/cFS/apps/cs/fsw/src/cs_table_cmds.c.gcno
+Finished .info-file creation

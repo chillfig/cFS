@@ -1,0 +1,23 @@
+name: count-sem-test
+classname: count-sem-test
+time_seconds: 1.2582
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 Test_CountSem
+[ PASS] 01.001 count-sem-test.c:86 - OS_CountSemGetInfo(OS_OBJECT_ID_UNDEFINED, &sem_prop) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 01.002 count-sem-test.c:87 - OS_CountSemGive(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 01.003 count-sem-test.c:88 - OS_CountSemTake(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 01.004 count-sem-test.c:89 - OS_CountSemTimedWait(OS_OBJECT_ID_UNDEFINED, 0) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 01.005 count-sem-test.c:90 - OS_CountSemDelete(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 01.006 count-sem-test.c:93 - OS_CountSemCreate(NULL, "Test_Sem", 0, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.007 count-sem-test.c:94 - OS_CountSemCreate(&sem_id[0], NULL, 0, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.008 count-sem-test.c:95 - OS_CountSemGetInfo(sem_id[0], NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.009 count-sem-test.c:96 - O...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

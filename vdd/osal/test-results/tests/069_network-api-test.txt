@@ -1,0 +1,22 @@
+name: network-api-test
+classname: network-api-test
+time_seconds: 24.0528
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 NetworkApiBadArgs
+[ PASS] 01.001 network-api-test.c:93 - OS_SocketOpen(NULL, OS_SocketDomain_INVALID, OS_SocketType_INVALID) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.002 network-api-test.c:94 - OS_SocketOpen(&socket_id, OS_SocketDomain_MAX, OS_SocketType_MAX) (-28) == OS_ERR_NOT_IMPLEMENTED (-28)
+[ PASS] 01.003 network-api-test.c:96 - OS_SocketAddrInit(&addr, OS_SocketDomain_INVALID) (-28) == OS_ERR_NOT_IMPLEMENTED (-28)
+[ PASS] 01.004 network-api-test.c:97 - OS_SocketAddrInit(NULL, OS_SocketDomain_INVALID) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.005 network-api-test.c:100 - OS_SocketAddrSetPort(&addr, 0xFFFF) (-34) == OS_ERR_BAD_ADDRESS (-34)
+[ PASS] 01.006 network-api-test.c:101 - OS_SocketAddrSetPort(NULL, 1234) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.007 network-api-test.c:104 - OS_SocketAddrGetPort(&port, &addr) (-34) == OS_ERR_BAD_ADDRESS (-34)
+[ PASS] 01.008 network-api-test.c:105 - OS_SocketAddrGetPort(NULL, &addr) (-2) == ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

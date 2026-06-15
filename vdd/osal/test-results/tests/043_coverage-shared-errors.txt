@@ -1,0 +1,26 @@
+name: coverage-shared-errors
+classname: coverage-shared-errors
+time_seconds: 0.0013325
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_GetErrorName
+[ PASS] 01.001 coveragetest-errors.c:38 - OS_GetErrorName(OS_ERROR, &err_name) (0) == OS_SUCCESS (0)
+[ PASS] 01.002 coveragetest-errors.c:39 - string(OS_ERROR) == OS_ERROR
+[ PASS] 01.003 coveragetest-errors.c:41 - OS_GetErrorName(-4444, &err_name) (0) == OS_SUCCESS (0)
+[ PASS] 01.004 coveragetest-errors.c:42 - string(UT_ERROR) == UT_ERROR
+[ PASS] 01.005 coveragetest-errors.c:44 - OS_GetErrorName(-4445, &err_name) (-1) == OS_ERROR (-1)
+[ PASS] 01.006 coveragetest-errors.c:45 - string(OS_UNKNOWN(-4445)) == OS_UNKNOWN(-4445)
+[ PASS] 01.007 coveragetest-errors.c:46 - OS_GetErrorName(-555555, &err_name) (-1) == OS_ERROR (-1)
+[ PASS] 01.008 coveragetest-errors.c:47 - OS_GetErrorName(-555555, NULL) (-2) == OS_INVALID_POINTER (-2)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_GetErrorName      TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

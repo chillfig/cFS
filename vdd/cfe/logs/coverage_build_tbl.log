@@ -1,0 +1,83 @@
+$ make -C build/native/default_cpu1/tbl
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS
+
+make: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/tbl'
+make[1]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  0%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_api.c.o
+[  0%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_accdesc.c.o
+[  0%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_load.c.o
+[  0%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_loadbuff.c.o
+[  0%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_registry.c.o
+[  0%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_regrec.c.o
+[  0%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_dump.c.o
+[  8%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_dumpctl.c.o
+[  8%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_handlelink.c.o
+[  8%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_valresult.c.o
+[  8%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_internal.c.o
+[  8%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_transaction.c.o
+[  8%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_task.c.o
+[  8%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_task_cmds.c.o
+[  8%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_objtab.c.o
+[  8%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_passthru_codec.c.o
+[  8%] Building C object tbl/CMakeFiles/tbl.dir/fsw/src/cfe_tbl_dispatch.c.o
+[  8%] Linking C static library libtbl.a
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  8%] Built target tbl
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  8%] Built target osal_generic-linux_impl
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  8%] Built target osal_bsp
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  8%] Built target ut_assert
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  8%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_api.c.o
+[  8%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_accdesc.c.o
+[  8%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_load.c.o
+[  8%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_loadbuff.c.o
+[  8%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_registry.c.o
+[ 16%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_regrec.c.o
+[ 16%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_dump.c.o
+[ 16%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_dumpctl.c.o
+[ 16%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_handlelink.c.o
+[ 16%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_valresult.c.o
+[ 16%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_internal.c.o
+[ 16%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_transaction.c.o
+[ 16%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_task.c.o
+[ 16%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_task_cmds.c.o
+[ 16%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_objtab.c.o
+[ 16%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_passthru_codec.c.o
+[ 16%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_dispatch.c.o
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 16%] Built target coverage-tbl-ALL-object
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 33%] Built target ut_psp_api_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 66%] Built target ut_osapi_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 83%] Built target ut_core_api_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 91%] Built target ut_core_private_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[100%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-testrunner.dir/tbl_ut_helpers.c.o
+[100%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-testrunner.dir/tbl_UT.c.o
+[100%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-testrunner.dir/tbl_ut_load.c.o
+[100%] Building C object tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-testrunner.dir/tbl_ut_support_passthru.c.o
+[100%] Linking C executable coverage-tbl-ALL-testrunner
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[100%] Built target coverage-tbl-ALL-testrunner
+make[1]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/tbl'

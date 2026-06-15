@@ -1,0 +1,232 @@
+$ make -C build/native/default_cpu1/apps/sbn
+# cwd: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS
+
+make: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1/apps/sbn'
+make[1]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[  0%] Building C object apps/sbn/CMakeFiles/sbn.dir/fsw/src/sbn_app.c.o
+[  0%] Building C object apps/sbn/CMakeFiles/sbn.dir/fsw/src/sbn_cmds.c.o
+[  0%] Building C object apps/sbn/CMakeFiles/sbn.dir/fsw/src/sbn_pack.c.o
+[  0%] Building C object apps/sbn/CMakeFiles/sbn.dir/fsw/src/sbn_subs.c.o
+[  7%] Linking C shared module sbn.so
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[  7%] Built target sbn
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[  7%] Building C object osal/generic-linux_impl/CMakeFiles/osal_generic-linux_impl.dir/src/bsp_start.c.o
+[  7%] Building C object osal/generic-linux_impl/CMakeFiles/osal_generic-linux_impl.dir/src/bsp_console.c.o
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[  7%] Built target osal_generic-linux_impl
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[  7%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o
+[  7%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o
+[  7%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o
+[ 14%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o
+[ 14%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o
+[ 14%] Linking C static library libosal_bsp.a
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 14%] Built target osal_bsp
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 14%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/utassert.c.o
+[ 14%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/utlist.c.o
+[ 14%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/utstubs.c.o
+[ 14%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/uttest.c.o
+[ 14%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/uttools.c.o
+[ 14%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/utbsp.c.o
+[ 14%] Linking C static library libut_assert.a
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 14%] Built target ut_assert
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 14%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_cache_api_stubs.c.o
+[ 14%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_cds_api_handlers.c.o
+[ 21%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_cds_api_stubs.c.o
+[ 21%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_eepromaccess_api_stubs.c.o
+[ 21%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_endian_handlers.c.o
+[ 21%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_endian_stubs.c.o
+[ 21%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_error_stubs.c.o
+[ 21%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_exception_api_handlers.c.o
+[ 21%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_exception_api_stubs.c.o
+[ 21%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_exceptionstorage_api_stubs.c.o
+[ 21%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_globaldata_stubs.c.o
+[ 21%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_id_api_handlers.c.o
+[ 21%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_id_api_stubs.c.o
+[ 28%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memaccess_api_handlers.c.o
+[ 28%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memaccess_api_stubs.c.o
+[ 28%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memory_stubs.c.o
+[ 28%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memrange_api_handlers.c.o
+[ 28%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memrange_api_stubs.c.o
+[ 28%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_module_stubs.c.o
+[ 28%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_port_api_stubs.c.o
+[ 28%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_ssr_api_stubs.c.o
+[ 28%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_stubs.c.o
+[ 28%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_timertick_api_handlers.c.o
+[ 28%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_timertick_api_stubs.c.o
+[ 28%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_version_api_handlers.c.o
+[ 35%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_version_api_stubs.c.o
+[ 35%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_watchdog_api_handlers.c.o
+[ 35%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_watchdog_api_stubs.c.o
+[ 35%] Linking C static library libut_psp_api_stubs.a
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 35%] Built target ut_psp_api_stubs
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 35%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/utstub-helpers.c.o
+[ 35%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-binsem-stubs.c.o
+[ 35%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-binsem-handlers.c.o
+[ 35%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-clock-stubs.c.o
+[ 35%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-clock-handlers.c.o
+[ 35%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-common-stubs.c.o
+[ 35%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-common-handlers.c.o
+[ 42%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-condvar-stubs.c.o
+[ 42%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-countsem-stubs.c.o
+[ 42%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-countsem-handlers.c.o
+[ 42%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-dir-stubs.c.o
+[ 42%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-dir-handlers.c.o
+[ 42%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-error-stubs.c.o
+[ 42%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-error-handlers.c.o
+[ 42%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-file-stubs.c.o
+[ 42%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-file-handlers.c.o
+[ 42%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-filesys-stubs.c.o
+[ 42%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-filesys-handlers.c.o
+[ 42%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-heap-stubs.c.o
+[ 50%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-heap-handlers.c.o
+[ 50%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-idmap-stubs.c.o
+[ 50%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-idmap-handlers.c.o
+[ 50%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-module-stubs.c.o
+[ 50%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-module-handlers.c.o
+[ 50%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-mutex-stubs.c.o
+[ 50%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-mutex-handlers.c.o
+[ 50%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-network-stubs.c.o
+[ 50%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-network-handlers.c.o
+[ 50%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-printf-stubs.c.o
+[ 50%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-printf-handlers.c.o
+[ 50%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-queue-stubs.c.o
+[ 57%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-queue-handlers.c.o
+[ 57%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-rwlock-stubs.c.o
+[ 57%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-rwlock-handlers.c.o
+[ 57%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-select-stubs.c.o
+[ 57%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-shell-stubs.c.o
+[ 57%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-sockets-stubs.c.o
+[ 57%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-sockets-handlers.c.o
+[ 57%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-task-stubs.c.o
+[ 57%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-task-handlers.c.o
+[ 57%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-timer-stubs.c.o
+[ 57%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-timer-handlers.c.o
+[ 64%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-timebase-stubs.c.o
+[ 64%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-timebase-handlers.c.o
+[ 64%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-version-stubs.c.o
+[ 64%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-version-handlers.c.o
+[ 64%] Linking C static library libut_osapi_stubs.a
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 64%] Built target ut_osapi_stubs
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_config_handlers.c.o
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_config_stubs.c.o
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_es_handlers.c.o
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_es_stubs.c.o
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_evs_handlers.c.o
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_evs_stubs.c.o
+[ 71%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_fs_handlers.c.o
+[ 71%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_fs_stubs.c.o
+[ 71%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_msg_handlers.c.o
+[ 71%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_msg_stubs.c.o
+[ 71%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_resourceid_handlers.c.o
+[ 71%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_resourceid_stubs.c.o
+[ 71%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_sb_handlers.c.o
+[ 71%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_sb_stubs.c.o
+[ 71%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_tbl_handlers.c.o
+[ 71%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_tbl_stubs.c.o
+[ 71%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_time_handlers.c.o
+[ 78%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_time_stubs.c.o
+[ 78%] Linking C static library libut_core_api_stubs.a
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 78%] Built target ut_core_api_stubs
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 78%] Building C object apps/sbn/ut-stubs/CMakeFiles/ut_sbn_stubs.dir/sbn_stubs.c.o
+[ 78%] Linking C static library libut_sbn_stubs.a
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 78%] Built target ut_sbn_stubs
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 78%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_app_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_app.c.o
+[ 85%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_app_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_cmds.c.o
+[ 85%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_app_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_subs.c.o
+[ 85%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_app_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_pack.c.o
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 85%] Built target ut_sbn-sbn_app_object
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 85%] Building C object apps/sbn/unit-test/CMakeFiles/sbn-sbn_app-testrunner.dir/coveragetest/coveragetest_sbn_app.c.o
+[ 85%] Building C object apps/sbn/unit-test/CMakeFiles/sbn-sbn_app-testrunner.dir/coveragetest/sbn_coveragetest_common.c.o
+[ 85%] Linking C executable sbn-sbn_app-testrunner
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 85%] Built target sbn-sbn_app-testrunner
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 85%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_subs_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_app.c.o
+[ 92%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_subs_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_cmds.c.o
+[ 92%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_subs_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_subs.c.o
+[ 92%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_subs_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_pack.c.o
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 92%] Built target ut_sbn-sbn_subs_object
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[ 92%] Building C object apps/sbn/unit-test/CMakeFiles/sbn-sbn_subs-testrunner.dir/coveragetest/coveragetest_sbn_subs.c.o
+[100%] Building C object apps/sbn/unit-test/CMakeFiles/sbn-sbn_subs-testrunner.dir/coveragetest/sbn_coveragetest_common.c.o
+[100%] Linking C executable sbn-sbn_subs-testrunner
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[100%] Built target sbn-sbn_subs-testrunner
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[100%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_pack_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_app.c.o
+[100%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_pack_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_cmds.c.o
+[100%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_pack_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_subs.c.o
+[100%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_pack_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_pack.c.o
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[100%] Built target ut_sbn-sbn_pack_object
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[100%] Building C object apps/sbn/unit-test/CMakeFiles/sbn-sbn_pack-testrunner.dir/coveragetest/coveragetest_sbn_pack.c.o
+[100%] Building C object apps/sbn/unit-test/CMakeFiles/sbn-sbn_pack-testrunner.dir/coveragetest/sbn_coveragetest_common.c.o
+[100%] Linking C executable sbn-sbn_pack-testrunner
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[100%] Built target sbn-sbn_pack-testrunner
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[100%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_cmds_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_app.c.o
+[100%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_cmds_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_cmds.c.o
+[100%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_cmds_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_subs.c.o
+[100%] Building C object apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_cmds_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_pack.c.o
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[100%] Built target ut_sbn-sbn_cmds_object
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[100%] Building C object apps/sbn/unit-test/CMakeFiles/sbn-sbn_cmds-testrunner.dir/coveragetest/coveragetest_sbn_cmds.c.o
+[100%] Building C object apps/sbn/unit-test/CMakeFiles/sbn-sbn_cmds-testrunner.dir/coveragetest/sbn_coveragetest_common.c.o
+[100%] Linking C executable sbn-sbn_cmds-testrunner
+make[2]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+[100%] Built target sbn-sbn_cmds-testrunner
+make[1]: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1'
+make: Leaving directory '/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1/apps/sbn'

@@ -1,0 +1,1710 @@
+$ ctest --output-on-failure --output-junit /home/cfs/opensource_cFS/cFS/vdd/osal/test-results/osal_junit.xml -j 4 --timeout 60
+# cwd: /home/cfs/opensource_cFS/cFS/osal/build
+
+Test project /home/cfs/opensource_cFS/cFS/osal/build
+      Start 70: osal-core-test
+      Start 47: coverage-shared-idmap
+      Start 55: coverage-shared-sockets
+      Start 44: coverage-shared-file
+ 1/85 Test #55: coverage-shared-sockets ...................   Passed    0.00 sec
+      Start 58: coverage-shared-time
+ 2/85 Test #44: coverage-shared-file ......................   Passed    0.00 sec
+      Start 45: coverage-shared-filesys
+ 3/85 Test #58: coverage-shared-time ......................   Passed    0.00 sec
+      Start  1: coverage-vxworks-binsem
+ 4/85 Test #45: coverage-shared-filesys ...................   Passed    0.00 sec
+      Start  3: coverage-vxworks-console
+ 5/85 Test  #1: coverage-vxworks-binsem ...................   Passed    0.00 sec
+      Start 48: coverage-shared-module
+ 6/85 Test  #3: coverage-vxworks-console ..................   Passed    0.00 sec
+      Start  7: coverage-vxworks-filesys
+ 7/85 Test #48: coverage-shared-module ....................   Passed    0.00 sec
+      Start 26: coverage-vxworks-bsd-sockets
+ 8/85 Test  #7: coverage-vxworks-filesys ..................   Passed    0.00 sec
+      Start 57: coverage-shared-timebase
+ 9/85 Test #26: coverage-vxworks-bsd-sockets ..............   Passed    0.00 sec
+      Start 39: coverage-shared-common
+10/85 Test #57: coverage-shared-timebase ..................   Passed    0.00 sec
+      Start  4: coverage-vxworks-countsem
+11/85 Test #39: coverage-shared-common ....................   Passed    0.00 sec
+      Start 56: coverage-shared-task
+12/85 Test  #4: coverage-vxworks-countsem .................   Passed    0.00 sec
+      Start 17: coverage-vxworks-tasks
+13/85 Test #56: coverage-shared-task ......................   Passed    0.00 sec
+      Start 18: coverage-vxworks-timebase
+14/85 Test #17: coverage-vxworks-tasks ....................   Passed    0.00 sec
+      Start 53: coverage-shared-rwlock
+15/85 Test #18: coverage-vxworks-timebase .................   Passed    0.00 sec
+      Start 21: coverage-vxworks-posix-files
+16/85 Test #53: coverage-shared-rwlock ....................   Passed    0.00 sec
+      Start 40: coverage-shared-condvar
+17/85 Test #21: coverage-vxworks-posix-files ..............   Passed    0.00 sec
+      Start 20: coverage-vxworks-posix-io
+18/85 Test #40: coverage-shared-condvar ...................   Passed    0.00 sec
+      Start  2: coverage-vxworks-common
+19/85 Test #20: coverage-vxworks-posix-io .................   Passed    0.00 sec
+      Start 38: coverage-shared-clock
+20/85 Test  #2: coverage-vxworks-common ...................   Passed    0.00 sec
+      Start 35: coverage-vxworks-no-condvar
+21/85 Test #38: coverage-shared-clock .....................   Passed    0.00 sec
+      Start 37: coverage-shared-binsem
+22/85 Test #35: coverage-vxworks-no-condvar ...............   Passed    0.00 sec
+      Start 11: coverage-vxworks-mutex
+23/85 Test #37: coverage-shared-binsem ....................   Passed    0.00 sec
+      Start 49: coverage-shared-mutex
+24/85 Test #11: coverage-vxworks-mutex ....................   Passed    0.00 sec
+      Start  9: coverage-vxworks-heap
+25/85 Test #49: coverage-shared-mutex .....................   Passed    0.00 sec
+      Start 41: coverage-shared-countsem
+26/85 Test  #9: coverage-vxworks-heap .....................   Passed    0.00 sec
+      Start 52: coverage-shared-queue
+27/85 Test #41: coverage-shared-countsem ..................   Passed    0.00 sec
+      Start 54: coverage-shared-select
+28/85 Test #52: coverage-shared-queue .....................   Passed    0.00 sec
+      Start 16: coverage-vxworks-symtab
+29/85 Test #54: coverage-shared-select ....................   Passed    0.00 sec
+      Start 13: coverage-vxworks-queues
+30/85 Test #16: coverage-vxworks-symtab ...................   Passed    0.00 sec
+      Start 27: coverage-vxworks-bsd-sockets-dns
+31/85 Test #13: coverage-vxworks-queues ...................   Passed    0.00 sec
+      Start 50: coverage-shared-network
+32/85 Test #27: coverage-vxworks-bsd-sockets-dns ..........   Passed    0.00 sec
+      Start 25: coverage-vxworks-bsd-select
+33/85 Test #50: coverage-shared-network ...................   Passed    0.00 sec
+      Start 19: coverage-vxworks-posix-gettime
+34/85 Test #25: coverage-vxworks-bsd-select ...............   Passed    0.00 sec
+      Start 23: coverage-vxworks-posix-dirs
+35/85 Test #19: coverage-vxworks-posix-gettime ............   Passed    0.00 sec
+      Start 14: coverage-vxworks-shell
+36/85 Test #23: coverage-vxworks-posix-dirs ...............   Passed    0.00 sec
+      Start  5: coverage-vxworks-dirs-globals
+37/85 Test #14: coverage-vxworks-shell ....................   Passed    0.00 sec
+      Start 42: coverage-shared-dir
+38/85 Test  #5: coverage-vxworks-dirs-globals .............   Passed    0.00 sec
+      Start 10: coverage-vxworks-loader
+39/85 Test #42: coverage-shared-dir .......................   Passed    0.00 sec
+      Start  8: coverage-vxworks-idmap
+40/85 Test #10: coverage-vxworks-loader ...................   Passed    0.00 sec
+      Start 22: coverage-vxworks-posix-file-allocate
+41/85 Test  #8: coverage-vxworks-idmap ....................   Passed    0.00 sec
+      Start 51: coverage-shared-printf
+42/85 Test #22: coverage-vxworks-posix-file-allocate ......   Passed    0.00 sec
+      Start 12: coverage-vxworks-network
+43/85 Test #51: coverage-shared-printf ....................   Passed    0.00 sec
+      Start 43: coverage-shared-errors
+44/85 Test #12: coverage-vxworks-network ..................   Passed    0.00 sec
+      Start  6: coverage-vxworks-files
+45/85 Test #43: coverage-shared-errors ....................   Passed    0.00 sec
+      Start 15: coverage-vxworks-sockets
+46/85 Test  #6: coverage-vxworks-files ....................   Passed    0.00 sec
+      Start 28: coverage-vxworks-bsd-sockets-no-dns
+47/85 Test #15: coverage-vxworks-sockets ..................   Passed    0.00 sec
+      Start 59: coverage-shared-version
+48/85 Test #28: coverage-vxworks-bsd-sockets-no-dns .......   Passed    0.00 sec
+      Start 29: coverage-vxworks-no-loader
+49/85 Test #59: coverage-shared-version ...................   Passed    0.00 sec
+      Start 46: coverage-shared-heap
+50/85 Test #29: coverage-vxworks-no-loader ................   Passed    0.00 sec
+      Start 30: coverage-vxworks-no-shell
+51/85 Test #46: coverage-shared-heap ......................   Passed    0.00 sec
+      Start 34: coverage-vxworks-no-sockets
+52/85 Test #30: coverage-vxworks-no-shell .................   Passed    0.00 sec
+      Start 24: coverage-vxworks-console-bsp
+53/85 Test #34: coverage-vxworks-no-sockets ...............   Passed    0.00 sec
+      Start 33: coverage-vxworks-no-network-gethostid
+54/85 Test #24: coverage-vxworks-console-bsp ..............   Passed    0.00 sec
+      Start 31: coverage-vxworks-no-symtab
+55/85 Test #33: coverage-vxworks-no-network-gethostid .....   Passed    0.00 sec
+      Start 36: coverage-vxworks-no-file-allocate
+56/85 Test #31: coverage-vxworks-no-symtab ................   Passed    0.00 sec
+      Start 32: coverage-vxworks-no-network-gethostname
+57/85 Test #36: coverage-vxworks-no-file-allocate .........   Passed    0.00 sec
+      Start 60: bin-sem-test
+58/85 Test #32: coverage-vxworks-no-network-gethostname ...   Passed    0.00 sec
+      Start 61: bin-sem-timeout-test
+59/85 Test #47: coverage-shared-idmap .....................   Passed    0.05 sec
+      Start 62: condvar-test
+60/85 Test #70: osal-core-test ............................***Failed    0.07 sec
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 TASK
+[ FAIL] 01.001 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.002 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.003 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.004 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.005 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.006 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.007 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.008 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.009 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.010 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.011 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.012 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.013 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.014 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.015 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.016 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.017 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.018 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.019 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.020 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.021 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.022 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.023 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.024 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.025 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.026 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.027 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.028 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.029 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.030 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.031 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.032 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.033 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.034 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.035 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.036 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.037 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.038 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.039 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.040 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.041 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.042 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.043 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.044 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.045 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.046 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.047 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.048 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.049 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.050 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.051 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.052 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.053 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.054 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.055 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.056 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.057 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.058 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.059 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.060 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.061 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.062 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.063 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.064 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ PASS] 01.065 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.066 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.067 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.068 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.069 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.070 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.071 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.072 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.073 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.074 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.075 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.076 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.077 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.078 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.079 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.080 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.081 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.082 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.083 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.084 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.085 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.086 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.087 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.088 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.089 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.090 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.091 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.092 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.093 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.094 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.095 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.096 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.097 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.098 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.099 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.100 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.101 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.102 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.103 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.104 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.105 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.106 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.107 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.108 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.109 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.110 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.111 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.112 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.113 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.114 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.115 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.116 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.117 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.118 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.119 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.120 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.121 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.122 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.123 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.124 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.125 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.126 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.127 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.128 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.129 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ PASS] 01.130 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ PASS] 01.131 osal-core-test.c:217 - OS_TaskDelete, redelete 1
+[ PASS] 01.132 osal-core-test.c:218 - OS_TaskDelete, redelete 2
+[ PASS] 01.133 osal-core-test.c:219 - OS_TaskDelete, redelete 3
+[ FAIL] 01.134 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.135 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.136 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.137 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.138 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.139 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.140 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.141 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.142 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.143 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.144 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.145 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.146 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.147 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.148 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.149 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.150 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.151 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.152 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.153 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.154 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.155 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.156 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.157 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.158 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.159 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.160 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.161 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.162 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.163 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.164 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.165 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.166 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.167 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.168 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.169 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.170 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.171 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.172 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.173 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.174 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.175 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.176 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.177 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.178 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.179 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.180 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.181 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.182 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.183 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.184 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.185 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.186 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.187 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.188 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.189 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.190 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.191 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.192 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.193 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.194 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.195 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.196 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.197 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.198 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.199 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.200 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.201 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.202 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.203 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.204 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.205 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.206 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.207 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.208 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.209 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.210 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.211 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.212 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.213 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.214 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.215 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.216 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.217 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.218 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.219 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.220 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.221 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.222 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.223 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.224 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.225 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.226 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.227 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.228 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.229 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.230 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.231 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.232 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.233 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.234 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.235 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.236 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.237 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.238 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.239 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.240 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.241 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.242 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.243 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.244 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.245 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.246 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.247 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.248 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.249 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.250 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.251 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.252 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.253 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.254 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.255 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.256 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.257 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.258 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.259 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.260 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.261 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.262 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.263 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.264 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.265 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.266 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.267 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.268 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.269 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.270 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.271 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.272 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.273 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.274 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.275 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.276 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.277 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.278 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.279 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.280 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.281 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.282 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.283 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.284 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.285 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.286 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.287 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.288 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.289 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.290 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.291 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.292 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.293 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.294 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.295 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.296 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.297 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.298 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.299 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.300 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.301 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.302 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.303 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.304 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.305 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.306 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.307 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.308 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.309 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.310 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.311 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.312 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.313 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.314 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.315 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.316 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.317 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.318 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.319 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.320 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.321 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.322 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.323 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.324 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.325 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.326 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.327 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.328 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.329 osal-core-test.c:274 - OS_TaskCreate, recreate 0
+[ PASS] 01.330 osal-core-test.c:284 - OS_TaskCreate, dupe name 0
+[ FAIL] 01.331 osal-core-test.c:293 - OS_TaskCreate, recreate 2
+[ FAIL] 01.332 osal-core-test.c:302 - OS_TaskCreate, recreate 3
+[ FAIL] 01.333 osal-core-test.c:306 - OS_TaskGetIdByName, Task 0
+[ PASS] 01.334 osal-core-test.c:309 - OS_TaskGetIdByName, Task 1
+[ FAIL] 01.335 osal-core-test.c:312 - OS_TaskGetIdByName, Task 2
+[ FAIL] 01.336 osal-core-test.c:315 - OS_TaskGetIdByName, Task 3
+[ PASS] 01.337 osal-core-test.c:321 - OS_TaskDelete, Old ID
+[ FAIL] 01.338 osal-core-test.c:323 - OS_TaskDelete, Task 0
+[ PASS] 01.339 osal-core-test.c:324 - OS_TaskDelete, Task 1
+[ FAIL] 01.340 osal-core-test.c:325 - OS_TaskDelete, Task 2
+[ FAIL] 01.341 osal-core-test.c:326 - OS_TaskDelete, Task 3
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 TASK                 TOTAL::341   PASS::139   FAIL::202   MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 TASKSTACK
+[ FAIL] 02.001 osal-core-test.c:338 - OS_TaskCreate(&task_0_id, "Task 0", task_test_stackptr_0, OSAL_STACKPTR_C(task_0_stack), sizeof(task_0_stack), OSAL_PRIORITY_C(TASK_0_PRIORITY), 0) (-1) == OS_SUCCESS (0)
+[ PASS] 02.002 osal-core-test.c:355 - loopcnt (0) < UT_EXIT_LOOP_MAX (100)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 02 TASKSTACK            TOTAL::2     PASS::1     FAIL::1     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 03 MSGQ
+[ PASS] 03.001 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.002 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.003 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.004 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.005 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.006 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.007 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.008 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.009 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.010 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.011 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.012 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.013 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.014 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.015 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.016 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.017 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.018 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.019 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.020 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.021 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.022 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.023 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.024 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.025 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.026 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.027 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.028 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.029 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.030 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.031 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.032 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.033 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.034 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.035 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.036 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.037 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.038 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.039 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.040 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.041 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.042 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.043 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.044 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.045 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.046 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.047 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.048 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.049 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.050 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.051 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.052 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.053 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.054 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.055 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.056 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.057 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.058 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.059 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.060 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.061 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.062 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.063 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.064 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.065 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.066 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.067 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.068 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.069 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.070 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.071 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.072 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.073 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.074 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.075 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.076 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.077 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.078 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.079 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.080 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.081 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.082 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.083 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.084 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.085 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.086 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.087 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.088 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.089 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.090 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.091 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.092 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.093 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.094 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.095 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.096 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.097 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.098 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.099 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.100 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.101 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.102 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.103 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.104 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.105 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.106 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.107 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.108 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.109 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.110 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.111 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.112 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.113 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.114 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.115 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.116 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.117 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.118 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.119 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.120 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.121 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.122 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.123 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.124 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.125 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.126 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.127 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.128 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.129 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.130 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.131 osal-core-test.c:395 - OS_QueueCreate, recreate 0
+[ PASS] 03.132 osal-core-test.c:399 - OS_QueueCreate, dupe name 0
+[ PASS] 03.133 osal-core-test.c:402 - OS_QueueCreate, recreate 2
+[ PASS] 03.134 osal-core-test.c:405 - OS_QueueCreate, recreate 3
+[ PASS] 03.135 osal-core-test.c:412 - OS_QueueGetIdByName, q 0
+[ PASS] 03.136 osal-core-test.c:415 - OS_QueueGetIdByName, q 1
+[ PASS] 03.137 osal-core-test.c:418 - OS_QueueGetIdByName, q 2
+[ PASS] 03.138 osal-core-test.c:421 - OS_QueueGetIdByName, q 3
+[ PASS] 03.139 osal-core-test.c:427 - OS_QueueDelete, Old ID
+[ PASS] 03.140 osal-core-test.c:432 - OS_QueueDelete, q 0
+[ PASS] 03.141 osal-core-test.c:435 - OS_QueueDelete, q 1
+[ PASS] 03.142 osal-core-test.c:438 - OS_QueueDelete, q 2
+[ PASS] 03.143 osal-core-test.c:441 - OS_QueueDelete, q 3
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 03 MSGQ                 TOTAL::143   PASS::143   FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 04 BSEM
+[ PASS] 04.001 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.002 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.003 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.004 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.005 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.006 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.007 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.008 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.009 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.010 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.011 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.012 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.013 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.014 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.015 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.016 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.017 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.018 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.019 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.020 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.021 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.022 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.023 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.024 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.025 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.026 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.027 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.028 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.029 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.030 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.031 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.032 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.033 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.034 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.035 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.036 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.037 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.038 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.039 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.040 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.041 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.042 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.043 osal-core-test.c:482 - OS_BinSemCreate, recreate 0
+[ PASS] 04.044 osal-core-test.c:485 - OS_BinSemCreate, dupe name 0
+[ PASS] 04.045 osal-core-test.c:488 - OS_BinSemCreate, recreate 2
+[ PASS] 04.046 osal-core-test.c:491 - OS_BinSemCreate, recreate 3
+[ PASS] 04.047 osal-core-test.c:494 - OS_BinSemGetIdByName, Bin 0
+[ PASS] 04.048 osal-core-test.c:497 - OS_BinSemGetIdByName, Bin 1
+[ PASS] 04.049 osal-core-test.c:500 - OS_BinSemGetIdByName, Bin 2
+[ PASS] 04.050 osal-core-test.c:503 - OS_BinSemGetIdByName, Bin 3
+[ PASS] 04.051 osal-core-test.c:509 - OS_BinSemDelete, Old ID
+[ PASS] 04.052 osal-core-test.c:512 - OS_BinSemDelete, Bin 0
+[ PASS] 04.053 osal-core-test.c:516 - OS_BinSemDelete, Bin 1
+[ PASS] 04.054 osal-core-test.c:519 - OS_BinSemDelete, Bin 2
+[ PASS] 04.055 osal-core-test.c:522 - OS_BinSemDelete, Bin 3
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 04 BSEM                 TOTAL::55    PASS::55    FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 05 MSEM
+[ PASS] 05.001 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.002 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.003 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.004 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.005 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.006 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.007 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.008 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.009 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.010 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.011 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.012 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.013 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.014 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.015 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.016 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.017 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.018 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.019 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.020 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.021 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.022 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.023 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.024 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.025 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.026 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.027 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.028 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.029 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.030 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.031 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.032 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.033 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.034 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.035 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.036 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.037 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.038 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.039 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.040 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.041 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.042 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.043 osal-core-test.c:563 - OS_MutSemCreate, recreate 0
+[ PASS] 05.044 osal-core-test.c:566 - OS_MutSemCreate, dupe name 0
+[ PASS] 05.045 osal-core-test.c:569 - OS_MutSemCreate, recreate 2
+[ PASS] 05.046 osal-core-test.c:572 - OS_MutSemCreate, recreate 3
+[ PASS] 05.047 osal-core-test.c:575 - OS_MutSemGetIdByName, Mut 0
+[ PASS] 05.048 osal-core-test.c:578 - OS_MutSemGetIdByName, Mut 1
+[ PASS] 05.049 osal-core-test.c:581 - OS_MutSemGetIdByName, Mut 2
+[ PASS] 05.050 osal-core-test.c:584 - OS_MutSemGetIdByName, Mut 3
+[ PASS] 05.051 osal-core-test.c:590 - OS_MutSemDelete, Old ID
+[ PASS] 05.052 osal-core-test.c:593 - OS_MutSemDelete, Mut 0
+[ PASS] 05.053 osal-core-test.c:597 - OS_MutSemDelete, Mut 1
+[ PASS] 05.054 osal-core-test.c:600 - OS_MutSemDelete, Mut 2
+[ PASS] 05.055 osal-core-test.c:603 - OS_MutSemDelete, Mut 3
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 05 MSEM                 TOTAL::55    PASS::55    FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 06 INFO
+[ FAIL] 06.001 osal-core-test.c:664 - OS_TaskCreate
+[ PASS] 06.002 osal-core-test.c:667 - OS_QueueCreate
+[ PASS] 06.003 osal-core-test.c:670 - OS_MutSemCreate
+[ FAIL] 06.004 osal-core-test.c:675 - OS_TaskGetInfo
+[ PASS] 06.005 osal-core-test.c:678 - OS_QueueGetInfo
+[ PASS] 06.006 osal-core-test.c:681 - OS_MutSemGetInfo
+[ FAIL] 06.007 osal-core-test.c:684 - OS_TaskDelete
+[ PASS] 06.008 osal-core-test.c:687 - OS_QueueDelete
+[ PASS] 06.009 osal-core-test.c:690 - OS_MutSemDelete
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 06 INFO                 TOTAL::9     PASS::6     FAIL::3     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 07 QUERIES
+[ FAIL] 07.001 osal-core-test.c:712 - OS_TaskCreate (-1) == OS_SUCCESS
+[ PASS] 07.002 osal-core-test.c:715 - OS_QueueCreate (0) == OS_SUCCESS
+[ PASS] 07.003 osal-core-test.c:718 - OS_BinSemCreate (0) == OS_SUCCESS
+[ PASS] 07.004 osal-core-test.c:721 - OS_MutSemCreate (0) == OS_SUCCESS
+[ FAIL] 07.005 osal-core-test.c:727 - Task NumInvocations (0) == 1
+[ PASS] 07.006 osal-core-test.c:728 - Task ObjList[0] (0) == 0
+[ PASS] 07.007 osal-core-test.c:735 - BinSem NumInvocations (1) == 1
+[ PASS] 07.008 osal-core-test.c:736 - BinSem ObjList[0] (40018) == 40018
+[ PASS] 07.009 osal-core-test.c:743 - CountSem NumInvocations (0) == 0
+[ PASS] 07.010 osal-core-test.c:755 - State.NumInvocations (4) >= 4
+[ PASS] 07.011 osal-core-test.c:759 - OS_GetResourceName (50019,-40) == OS_ERR_INVALID_SIZE
+[ PASS] 07.012 osal-core-test.c:765 - OS_GetResourceName (20045,0) == OS_SUCCESS
+[ PASS] 07.013 osal-core-test.c:769 - Output value correct
+[ PASS] 07.014 osal-core-test.c:772 - OS_GetResourceName (0,-16) == OS_ERR_INVALID_ID
+[ PASS] 07.015 osal-core-test.c:778 - OS_GetResourceName (40018,-13) == OS_ERR_NAME_TOO_LONG
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 07 QUERIES              TOTAL::15    PASS::13    FAIL::2     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 08 Cleanup
+[  END] No test cases
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 07 SUMMARY              TOTAL::620   PASS::412   FAIL::208   MIR::0     TSF::0     TTF::0   
+COMPLETE: 7 tests Segment(s) executed
+
+
+      Start 63: count-sem-test
+61/85 Test #60: bin-sem-test ..............................   Passed    1.08 sec
+      Start 64: count-sem-timeout-test
+62/85 Test #63: count-sem-test ............................   Passed    1.26 sec
+      Start 65: file-api-test
+63/85 Test #65: file-api-test .............................   Passed    0.03 sec
+      Start 66: file-sys-add-fixed-map-api-test
+64/85 Test #66: file-sys-add-fixed-map-api-test ...........   Passed    0.03 sec
+      Start 67: idmap-api-test
+65/85 Test #67: idmap-api-test ............................   Passed    0.06 sec
+      Start 68: mutex-test
+66/85 Test #61: bin-sem-timeout-test ......................***Timeout  60.02 sec
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 BinSemTimeoutTest
+[ PASS] 01.001 bin-sem-timeout-test.c:200 - BinSem1 create Id=40001 Rc=0
+[ PASS] 01.002 bin-sem-timeout-test.c:206 - BinSem1 take Rc=0
+[  TSF] 01.003 bin-sem-timeout-test.c:218 - Task 1 create Id=0 Rc=-1
+[ PASS] 01.004 bin-sem-timeout-test.c:224 - Timer 1 create Id=90001 Rc=0
+[ INFO] bin-sem-timeout-test.c:225:Timer Accuracy = 10000 microseconds 
+[ PASS] 01.005 bin-sem-timeout-test.c:231 - Timer 1 set Rc=0
+
+      Start 69: network-api-test
+67/85 Test #62: condvar-test ..............................***Timeout  60.01 sec
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 CondVarOps
+[ PASS] 01.001 condvar-test.c:350 - OS_CondVarCreate(NULL, "cvex", 0) (-2) == OS_INVALID_POINTER (-2)
+
+**BUG** OS_CondVarCreate():87:check '(var_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_CondVarCreate():88:check '(var_name) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 01.002 condvar-test.c:351 - OS_CondVarCreate(&cv_extra, NULL, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.003 condvar-test.c:356 - OS_CondVarCreate(&cv_id[i], cv_name, 0) (0) == OS_SUCCESS (0)
+[ PASS] 01.004 condvar-test.c:356 - OS_CondVarCreate(&cv_id[i], cv_name, 0) (0) == OS_SUCCESS (0)
+[ PASS] 01.005 condvar-test.c:356 - OS_CondVarCreate(&cv_id[i], cv_name, 0) (0) == OS_SUCCESS (0)
+[ PASS] 01.006 condvar-test.c:356 - OS_CondVarCreate(&cv_id[i], cv_name, 0) (0) == OS_SUCCESS (0)
+[ PASS] 01.007 condvar-test.c:359 - OS_CondVarCreate(&cv_extra, "cvex", 0) (-14) == OS_ERR_NO_FREE_IDS (-14)
+[ PASS] 01.008 condvar-test.c:360 - OS_CondVarDelete(cv_id[OS_MAX_CONDVARS - 1]) (0) == OS_SUCCESS (0)
+[ PASS] 01.009 condvar-test.c:361 - OS_CondVarCreate(&cv_extra, "cv000", 0) (-15) == OS_ERR_NAME_TAKEN (-15)
+[ PASS] 01.010 condvar-test.c:363 - OS_CondVarGetIdByName(&cv_extra, "cv000") (0) == OS_SUCCESS (0)
+[ PASS] 01.011 condvar-test.c:364 - objid (851970) == cv_id[0] (851970)
+[ PASS] 01.012 condvar-test.c:368 - OS_CondVarGetIdByName(&cv_extra, "cvex") (-17) == OS_ERR_NAME_NOT_FOUND (-17)
+[ PASS] 01.013 condvar-test.c:370 - OS_CondVarGetInfo(cv_id[0], &cv_prop) (0) == OS_SUCCESS (0)
+[ PASS] 01.014 condvar-test.c:371 - String: 'cv000' == 'cv000'
+[ PASS] 01.015 condvar-test.c:372 - OS_CondVarGetInfo(cv_id[OS_MAX_CONDVARS - 1], &cv_prop) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 01.016 condvar-test.c:373 - OS_CondVarGetInfo(OS_OBJECT_ID_UNDEFINED, &cv_prop) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 01.017 condvar-test.c:378 - OS_CondVarDelete(cv_id[i]) (0) == OS_SUCCESS (0)
+[ PASS] 01.018 condvar-test.c:378 - OS_CondVarDelete(cv_id[i]) (0) == OS_SUCCESS (0)
+[ PASS] 01.019 condvar-test.c:378 - OS_CondVarDelete(cv_id[i]) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 CondVarOps           TOTAL::19    PASS::19    FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 CondVarBasic
+[ PASS] 02.001 condvar-test.c:127 - OS_CondVarCreate(&condvar_id, "CondVar", 0) (0) == OS_SUCCESS (0)
+[ INFO] condvar-test.c:128:CondVar create Id=851974
+[ FAIL] 02.002 condvar-test.c:136 - OS_TaskCreate(&task_states[i].task_id, task_name, task_entry_points[i], OSAL_STACKPTR_C(&task_stacks[i]), sizeof(task_stacks[i]), OSAL_PRIORITY_C(10 + (i * 10)), 0) (-1) == OS_SUCCESS (0)
+[ INFO] condvar-test.c:144:Task1 create Id=0
+[ FAIL] 02.003 condvar-test.c:136 - OS_TaskCreate(&task_states[i].task_id, task_name, task_entry_points[i], OSAL_STACKPTR_C(&task_stacks[i]), sizeof(task_stacks[i]), OSAL_PRIORITY_C(10 + (i * 10)), 0) (-1) == OS_SUCCESS (0)
+[ INFO] condvar-test.c:144:Task2 create Id=0
+[ FAIL] 02.004 condvar-test.c:136 - OS_TaskCreate(&task_states[i].task_id, task_name, task_entry_points[i], OSAL_STACKPTR_C(&task_stacks[i]), sizeof(task_stacks[i]), OSAL_PRIORITY_C(10 + (i * 10)), 0) (-1) == OS_SUCCESS (0)
+[ INFO] condvar-test.c:144:Task3 create Id=0
+[ PASS] 02.005 condvar-test.c:160 - OS_CondVarLock(condvar_id) (0) == OS_SUCCESS (0)
+[ PASS] 02.006 condvar-test.c:161 - total_work (0) == num_signals (0)
+[ PASS] 02.007 condvar-test.c:163 - OS_CondVarSignal(condvar_id) (0) == OS_SUCCESS (0)
+[ PASS] 02.008 condvar-test.c:167 - curr_condition (0x7) & ALL_RUN_CONDITION (0x7)
+[ PASS] 02.009 condvar-test.c:168 - OS_CondVarUnlock(condvar_id) (0) == OS_SUCCESS (0)
+[ PASS] 02.010 condvar-test.c:174 - OS_CondVarLock(condvar_id) (0) == OS_SUCCESS (0)
+[ FAIL] 02.011 condvar-test.c:175 - total_work (0) == num_signals (1)
+[ FAIL] 02.012 condvar-test.c:176 - curr_condition (7) != ALL_RUN_CONDITION (7)
+[ PASS] 02.013 condvar-test.c:177 - curr_condition (7) != 0 (0)
+[ PASS] 02.014 condvar-test.c:178 - OS_CondVarUnlock(condvar_id) (0) == OS_SUCCESS (0)
+[ PASS] 02.015 condvar-test.c:180 - OS_CondVarSignal(condvar_id) (0) == OS_SUCCESS (0)
+[ PASS] 02.016 condvar-test.c:174 - OS_CondVarLock(condvar_id) (0) == OS_SUCCESS (0)
+[ FAIL] 02.017 condvar-test.c:175 - total_work (0) == num_signals (2)
+[ FAIL] 02.018 condvar-test.c:176 - curr_condition (7) != ALL_RUN_CONDITION (7)
+[ PASS] 02.019 condvar-test.c:177 - curr_condition (7) != 0 (0)
+[ PASS] 02.020 condvar-test.c:178 - OS_CondVarUnlock(condvar_id) (0) == OS_SUCCESS (0)
+[ PASS] 02.021 condvar-test.c:180 - OS_CondVarSignal(condvar_id) (0) == OS_SUCCESS (0)
+[ PASS] 02.022 condvar-test.c:187 - OS_CondVarLock(condvar_id) (0) == OS_SUCCESS (0)
+[ FAIL] 02.023 condvar-test.c:190 - task_states[i].run_count (0) == 1 (1)
+[ FAIL] 02.024 condvar-test.c:190 - task_states[i].run_count (0) == 1 (1)
+[ FAIL] 02.025 condvar-test.c:190 - task_states[i].run_count (0) == 1 (1)
+[ FAIL] 02.026 condvar-test.c:192 - total_work (0) == num_signals (3)
+[ FAIL] 02.027 condvar-test.c:193 - curr_condition (0x7) &~ ALL_RUN_CONDITION (0x7)
+[ PASS] 02.028 condvar-test.c:195 - OS_CondVarBroadcast(condvar_id) (0) == OS_SUCCESS (0)
+[ PASS] 02.029 condvar-test.c:196 - OS_CondVarUnlock(condvar_id) (0) == OS_SUCCESS (0)
+[ PASS] 02.030 condvar-test.c:201 - OS_CondVarLock(condvar_id) (0) == OS_SUCCESS (0)
+[ FAIL] 02.031 condvar-test.c:202 - curr_condition (0x7) &~ ALL_RUN_CONDITION (0x7)
+[ FAIL] 02.032 condvar-test.c:205 - task_states[i].run_count (0) == 2 (2)
+[ FAIL] 02.033 condvar-test.c:205 - task_states[i].run_count (0) == 2 (2)
+[ FAIL] 02.034 condvar-test.c:205 - task_states[i].run_count (0) == 2 (2)
+[ FAIL] 02.035 condvar-test.c:207 - total_work (0) == NUM_TASKS * 2 (6)
+[ PASS] 02.036 condvar-test.c:209 - OS_CondVarBroadcast(condvar_id) (0) == OS_SUCCESS (0)
+[ PASS] 02.037 condvar-test.c:210 - OS_CondVarUnlock(condvar_id) (0) == OS_SUCCESS (0)
+[ PASS] 02.038 condvar-test.c:215 - OS_CondVarLock(condvar_id) (0) == OS_SUCCESS (0)
+[ FAIL] 02.039 condvar-test.c:216 - total_work (0) == (NUM_TASKS * 2) + 1 (7)
+[ FAIL] 02.040 condvar-test.c:217 - task_states[0].run_count (0) == 3 (3)
+[ FAIL] 02.041 condvar-test.c:218 - curr_condition (0x7) &~ ALL_RUN_CONDITION (0x7)
+[ PASS] 02.042 condvar-test.c:219 - OS_CondVarUnlock(condvar_id) (0) == OS_SUCCESS (0)
+[ FAIL] 02.043 condvar-test.c:231 - OS_TaskDelete(task_states[i].task_id) (-16) == OS_SUCCESS (0)
+[ INFO] condvar-test.c:232:Task1 delete Id=0
+[ FAIL] 02.044 condvar-test.c:231 - OS_TaskDelete(task_states[i].task_id) (-16) == OS_SUCCESS (0)
+[ INFO] condvar-test.c:232:Task2 delete Id=0
+[ FAIL] 02.045 condvar-test.c:231 - OS_TaskDelete(task_states[i].task_id) (-16) == OS_SUCCESS (0)
+[ INFO] condvar-test.c:232:Task3 delete Id=0
+[ PASS] 02.046 condvar-test.c:236 - OS_CondVarLock(condvar_id) (0) == OS_SUCCESS (0)
+[ PASS] 02.047 condvar-test.c:237 - OS_CondVarUnlock(condvar_id) (0) == OS_SUCCESS (0)
+[ PASS] 02.048 condvar-test.c:239 - OS_CondVarDelete(condvar_id) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 02 CondVarBasic         TOTAL::48    PASS::25    FAIL::23    MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 03 CondVarTimed
+[ PASS] 03.001 condvar-test.c:288 - OS_CondVarCreate(&condvar_id, "CondVar", 0) (0) == OS_SUCCESS (0)
+[ FAIL] 03.002 condvar-test.c:290 - OS_TaskCreate(&task_states[0].task_id, "timedwait", condvar_timedtask_entry, OSAL_STACKPTR_C(&task_stacks[0]), sizeof(task_stacks[0]), OSAL_PRIORITY_C(10), 0) (-1) == OS_SUCCESS (0)
+[ PASS] 03.003 condvar-test.c:305 - OS_CondVarLock(condvar_id) (0) == OS_SUCCESS (0)
+
+      Start 71: queue-test
+68/85 Test #64: count-sem-timeout-test ....................***Timeout  60.00 sec
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 CountSemTest
+[ PASS] 01.001 count-sem-timeout-test.c:204 - CountSem1 create Id=30001 Rc=0
+[ PASS] 01.002 count-sem-timeout-test.c:215 - CountSem1 take Rc=0
+[ PASS] 01.003 count-sem-timeout-test.c:215 - CountSem1 take Rc=0
+[  TSF] 01.004 count-sem-timeout-test.c:228 - Task 1 create Id=0 Rc=-1
+[  TSF] 01.005 count-sem-timeout-test.c:237 - Task 2 create Id=0 Rc=-1
+[  TSF] 01.006 count-sem-timeout-test.c:246 - Task 3 create Id=0 Rc=-1
+
+      Start 72: rwlock-test
+69/85 Test #68: mutex-test ................................***Timeout  60.01 sec
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 MutexTest
+[ PASS] 01.001 mutex-test.c:239 - MutSem1 create Id=50001 Rc=0
+[ PASS] 01.002 mutex-test.c:245 - OS_MutSemTake 1 Rc=0
+[ PASS] 01.003 mutex-test.c:248 - OS_MutSemTake 2 Rc=0
+[ PASS] 01.004 mutex-test.c:251 - OS_MutSemGive 2 Rc=0
+[ PASS] 01.005 mutex-test.c:254 - OS_MutSemGive 1 Rc=0
+[  TSF] 01.006 mutex-test.c:266 - Task 1 create Id=0 Rc=-1
+[  TSF] 01.007 mutex-test.c:275 - Task 2 create Id=0 Rc=-1
+[  TSF] 01.008 mutex-test.c:284 - Task 3 create Id=0 Rc=-1
+
+      Start 73: select-test
+70/85 Test #73: select-test ...............................   Passed    3.61 sec
+      Start 74: sem-speed-test
+71/85 Test #74: sem-speed-test ............................   Passed    5.04 sec
+      Start 75: shell-test
+72/85 Test #75: shell-test ................................   Passed    0.03 sec
+      Start 76: symbol-api-test
+73/85 Test #76: symbol-api-test ...........................   Passed    0.03 sec
+      Start 77: time-base-api-test
+74/85 Test #77: time-base-api-test ........................   Passed    0.05 sec
+      Start 78: timer-add-api-test
+75/85 Test #71: queue-test ................................***Failed   12.95 sec
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 QueueTimeoutTest
+[ PASS] 01.001 queue-test.c:149 - MsgQ create Id=20001 Rc=0
+[  TSF] 01.002 queue-test.c:161 - Task 1 create Id=0 Rc=-1
+[ PASS] 01.003 queue-test.c:167 - Timer 1 create Id=90001 Rc=0
+[ INFO] queue-test.c:168:Timer Accuracy = 10000 microseconds 
+[ PASS] 01.004 queue-test.c:174 - Timer 1 set Rc=0
+[ PASS] 01.005 queue-test.c:111 - Timer delete Rc=0
+[ FAIL] 01.006 queue-test.c:113 - Task 1 delete Rc=-16
+[ PASS] 01.007 queue-test.c:115 - Queue 1 delete Rc=0
+[ PASS] 01.008 queue-test.c:118 - Task 1 failures = 0
+[ PASS] 01.009 queue-test.c:124 - Task 1 messages = 0
+[ PASS] 01.010 queue-test.c:127 - Task 1 timeouts 0 <= 10
+[ FAIL] 01.011 queue-test.c:133 - Task 1 timeouts 0 >= 6
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 QueueTimeoutTest     TOTAL::11    PASS::8     FAIL::2     MIR::0     TSF::1     TTF::0   
+
+[BEGIN] 02 QueueMessageCheck
+[ PASS] 02.001 queue-test.c:214 - MsgQ create Id=20002 Rc=0
+[  TSF] 02.002 queue-test.c:226 - Task 1 create Id=0 Rc=-1
+[ PASS] 02.003 queue-test.c:232 - Timer 1 create Id=90002 Rc=0
+[ INFO] queue-test.c:233:Timer Accuracy = 10000 microseconds 
+[ PASS] 02.004 queue-test.c:239 - Timer 1 set Rc=0
+[ PASS] 02.005 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.006 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.007 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.008 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.009 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.010 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.011 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.012 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.013 queue-test.c:252 - OS Queue Put Rc=0
+[ PASS] 02.014 queue-test.c:252 - OS Queue Put Rc=0
+Delay for half a second before checking
+[ PASS] 02.015 queue-test.c:191 - Timer delete Rc=0
+[ FAIL] 02.016 queue-test.c:193 - Task 1 delete Rc=-16
+[ PASS] 02.017 queue-test.c:195 - Queue 1 delete Rc=0
+[ PASS] 02.018 queue-test.c:198 - Task 1 failures = 0
+[ FAIL] 02.019 queue-test.c:199 - Task 1 messages = 0
+[ PASS] 02.020 queue-test.c:200 - Task 1 timeouts = 0
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 02 QueueMessageCheck    TOTAL::20    PASS::17    FAIL::2     MIR::0     TSF::1     TTF::0   
+
+[BEGIN] 03 Cleanup
+[  END] No test cases
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 02 SUMMARY              TOTAL::31    PASS::25    FAIL::4     MIR::0     TSF::2     TTF::0   
+COMPLETE: 2 tests Segment(s) executed
+
+
+      Start 79: timer-test
+76/85 Test #69: network-api-test ..........................   Passed   24.05 sec
+      Start 80: osal_core_UT
+77/85 Test #80: osal_core_UT ..............................***Failed    2.93 sec
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_API_Init
+[ PASS] 01.001 ut_oscore_misc_test.c:107 - OS_QueueCreate(&qId, "Queue A", qDepth, qSize, qFlags) (-1) not successful
+[ PASS] 01.002 ut_oscore_misc_test.c:108 - OS_BinSemCreate(&semIds[0], "BinSem 1", semInitValue, semOptions) (-1) not successful
+[ PASS] 01.003 ut_oscore_misc_test.c:109 - OS_CountSemCreate(&semIds[1], "CountSem 1", semInitValue, semOptions) (-1) not successful
+[ PASS] 01.004 ut_oscore_misc_test.c:110 - OS_MutSemCreate(&semIds[2], "MutexSem 1", semOptions) (-1) not successful
+[ PASS] 01.005 ut_oscore_misc_test.c:115 - OS_API_Init() (0) == OS_SUCCESS (0)
+[ PASS] 01.006 ut_oscore_misc_test.c:117 - OS_QueueCreate(&qId, "Queue A", qDepth, qSize, qFlags) (0) == OS_SUCCESS (0)
+[ PASS] 01.007 ut_oscore_misc_test.c:118 - OS_BinSemCreate(&semIds[0], "BinSem 1", semInitValue, semOptions) (0) == OS_SUCCESS (0)
+[ PASS] 01.008 ut_oscore_misc_test.c:119 - OS_CountSemCreate(&semIds[1], "CountSem 1", semInitValue, semOptions) (0) == OS_SUCCESS (0)
+[ PASS] 01.009 ut_oscore_misc_test.c:120 - OS_MutSemCreate(&semIds[2], "MutexSem 1", semOptions) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_API_Init          TOTAL::9     PASS::9     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_RegisterEventHandler
+[ PASS] 02.001 ut_oscore_misc_test.c:142 - OS_RegisterEventHandler(NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 02.002 ut_oscore_misc_test.c:146 - OS_RegisterEventHandler(UT_os_eventhandler) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 02 OS_RegisterEventHandler TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 03 OS_printf
+[  MIR] 03.001 ut_oscore_misc_test.c:164 - OS_printf("OS_printf() - #1 Nominal [Seeing this text in stdout constitutes a pass for this MIR]\n")
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+
+**BUG** OS_RegisterEventHandler():276:check '(handler) != NULL' FAILED --> OS_INVALID_POINTER
+
+OS_printf() - #1 Nominal [Seeing this text in stdout constitutes a pass for this MIR]
+[  END] 03 OS_printf            TOTAL::1     PASS::0     FAIL::0     MIR::1     TSF::0     TTF::0   
+
+[BEGIN] 04 OS_printf_enable
+[  MIR] 04.001 ut_oscore_misc_test.c:184 - OS_printf("OS_printf_enable() - #1 Nominal [Seeing this text in stdout constitutes a pass for this MIR]\n")
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 04 OS_printf_enable     TOTAL::1     PASS::0     FAIL::0     MIR::1     TSF::0     TTF::0   
+
+[BEGIN] 05 OS_printf_disable
+OS_printf_enable() - #1 Nominal [Seeing this text in stdout constitutes a pass for this MIR]
+OS_printf_disable() - #1 Nominal [Seeing this text in stdout constitutes a pass for this MIR]
+[  MIR] 05.001 ut_oscore_misc_test.c:203 - OS_printf("OS_printf_disable() - #1 Nominal [Seeing this text in stdout constitutes a pass for this MIR]\n")
+[  MIR] 05.002 ut_oscore_misc_test.c:207 - OS_printf( "OS_printf_disable() - #1 Nominal [Seeing this text in stdout constitutes a failure for this MIR]\n")
+[  MIR] 05.003 ut_oscore_misc_test.c:212 - OS_printf("OS_printf_disable() - #1 Nominal [Seeing this text in stdout constitutes a pass for this MIR]\n")
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 05 OS_printf_disable    TOTAL::3     PASS::0     FAIL::0     MIR::3     TSF::0     TTF::0   
+
+[BEGIN] 06 OS_BinSemCreate
+OS_printf_disable() - #1 Nominal [Seeing this text in stdout constitutes a pass for this MIR]
+
+**BUG** OS_BinSemCreate():98:check '(sem_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 06.001 ut_oscore_binsem_test.c:76 - OS_BinSemCreate(NULL, "BinSem1", 1, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 06.002 ut_oscore_binsem_test.c:79 - OS_BinSemCreate(&sem_ids[0], NULL, 1, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 06.003 ut_oscore_binsem_test.c:84 - OS_BinSemCreate(&sem_ids[0], long_sem_name, 1, 0) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+
+**BUG** OS_BinSemCreate():99:check '(sem_name) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 06.004 ut_oscore_binsem_test.c:101 - OS_BinSemCreate(&sem_ids[OS_MAX_BIN_SEMAPHORES], "OneTooMany", 1, 0) (-14) == OS_ERR_NO_FREE_IDS (-14)
+[ PASS] 06.005 ut_oscore_binsem_test.c:110 - OS_BinSemCreate(&sem_ids[0], "DUPLICATE", 1, 0) (-15) == OS_ERR_NAME_TAKEN (-15)
+[ PASS] 06.006 ut_oscore_binsem_test.c:117 - OS_BinSemCreate(&sem_ids[0], "Good", 1, 0) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 06 OS_BinSemCreate      TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 07 OS_BinSemDelete
+[ PASS] 07.001 ut_oscore_binsem_test.c:136 - OS_BinSemDelete(UT_OBJID_INCORRECT) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 07.002 ut_oscore_binsem_test.c:137 - OS_BinSemDelete(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 07.003 ut_oscore_binsem_test.c:142 - OS_BinSemDelete(bin_sem_id) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 07 OS_BinSemDelete      TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 08 OS_BinSemFlush
+[ PASS] 08.001 ut_oscore_binsem_test.c:160 - OS_BinSemFlush(UT_OBJID_INCORRECT) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 08.002 ut_oscore_binsem_test.c:161 - OS_BinSemFlush(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 08.003 ut_oscore_binsem_test.c:166 - OS_BinSemFlush(bin_sem_id) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 08 OS_BinSemFlush       TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 09 OS_BinSemGive
+[ PASS] 09.001 ut_oscore_binsem_test.c:185 - OS_BinSemGive(UT_OBJID_INCORRECT) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 09.002 ut_oscore_binsem_test.c:186 - OS_BinSemGive(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 09.003 ut_oscore_binsem_test.c:191 - OS_BinSemGive(bin_sem_id) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 09 OS_BinSemGive        TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 10 OS_BinSemTake
+[ PASS] 10.001 ut_oscore_binsem_test.c:211 - OS_BinSemTake(UT_OBJID_INCORRECT) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 10.002 ut_oscore_binsem_test.c:212 - OS_BinSemTake(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 10.003 ut_oscore_binsem_test.c:217 - OS_BinSemTake(bin_sem_id) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 10 OS_BinSemTake        TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 11 OS_BinSemTimedWait
+[ PASS] 11.001 ut_oscore_binsem_test.c:236 - OS_BinSemTimedWait(UT_OBJID_INCORRECT, 1000) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 11.002 ut_oscore_binsem_test.c:237 - OS_BinSemTimedWait(OS_OBJECT_ID_UNDEFINED, 1000) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 11.003 ut_oscore_binsem_test.c:242 - OS_BinSemTimedWait(bin_sem_id, 1000) (-7) == OS_SEM_TIMEOUT (-7)
+[ PASS] 11.004 ut_oscore_binsem_test.c:249 - OS_BinSemTimedWait(bin_sem_id, 1000) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 11 OS_BinSemTimedWait   TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 12 OS_BinSemGetIdByName
+[ PASS] 12.001 ut_oscore_binsem_test.c:270 - OS_BinSemGetIdByName(NULL, "InvalidName") (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 12.002 ut_oscore_binsem_test.c:273 - OS_BinSemGetIdByName(&bin_sem_id, NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 12.003 ut_oscore_binsem_test.c:278 - OS_BinSemGetIdByName(&bin_sem_id, long_sem_name) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+[ PASS] 12.004 ut_oscore_binsem_test.c:281 - OS_BinSemGetIdByName(&bin_sem_id, "NameNotFound") (-17) == OS_ERR_NAME_NOT_FOUND (-17)
+[ PASS] 12.005 ut_oscore_binsem_test.c:286 - OS_BinSemGetIdByName(&bin_sem_id, "GetIDByName") (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 12 OS_BinSemGetIdByName TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 13 OS_CountSemCreate
+[ PASS] 13.001 ut_oscore_countsem_test.c:78 - OS_CountSemCreate(NULL, "CountSem1", 1, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 13.002 ut_oscore_countsem_test.c:83 - OS_CountSemCreate(&count_sem_ids[0], NULL, 1, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 13.003 ut_oscore_countsem_test.c:90 - OS_CountSemCreate(&count_sem_ids[0], long_sem_name, 1, 0) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+
+**BUG** OS_BinSemGetIdByName():238:check '(sem_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_BinSemGetIdByName():239:check '(sem_name) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_CountSemCreate():90:check '(sem_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_CountSemCreate():91:check '(sem_name) != NULL' FAILED --> OS_INVALID_POINTER
+
+[  N/A] 13.004 ut_oscore_countsem_test.c:107 - #4 Initial-count-too-high
+[ PASS] 13.005 ut_oscore_countsem_test.c:120 - OS_CountSemCreate(&count_sem_ids[i], "OneTooMany", 1, 0) (-14) == OS_ERR_NO_FREE_IDS (-14)
+[ PASS] 13.006 ut_oscore_countsem_test.c:137 - OS_CountSemCreate(&count_sem_ids[1], "DUPLICATE", 1, 0) (-15) == OS_ERR_NAME_TAKEN (-15)
+[ PASS] 13.007 ut_oscore_countsem_test.c:146 - OS_CountSemCreate(&count_sem_ids[0], "Good", 1, 0) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::1   
+[  END] 13 OS_CountSemCreate    TOTAL::7     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 14 OS_CountSemDelete
+[ PASS] 14.001 ut_oscore_countsem_test.c:167 - OS_CountSemDelete(UT_OBJID_INCORRECT) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 14.002 ut_oscore_countsem_test.c:168 - OS_CountSemDelete(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 14.003 ut_oscore_countsem_test.c:176 - OS_CountSemDelete(count_sem_id) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 14 OS_CountSemDelete    TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 15 OS_CountSemGive
+[ PASS] 15.001 ut_oscore_countsem_test.c:196 - OS_CountSemGive(UT_OBJID_INCORRECT) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 15.002 ut_oscore_countsem_test.c:197 - OS_CountSemGive(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 15.003 ut_oscore_countsem_test.c:205 - OS_CountSemGive(count_sem_id) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 15 OS_CountSemGive      TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 16 OS_CountSemTake
+[ PASS] 16.001 ut_oscore_countsem_test.c:227 - OS_CountSemTake(UT_OBJID_INCORRECT) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 16.002 ut_oscore_countsem_test.c:228 - OS_CountSemTake(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 16.003 ut_oscore_countsem_test.c:236 - OS_CountSemTake(count_sem_id) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 16 OS_CountSemTake      TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 17 OS_CountSemTimedWait
+[ PASS] 17.001 ut_oscore_countsem_test.c:257 - OS_CountSemTimedWait(UT_OBJID_INCORRECT, 1000) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 17.002 ut_oscore_countsem_test.c:258 - OS_CountSemTimedWait(OS_OBJECT_ID_UNDEFINED, 1000) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 17.003 ut_oscore_countsem_test.c:268 - OS_CountSemTimedWait(count_sem_id, 1000) (-7) == OS_SEM_TIMEOUT (-7)
+[ PASS] 17.004 ut_oscore_countsem_test.c:279 - OS_CountSemTimedWait(count_sem_id, 1000) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 17 OS_CountSemTimedWait TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 18 OS_CountSemGetIdByName
+[ PASS] 18.001 ut_oscore_countsem_test.c:302 - OS_CountSemGetIdByName(NULL, "Name") (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 18.002 ut_oscore_countsem_test.c:307 - OS_CountSemGetIdByName(&count_sem_id, NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 18.003 ut_oscore_countsem_test.c:314 - OS_CountSemGetIdByName(&count_sem_id, long_sem_name) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+[ PASS] 18.004 ut_oscore_countsem_test.c:319 - OS_CountSemGetIdByName(&count_sem_id, "NotFound") (-17) == OS_ERR_NAME_NOT_FOUND (-17)
+[ PASS] 18.005 ut_oscore_countsem_test.c:327 - OS_CountSemGetIdByName(&count_sem_id, "GetIDByName") (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 18 OS_CountSemGetIdByName TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 19 OS_MutSemCreate
+
+**BUG** OS_CountSemGetIdByName():209:check '(sem_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_CountSemGetIdByName():210:check '(sem_name) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_MutSemCreate():95:check '(sem_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 19.001 ut_oscore_mutex_test.c:77 - OS_MutSemCreate(NULL, "MutSem1", 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 19.002 ut_oscore_mutex_test.c:82 - OS_MutSemCreate(&mut_sem_id, NULL, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 19.003 ut_oscore_mutex_test.c:89 - OS_MutSemCreate(&mut_sem_id, long_sem_name, 0) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+
+**BUG** OS_MutSemCreate():96:check '(sem_name) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 19.004 ut_oscore_mutex_test.c:101 - OS_MutSemCreate(&mut_sem_id, "OneTooMany", 0) (-14) == OS_ERR_NO_FREE_IDS (-14)
+[ PASS] 19.005 ut_oscore_mutex_test.c:118 - OS_MutSemCreate(&mut_sem_id, "DUPLICATE", 0) (-15) == OS_ERR_NAME_TAKEN (-15)
+[ PASS] 19.006 ut_oscore_mutex_test.c:127 - OS_MutSemCreate(&mut_sem_id, "Good", 0) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 19 OS_MutSemCreate      TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 20 OS_MutSemDelete
+[ PASS] 20.001 ut_oscore_mutex_test.c:149 - OS_MutSemDelete(UT_OBJID_INCORRECT) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 20.002 ut_oscore_mutex_test.c:150 - OS_MutSemDelete(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 20.003 ut_oscore_mutex_test.c:157 - OS_MutSemDelete(mut_sem_id) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 20 OS_MutSemDelete      TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 21 OS_MutSemGive
+[ PASS] 21.001 ut_oscore_mutex_test.c:177 - OS_MutSemGive(UT_OBJID_INCORRECT) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 21.002 ut_oscore_mutex_test.c:178 - OS_MutSemGive(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 21.003 ut_oscore_mutex_test.c:187 - OS_MutSemGive(mut_sem_id) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 21 OS_MutSemGive        TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 22 OS_MutSemTake
+[ PASS] 22.001 ut_oscore_mutex_test.c:210 - OS_MutSemTake(UT_OBJID_INCORRECT) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 22.002 ut_oscore_mutex_test.c:211 - OS_MutSemTake(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 22.003 ut_oscore_mutex_test.c:218 - OS_MutSemTake(mut_sem_id) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 22 OS_MutSemTake        TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 23 OS_MutSemGetIdByName
+[ PASS] 23.001 ut_oscore_mutex_test.c:242 - OS_MutSemGetIdByName(NULL, "Name") (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 23.002 ut_oscore_mutex_test.c:247 - OS_MutSemGetIdByName(&mut_sem_id, NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 23.003 ut_oscore_mutex_test.c:254 - OS_MutSemGetIdByName(&mut_sem_id, long_sem_name) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+[ PASS] 23.004 ut_oscore_mutex_test.c:259 - OS_MutSemGetIdByName(&mut_sem_id, "NotFound") (-17) == OS_ERR_NAME_NOT_FOUND (-17)
+
+**BUG** OS_MutSemGetIdByName():217:check '(sem_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_MutSemGetIdByName():218:check '(sem_name) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 23.005 ut_oscore_mutex_test.c:266 - OS_MutSemGetIdByName(&mut_sem_id, "GetIDByName") (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 23 OS_MutSemGetIdByName TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 24 OS_MutSemGetInfo
+[ PASS] 24.001 ut_oscore_mutex_test.c:287 - OS_MutSemGetInfo(UT_OBJID_INCORRECT, &mut_sem_prop) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 24.002 ut_oscore_mutex_test.c:288 - OS_MutSemGetInfo(OS_OBJECT_ID_UNDEFINED, &mut_sem_prop) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 24.003 ut_oscore_mutex_test.c:295 - OS_MutSemGetInfo(mut_sem_id, NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 24.004 ut_oscore_mutex_test.c:305 - OS_MutSemGetInfo(mut_sem_id, &mut_sem_prop) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 24 OS_MutSemGetInfo     TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 25 OS_QueueCreate
+
+**BUG** OS_MutSemGetInfo():238:check '(mut_prop) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 25.001 ut_oscore_queue_test.c:81 - OS_QueueCreate(NULL, "Queue1", OSAL_BLOCKCOUNT_C(10), sizeof(uint32), 0) (-2) == OS_INVALID_POINTER (-2)
+
+**BUG** OS_QueueCreate():95:check '(queue_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 25.002 ut_oscore_queue_test.c:86 - OS_QueueCreate(&queue_id, NULL, OSAL_BLOCKCOUNT_C(10), sizeof(uint32), 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 25.003 ut_oscore_queue_test.c:91 - OS_QueueCreate(&queue_id, "Queue1", OSAL_BLOCKCOUNT_C(10), 0, 0) (-40) == OS_ERR_INVALID_SIZE (-40)
+
+**BUG** OS_QueueCreate():96:check '(queue_name) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 25.004 ut_oscore_queue_test.c:93 - OS_QueueCreate(&queue_id, "Queue1", OSAL_BLOCKCOUNT_C(OS_QUEUE_MAX_DEPTH + 1), sizeof(uint32), 0) (-11) == OS_QUEUE_INVALID_SIZE (-11)
+[ PASS] 25.005 ut_oscore_queue_test.c:101 - OS_QueueCreate(&queue_id, long_queue_name, OSAL_BLOCKCOUNT_C(10), sizeof(uint32), 0) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+[ PASS] 25.006 ut_oscore_queue_test.c:114 - OS_QueueCreate(&queue_id, "OneTooMany", OSAL_BLOCKCOUNT_C(10), sizeof(uint32), 0) (-14) == OS_ERR_NO_FREE_IDS (-14)
+[ PASS] 25.007 ut_oscore_queue_test.c:131 - OS_QueueCreate(&queue_id, "DUPLICATE", OSAL_BLOCKCOUNT_C(10), sizeof(uint32), 0) (-15) == OS_ERR_NAME_TAKEN (-15)
+[ PASS] 25.008 ut_oscore_queue_test.c:140 - OS_QueueCreate(&queue_id, "Good", OSAL_BLOCKCOUNT_C(10), sizeof(uint32), 0) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 25 OS_QueueCreate       TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 26 OS_QueueDelete
+[ PASS] 26.001 ut_oscore_queue_test.c:161 - OS_QueueDelete(UT_OBJID_INCORRECT) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 26.002 ut_oscore_queue_test.c:162 - OS_QueueDelete(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 26.003 ut_oscore_queue_test.c:169 - OS_QueueDelete(queue_id) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 26 OS_QueueDelete       TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 27 OS_QueuePut
+[ PASS] 27.001 ut_oscore_queue_test.c:308 - OS_QueuePut(UT_OBJID_INCORRECT, (void *)&queue_data_out, sizeof(uint32), 0) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 27.002 ut_oscore_queue_test.c:309 - OS_QueuePut(OS_OBJECT_ID_UNDEFINED, (void *)&queue_data_out, sizeof(uint32), 0) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 27.003 ut_oscore_queue_test.c:317 - OS_QueuePut(queue_id, NULL, sizeof(uint32), 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 27.004 ut_oscore_queue_test.c:318 - OS_QueuePut(queue_id, &queue_data_out, sizeof(uint32) + 1, 0) (-11) == OS_QUEUE_INVALID_SIZE (-11)
+[ PASS] 27.005 ut_oscore_queue_test.c:319 - OS_QueuePut(queue_id, &queue_data_out, 0, 0) (-40) == OS_ERR_INVALID_SIZE (-40)
+
+**BUG** OS_QueuePut():197:check '(data) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 27.006 ut_oscore_queue_test.c:334 - OS_QueuePut(queue_id, &queue_data_out, sizeof(uint32), 0) (-9) == OS_QUEUE_FULL (-9)
+[ PASS] 27.007 ut_oscore_queue_test.c:351 - OS_QueuePut(queue_id, &queue_data_out, sizeof(uint32), 0) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 27 OS_QueuePut          TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 28 OS_QueueGet
+[ PASS] 28.001 ut_oscore_queue_test.c:195 - OS_QueueGet(UT_OBJID_INCORRECT, (void *)&queue_data_in, sizeof(uint32), &size_copied, OS_CHECK) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 28.002 ut_oscore_queue_test.c:197 - OS_QueueGet(OS_OBJECT_ID_UNDEFINED, (void *)&queue_data_in, sizeof(uint32), &size_copied, OS_CHECK) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 28.003 ut_oscore_queue_test.c:207 - OS_QueueGet(queue_id, NULL, sizeof(uint32), &size_copied, OS_CHECK) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 28.004 ut_oscore_queue_test.c:208 - OS_QueueGet(queue_id, &queue_data_in, sizeof(uint32), NULL, OS_CHECK) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 28.005 ut_oscore_queue_test.c:209 - OS_QueueGet(queue_id, &queue_data_in, 0, &size_copied, OS_CHECK) (-40) == OS_ERR_INVALID_SIZE (-40)
+[ PASS] 28.006 ut_oscore_queue_test.c:219 - OS_QueueGet(queue_id, &queue_data_in, sizeof(uint32), &data_size, OS_CHECK) (-8) == OS_QUEUE_EMPTY (-8)
+
+**BUG** OS_QueueGet():158:check '(data) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_QueueGet():159:check '(size_copied) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 28.007 ut_oscore_queue_test.c:229 - OS_QueueGet(queue_id, &queue_data_in, sizeof(uint32), &data_size, 2) (-10) == OS_QUEUE_TIMEOUT (-10)
+[ PASS] 28.008 ut_oscore_queue_test.c:243 - OS_QueueGet(queue_id, &queue_data_in, OSAL_SIZE_C(3), &data_size, OS_CHECK) (-11) == OS_QUEUE_INVALID_SIZE (-11)
+[ PASS] 28.009 ut_oscore_queue_test.c:257 - OS_QueueGet(queue_id, &queue_data_in, sizeof(uint32), &data_size, OS_PEND) (0) == OS_SUCCESS (0)
+[ PASS] 28.010 ut_oscore_queue_test.c:270 - OS_QueueGet(queue_id, &queue_data_in, sizeof(uint32), &data_size, 20) (0) == OS_SUCCESS (0)
+[ PASS] 28.011 ut_oscore_queue_test.c:283 - OS_QueueGet(queue_id, &queue_data_in, sizeof(uint32), &data_size, OS_CHECK) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 28 OS_QueueGet          TOTAL::11    PASS::11    FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 29 OS_QueueGetIdByName
+[ PASS] 29.001 ut_oscore_queue_test.c:373 - OS_QueueGetIdByName(NULL, "Name") (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 29.002 ut_oscore_queue_test.c:378 - OS_QueueGetIdByName(&queue_id, NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 29.003 ut_oscore_queue_test.c:385 - OS_QueueGetIdByName(&queue_id, long_queue_name) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+[ PASS] 29.004 ut_oscore_queue_test.c:390 - OS_QueueGetIdByName(&queue_id, "NameNotFound") (-17) == OS_ERR_NAME_NOT_FOUND (-17)
+
+**BUG** OS_QueueGetIdByName():232:check '(queue_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_QueueGetIdByName():233:check '(queue_name) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 29.005 ut_oscore_queue_test.c:397 - OS_QueueGetIdByName(&queue_id, "GetIDByName") (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 29 OS_QueueGetIdByName  TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 30 OS_QueueGetInfo
+[ PASS] 30.001 ut_oscore_queue_test.c:419 - OS_QueueGetInfo(UT_OBJID_INCORRECT, &queue_prop) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 30.002 ut_oscore_queue_test.c:420 - OS_QueueGetInfo(OS_OBJECT_ID_UNDEFINED, &queue_prop) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 30.003 ut_oscore_queue_test.c:427 - OS_QueueGetInfo(queue_id, NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 30.004 ut_oscore_queue_test.c:436 - OS_QueueGetInfo(queue_id, &queue_prop) (0) == OS_SUCCESS (0)
+
+**BUG** OS_QueueGetInfo():253:check '(queue_prop) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 30 OS_QueueGetInfo      TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 31 OS_SelectFd
+[ PASS] 31.001 ut_oscore_select_test.c:97 - OS_SelectFdZero(&FdSet) (0) == OS_SUCCESS (0)
+[ PASS] 31.002 ut_oscore_select_test.c:102 - OS_SelectFdZero(NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 31.003 ut_oscore_select_test.c:103 - OS_SelectFdAdd(NULL, selecttest_fd) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 31.004 ut_oscore_select_test.c:104 - OS_SelectFdClear(NULL, selecttest_fd) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 31.005 ut_oscore_select_test.c:105 - OS_SelectFdIsSet(NULL, selecttest_fd) (0) == false (0)
+[ PASS] 31.006 ut_oscore_select_test.c:107 - OS_SelectFdAdd(&FdSet, invalid_fd) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 31.007 ut_oscore_select_test.c:108 - OS_SelectFdAdd(&FdSet, OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+
+**BUG** OS_SelectFdZero():133:check '(Set) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_SelectFdAdd():151:check '(Set) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_SelectFdClear():179:check '(Set) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_SelectFdIsSet():207:check 'Set != NULL' FAILED --> false
+
+[ PASS] 31.008 ut_oscore_select_test.c:109 - OS_SelectFdClear(&FdSet, invalid_fd) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 31.009 ut_oscore_select_test.c:110 - OS_SelectFdClear(&FdSet, OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 31.010 ut_oscore_select_test.c:111 - OS_SelectFdIsSet(&FdSet, invalid_fd) (0) == false (0)
+[ PASS] 31.011 ut_oscore_select_test.c:112 - OS_SelectFdIsSet(&FdSet, OS_OBJECT_ID_UNDEFINED) (0) == false (0)
+[ PASS] 31.012 ut_oscore_select_test.c:114 - OS_SelectFdZero(&FdSet) (0) == OS_SUCCESS (0)
+[ PASS] 31.013 ut_oscore_select_test.c:115 - OS_SelectFdAdd(&FdSet, selecttest_fd) (0) == OS_SUCCESS (0)
+[ PASS] 31.014 ut_oscore_select_test.c:116 - OS_SelectFdIsSet(&FdSet, selecttest_fd) (1) == true (1)
+[ PASS] 31.015 ut_oscore_select_test.c:118 - OS_SelectFdZero(&FdSet) (0) == OS_SUCCESS (0)
+[ PASS] 31.016 ut_oscore_select_test.c:119 - OS_SelectFdAdd(&FdSet, selecttest_fd) (0) == OS_SUCCESS (0)
+[ PASS] 31.017 ut_oscore_select_test.c:120 - OS_SelectFdClear(&FdSet, selecttest_fd) (0) == OS_SUCCESS (0)
+[ PASS] 31.018 ut_oscore_select_test.c:121 - OS_SelectFdIsSet(&FdSet, selecttest_fd) (0) == false (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 31 OS_SelectFd          TOTAL::18    PASS::18    FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 32 OS_SelectSingle
+[ PASS] 32.001 ut_oscore_select_test.c:135 - OS_SelectSingle(selecttest_fd, NULL, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 32.002 ut_oscore_select_test.c:138 - OS_SelectSingle(selecttest_fd, &StateFlags, 0) (0) == OS_SUCCESS (0)
+[ PASS] 32.003 ut_oscore_select_test.c:143 - StateFlags (0x8) & OS_STREAM_STATE_WRITABLE
+[ PASS] 32.004 ut_oscore_select_test.c:148 - OS_SelectSingle(selecttest_fd, &StateFlags, 1) (0) == OS_SUCCESS (0)
+[ PASS] 32.005 ut_oscore_select_test.c:150 - StateFlags (0x4) & OS_STREAM_STATE_READABLE
+
+**BUG** OS_SelectSingleAbs():63:check '(StateFlags) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 32.006 ut_oscore_select_test.c:154 - OS_SelectSingle(invalid_fd, &StateFlags, 0) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 32.007 ut_oscore_select_test.c:155 - OS_SelectSingle(OS_OBJECT_ID_UNDEFINED, &StateFlags, 0) (-16) == OS_ERR_INVALID_ID (-16)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 32 OS_SelectSingle      TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 33 OS_SelectMultiple
+[ PASS] 33.001 ut_oscore_select_test.c:171 - OS_SelectMultiple(NULL, &WriteSet, 1) (0) == OS_SUCCESS (0)
+[ PASS] 33.002 ut_oscore_select_test.c:176 - OS_SelectFdIsSet(&WriteSet, selecttest_fd)
+[ PASS] 33.003 ut_oscore_select_test.c:180 - OS_SelectMultiple(&ReadSet, NULL, 1) (0) == OS_SUCCESS (0)
+[ PASS] 33.004 ut_oscore_select_test.c:182 - !OS_SelectFdIsSet(&ReadSet, selecttest_fd)
+[ PASS] 33.005 ut_oscore_select_test.c:185 - OS_SelectMultiple(NULL, NULL, 1) (-16) == OS_ERR_INVALID_ID (-16)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 33 OS_SelectMultiple    TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 34 UT_os_init_task_misc
+[  END] No test cases
+
+[BEGIN] 34 OS_TaskCreate
+[ PASS] 34.001 ut_oscore_task_test.c:113 - OS_TaskCreate(NULL, g_task_names[1], generic_test_task, OSAL_STACKPTR_C(&g_task_stacks[1]), sizeof(g_task_stacks[1]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 34.002 ut_oscore_task_test.c:125 - OS_TaskCreate(&g_task_ids[2], NULL, generic_test_task, OSAL_STACKPTR_C(&g_task_stacks[2]), sizeof(g_task_stacks[2]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 34.003 ut_oscore_task_test.c:137 - OS_TaskCreate(&g_task_ids[3], g_task_names[3], NULL, OSAL_STACKPTR_C(&g_task_stacks[3]), sizeof(g_task_stacks[3]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 34.004 ut_oscore_task_test.c:149 - OS_TaskCreate(&g_task_ids[3], g_task_names[3], generic_test_task, OSAL_STACKPTR_C(&g_task_stacks[3]), 0, OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-40) == OS_ERR_INVALID_SIZE (-40)
+[ PASS] 34.005 ut_oscore_task_test.c:161 - OS_TaskCreate(&g_task_ids[4], g_long_task_name, generic_test_task, OSAL_STACKPTR_C(&g_task_stacks[4]), sizeof(g_task_stacks[4]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+[  TSF] 34.006 ut_oscore_task_test.c:188 - OS_TaskCreate(&g_task_ids[i], task_name, generic_test_task, OSAL_STACKPTR_C(&g_task_stacks[i]), sizeof(g_task_stacks[i]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-1) >= OS_SUCCESS
+
+**BUG** OS_TaskCreate():181:check '(task_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_TaskCreate():183:check '(task_name) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_TaskCreate():182:check '(function_pointer) != NULL' FAILED --> OS_INVALID_POINTER
+
+[  TTF] 34.007 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.008 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.009 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.010 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.011 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.012 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.013 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.014 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.015 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.016 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.017 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.018 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.019 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.020 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.021 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.022 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.023 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.024 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.025 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.026 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.027 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.028 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.029 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.030 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.031 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.032 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.033 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.034 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.035 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.036 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.037 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.038 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.039 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.040 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.041 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.042 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.043 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.044 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.045 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.046 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.047 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.048 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.049 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.050 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.051 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.052 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.053 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.054 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.055 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.056 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.057 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.058 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.059 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.060 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.061 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.062 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.063 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.064 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.065 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.066 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.067 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.068 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.069 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TTF] 34.070 ut_oscore_task_test.c:206 - OS_TaskDelete(g_task_ids[i]) (-16) >= OS_SUCCESS
+[  TSF] 34.071 ut_oscore_task_test.c:212 - OS_TaskCreate(&g_task_ids[7], g_task_names[7], generic_test_task, OSAL_STACKPTR_C(&g_task_stacks[7]), sizeof(g_task_stacks[7]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-1) >= OS_SUCCESS
+[ FAIL] 34.072 ut_oscore_task_test.c:239 - OS_TaskCreate(&g_task_ids[9], g_task_names[9], generic_test_task, OSAL_STACKPTR_C(&g_task_stacks[9]), sizeof(g_task_stacks[9]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-1) == OS_SUCCESS (0)
+[ PASS] 34.073 ut_oscore_task_test.c:250 - OS_TaskCreate(&g_task_ids[8], g_task_names[8], generic_test_task, NULL, sizeof(g_task_stacks[8]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (0) == OS_SUCCESS (0)
+[ INFO] ut_oscore_task_test.c:85:Starting GenericTask: Create_OsErr, id: 10004
+[  TTF] 34.074 ut_oscore_task_test.c:263 - OS_TaskDelete(g_task_ids[9]) (-16) >= OS_SUCCESS
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 34 OS_TaskCreate        TOTAL::74    PASS::6     FAIL::1     MIR::0     TSF::2     TTF::65  
+
+[BEGIN] 35 OS_TaskDelete
+[ PASS] 35.001 ut_oscore_task_test.c:279 - OS_TaskDelete(UT_OBJID_INCORRECT) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 35.002 ut_oscore_task_test.c:280 - OS_TaskDelete(OS_OBJECT_ID_UNDEFINED) (-16) == OS_ERR_INVALID_ID (-16)
+[  TSF] 35.003 ut_oscore_task_test.c:286 - OS_TaskCreate(&g_task_ids[3], g_task_names[3], generic_test_task, OSAL_STACKPTR_C(&g_task_stacks[3]), sizeof(g_task_stacks[3]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-1) >= OS_SUCCESS
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 35 OS_TaskDelete        TOTAL::3     PASS::2     FAIL::0     MIR::0     TSF::1     TTF::0   
+
+[BEGIN] 36 OS_TaskInstallDeleteHandler
+[ PASS] 36.001 ut_oscore_task_test.c:351 - OS_TaskInstallDeleteHandler(&delete_handler_callback) (-16) == OS_ERR_INVALID_ID (-16)
+[  TSF] 36.002 ut_oscore_task_test.c:362 - OS_TaskCreate(&g_task_ids[2], g_task_names[2], delete_handler_test_task, OSAL_STACKPTR_C(&g_task_stacks[2]), sizeof(g_task_stacks[2]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-1) >= OS_SUCCESS
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 36 OS_TaskInstallDeleteHandler TOTAL::2     PASS::1     FAIL::0     MIR::0     TSF::1     TTF::0   
+
+[BEGIN] 37 OS_TaskExit
+[  TSF] 37.001 ut_oscore_task_test.c:430 - OS_TaskCreate(&g_task_ids[1], g_task_names[1], exit_test_task, OSAL_STACKPTR_C(&g_task_stacks[1]), sizeof(g_task_stacks[1]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-1) >= OS_SUCCESS
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 37 OS_TaskExit          TOTAL::1     PASS::0     FAIL::0     MIR::0     TSF::1     TTF::0   
+
+[BEGIN] 38 OS_TaskDelay
+[ PASS] 38.001 ut_oscore_task_test.c:481 - OS_TaskDelay(100) (0) == OS_SUCCESS (0)
+[ PASS] 38.002 ut_oscore_task_test.c:485 - Elapsed time 101 msec, expected 100
+[ PASS] 38.003 ut_oscore_task_test.c:490 - OS_TaskDelay(250) (0) == OS_SUCCESS (0)
+[ PASS] 38.004 ut_oscore_task_test.c:494 - Elapsed time 251 msec, expected 250
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 38 OS_TaskDelay         TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 39 OS_TaskSetPriority
+[ PASS] 39.001 ut_oscore_task_test.c:511 - OS_TaskSetPriority(UT_OBJID_INCORRECT, OSAL_PRIORITY_C(100)) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 39.002 ut_oscore_task_test.c:512 - OS_TaskSetPriority(OS_OBJECT_ID_UNDEFINED, OSAL_PRIORITY_C(100)) (-16) == OS_ERR_INVALID_ID (-16)
+[  TSF] 39.003 ut_oscore_task_test.c:517 - OS_TaskCreate(&g_task_ids[4], g_task_names[4], generic_test_task, OSAL_STACKPTR_C(&g_task_stacks[4]), sizeof(g_task_stacks[4]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-1) >= OS_SUCCESS
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 39 OS_TaskSetPriority   TOTAL::3     PASS::2     FAIL::0     MIR::0     TSF::1     TTF::0   
+
+[BEGIN] 40 OS_TaskGetId
+[  TSF] 40.001 ut_oscore_task_test.c:568 - OS_TaskCreate(&g_task_ids[1], g_task_names[1], getid_test_task, OSAL_STACKPTR_C(&g_task_stacks[1]), sizeof(g_task_stacks[1]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-1) >= OS_SUCCESS
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 40 OS_TaskGetId         TOTAL::1     PASS::0     FAIL::0     MIR::0     TSF::1     TTF::0   
+
+[BEGIN] 41 OS_TaskGetIdByName
+[ PASS] 41.001 ut_oscore_task_test.c:601 - OS_TaskGetIdByName(NULL, "Name") (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 41.002 ut_oscore_task_test.c:606 - OS_TaskGetIdByName(&g_task_ids[2], NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 41.003 ut_oscore_task_test.c:611 - OS_TaskGetIdByName(&g_task_ids[3], g_long_task_name) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+[ PASS] 41.004 ut_oscore_task_test.c:616 - OS_TaskGetIdByName(&g_task_ids[4], "NotFound") (-17) == OS_ERR_NAME_NOT_FOUND (-17)
+[  TSF] 41.005 ut_oscore_task_test.c:622 - OS_TaskCreate(&g_task_ids[5], g_task_names[5], generic_test_task, OSAL_STACKPTR_C(&g_task_stacks[5]), sizeof(g_task_stacks[5]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-1) >= OS_SUCCESS
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 41 OS_TaskGetIdByName   TOTAL::5     PASS::4     FAIL::0     MIR::0     TSF::1     TTF::0   
+
+[BEGIN] 42 OS_TaskGetInfo
+[ PASS] 42.001 ut_oscore_task_test.c:657 - OS_TaskGetInfo(UT_OBJID_INCORRECT, &task_prop) (-16) == OS_ERR_INVALID_ID (-16)
+[ PASS] 42.002 ut_oscore_task_test.c:658 - OS_TaskGetInfo(OS_OBJECT_ID_UNDEFINED, &task_prop) (-16) == OS_ERR_INVALID_ID (-16)
+
+**BUG** OS_TaskGetIdByName():348:check '(task_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_TaskGetIdByName():349:check '(task_name) != NULL' FAILED --> OS_INVALID_POINTER
+
+[  TSF] 42.003 ut_oscore_task_test.c:664 - OS_TaskCreate(&g_task_ids[2], g_task_names[2], generic_test_task, OSAL_STACKPTR_C(&g_task_stacks[2]), sizeof(g_task_stacks[2]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-1) >= OS_SUCCESS
+[  TSF] 42.004 ut_oscore_task_test.c:684 - OS_TaskCreate(&g_task_ids[3], g_task_names[3], generic_test_task, OSAL_STACKPTR_C(&g_task_stacks[3]), sizeof(g_task_stacks[3]), OSAL_PRIORITY_C(UT_TASK_PRIORITY), 0) (-1) >= OS_SUCCESS
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 42 OS_TaskGetInfo       TOTAL::4     PASS::2     FAIL::0     MIR::0     TSF::2     TTF::0   
+
+[BEGIN] 43 OS_TaskFindIdBySystemData
+[ PASS] 43.001 ut_oscore_task_test.c:719 - OS_TaskFindIdBySystemData(NULL, &sysdata, sizeof(sysdata)) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 43.002 ut_oscore_task_test.c:720 - OS_TaskFindIdBySystemData(&task_id, NULL, sizeof(sysdata)) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 43.003 ut_oscore_task_test.c:721 - OS_TaskFindIdBySystemData(&task_id, &sysdata, 0) (-2) == OS_INVALID_POINTER (-2)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 43 OS_TaskFindIdBySystemData TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 44 OS_GetErrorName
+[ PASS] 44.001 ut_oscore_misc_test.c:447 - OS_GetErrorName(OS_ERROR, NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 44.002 ut_oscore_misc_test.c:452 - OS_GetErrorName(12345, &errNames[0]) (-1) == OS_ERROR (-1)
+
+**BUG** OS_TaskFindIdBySystemData():439:check '(task_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_GetErrorName():132:check '(err_name) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 44.003 ut_oscore_misc_test.c:457 - OS_GetErrorName(OS_ERR_NAME_TOO_LONG, &errNames[0]) (0) == OS_SUCCESS (0)
+[ PASS] 44.004 ut_oscore_misc_test.c:458 - OS_ERR_NAME_TOO_LONG == OS_ERR_NAME_TOO_LONG
+[ PASS] 44.005 ut_oscore_misc_test.c:460 - OS_GetErrorName(OS_ERR_NAME_TAKEN, &errNames[1]) (0) == OS_SUCCESS (0)
+[ PASS] 44.006 ut_oscore_misc_test.c:461 - OS_ERR_NAME_TAKEN == OS_ERR_NAME_TAKEN
+[ PASS] 44.007 ut_oscore_misc_test.c:463 - OS_GetErrorName(OS_ERR_NO_FREE_IDS, &errNames[2]) (0) == OS_SUCCESS (0)
+[ PASS] 44.008 ut_oscore_misc_test.c:464 - OS_ERR_NO_FREE_IDS == OS_ERR_NO_FREE_IDS
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 44 OS_GetErrorName      TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 45 OS_StatusToString
+[ PASS] 45.001 ut_oscore_misc_test.c:489 - OS_StatusToString(OS_SUCCESS, NULL) (0x0) == NULL (0x0)
+[ PASS] 45.002 ut_oscore_misc_test.c:479 - rtn_addr (0xfffff6030ce8) == status_string (0xfffff6030ce8)
+[ PASS] 45.003 ut_oscore_misc_test.c:480 - String: '0' == '0'
+[ PASS] 45.004 ut_oscore_misc_test.c:479 - rtn_addr (0xfffff6030ce8) == status_string (0xfffff6030ce8)
+[ PASS] 45.005 ut_oscore_misc_test.c:480 - String: '-1' == '-1'
+[ PASS] 45.006 ut_oscore_misc_test.c:479 - rtn_addr (0xfffff6030ce8) == status_string (0xfffff6030ce8)
+[ PASS] 45.007 ut_oscore_misc_test.c:480 - String: '2147483647' == '2147483647'
+[ PASS] 45.008 ut_oscore_misc_test.c:479 - rtn_addr (0xfffff6030ce8) == status_string (0xfffff6030ce8)
+[ PASS] 45.009 ut_oscore_misc_test.c:480 - String: '-2147483648' == '-2147483648'
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 45 OS_StatusToString    TOTAL::9     PASS::9     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 46 OS_GetLocalTime
+[ PASS] 46.001 ut_oscore_misc_test.c:266 - OS_GetLocalTime(NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 46.002 ut_oscore_misc_test.c:272 - OS_GetLocalTime(&time_struct[i]) (0) == OS_SUCCESS (0)
+[ INFO] ut_oscore_misc_test.c:274:[Expecting output after API call to increase over time: 1779982740.995662]
+
+**BUG** OS_GetLocalTime():64:check '(time_struct) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_GetLocalTime():64:check '(time_struct) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 46.003 ut_oscore_misc_test.c:272 - OS_GetLocalTime(&time_struct[i]) (0) == OS_SUCCESS (0)
+[ INFO] ut_oscore_misc_test.c:274:[Expecting output after API call to increase over time: 1779982741.16358]
+[ PASS] 46.004 ut_oscore_misc_test.c:272 - OS_GetLocalTime(&time_struct[i]) (0) == OS_SUCCESS (0)
+[ INFO] ut_oscore_misc_test.c:274:[Expecting output after API call to increase over time: 1779982741.38057]
+[ PASS] 46.005 ut_oscore_misc_test.c:272 - OS_GetLocalTime(&time_struct[i]) (0) == OS_SUCCESS (0)
+[ INFO] ut_oscore_misc_test.c:274:[Expecting output after API call to increase over time: 1779982741.61097]
+[ PASS] 46.006 ut_oscore_misc_test.c:272 - OS_GetLocalTime(&time_struct[i]) (0) == OS_SUCCESS (0)
+[ INFO] ut_oscore_misc_test.c:274:[Expecting output after API call to increase over time: 1779982741.85974]
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 46 OS_GetLocalTime      TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 47 OS_SetLocalTime
+[ PASS] 47.001 ut_oscore_misc_test.c:352 - OS_SetLocalTime(NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 47.002 ut_oscore_misc_test.c:359 - OS_GetLocalTime(&time_struct[i]) (0) == OS_SUCCESS (0)
+[ INFO] ut_oscore_misc_test.c:360:[Expecting output before API call to increase over time: 1779982741.107430]
+
+**BUG** OS_SetLocalTime():78:check '(time_struct) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_SetLocalTime():78:check '(time_struct) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 47.003 ut_oscore_misc_test.c:359 - OS_GetLocalTime(&time_struct[i]) (0) == OS_SUCCESS (0)
+[ INFO] ut_oscore_misc_test.c:360:[Expecting output before API call to increase over time: 1779982741.132391]
+[ PASS] 47.004 ut_oscore_misc_test.c:359 - OS_GetLocalTime(&time_struct[i]) (0) == OS_SUCCESS (0)
+[ INFO] ut_oscore_misc_test.c:360:[Expecting output before API call to increase over time: 1779982741.154414]
+[ PASS] 47.005 ut_oscore_misc_test.c:359 - OS_GetLocalTime(&time_struct[i]) (0) == OS_SUCCESS (0)
+[ INFO] ut_oscore_misc_test.c:360:[Expecting output before API call to increase over time: 1779982741.175750]
+[ PASS] 47.006 ut_oscore_misc_test.c:359 - OS_GetLocalTime(&time_struct[i]) (0) == OS_SUCCESS (0)
+[ INFO] ut_oscore_misc_test.c:360:[Expecting output before API call to increase over time: 1779982741.197549]
+[  MIR] 47.007 ut_os_support.h:89 - OS_SetLocalTime(&time_struct[0]) value=-1
+[ INFO] ut_oscore_misc_test.c:378:Failed OS_SetLocalTime(), Check to see if your system has the required premission.
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 47 OS_SetLocalTime      TOTAL::7     PASS::6     FAIL::0     MIR::1     TSF::0     TTF::0   
+
+[BEGIN] 48 OS_HeapGetInfo
+[ PASS] 48.001 ut_oscore_misc_test.c:535 - OS_HeapGetInfo(NULL) (-2) == OS_INVALID_POINTER (-2)
+[  N/A] 48.002 ut_oscore_misc_test.c:540 - OS_HeapGetInfo(&heapProp) (-28) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::1   
+[  END] 48 OS_HeapGetInfo       TOTAL::2     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 49 Cleanup
+
+**BUG** OS_HeapGetInfo():50:check '(heap_prop) != NULL' FAILED --> OS_INVALID_POINTER
+
+[  END] No test cases
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::2   
+[  END] 48 SUMMARY              TOTAL::292   PASS::208   FAIL::1     MIR::6     TSF::10    TTF::65  
+COMPLETE: 48 tests Segment(s) executed
+
+
+      Start 81: osal_loader_UT
+78/85 Test #81: osal_loader_UT ............................   Passed    0.07 sec
+      Start 82: osal_filesys_UT
+79/85 Test #82: osal_filesys_UT ...........................   Passed    0.03 sec
+      Start 83: osal_file_UT
+80/85 Test #83: osal_file_UT ..............................   Passed    0.03 sec
+      Start 84: osal_network_UT
+81/85 Test #84: osal_network_UT ...........................   Passed    0.03 sec
+      Start 85: osal_timer_UT
+82/85 Test #85: osal_timer_UT .............................   Passed    5.32 sec
+83/85 Test #78: timer-add-api-test ........................   Passed   30.12 sec
+84/85 Test #72: rwlock-test ...............................***Timeout  60.03 sec
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 RwLockTest
+[ PASS] 01.001 rwlock-test.c:356 - RwLock ID=e0002, status=0
+[ PASS] 01.002 rwlock-test.c:360 - OS_RwLockReadTake 1, status=0
+[ PASS] 01.003 rwlock-test.c:363 - OS_RwLockReadTake 2, status=0
+[ PASS] 01.004 rwlock-test.c:366 - OS_RwLockReadGive 2, status=0
+[ PASS] 01.005 rwlock-test.c:369 - OS_RwLockReadGive 1, status=0
+[ PASS] 01.006 rwlock-test.c:373 - OS_RwLockWriteTake, status=0
+[  TSF] 01.007 rwlock-test.c:383 - Reader ID=0, status=-1
+[  TSF] 01.008 rwlock-test.c:392 - Reader ID=0, status=-1
+Starting ORCHESTRATOR...
+Single-writer only check passed!
+ORCHESTRATOR:Error, readers unable to simultaneously read
+
+85/85 Test #79: timer-test ................................***Timeout  60.01 sec
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 TimerTest
+[  TSF] 01.001 timer-test.c:99 - Timer Test Task Created RC=-1
+
+
+89% tests passed, 9 tests failed out of 85
+
+Total Test time (real) = 133.03 sec
+
+The following tests FAILED:
+	 61 - bin-sem-timeout-test (Timeout)
+	 62 - condvar-test (Timeout)
+	 64 - count-sem-timeout-test (Timeout)
+	 68 - mutex-test (Timeout)
+	 70 - osal-core-test (Failed)
+	 71 - queue-test (Failed)
+	 72 - rwlock-test (Timeout)
+	 79 - timer-test (Timeout)
+	 80 - osal_core_UT (Failed)
+Errors while running CTest

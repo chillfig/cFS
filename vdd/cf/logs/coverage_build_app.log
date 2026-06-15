@@ -1,0 +1,379 @@
+$ make -C build/native/default_cpu1/apps/cf
+# cwd: /tmp/vdd_cf_coverage_v_xh7n87/cFS
+
+make: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1/apps/cf'
+make[1]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[  0%] Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_app.c.o
+[  0%] Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp.c.o
+[  5%] Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_r.c.o
+[  5%] Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_s.c.o
+[  5%] Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_sbintf.c.o
+[  5%] Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cfdp_dispatch.c.o
+[  5%] Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_chunk.c.o
+[  5%] Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_clist.c.o
+[  5%] Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_codec.c.o
+[  5%] Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_cmd.c.o
+[  5%] Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_crc.c.o
+[  5%] Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_timer.c.o
+[  5%] Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_utils.c.o
+[  5%] Building C object apps/cf/CMakeFiles/cf.dir/fsw/src/cf_dispatch.c.o
+[ 11%] Linking C shared module cf.so
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 11%] Built target cf
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 11%] Building C object osal/generic-linux_impl/CMakeFiles/osal_generic-linux_impl.dir/src/bsp_start.c.o
+[ 11%] Building C object osal/generic-linux_impl/CMakeFiles/osal_generic-linux_impl.dir/src/bsp_console.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 11%] Built target osal_generic-linux_impl
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 11%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o
+[ 11%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o
+[ 11%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o
+[ 17%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o
+[ 17%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o
+[ 17%] Linking C static library libosal_bsp.a
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 17%] Built target osal_bsp
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 17%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/utassert.c.o
+[ 17%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/utlist.c.o
+[ 17%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/utstubs.c.o
+[ 17%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/uttest.c.o
+[ 17%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/uttools.c.o
+[ 17%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/utbsp.c.o
+[ 17%] Linking C static library libut_assert.a
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 17%] Built target ut_assert
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 23%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_cache_api_stubs.c.o
+[ 23%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_cds_api_handlers.c.o
+[ 23%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_cds_api_stubs.c.o
+[ 23%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_eepromaccess_api_stubs.c.o
+[ 23%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_endian_handlers.c.o
+[ 23%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_endian_stubs.c.o
+[ 23%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_error_stubs.c.o
+[ 23%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_exception_api_handlers.c.o
+[ 23%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_exception_api_stubs.c.o
+[ 23%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_exceptionstorage_api_stubs.c.o
+[ 23%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_globaldata_stubs.c.o
+[ 23%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_id_api_handlers.c.o
+[ 23%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_id_api_stubs.c.o
+[ 29%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memaccess_api_handlers.c.o
+[ 29%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memaccess_api_stubs.c.o
+[ 29%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memory_stubs.c.o
+[ 29%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memrange_api_handlers.c.o
+[ 29%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memrange_api_stubs.c.o
+[ 29%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_module_stubs.c.o
+[ 29%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_port_api_stubs.c.o
+[ 29%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_ssr_api_stubs.c.o
+[ 29%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_stubs.c.o
+[ 29%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_timertick_api_handlers.c.o
+[ 29%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_timertick_api_stubs.c.o
+[ 29%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_version_api_handlers.c.o
+[ 35%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_version_api_stubs.c.o
+[ 35%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_watchdog_api_handlers.c.o
+[ 35%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_watchdog_api_stubs.c.o
+[ 35%] Linking C static library libut_psp_api_stubs.a
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 35%] Built target ut_psp_api_stubs
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 35%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/utstub-helpers.c.o
+[ 35%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-binsem-stubs.c.o
+[ 35%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-binsem-handlers.c.o
+[ 35%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-clock-stubs.c.o
+[ 41%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-clock-handlers.c.o
+[ 41%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-common-stubs.c.o
+[ 41%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-common-handlers.c.o
+[ 41%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-condvar-stubs.c.o
+[ 41%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-countsem-stubs.c.o
+[ 41%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-countsem-handlers.c.o
+[ 41%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-dir-stubs.c.o
+[ 41%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-dir-handlers.c.o
+[ 41%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-error-stubs.c.o
+[ 41%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-error-handlers.c.o
+[ 41%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-file-stubs.c.o
+[ 41%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-file-handlers.c.o
+[ 47%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-filesys-stubs.c.o
+[ 47%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-filesys-handlers.c.o
+[ 47%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-heap-stubs.c.o
+[ 47%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-heap-handlers.c.o
+[ 47%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-idmap-stubs.c.o
+[ 47%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-idmap-handlers.c.o
+[ 47%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-module-stubs.c.o
+[ 47%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-module-handlers.c.o
+[ 47%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-mutex-stubs.c.o
+[ 47%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-mutex-handlers.c.o
+[ 47%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-network-stubs.c.o
+[ 47%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-network-handlers.c.o
+[ 52%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-printf-stubs.c.o
+[ 52%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-printf-handlers.c.o
+[ 52%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-queue-stubs.c.o
+[ 52%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-queue-handlers.c.o
+[ 52%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-rwlock-stubs.c.o
+[ 52%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-rwlock-handlers.c.o
+[ 52%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-select-stubs.c.o
+[ 52%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-shell-stubs.c.o
+[ 52%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-sockets-stubs.c.o
+[ 52%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-sockets-handlers.c.o
+[ 52%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-task-stubs.c.o
+[ 52%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-task-handlers.c.o
+[ 58%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-timer-stubs.c.o
+[ 58%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-timer-handlers.c.o
+[ 58%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-timebase-stubs.c.o
+[ 58%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-timebase-handlers.c.o
+[ 58%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-version-stubs.c.o
+[ 58%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-version-handlers.c.o
+[ 58%] Linking C static library libut_osapi_stubs.a
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 58%] Built target ut_osapi_stubs
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 58%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_config_handlers.c.o
+[ 58%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_config_stubs.c.o
+[ 58%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_es_handlers.c.o
+[ 58%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_es_stubs.c.o
+[ 58%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_evs_handlers.c.o
+[ 58%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_evs_stubs.c.o
+[ 58%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_fs_handlers.c.o
+[ 58%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_fs_stubs.c.o
+[ 58%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_msg_handlers.c.o
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_msg_stubs.c.o
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_resourceid_handlers.c.o
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_resourceid_stubs.c.o
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_sb_handlers.c.o
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_sb_stubs.c.o
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_tbl_handlers.c.o
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_tbl_stubs.c.o
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_time_handlers.c.o
+[ 64%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_time_stubs.c.o
+[ 64%] Linking C static library libut_core_api_stubs.a
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 64%] Built target ut_core_api_stubs
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 64%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/utilities/cf_test_utils.c.o
+[ 64%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/utilities/cf_test_alt_handler.c.o
+[ 64%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_app_global.c.o
+[ 64%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_app_stubs.c.o
+[ 64%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_cfdp_handlers.c.o
+[ 64%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_cfdp_dispatch_stubs.c.o
+[ 70%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_cfdp_r_stubs.c.o
+[ 70%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_cfdp_s_stubs.c.o
+[ 70%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_cfdp_stubs.c.o
+[ 70%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_cfdp_sbintf_handlers.c.o
+[ 70%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_cfdp_sbintf_stubs.c.o
+[ 70%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_chunk_handlers.c.o
+[ 70%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_chunk_stubs.c.o
+[ 70%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_clist_handlers.c.o
+[ 70%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_clist_stubs.c.o
+[ 70%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_cmd_handlers.c.o
+[ 70%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_cmd_stubs.c.o
+[ 70%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_codec_handlers.c.o
+[ 70%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_codec_stubs.c.o
+[ 76%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_crc_stubs.c.o
+[ 76%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_dispatch_stubs.c.o
+[ 76%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_timer_stubs.c.o
+[ 76%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_utils_handlers.c.o
+[ 76%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf_internal-stubs.dir/stubs/cf_utils_stubs.c.o
+[ 76%] Linking C static library libcoverage-cf_internal-stubs.a
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 76%] Built target coverage-cf_internal-stubs
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 82%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_app-object.dir/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw/src/cf_app.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 82%] Built target coverage-cf-cf_app-object
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 82%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_app-testrunner.dir/cf_app_tests.c.o
+[ 82%] Linking C executable coverage-cf-cf_app-testrunner
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 82%] Built target coverage-cf-cf_app-testrunner
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 82%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_cfdp-object.dir/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw/src/cf_cfdp.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 82%] Built target coverage-cf-cf_cfdp-object
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 82%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_cfdp-testrunner.dir/cf_cfdp_tests.c.o
+[ 82%] Linking C executable coverage-cf-cf_cfdp-testrunner
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 82%] Built target coverage-cf-cf_cfdp-testrunner
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 82%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_cfdp_r-object.dir/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw/src/cf_cfdp_r.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 82%] Built target coverage-cf-cf_cfdp_r-object
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 82%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_cfdp_r-testrunner.dir/cf_cfdp_r_tests.c.o
+[ 82%] Linking C executable coverage-cf-cf_cfdp_r-testrunner
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 82%] Built target coverage-cf-cf_cfdp_r-testrunner
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_cfdp_s-object.dir/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw/src/cf_cfdp_s.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Built target coverage-cf-cf_cfdp_s-object
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_cfdp_s-testrunner.dir/cf_cfdp_s_tests.c.o
+[ 88%] Linking C executable coverage-cf-cf_cfdp_s-testrunner
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Built target coverage-cf-cf_cfdp_s-testrunner
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_cfdp_sbintf-object.dir/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw/src/cf_cfdp_sbintf.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Built target coverage-cf-cf_cfdp_sbintf-object
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_cfdp_sbintf-testrunner.dir/cf_cfdp_sbintf_tests.c.o
+[ 88%] Linking C executable coverage-cf-cf_cfdp_sbintf-testrunner
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Built target coverage-cf-cf_cfdp_sbintf-testrunner
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_cfdp_dispatch-object.dir/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw/src/cf_cfdp_dispatch.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Built target coverage-cf-cf_cfdp_dispatch-object
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_cfdp_dispatch-testrunner.dir/cf_cfdp_dispatch_tests.c.o
+[ 88%] Linking C executable coverage-cf-cf_cfdp_dispatch-testrunner
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Built target coverage-cf-cf_cfdp_dispatch-testrunner
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_chunk-object.dir/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw/src/cf_chunk.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Built target coverage-cf-cf_chunk-object
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_chunk-testrunner.dir/cf_chunk_tests.c.o
+[ 88%] Linking C executable coverage-cf-cf_chunk-testrunner
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Built target coverage-cf-cf_chunk-testrunner
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_clist-object.dir/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw/src/cf_clist.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Built target coverage-cf-cf_clist-object
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_clist-testrunner.dir/cf_clist_tests.c.o
+[ 88%] Linking C executable coverage-cf-cf_clist-testrunner
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Built target coverage-cf-cf_clist-testrunner
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_codec-object.dir/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw/src/cf_codec.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Built target coverage-cf-cf_codec-object
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_codec-testrunner.dir/cf_codec_tests.c.o
+[ 88%] Linking C executable coverage-cf-cf_codec-testrunner
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 88%] Built target coverage-cf-cf_codec-testrunner
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 94%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_cmd-object.dir/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw/src/cf_cmd.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 94%] Built target coverage-cf-cf_cmd-object
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 94%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_cmd-testrunner.dir/cf_cmd_tests.c.o
+[ 94%] Linking C executable coverage-cf-cf_cmd-testrunner
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 94%] Built target coverage-cf-cf_cmd-testrunner
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 94%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_crc-object.dir/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw/src/cf_crc.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 94%] Built target coverage-cf-cf_crc-object
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 94%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_crc-testrunner.dir/cf_crc_tests.c.o
+[ 94%] Linking C executable coverage-cf-cf_crc-testrunner
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[ 94%] Built target coverage-cf-cf_crc-testrunner
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[100%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_timer-object.dir/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw/src/cf_timer.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[100%] Built target coverage-cf-cf_timer-object
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[100%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_timer-testrunner.dir/cf_timer_tests.c.o
+[100%] Linking C executable coverage-cf-cf_timer-testrunner
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[100%] Built target coverage-cf-cf_timer-testrunner
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[100%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_utils-object.dir/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw/src/cf_utils.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[100%] Built target coverage-cf-cf_utils-object
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[100%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_utils-testrunner.dir/cf_utils_tests.c.o
+[100%] Linking C executable coverage-cf-cf_utils-testrunner
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[100%] Built target coverage-cf-cf_utils-testrunner
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[100%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_dispatch-object.dir/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw/src/cf_dispatch.c.o
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[100%] Built target coverage-cf-cf_dispatch-object
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[100%] Building C object apps/cf/unit-test/CMakeFiles/coverage-cf-cf_dispatch-testrunner.dir/cf_dispatch_tests.c.o
+[100%] Linking C executable coverage-cf-cf_dispatch-testrunner
+make[2]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+[100%] Built target coverage-cf-cf_dispatch-testrunner
+make[1]: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1'
+make: Leaving directory '/tmp/vdd_cf_coverage_v_xh7n87/cFS/build/native/default_cpu1/apps/cf'

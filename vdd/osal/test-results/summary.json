@@ -1,0 +1,693 @@
+{
+  "generated_at_utc": "2026-05-28T15:39:47.276204+00:00",
+  "ctest_returncode": 8,
+  "total": 85,
+  "counts": {
+    "passed": 76,
+    "failed": 9,
+    "error": 0,
+    "skipped": 0
+  },
+  "results": [
+    {
+      "name": "coverage-vxworks-binsem",
+      "classname": "coverage-vxworks-binsem",
+      "status": "passed",
+      "time_seconds": 0.000996042,
+      "output_file": "vdd/osal/test-results/tests/001_coverage-vxworks-binsem.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-common",
+      "classname": "coverage-vxworks-common",
+      "status": "passed",
+      "time_seconds": 0.00100379,
+      "output_file": "vdd/osal/test-results/tests/002_coverage-vxworks-common.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-console",
+      "classname": "coverage-vxworks-console",
+      "status": "passed",
+      "time_seconds": 0.000879875,
+      "output_file": "vdd/osal/test-results/tests/003_coverage-vxworks-console.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-countsem",
+      "classname": "coverage-vxworks-countsem",
+      "status": "passed",
+      "time_seconds": 0.00101546,
+      "output_file": "vdd/osal/test-results/tests/004_coverage-vxworks-countsem.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-dirs-globals",
+      "classname": "coverage-vxworks-dirs-globals",
+      "status": "passed",
+      "time_seconds": 0.00104237,
+      "output_file": "vdd/osal/test-results/tests/005_coverage-vxworks-dirs-globals.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-files",
+      "classname": "coverage-vxworks-files",
+      "status": "passed",
+      "time_seconds": 0.00132079,
+      "output_file": "vdd/osal/test-results/tests/006_coverage-vxworks-files.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-filesys",
+      "classname": "coverage-vxworks-filesys",
+      "status": "passed",
+      "time_seconds": 0.000976458,
+      "output_file": "vdd/osal/test-results/tests/007_coverage-vxworks-filesys.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-idmap",
+      "classname": "coverage-vxworks-idmap",
+      "status": "passed",
+      "time_seconds": 0.00240612,
+      "output_file": "vdd/osal/test-results/tests/008_coverage-vxworks-idmap.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-heap",
+      "classname": "coverage-vxworks-heap",
+      "status": "passed",
+      "time_seconds": 0.000854583,
+      "output_file": "vdd/osal/test-results/tests/009_coverage-vxworks-heap.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-loader",
+      "classname": "coverage-vxworks-loader",
+      "status": "passed",
+      "time_seconds": 0.00194017,
+      "output_file": "vdd/osal/test-results/tests/010_coverage-vxworks-loader.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-mutex",
+      "classname": "coverage-vxworks-mutex",
+      "status": "passed",
+      "time_seconds": 0.000871292,
+      "output_file": "vdd/osal/test-results/tests/011_coverage-vxworks-mutex.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-network",
+      "classname": "coverage-vxworks-network",
+      "status": "passed",
+      "time_seconds": 0.00142508,
+      "output_file": "vdd/osal/test-results/tests/012_coverage-vxworks-network.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-queues",
+      "classname": "coverage-vxworks-queues",
+      "status": "passed",
+      "time_seconds": 0.00135458,
+      "output_file": "vdd/osal/test-results/tests/013_coverage-vxworks-queues.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-shell",
+      "classname": "coverage-vxworks-shell",
+      "status": "passed",
+      "time_seconds": 0.00112908,
+      "output_file": "vdd/osal/test-results/tests/014_coverage-vxworks-shell.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-sockets",
+      "classname": "coverage-vxworks-sockets",
+      "status": "passed",
+      "time_seconds": 0.000974041,
+      "output_file": "vdd/osal/test-results/tests/015_coverage-vxworks-sockets.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-symtab",
+      "classname": "coverage-vxworks-symtab",
+      "status": "passed",
+      "time_seconds": 0.000911625,
+      "output_file": "vdd/osal/test-results/tests/016_coverage-vxworks-symtab.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-tasks",
+      "classname": "coverage-vxworks-tasks",
+      "status": "passed",
+      "time_seconds": 0.00104396,
+      "output_file": "vdd/osal/test-results/tests/017_coverage-vxworks-tasks.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-timebase",
+      "classname": "coverage-vxworks-timebase",
+      "status": "passed",
+      "time_seconds": 0.00128188,
+      "output_file": "vdd/osal/test-results/tests/018_coverage-vxworks-timebase.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-posix-gettime",
+      "classname": "coverage-vxworks-posix-gettime",
+      "status": "passed",
+      "time_seconds": 0.00092475,
+      "output_file": "vdd/osal/test-results/tests/019_coverage-vxworks-posix-gettime.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-posix-io",
+      "classname": "coverage-vxworks-posix-io",
+      "status": "passed",
+      "time_seconds": 0.00103,
+      "output_file": "vdd/osal/test-results/tests/020_coverage-vxworks-posix-io.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-posix-files",
+      "classname": "coverage-vxworks-posix-files",
+      "status": "passed",
+      "time_seconds": 0.000924583,
+      "output_file": "vdd/osal/test-results/tests/021_coverage-vxworks-posix-files.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-posix-file-allocate",
+      "classname": "coverage-vxworks-posix-file-allocate",
+      "status": "passed",
+      "time_seconds": 0.00256796,
+      "output_file": "vdd/osal/test-results/tests/022_coverage-vxworks-posix-file-allocate.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-posix-dirs",
+      "classname": "coverage-vxworks-posix-dirs",
+      "status": "passed",
+      "time_seconds": 0.00101938,
+      "output_file": "vdd/osal/test-results/tests/023_coverage-vxworks-posix-dirs.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-console-bsp",
+      "classname": "coverage-vxworks-console-bsp",
+      "status": "passed",
+      "time_seconds": 0.00100379,
+      "output_file": "vdd/osal/test-results/tests/024_coverage-vxworks-console-bsp.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-bsd-select",
+      "classname": "coverage-vxworks-bsd-select",
+      "status": "passed",
+      "time_seconds": 0.000970208,
+      "output_file": "vdd/osal/test-results/tests/025_coverage-vxworks-bsd-select.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-bsd-sockets",
+      "classname": "coverage-vxworks-bsd-sockets",
+      "status": "passed",
+      "time_seconds": 0.00112575,
+      "output_file": "vdd/osal/test-results/tests/026_coverage-vxworks-bsd-sockets.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-bsd-sockets-dns",
+      "classname": "coverage-vxworks-bsd-sockets-dns",
+      "status": "passed",
+      "time_seconds": 0.00205496,
+      "output_file": "vdd/osal/test-results/tests/027_coverage-vxworks-bsd-sockets-dns.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-bsd-sockets-no-dns",
+      "classname": "coverage-vxworks-bsd-sockets-no-dns",
+      "status": "passed",
+      "time_seconds": 0.000968417,
+      "output_file": "vdd/osal/test-results/tests/028_coverage-vxworks-bsd-sockets-no-dns.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-no-loader",
+      "classname": "coverage-vxworks-no-loader",
+      "status": "passed",
+      "time_seconds": 0.00118467,
+      "output_file": "vdd/osal/test-results/tests/029_coverage-vxworks-no-loader.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-no-shell",
+      "classname": "coverage-vxworks-no-shell",
+      "status": "passed",
+      "time_seconds": 0.00145992,
+      "output_file": "vdd/osal/test-results/tests/030_coverage-vxworks-no-shell.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-no-symtab",
+      "classname": "coverage-vxworks-no-symtab",
+      "status": "passed",
+      "time_seconds": 0.00154521,
+      "output_file": "vdd/osal/test-results/tests/031_coverage-vxworks-no-symtab.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-no-network-gethostname",
+      "classname": "coverage-vxworks-no-network-gethostname",
+      "status": "passed",
+      "time_seconds": 0.00109733,
+      "output_file": "vdd/osal/test-results/tests/032_coverage-vxworks-no-network-gethostname.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-no-network-gethostid",
+      "classname": "coverage-vxworks-no-network-gethostid",
+      "status": "passed",
+      "time_seconds": 0.00122967,
+      "output_file": "vdd/osal/test-results/tests/033_coverage-vxworks-no-network-gethostid.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-no-sockets",
+      "classname": "coverage-vxworks-no-sockets",
+      "status": "passed",
+      "time_seconds": 0.00140808,
+      "output_file": "vdd/osal/test-results/tests/034_coverage-vxworks-no-sockets.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-no-condvar",
+      "classname": "coverage-vxworks-no-condvar",
+      "status": "passed",
+      "time_seconds": 0.000928792,
+      "output_file": "vdd/osal/test-results/tests/035_coverage-vxworks-no-condvar.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-vxworks-no-file-allocate",
+      "classname": "coverage-vxworks-no-file-allocate",
+      "status": "passed",
+      "time_seconds": 0.00138104,
+      "output_file": "vdd/osal/test-results/tests/036_coverage-vxworks-no-file-allocate.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-binsem",
+      "classname": "coverage-shared-binsem",
+      "status": "passed",
+      "time_seconds": 0.0008775,
+      "output_file": "vdd/osal/test-results/tests/037_coverage-shared-binsem.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-clock",
+      "classname": "coverage-shared-clock",
+      "status": "passed",
+      "time_seconds": 0.000918583,
+      "output_file": "vdd/osal/test-results/tests/038_coverage-shared-clock.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-common",
+      "classname": "coverage-shared-common",
+      "status": "passed",
+      "time_seconds": 0.000958,
+      "output_file": "vdd/osal/test-results/tests/039_coverage-shared-common.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-condvar",
+      "classname": "coverage-shared-condvar",
+      "status": "passed",
+      "time_seconds": 0.00101238,
+      "output_file": "vdd/osal/test-results/tests/040_coverage-shared-condvar.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-countsem",
+      "classname": "coverage-shared-countsem",
+      "status": "passed",
+      "time_seconds": 0.000888625,
+      "output_file": "vdd/osal/test-results/tests/041_coverage-shared-countsem.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-dir",
+      "classname": "coverage-shared-dir",
+      "status": "passed",
+      "time_seconds": 0.00116892,
+      "output_file": "vdd/osal/test-results/tests/042_coverage-shared-dir.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-errors",
+      "classname": "coverage-shared-errors",
+      "status": "passed",
+      "time_seconds": 0.0013325,
+      "output_file": "vdd/osal/test-results/tests/043_coverage-shared-errors.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-file",
+      "classname": "coverage-shared-file",
+      "status": "passed",
+      "time_seconds": 0.00150771,
+      "output_file": "vdd/osal/test-results/tests/044_coverage-shared-file.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-filesys",
+      "classname": "coverage-shared-filesys",
+      "status": "passed",
+      "time_seconds": 0.00119075,
+      "output_file": "vdd/osal/test-results/tests/045_coverage-shared-filesys.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-heap",
+      "classname": "coverage-shared-heap",
+      "status": "passed",
+      "time_seconds": 0.00129721,
+      "output_file": "vdd/osal/test-results/tests/046_coverage-shared-heap.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-idmap",
+      "classname": "coverage-shared-idmap",
+      "status": "passed",
+      "time_seconds": 0.0490262,
+      "output_file": "vdd/osal/test-results/tests/047_coverage-shared-idmap.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-module",
+      "classname": "coverage-shared-module",
+      "status": "passed",
+      "time_seconds": 0.001015,
+      "output_file": "vdd/osal/test-results/tests/048_coverage-shared-module.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-mutex",
+      "classname": "coverage-shared-mutex",
+      "status": "passed",
+      "time_seconds": 0.000901375,
+      "output_file": "vdd/osal/test-results/tests/049_coverage-shared-mutex.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-network",
+      "classname": "coverage-shared-network",
+      "status": "passed",
+      "time_seconds": 0.001495,
+      "output_file": "vdd/osal/test-results/tests/050_coverage-shared-network.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-printf",
+      "classname": "coverage-shared-printf",
+      "status": "passed",
+      "time_seconds": 0.00230771,
+      "output_file": "vdd/osal/test-results/tests/051_coverage-shared-printf.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-queue",
+      "classname": "coverage-shared-queue",
+      "status": "passed",
+      "time_seconds": 0.000922333,
+      "output_file": "vdd/osal/test-results/tests/052_coverage-shared-queue.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-rwlock",
+      "classname": "coverage-shared-rwlock",
+      "status": "passed",
+      "time_seconds": 0.00117842,
+      "output_file": "vdd/osal/test-results/tests/053_coverage-shared-rwlock.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-select",
+      "classname": "coverage-shared-select",
+      "status": "passed",
+      "time_seconds": 0.000927166,
+      "output_file": "vdd/osal/test-results/tests/054_coverage-shared-select.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-sockets",
+      "classname": "coverage-shared-sockets",
+      "status": "passed",
+      "time_seconds": 0.00130642,
+      "output_file": "vdd/osal/test-results/tests/055_coverage-shared-sockets.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-task",
+      "classname": "coverage-shared-task",
+      "status": "passed",
+      "time_seconds": 0.00103525,
+      "output_file": "vdd/osal/test-results/tests/056_coverage-shared-task.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-timebase",
+      "classname": "coverage-shared-timebase",
+      "status": "passed",
+      "time_seconds": 0.00121446,
+      "output_file": "vdd/osal/test-results/tests/057_coverage-shared-timebase.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-time",
+      "classname": "coverage-shared-time",
+      "status": "passed",
+      "time_seconds": 0.00115217,
+      "output_file": "vdd/osal/test-results/tests/058_coverage-shared-time.txt",
+      "message": ""
+    },
+    {
+      "name": "coverage-shared-version",
+      "classname": "coverage-shared-version",
+      "status": "passed",
+      "time_seconds": 0.00102892,
+      "output_file": "vdd/osal/test-results/tests/059_coverage-shared-version.txt",
+      "message": ""
+    },
+    {
+      "name": "bin-sem-test",
+      "classname": "bin-sem-test",
+      "status": "passed",
+      "time_seconds": 1.08407,
+      "output_file": "vdd/osal/test-results/tests/060_bin-sem-test.txt",
+      "message": ""
+    },
+    {
+      "name": "bin-sem-timeout-test",
+      "classname": "bin-sem-timeout-test",
+      "status": "failed",
+      "time_seconds": 60.0153,
+      "output_file": "vdd/osal/test-results/tests/061_bin-sem-timeout-test.txt",
+      "message": "Timeout"
+    },
+    {
+      "name": "condvar-test",
+      "classname": "condvar-test",
+      "status": "failed",
+      "time_seconds": 60.0124,
+      "output_file": "vdd/osal/test-results/tests/062_condvar-test.txt",
+      "message": "Timeout"
+    },
+    {
+      "name": "count-sem-test",
+      "classname": "count-sem-test",
+      "status": "passed",
+      "time_seconds": 1.2582,
+      "output_file": "vdd/osal/test-results/tests/063_count-sem-test.txt",
+      "message": ""
+    },
+    {
+      "name": "count-sem-timeout-test",
+      "classname": "count-sem-timeout-test",
+      "status": "failed",
+      "time_seconds": 60.002,
+      "output_file": "vdd/osal/test-results/tests/064_count-sem-timeout-test.txt",
+      "message": "Timeout"
+    },
+    {
+      "name": "file-api-test",
+      "classname": "file-api-test",
+      "status": "passed",
+      "time_seconds": 0.0297531,
+      "output_file": "vdd/osal/test-results/tests/065_file-api-test.txt",
+      "message": ""
+    },
+    {
+      "name": "file-sys-add-fixed-map-api-test",
+      "classname": "file-sys-add-fixed-map-api-test",
+      "status": "passed",
+      "time_seconds": 0.028886,
+      "output_file": "vdd/osal/test-results/tests/066_file-sys-add-fixed-map-api-test.txt",
+      "message": ""
+    },
+    {
+      "name": "idmap-api-test",
+      "classname": "idmap-api-test",
+      "status": "passed",
+      "time_seconds": 0.062108,
+      "output_file": "vdd/osal/test-results/tests/067_idmap-api-test.txt",
+      "message": ""
+    },
+    {
+      "name": "mutex-test",
+      "classname": "mutex-test",
+      "status": "failed",
+      "time_seconds": 60.0065,
+      "output_file": "vdd/osal/test-results/tests/068_mutex-test.txt",
+      "message": "Timeout"
+    },
+    {
+      "name": "network-api-test",
+      "classname": "network-api-test",
+      "status": "passed",
+      "time_seconds": 24.0528,
+      "output_file": "vdd/osal/test-results/tests/069_network-api-test.txt",
+      "message": ""
+    },
+    {
+      "name": "osal-core-test",
+      "classname": "osal-core-test",
+      "status": "failed",
+      "time_seconds": 0.0657755,
+      "output_file": "vdd/osal/test-results/tests/070_osal-core-test.txt",
+      "message": "Failed"
+    },
+    {
+      "name": "queue-test",
+      "classname": "queue-test",
+      "status": "failed",
+      "time_seconds": 12.9518,
+      "output_file": "vdd/osal/test-results/tests/071_queue-test.txt",
+      "message": "Failed"
+    },
+    {
+      "name": "rwlock-test",
+      "classname": "rwlock-test",
+      "status": "failed",
+      "time_seconds": 60.0288,
+      "output_file": "vdd/osal/test-results/tests/072_rwlock-test.txt",
+      "message": "Timeout"
+    },
+    {
+      "name": "select-test",
+      "classname": "select-test",
+      "status": "passed",
+      "time_seconds": 3.6072,
+      "output_file": "vdd/osal/test-results/tests/073_select-test.txt",
+      "message": ""
+    },
+    {
+      "name": "sem-speed-test",
+      "classname": "sem-speed-test",
+      "status": "passed",
+      "time_seconds": 5.04313,
+      "output_file": "vdd/osal/test-results/tests/074_sem-speed-test.txt",
+      "message": ""
+    },
+    {
+      "name": "shell-test",
+      "classname": "shell-test",
+      "status": "passed",
+      "time_seconds": 0.0276493,
+      "output_file": "vdd/osal/test-results/tests/075_shell-test.txt",
+      "message": ""
+    },
+    {
+      "name": "symbol-api-test",
+      "classname": "symbol-api-test",
+      "status": "passed",
+      "time_seconds": 0.0276106,
+      "output_file": "vdd/osal/test-results/tests/076_symbol-api-test.txt",
+      "message": ""
+    },
+    {
+      "name": "time-base-api-test",
+      "classname": "time-base-api-test",
+      "status": "passed",
+      "time_seconds": 0.054497,
+      "output_file": "vdd/osal/test-results/tests/077_time-base-api-test.txt",
+      "message": ""
+    },
+    {
+      "name": "timer-add-api-test",
+      "classname": "timer-add-api-test",
+      "status": "passed",
+      "time_seconds": 30.1221,
+      "output_file": "vdd/osal/test-results/tests/078_timer-add-api-test.txt",
+      "message": ""
+    },
+    {
+      "name": "timer-test",
+      "classname": "timer-test",
+      "status": "failed",
+      "time_seconds": 60.0145,
+      "output_file": "vdd/osal/test-results/tests/079_timer-test.txt",
+      "message": "Timeout"
+    },
+    {
+      "name": "osal_core_UT",
+      "classname": "osal_core_UT",
+      "status": "failed",
+      "time_seconds": 2.93406,
+      "output_file": "vdd/osal/test-results/tests/080_osal_core_UT.txt",
+      "message": "Failed"
+    },
+    {
+      "name": "osal_loader_UT",
+      "classname": "osal_loader_UT",
+      "status": "passed",
+      "time_seconds": 0.0663702,
+      "output_file": "vdd/osal/test-results/tests/081_osal_loader_UT.txt",
+      "message": ""
+    },
+    {
+      "name": "osal_filesys_UT",
+      "classname": "osal_filesys_UT",
+      "status": "passed",
+      "time_seconds": 0.0280576,
+      "output_file": "vdd/osal/test-results/tests/082_osal_filesys_UT.txt",
+      "message": ""
+    },
+    {
+      "name": "osal_file_UT",
+      "classname": "osal_file_UT",
+      "status": "passed",
+      "time_seconds": 0.0299106,
+      "output_file": "vdd/osal/test-results/tests/083_osal_file_UT.txt",
+      "message": ""
+    },
+    {
+      "name": "osal_network_UT",
+      "classname": "osal_network_UT",
+      "status": "passed",
+      "time_seconds": 0.0311727,
+      "output_file": "vdd/osal/test-results/tests/084_osal_network_UT.txt",
+      "message": ""
+    },
+    {
+      "name": "osal_timer_UT",
+      "classname": "osal_timer_UT",
+      "status": "passed",
+      "time_seconds": 5.32333,
+      "output_file": "vdd/osal/test-results/tests/085_osal_timer_UT.txt",
+      "message": ""
+    }
+  ]
+}

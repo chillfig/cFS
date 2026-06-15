@@ -1,0 +1,20 @@
+{
+  "lines": {
+    "percent": 100.0,
+    "hit": 3633,
+    "total": 3633,
+    "missed": 0
+  },
+  "functions": {
+    "percent": 100.0,
+    "hit": 425,
+    "total": 425,
+    "missed": 0
+  },
+  "branches": {
+    "percent": 100.0,
+    "hit": 1840,
+    "total": 1840,
+    "missed": 0
+  }
+}

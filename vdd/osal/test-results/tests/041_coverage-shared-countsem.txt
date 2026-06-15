@@ -1,0 +1,25 @@
+name: coverage-shared-countsem
+classname: coverage-shared-countsem
+time_seconds: 0.000888625
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_CountSemAPI_Init
+[ PASS] 01.001 coveragetest-countsem.c:42 - OS_CountSemAPI_Init() (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_CountSemAPI_Init  TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_CountSemCreate
+[ PASS] 02.001 coveragetest-countsem.c:54 - OS_CountSemCreate(&objid, "UT", 0, 0) (0) == OS_SUCCESS (0)
+[ PASS] 02.002 coveragetest-countsem.c:55 - objid (1073938433) != OS_OBJECT_ID_UNDEFINED (0)
+[ PASS] 02.003 coveragetest-countsem.c:57 - OS_CountSemCreate(NULL, "UT", 0, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 02.004 coveragetest-countsem.c:58 - OS_CountSemCreate(&objid, NULL, 0, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 02.005 coveragetest-countsem.c:60 - OS_CountSemCreate(&objid, "UT", 0, 0) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+[ PASS] 02.006 coveragetest-countsem.c:63 - OS_CountSemCreate(&objid, "UT", 0, 0) ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

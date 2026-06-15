@@ -1,0 +1,43 @@
+$ lcov --capture --initial --directory build --output-file coverage_base.info
+# cwd: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Capturing coverage data from build
+geninfo cmd: '/usr/bin/geninfo build --output-filename coverage_base.info --initial --memory 0'
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_datKuOY
+Scanning build for .gcno files ...
+Found 16 graph files in build
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_cmds_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_subs.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_cmds_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_cmds.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_cmds_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_pack.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_cmds_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_app.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_app_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_subs.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_app_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_cmds.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_app_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_pack.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_app_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_app.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_subs_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_subs.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_subs_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_cmds.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_subs_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_pack.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_subs_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_app.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_pack_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_subs.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_pack_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_cmds.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_pack_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_pack.c.gcno
+Processing build/native/default_cpu1/apps/sbn/unit-test/CMakeFiles/ut_sbn-sbn_pack_object.dir/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/apps/sbn/fsw/src/sbn_app.c.gcno
+Finished .info-file creation

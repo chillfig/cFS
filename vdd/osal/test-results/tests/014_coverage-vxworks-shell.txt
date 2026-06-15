@@ -1,0 +1,21 @@
+name: coverage-vxworks-shell
+classname: coverage-vxworks-shell
+time_seconds: 0.00112908
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_ShellOutputToFile_Impl
+[ PASS] 01.001 coveragetest-shell.c:46 - OS_ShellOutputToFile_Impl(&token, "TestCmd") (0) == OS_SUCCESS (0)
+[ PASS] 01.002 coveragetest-shell.c:47 - shellGenericInit() called
+[ PASS] 01.003 coveragetest-shell.c:51 - OS_ShellOutputToFile_Impl(&token, "TestCmd") (-1) == OS_ERROR (-1)
+[ PASS] 01.004 coveragetest-shell.c:55 - OS_ShellOutputToFile_Impl(&token, "TestCmd") (-1) == OS_ERROR (-1)
+[ PASS] 01.005 coveragetest-shell.c:60 - OS_ShellOutputToFile_Impl(&token, "TestCmd") (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_ShellOutputToFile_Impl TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+COMPLETE: 1 tests Segment(s) executed

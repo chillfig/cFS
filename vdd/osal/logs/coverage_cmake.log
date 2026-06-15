@@ -1,0 +1,16 @@
+$ cmake -DCMAKE_BUILD_TYPE=Debug -DENABLE_UNIT_TESTS=TRUE -DOSAL_OMIT_DEPRECATED=FALSE -DOSAL_VALIDATE_API=FALSE -DOSAL_INSTALL_LIBRARIES=FALSE -DOSAL_CONFIG_DEBUG_PERMISSIVE_MODE=TRUE -DOSAL_SYSTEM_BSPTYPE=generic-linux -DCMAKE_PREFIX_PATH=/usr/lib/cmake -DCMAKE_INSTALL_PREFIX=/usr -S source -B build
+# cwd: /tmp/vdd_osal_coverage__52xjsi7/cFS
+
+-- The C compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- BSP Selection: generic-linux at /tmp/vdd_osal_coverage__52xjsi7/cFS/source/src/bsp/generic-linux
+-- OSAL Selection: posix at /tmp/vdd_osal_coverage__52xjsi7/cFS/source/src/os/posix
+-- OSAL Compile Definitions: _XOPEN_SOURCE=600;_POSIX_OS_
+-- Coverage Test Target OS: vxworks;shared
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /tmp/vdd_osal_coverage__52xjsi7/cFS/build

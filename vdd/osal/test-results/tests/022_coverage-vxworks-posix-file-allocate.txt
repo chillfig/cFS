@@ -1,0 +1,22 @@
+name: coverage-vxworks-posix-file-allocate
+classname: coverage-vxworks-posix-file-allocate
+time_seconds: 0.00256796
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_FileAllocate_Impl
+[ PASS] 01.001 coveragetest-posix-file-allocate.c:43 - OS_FileAllocate_Impl(&token, 0, 0) (0) == OS_SUCCESS (0)
+[ PASS] 01.002 coveragetest-posix-file-allocate.c:48 - OS_FileAllocate_Impl(&token, 0, 0) (-38) == OS_ERR_OPERATION_NOT_SUPPORTED (-38)
+[ PASS] 01.003 coveragetest-posix-file-allocate.c:50 - OS_FileAllocate_Impl(&token, 0, 0) (-41) == OS_ERR_OUTPUT_TOO_LARGE (-41)
+[ PASS] 01.004 coveragetest-posix-file-allocate.c:52 - OS_FileAllocate_Impl(&token, 0, 0) (-41) == OS_ERR_OUTPUT_TOO_LARGE (-41)
+[ PASS] 01.005 coveragetest-posix-file-allocate.c:54 - OS_FileAllocate_Impl(&token, 0, 0) (-36) == OS_ERR_INCORRECT_OBJ_TYPE (-36)
+[ PASS] 01.006 coveragetest-posix-file-allocate.c:56 - OS_FileAllocate_Impl(&token, 0, 0) (-36) == OS_ERR_INCORRECT_OBJ_TYPE (-36)
+[ PASS] 01.007 coveragetest-posix-file-allocate.c:58 - OS_FileAllocate_Impl(&token, 0, 0) (-1) == OS_ERROR (-1)
+[ INFO]                        ABORT::0     WARN::0 ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

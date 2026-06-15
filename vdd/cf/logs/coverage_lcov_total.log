@@ -1,0 +1,21 @@
+$ lcov --rc lcov_branch_coverage=1 --add-tracefile coverage_base.info --add-tracefile coverage_test.info --output-file coverage_total.info
+# cwd: /tmp/vdd_cf_coverage_v_xh7n87/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+lcov: WARNING: RC option 'lcov_branch_coverage' is deprecated.  Consider using 'branch_coverage. instead.  (Backward-compatible support will be removed in the future
+Combining tracefiles.
+.. found 2 files to aggregate.
+Merging coverage_base.info..1 remaining
+Merging coverage_test.info..0 remaining
+Writing data to coverage_total.info
+Summary coverage rate:
+  lines......: 100.0% (2951 of 2951 lines)
+  functions..: 100.0% (273 of 273 functions)
+  branches...: 100.0% (1262 of 1262 branches)

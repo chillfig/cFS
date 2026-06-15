@@ -1,0 +1,21 @@
+name: file-sys-add-fixed-map-api-test
+classname: file-sys-add-fixed-map-api-test
+time_seconds: 0.028886
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 TestFileSysAddFixedMapApi
+[ PASS] 01.001 file-sys-add-fixed-map-api-test.c:50 - OS_TranslatePath("/test/myfile.txt", translated_path) (-108) == OS_FS_ERR_PATH_INVALID (-108)
+[ PASS] 01.002 file-sys-add-fixed-map-api-test.c:51 - OS_FileSysAddFixedMap(&fs_id, "./test", "/test") (0) == OS_SUCCESS (0)
+[ PASS] 01.003 file-sys-add-fixed-map-api-test.c:52 - OS_TranslatePath("/test/myfile.txt", translated_path) (0) == OS_SUCCESS (0)
+[ PASS] 01.004 file-sys-add-fixed-map-api-test.c:55 - OS_FileSysAddFixedMap(NULL, "./test", "/test") (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.005 file-sys-add-fixed-map-api-test.c:56 - OS_FileSysAddFixedMap(&fs_id, NULL, "/test") (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.006 file-sys-add-fixed-map-api-test.c:57 - OS_FileSysAddFixedMap(&fs_id, "./test", NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.007 file-sys-add-fixed-map-api-test.c:68 - OS_FileSysAddFixedMap(&fs_id, "./test", long_path) (-103) == OS_FS_ERR_PAT...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

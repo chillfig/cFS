@@ -1,0 +1,87 @@
+$ lcov --capture --rc lcov_branch_coverage=1 --directory /home/cfs/opensource_cFS/cFS/osal/build --output-file /home/cfs/opensource_cFS/cFS/osal/build/coverage.info
+# cwd: /home/cfs/opensource_cFS/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Capturing coverage data from /home/cfs/opensource_cFS/cFS/osal/build
+geninfo cmd: '/usr/bin/geninfo /home/cfs/opensource_cFS/cFS/osal/build --output-filename /home/cfs/opensource_cFS/cFS/osal/build/coverage.info --rc lcov_branch_coverage=1 --memory 0 --branch-coverage'
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+geninfo: WARNING: RC option 'lcov_branch_coverage' is deprecated.  Consider using 'branch_coverage. instead.  (Backward-compatible support will be removed in the future
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_datRnt5
+Scanning /home/cfs/opensource_cFS/cFS/osal/build for .gcda files ...
+Found 59 data files in /home/cfs/opensource_cFS/cFS/osal/build
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-module.dir/__/__/os/shared/src/osapi-module.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-timebase.dir/__/__/os/shared/src/osapi-timebase.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-countsem.dir/__/__/os/shared/src/osapi-countsem.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-mutex.dir/__/__/os/shared/src/osapi-mutex.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-heap.dir/__/__/os/shared/src/osapi-heap.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-task.dir/__/__/os/shared/src/osapi-task.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-binsem.dir/__/__/os/shared/src/osapi-binsem.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-filesys.dir/__/__/os/shared/src/osapi-filesys.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-network.dir/__/__/os/shared/src/osapi-network.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-queue.dir/__/__/os/shared/src/osapi-queue.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-dir.dir/__/__/os/shared/src/osapi-dir.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-clock.dir/__/__/os/shared/src/osapi-clock.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-condvar.dir/__/__/os/shared/src/osapi-condvar.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-idmap.dir/__/__/os/shared/src/osapi-idmap.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-rwlock.dir/__/__/os/shared/src/osapi-rwlock.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-common.dir/__/__/os/shared/src/osapi-common.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-file.dir/__/__/os/shared/src/osapi-file.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-sockets.dir/__/__/os/shared/src/osapi-sockets.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-printf.dir/__/__/os/shared/src/osapi-printf.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-version.dir/__/__/os/shared/src/osapi-version.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-time.dir/__/__/os/shared/src/osapi-time.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-errors.dir/__/__/os/shared/src/osapi-errors.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/shared/CMakeFiles/utobj_coverage-shared-select.dir/__/__/os/shared/src/osapi-select.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-shell.dir/__/__/os/vxworks/src/os-impl-shell.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-sockets.dir/__/__/os/vxworks/src/os-impl-sockets.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-bsd-sockets-dns.dir/__/__/os/portable/os-impl-bsd-sockets-dns.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-posix-file-allocate.dir/__/__/os/portable/os-impl-posix-file-allocate.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-files.dir/__/__/os/vxworks/src/os-impl-files.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-tasks.dir/__/__/os/vxworks/src/os-impl-tasks.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-no-network-gethostid.dir/__/__/os/portable/os-impl-no-network-gethostid.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-no-shell.dir/__/__/os/portable/os-impl-no-shell.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-bsd-sockets-no-dns.dir/__/__/os/portable/os-impl-bsd-sockets-no-dns.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-no-file-allocate.dir/__/__/os/portable/os-impl-no-file-allocate.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-filesys.dir/__/__/os/vxworks/src/os-impl-filesys.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-no-condvar.dir/__/__/os/portable/os-impl-no-condvar.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-bsd-sockets.dir/__/__/os/portable/os-impl-bsd-sockets.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-console-bsp.dir/__/__/os/portable/os-impl-console-bsp.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-network.dir/__/__/os/vxworks/src/os-impl-network.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-dirs-globals.dir/__/__/os/vxworks/src/os-impl-dirs-globals.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-heap.dir/__/__/os/vxworks/src/os-impl-heap.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-queues.dir/__/__/os/vxworks/src/os-impl-queues.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-countsem.dir/__/__/os/vxworks/src/os-impl-countsem.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-no-loader.dir/__/__/os/portable/os-impl-no-loader.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-loader.dir/__/__/os/vxworks/src/os-impl-loader.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-timebase.dir/__/__/os/vxworks/src/os-impl-timebase.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-no-sockets.dir/__/__/os/portable/os-impl-no-sockets.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-posix-gettime.dir/__/__/os/portable/os-impl-posix-gettime.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-posix-dirs.dir/__/__/os/portable/os-impl-posix-dirs.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-symtab.dir/__/__/os/vxworks/src/os-impl-symtab.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-no-symtab.dir/__/__/os/portable/os-impl-no-symtab.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-posix-files.dir/__/__/os/portable/os-impl-posix-files.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-posix-io.dir/__/__/os/portable/os-impl-posix-io.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-common.dir/__/__/os/vxworks/src/os-impl-common.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-no-network-gethostname.dir/__/__/os/portable/os-impl-no-network-gethostname.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-console.dir/__/__/os/vxworks/src/os-impl-console.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-bsd-select.dir/__/__/os/portable/os-impl-bsd-select.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-idmap.dir/__/__/os/vxworks/src/os-impl-idmap.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-binsem.dir/__/__/os/vxworks/src/os-impl-binsem.c.gcda
+Processing /home/cfs/opensource_cFS/cFS/osal/build/unit-test-coverage/vxworks/CMakeFiles/utobj_coverage-vxworks-mutex.dir/__/__/os/vxworks/src/os-impl-mutex.c.gcda
+Finished .info-file creation

@@ -1,0 +1,26 @@
+{
+  "generated_at_utc": "2026-05-28T17:11:34.279636+00:00",
+  "git": {
+    "describe": "v7.0.1-dirty",
+    "sha": "088b2fa828db9ff7e00733f1908e0eeb59f66ce3"
+  },
+  "source_root": "/home/cfs/opensource_cFS/cFS",
+  "targets": {
+    "cfe": {
+      "coverage": {
+        "files": [],
+        "status": "not_applicable"
+      },
+      "docs": {
+        "files": [
+          "vdd/cfe/cfe_userguide.pdf"
+        ],
+        "status": "success"
+      },
+      "git": {
+        "describe": "v7.0.1",
+        "sha": "c5fb2b4d540bd55eb6c3707da7dd13eee679d4dd"
+      }
+    }
+  }
+}

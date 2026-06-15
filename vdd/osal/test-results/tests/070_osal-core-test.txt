@@ -1,0 +1,666 @@
+name: osal-core-test
+classname: osal-core-test
+time_seconds: 0.0657755
+status: failed
+message: Failed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 TASK
+[ FAIL] 01.001 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.002 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.003 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.004 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.005 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.006 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.007 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.008 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.009 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.010 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.011 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.012 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.013 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.014 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.015 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.016 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.017 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.018 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.019 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.020 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.021 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.022 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.023 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.024 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.025 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.026 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.027 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.028 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.029 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.030 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.031 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.032 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.033 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.034 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.035 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.036 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.037 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.038 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.039 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.040 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.041 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.042 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.043 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.044 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.045 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.046 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.047 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.048 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.049 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.050 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.051 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.052 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.053 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.054 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.055 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.056 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.057 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.058 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.059 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.060 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.061 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.062 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.063 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.064 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ PASS] 01.065 osal-core-test.c:195 - OS_TaskCreate, nominal
+[ FAIL] 01.066 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.067 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.068 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.069 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.070 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.071 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.072 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.073 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.074 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.075 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.076 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.077 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.078 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.079 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.080 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.081 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.082 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.083 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.084 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.085 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.086 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.087 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.088 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.089 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.090 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.091 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.092 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.093 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.094 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.095 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.096 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.097 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.098 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.099 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.100 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.101 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.102 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.103 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.104 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.105 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.106 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.107 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.108 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.109 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.110 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.111 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.112 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.113 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.114 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.115 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.116 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.117 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.118 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.119 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.120 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.121 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.122 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.123 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.124 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.125 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.126 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.127 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.128 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ FAIL] 01.129 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ PASS] 01.130 osal-core-test.c:211 - OS_TaskDelete, nominal
+[ PASS] 01.131 osal-core-test.c:217 - OS_TaskDelete, redelete 1
+[ PASS] 01.132 osal-core-test.c:218 - OS_TaskDelete, redelete 2
+[ PASS] 01.133 osal-core-test.c:219 - OS_TaskDelete, redelete 3
+[ FAIL] 01.134 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.135 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.136 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.137 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.138 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.139 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.140 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.141 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.142 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.143 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.144 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.145 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.146 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.147 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.148 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.149 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.150 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.151 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.152 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.153 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.154 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.155 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.156 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.157 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.158 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.159 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.160 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.161 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.162 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.163 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.164 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.165 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.166 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.167 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.168 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.169 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.170 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.171 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.172 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.173 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.174 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.175 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.176 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.177 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.178 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.179 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.180 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.181 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.182 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.183 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.184 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.185 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.186 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.187 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.188 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.189 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.190 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.191 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.192 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.193 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.194 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.195 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.196 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.197 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.198 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.199 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.200 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.201 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.202 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.203 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.204 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.205 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.206 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.207 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.208 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.209 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.210 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.211 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.212 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.213 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.214 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.215 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.216 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.217 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.218 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.219 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.220 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.221 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.222 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.223 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.224 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.225 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.226 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.227 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.228 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.229 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.230 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.231 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.232 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.233 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.234 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.235 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.236 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.237 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.238 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.239 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.240 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.241 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.242 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.243 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.244 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.245 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.246 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.247 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.248 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.249 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.250 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.251 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.252 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.253 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.254 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.255 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.256 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.257 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.258 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.259 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.260 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.261 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.262 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.263 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.264 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.265 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.266 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.267 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.268 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.269 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.270 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.271 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.272 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.273 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.274 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.275 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.276 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.277 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.278 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.279 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.280 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.281 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.282 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.283 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.284 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.285 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.286 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.287 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.288 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.289 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.290 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.291 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.292 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.293 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.294 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.295 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.296 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.297 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.298 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.299 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.300 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.301 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.302 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.303 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.304 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.305 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.306 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.307 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.308 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.309 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.310 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.311 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.312 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.313 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.314 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.315 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.316 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.317 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.318 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.319 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.320 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.321 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.322 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.323 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.324 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.325 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.326 osal-core-test.c:239 - OS_TaskCreate, self exiting task
+[ PASS] 01.327 osal-core-test.c:251 - Looped 0 times without self-exiting task exiting
+[ PASS] 01.328 osal-core-test.c:260 - OS_TaskDelete, self exiting task
+[ FAIL] 01.329 osal-core-test.c:274 - OS_TaskCreate, recreate 0
+[ PASS] 01.330 osal-core-test.c:284 - OS_TaskCreate, dupe name 0
+[ FAIL] 01.331 osal-core-test.c:293 - OS_TaskCreate, recreate 2
+[ FAIL] 01.332 osal-core-test.c:302 - OS_TaskCreate, recreate 3
+[ FAIL] 01.333 osal-core-test.c:306 - OS_TaskGetIdByName, Task 0
+[ PASS] 01.334 osal-core-test.c:309 - OS_TaskGetIdByName, Task 1
+[ FAIL] 01.335 osal-core-test.c:312 - OS_TaskGetIdByName, Task 2
+[ FAIL] 01.336 osal-core-test.c:315 - OS_TaskGetIdByName, Task 3
+[ PASS] 01.337 osal-core-test.c:321 - OS_TaskDelete, Old ID
+[ FAIL] 01.338 osal-core-test.c:323 - OS_TaskDelete, Task 0
+[ PASS] 01.339 osal-core-test.c:324 - OS_TaskDelete, Task 1
+[ FAIL] 01.340 osal-core-test.c:325 - OS_TaskDelete, Task 2
+[ FAIL] 01.341 osal-core-test.c:326 - OS_TaskDelete, Task 3
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 TASK                 TOTAL::341   PASS::139   FAIL::202   MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 TASKSTACK
+[ FAIL] 02.001 osal-core-test.c:338 - OS_TaskCreate(&task_0_id, "Task 0", task_test_stackptr_0, OSAL_STACKPTR_C(task_0_stack), sizeof(task_0_stack), OSAL_PRIORITY_C(TASK_0_PRIORITY), 0) (-1) == OS_SUCCESS (0)
+[ PASS] 02.002 osal-core-test.c:355 - loopcnt (0) < UT_EXIT_LOOP_MAX (100)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 02 TASKSTACK            TOTAL::2     PASS::1     FAIL::1     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 03 MSGQ
+[ PASS] 03.001 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.002 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.003 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.004 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.005 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.006 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.007 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.008 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.009 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.010 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.011 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.012 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.013 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.014 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.015 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.016 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.017 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.018 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.019 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.020 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.021 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.022 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.023 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.024 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.025 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.026 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.027 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.028 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.029 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.030 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.031 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.032 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.033 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.034 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.035 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.036 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.037 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.038 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.039 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.040 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.041 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.042 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.043 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.044 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.045 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.046 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.047 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.048 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.049 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.050 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.051 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.052 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.053 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.054 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.055 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.056 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.057 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.058 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.059 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.060 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.061 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.062 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.063 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.064 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.065 osal-core-test.c:376 - OS_QueueCreate, nominal
+[ PASS] 03.066 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.067 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.068 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.069 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.070 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.071 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.072 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.073 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.074 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.075 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.076 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.077 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.078 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.079 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.080 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.081 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.082 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.083 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.084 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.085 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.086 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.087 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.088 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.089 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.090 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.091 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.092 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.093 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.094 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.095 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.096 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.097 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.098 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.099 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.100 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.101 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.102 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.103 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.104 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.105 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.106 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.107 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.108 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.109 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.110 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.111 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.112 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.113 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.114 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.115 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.116 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.117 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.118 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.119 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.120 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.121 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.122 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.123 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.124 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.125 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.126 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.127 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.128 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.129 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.130 osal-core-test.c:387 - OS_QueueDelete, nominal
+[ PASS] 03.131 osal-core-test.c:395 - OS_QueueCreate, recreate 0
+[ PASS] 03.132 osal-core-test.c:399 - OS_QueueCreate, dupe name 0
+[ PASS] 03.133 osal-core-test.c:402 - OS_QueueCreate, recreate 2
+[ PASS] 03.134 osal-core-test.c:405 - OS_QueueCreate, recreate 3
+[ PASS] 03.135 osal-core-test.c:412 - OS_QueueGetIdByName, q 0
+[ PASS] 03.136 osal-core-test.c:415 - OS_QueueGetIdByName, q 1
+[ PASS] 03.137 osal-core-test.c:418 - OS_QueueGetIdByName, q 2
+[ PASS] 03.138 osal-core-test.c:421 - OS_QueueGetIdByName, q 3
+[ PASS] 03.139 osal-core-test.c:427 - OS_QueueDelete, Old ID
+[ PASS] 03.140 osal-core-test.c:432 - OS_QueueDelete, q 0
+[ PASS] 03.141 osal-core-test.c:435 - OS_QueueDelete, q 1
+[ PASS] 03.142 osal-core-test.c:438 - OS_QueueDelete, q 2
+[ PASS] 03.143 osal-core-test.c:441 - OS_QueueDelete, q 3
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 03 MSGQ                 TOTAL::143   PASS::143   FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 04 BSEM
+[ PASS] 04.001 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.002 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.003 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.004 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.005 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.006 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.007 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.008 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.009 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.010 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.011 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.012 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.013 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.014 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.015 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.016 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.017 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.018 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.019 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.020 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.021 osal-core-test.c:460 - OS_BinSemCreate, nominal
+[ PASS] 04.022 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.023 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.024 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.025 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.026 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.027 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.028 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.029 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.030 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.031 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.032 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.033 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.034 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.035 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.036 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.037 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.038 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.039 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.040 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.041 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.042 osal-core-test.c:471 - OS_BinSemDelete, nominal
+[ PASS] 04.043 osal-core-test.c:482 - OS_BinSemCreate, recreate 0
+[ PASS] 04.044 osal-core-test.c:485 - OS_BinSemCreate, dupe name 0
+[ PASS] 04.045 osal-core-test.c:488 - OS_BinSemCreate, recreate 2
+[ PASS] 04.046 osal-core-test.c:491 - OS_BinSemCreate, recreate 3
+[ PASS] 04.047 osal-core-test.c:494 - OS_BinSemGetIdByName, Bin 0
+[ PASS] 04.048 osal-core-test.c:497 - OS_BinSemGetIdByName, Bin 1
+[ PASS] 04.049 osal-core-test.c:500 - OS_BinSemGetIdByName, Bin 2
+[ PASS] 04.050 osal-core-test.c:503 - OS_BinSemGetIdByName, Bin 3
+[ PASS] 04.051 osal-core-test.c:509 - OS_BinSemDelete, Old ID
+[ PASS] 04.052 osal-core-test.c:512 - OS_BinSemDelete, Bin 0
+[ PASS] 04.053 osal-core-test.c:516 - OS_BinSemDelete, Bin 1
+[ PASS] 04.054 osal-core-test.c:519 - OS_BinSemDelete, Bin 2
+[ PASS] 04.055 osal-core-test.c:522 - OS_BinSemDelete, Bin 3
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 04 BSEM                 TOTAL::55    PASS::55    FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 05 MSEM
+[ PASS] 05.001 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.002 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.003 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.004 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.005 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.006 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.007 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.008 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.009 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.010 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.011 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.012 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.013 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.014 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.015 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.016 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.017 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.018 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.019 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.020 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.021 osal-core-test.c:541 - OS_MutSemCreate, nominal
+[ PASS] 05.022 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.023 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.024 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.025 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.026 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.027 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.028 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.029 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.030 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.031 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.032 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.033 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.034 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.035 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.036 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.037 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.038 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.039 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.040 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.041 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.042 osal-core-test.c:552 - OS_MutSemDelete, nominal
+[ PASS] 05.043 osal-core-test.c:563 - OS_MutSemCreate, recreate 0
+[ PASS] 05.044 osal-core-test.c:566 - OS_MutSemCreate, dupe name 0
+[ PASS] 05.045 osal-core-test.c:569 - OS_MutSemCreate, recreate 2
+[ PASS] 05.046 osal-core-test.c:572 - OS_MutSemCreate, recreate 3
+[ PASS] 05.047 osal-core-test.c:575 - OS_MutSemGetIdByName, Mut 0
+[ PASS] 05.048 osal-core-test.c:578 - OS_MutSemGetIdByName, Mut 1
+[ PASS] 05.049 osal-core-test.c:581 - OS_MutSemGetIdByName, Mut 2
+[ PASS] 05.050 osal-core-test.c:584 - OS_MutSemGetIdByName, Mut 3
+[ PASS] 05.051 osal-core-test.c:590 - OS_MutSemDelete, Old ID
+[ PASS] 05.052 osal-core-test.c:593 - OS_MutSemDelete, Mut 0
+[ PASS] 05.053 osal-core-test.c:597 - OS_MutSemDelete, Mut 1
+[ PASS] 05.054 osal-core-test.c:600 - OS_MutSemDelete, Mut 2
+[ PASS] 05.055 osal-core-test.c:603 - OS_MutSemDelete, Mut 3
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 05 MSEM                 TOTAL::55    PASS::55    FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 06 INFO
+[ FAIL] 06.001 osal-core-test.c:664 - OS_TaskCreate
+[ PASS] 06.002 osal-core-test.c:667 - OS_QueueCreate
+[ PASS] 06.003 osal-core-test.c:670 - OS_MutSemCreate
+[ FAIL] 06.004 osal-core-test.c:675 - OS_TaskGetInfo
+[ PASS] 06.005 osal-core-test.c:678 - OS_QueueGetInfo
+[ PASS] 06.006 osal-core-test.c:681 - OS_MutSemGetInfo
+[ FAIL] 06.007 osal-core-test.c:684 - OS_TaskDelete
+[ PASS] 06.008 osal-core-test.c:687 - OS_QueueDelete
+[ PASS] 06.009 osal-core-test.c:690 - OS_MutSemDelete
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 06 INFO                 TOTAL::9     PASS::6     FAIL::3     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 07 QUERIES
+[ FAIL] 07.001 osal-core-test.c:712 - OS_TaskCreate (-1) == OS_SUCCESS
+[ PASS] 07.002 osal-core-test.c:715 - OS_QueueCreate (0) == OS_SUCCESS
+[ PASS] 07.003 osal-core-test.c:718 - OS_BinSemCreate (0) == OS_SUCCESS
+[ PASS] 07.004 osal-core-test.c:721 - OS_MutSemCreate (0) == OS_SUCCESS
+[ FAIL] 07.005 osal-core-test.c:727 - Task NumInvocations (0) == 1
+[ PASS] 07.006 osal-core-test.c:728 - Task ObjList[0] (0) == 0
+[ PASS] 07.007 osal-core-test.c:735 - BinSem NumInvocations (1) == 1
+[ PASS] 07.008 osal-core-test.c:736 - BinSem ObjList[0] (40018) == 40018
+[ PASS] 07.009 osal-core-test.c:743 - CountSem NumInvocations (0) == 0
+[ PASS] 07.010 osal-core-test.c:755 - State.NumInvocations (4) >= 4
+[ PASS] 07.011 osal-core-test.c:759 - OS_GetResourceName (50019,-40) == OS_ERR_INVALID_SIZE
+[ PASS] 07.012 osal-core-test.c:765 - OS_GetResourceName (20045,0) == OS_SUCCESS
+[ PASS] 07.013 osal-core-test.c:769 - Output value correct
+[ PASS] 07.014 osal-core-test.c:772 - OS_GetResourceName (0,-16) == OS_ERR_INVALID_ID
+[ PASS] 07.015 osal-core-test.c:778 - OS_GetResourceName (40018,-13) == OS_ERR_NAME_TOO_LONG
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 07 QUERIES              TOTAL::15    PASS::13    FAIL::2     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 08 Cleanup
+[  END] No test cases
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 07 SUMMARY              TOTAL::620   PASS::412   FAIL::208   MIR::0     TSF::0     TTF::0   
+COMPLETE: 7 tests Segment(s) executed

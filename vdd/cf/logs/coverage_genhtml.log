@@ -1,0 +1,62 @@
+$ genhtml coverage_total.info --branch-coverage --output-directory lcov
+# cwd: /tmp/vdd_cf_coverage_v_xh7n87/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found 22 entries.
+Found common filename prefix "/tmp/vdd_cf_coverage_v_xh7n87/cFS/apps/cf/fsw"
+Generating output.
+Processing file src/cf_cfdp_r.c
+  lines=371 hit=371 functions=24 hit=24 branches=171 hit=171
+Processing file src/cf_cfdp_dispatch.c
+  lines=47 hit=47 functions=3 hit=3 branches=22 hit=22
+Processing file src/cf_cfdp.c
+  lines=746 hit=746 functions=61 hit=61 branches=294 hit=294
+Processing file src/cf_crc.c
+  lines=19 hit=19 functions=3 hit=3 branches=6 hit=6
+Processing file src/cf_utils.h
+  lines=18 hit=18 functions=5 hit=5
+Processing file src/cf_cfdp.h
+  lines=2 hit=2 functions=1 hit=1
+Processing file src/cf_cmd.h
+  lines=2 hit=2 functions=1 hit=1
+Processing file src/cf_cfdp_s.c
+  lines=317 hit=317 functions=20 hit=20 branches=171 hit=171
+Processing file src/cf_timer.c
+  lines=10 hit=10 functions=4 hit=4
+Processing file /tmp/vdd_cf_coverage_v_xh7n87/cFS/osal/src/os/inc/osapi-idmap.h
+  lines=4 hit=4 functions=2 hit=2
+Processing file src/cf_codec.h
+  lines=16 hit=16 functions=6 hit=6
+Processing file src/cf_codec.c
+  lines=356 hit=356 functions=43 hit=43 branches=128 hit=128
+Processing file src/cf_cmd.c
+  lines=445 hit=445 functions=38 hit=38 branches=207 hit=207
+Processing file src/cf_app.c
+  lines=86 hit=86 functions=5 hit=5 branches=56 hit=56
+Processing file /tmp/vdd_cf_coverage_v_xh7n87/cFS/cfe/modules/core_api/fsw/inc/cfe_sb.h
+  lines=7 hit=7 functions=3 hit=3
+Processing file src/cf_cfdp_sbintf.c
+  lines=62 hit=62 functions=3 hit=3 branches=34 hit=34
+Processing file src/cf_chunk.h
+  lines=4 hit=4 functions=1 hit=1 branches=2 hit=2
+Processing file src/cf_clist.c
+  lines=74 hit=74 functions=8 hit=8 branches=36 hit=36
+Processing file src/cf_chunk.c
+  lines=133 hit=133 functions=14 hit=14 branches=64 hit=64
+Processing file src/cf_dispatch.c
+  lines=32 hit=32 functions=2 hit=2 branches=14 hit=14
+Processing file src/cf_utils.c
+  lines=198 hit=198 functions=25 hit=25 branches=57 hit=57
+Processing file src/cf_clist.h
+  lines=2 hit=2 functions=1 hit=1
+Overall coverage rate:
+  lines......: 100.0% (2951 of 2951 lines)
+  functions......: 100.0% (273 of 273 functions)
+  branches......: 100.0% (1262 of 1262 branches)

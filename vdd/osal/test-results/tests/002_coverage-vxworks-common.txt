@@ -1,0 +1,23 @@
+name: coverage-vxworks-common
+classname: coverage-vxworks-common
+time_seconds: 0.00100379
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_API_Impl_Init
+[ PASS] 01.001 coveragetest-common.c:42 - OS_API_Impl_Init(0) (0) == OS_SUCCESS (0)
+[ PASS] 01.002 coveragetest-common.c:44 - OS_API_Impl_Init(OS_OBJECT_TYPE_OS_TASK) (-1) == OS_ERROR (-1)
+[ PASS] 01.003 coveragetest-common.c:46 - OS_API_Impl_Init(OS_OBJECT_TYPE_OS_TASK) (0) == OS_SUCCESS (0)
+[ PASS] 01.004 coveragetest-common.c:47 - OS_API_Impl_Init(OS_OBJECT_TYPE_OS_QUEUE) (0) == OS_SUCCESS (0)
+[ PASS] 01.005 coveragetest-common.c:48 - OS_API_Impl_Init(OS_OBJECT_TYPE_OS_BINSEM) (0) == OS_SUCCESS (0)
+[ PASS] 01.006 coveragetest-common.c:49 - OS_API_Impl_Init(OS_OBJECT_TYPE_OS_COUNTSEM) (0) == OS_SUCCESS (0)
+[ PASS] 01.007 coveragetest-common.c:50 - OS_API_Impl_Init(OS_OBJECT_TYPE_OS_MUTEX) (0) == OS_SUCCESS (0)
+[ PASS] 01.008 coveragetest-common.c:51 - OS_API_Impl_Init(OS_OBJECT_TYPE_OS_MODULE) (0) == OS_SUCCESS (0)
+[ PASS] 01.009 coveragetest-common.c:52 - OS_API_Impl_Init(OS_OBJECT_TYPE_OS_TIMEBASE) (0) == OS_SUCCESS (0...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

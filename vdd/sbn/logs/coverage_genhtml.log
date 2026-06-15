@@ -1,0 +1,32 @@
+$ genhtml coverage_total.info --branch-coverage --output-directory lcov
+# cwd: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found 7 entries.
+Found common filename prefix "/tmp/vdd_sbn_coverage_cjj9r_tj/cFS"
+Generating output.
+Processing file apps/sbn/fsw/src/sbn_app.c
+  lines=701 hit=637 functions=29 hit=29 branches=356 hit=287
+Processing file apps/sbn/fsw/src/sbn_cmds.c
+  lines=227 hit=220 functions=13 hit=13 branches=77 hit=69
+Processing file cfe/modules/core_api/fsw/inc/cfe_sb.h
+  lines=7 hit=7 functions=3 hit=3
+Processing file osal/src/os/inc/osapi-idmap.h
+  lines=4 hit=4 functions=2 hit=2
+Processing file apps/sbn/fsw/src/sbn_pack.c
+  lines=62 hit=62 functions=15 hit=15 branches=16 hit=16
+Processing file cfe/modules/core_api/fsw/inc/cfe_resourceid.h
+  lines=6 hit=6 functions=3 hit=3
+Processing file apps/sbn/fsw/src/sbn_subs.c
+  lines=233 hit=231 functions=15 hit=15 branches=116 hit=106
+Overall coverage rate:
+  lines......: 94.1% (1167 of 1240 lines)
+  functions......: 100.0% (80 of 80 functions)
+  branches......: 84.6% (478 of 565 branches)

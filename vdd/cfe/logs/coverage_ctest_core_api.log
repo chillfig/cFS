@@ -1,0 +1,5 @@
+$ ctest --output-on-failure
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/core_api
+
+Test project /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/core_api
+No tests were found!!!

@@ -1,0 +1,138 @@
+Testing module config
+$ ctest --output-on-failure
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/config
+
+Test project /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/config
+    Start 1: coverage-config-ALL
+1/1 Test #1: coverage-config-ALL ..............   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.00 sec
+
+Testing module core_api
+$ ctest --output-on-failure
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/core_api
+
+Test project /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/core_api
+No tests were found!!!
+
+Testing module core_private
+$ ctest --output-on-failure
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/core_private
+
+Test project /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/core_private
+No tests were found!!!
+
+Testing module es
+$ ctest --output-on-failure
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/es
+
+Test project /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/es
+    Start 1: coverage-es-ALL
+1/1 Test #1: coverage-es-ALL ..................   Passed    0.04 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.04 sec
+
+Testing module evs
+$ ctest --output-on-failure
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/evs
+
+Test project /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/evs
+    Start 1: coverage-evs-ALL
+1/1 Test #1: coverage-evs-ALL .................   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.02 sec
+
+Testing module fs
+$ ctest --output-on-failure
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/fs
+
+Test project /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/fs
+    Start 1: coverage-fs-ALL
+1/1 Test #1: coverage-fs-ALL ..................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.01 sec
+
+Testing module msg
+$ ctest --output-on-failure
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/msg
+
+Test project /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/msg
+    Start 1: coverage-msg-ALL
+1/1 Test #1: coverage-msg-ALL .................   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.01 sec
+
+Testing module resourceid
+$ ctest --output-on-failure
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/resourceid
+
+Test project /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/resourceid
+    Start 1: resourceid_UT
+1/1 Test #1: resourceid_UT ....................   Passed    0.04 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.04 sec
+
+Testing module sb
+$ ctest --output-on-failure
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/sb
+
+Test project /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/sb
+    Start 1: coverage-sb-ALL
+1/1 Test #1: coverage-sb-ALL ..................   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.01 sec
+
+Testing module sbr
+$ ctest --output-on-failure
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/sbr
+
+Test project /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/sbr
+    Start 1: sbr_map_direct_UT
+1/3 Test #1: sbr_map_direct_UT ................   Passed    0.03 sec
+    Start 2: sbr_map_hash_UT
+2/3 Test #2: sbr_map_hash_UT ..................   Passed    0.03 sec
+    Start 3: sbr_route_unsorted_UT
+3/3 Test #3: sbr_route_unsorted_UT ............   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) =   0.06 sec
+
+Testing module tbl
+$ ctest --output-on-failure
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/tbl
+
+Test project /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/tbl
+    Start 1: coverage-tbl-ALL
+1/1 Test #1: coverage-tbl-ALL .................   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.01 sec
+
+Testing module time
+$ ctest --output-on-failure
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/time
+
+Test project /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/time
+    Start 1: coverage-time-ALL
+1/1 Test #1: coverage-time-ALL ................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.00 sec
+

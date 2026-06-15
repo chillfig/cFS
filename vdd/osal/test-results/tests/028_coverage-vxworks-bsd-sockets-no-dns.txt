@@ -1,0 +1,24 @@
+name: coverage-vxworks-bsd-sockets-no-dns
+classname: coverage-vxworks-bsd-sockets-no-dns
+time_seconds: 0.000968417
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_SocketAddrToString_Impl
+[ PASS] 01.001 coveragetest-bsd-sockets-no-dns.c:51 - OS_SocketAddrToString_Impl(buffer, sizeof(buffer), &addr) (-34) == OS_ERR_BAD_ADDRESS (-34)
+[ PASS] 01.002 coveragetest-bsd-sockets-no-dns.c:55 - OS_SocketAddrToString_Impl(buffer, sizeof(buffer), &addr) (0) == OS_SUCCESS (0)
+[ PASS] 01.003 coveragetest-bsd-sockets-no-dns.c:59 - OS_SocketAddrToString_Impl(buffer, sizeof(buffer), &addr) (0) == OS_SUCCESS (0)
+[ PASS] 01.004 coveragetest-bsd-sockets-no-dns.c:63 - OS_SocketAddrToString_Impl(buffer, sizeof(buffer), &addr) (-1) == OS_ERROR (-1)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_SocketAddrToString_Impl TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_SocketAddrFromString_Impl
+[ PASS] 02.001 coveragetest-bsd-sockets-no-dns.c:74 - OS_SocketAddrFromString_Impl(&addr, buffer) (-34) == OS_ERR_BAD_ADDRESS (-34)
+[ PASS]...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

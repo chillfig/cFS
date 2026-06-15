@@ -1,0 +1,30 @@
+$ genhtml coverage_total.info --branch-coverage --output-directory lcov
+# cwd: /tmp/vdd_hk_coverage_8k3jjcjo/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found 6 entries.
+Found common filename prefix "/tmp/vdd_hk_coverage_8k3jjcjo/cFS"
+Generating output.
+Processing file apps/hk/fsw/src/hk_app.c
+  lines=99 hit=99 functions=4 hit=4 branches=42 hit=42
+Processing file apps/hk/fsw/src/hk_dispatch.c
+  lines=77 hit=77 functions=8 hit=8 branches=23 hit=23
+Processing file cfe/modules/core_api/fsw/inc/cfe_resourceid.h
+  lines=2 hit=2 functions=1 hit=1
+Processing file apps/hk/fsw/src/hk_cmds.c
+  lines=24 hit=24 functions=4 hit=4 branches=2 hit=2
+Processing file apps/hk/fsw/src/hk_utils.c
+  lines=259 hit=259 functions=10 hit=10 branches=136 hit=136
+Processing file cfe/modules/core_api/fsw/inc/cfe_sb.h
+  lines=7 hit=7 functions=3 hit=3
+Overall coverage rate:
+  lines......: 100.0% (468 of 468 lines)
+  functions......: 100.0% (30 of 30 functions)
+  branches......: 100.0% (203 of 203 branches)

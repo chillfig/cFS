@@ -1,0 +1,10 @@
+$ ctest --output-on-failure
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/evs
+
+Test project /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/evs
+    Start 1: coverage-evs-ALL
+1/1 Test #1: coverage-evs-ALL .................   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.02 sec

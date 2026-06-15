@@ -1,0 +1,34 @@
+$ genhtml coverage_total.info --branch-coverage --output-directory lcov
+# cwd: /tmp/vdd_lc_coverage_34dcgrn9/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found 8 entries.
+Found common filename prefix "/tmp/vdd_lc_coverage_34dcgrn9/cFS/apps/lc/fsw"
+Generating output.
+Processing file src/lc_cmds.c
+  lines=245 hit=245 functions=12 hit=12 branches=93 hit=93
+Processing file src/lc_action.c
+  lines=198 hit=198 functions=5 hit=5 branches=174 hit=174
+Processing file src/lc_watch.c
+  lines=379 hit=379 functions=13 hit=13 branches=176 hit=176
+Processing file src/lc_app.c
+  lines=244 hit=244 functions=9 hit=9 branches=186 hit=186
+Processing file /tmp/vdd_lc_coverage_34dcgrn9/cFS/cfe/modules/core_api/fsw/inc/cfe_sb.h
+  lines=7 hit=7 functions=3 hit=3
+Processing file src/lc_utils.c
+  lines=43 hit=43 functions=3 hit=3 branches=20 hit=20
+Processing file src/lc_custom.c
+  lines=13 hit=13 functions=2 hit=2
+Processing file src/lc_dispatch.c
+  lines=116 hit=116 functions=12 hit=12 branches=42 hit=42
+Overall coverage rate:
+  lines......: 100.0% (1245 of 1245 lines)
+  functions......: 100.0% (59 of 59 functions)
+  branches......: 100.0% (691 of 691 branches)

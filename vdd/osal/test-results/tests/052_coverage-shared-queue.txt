@@ -1,0 +1,24 @@
+name: coverage-shared-queue
+classname: coverage-shared-queue
+time_seconds: 0.000922333
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_QueueAPI_Init
+[ PASS] 01.001 coveragetest-queue.c:42 - OS_QueueAPI_Init() (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_QueueAPI_Init     TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_QueueCreate
+[ PASS] 02.001 coveragetest-queue.c:54 - OS_QueueCreate(&objid, "UT", OSAL_BLOCKCOUNT_C(4), OSAL_SIZE_C(4), 0) (0) == OS_SUCCESS (0)
+[ PASS] 02.002 coveragetest-queue.c:57 - OS_QueueCreate(NULL, "UT", OSAL_BLOCKCOUNT_C(4), OSAL_SIZE_C(4), 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 02.003 coveragetest-queue.c:58 - OS_QueueCreate(&objid, NULL, OSAL_BLOCKCOUNT_C(4), OSAL_SIZE_C(4), 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 02.004 coveragetest-queue.c:60 - OS_QueueCreate(&objid, "UT", OSAL_BLOCKCOUNT_C(4), OSAL_SIZE_C(0), 0) (-40) == OS_ERR_INVALID_SIZE (-40)
+[ PASS] 02.005 coveragetest-queue.c:61 - OS_QueueCreate(&objid, "UT", OS...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

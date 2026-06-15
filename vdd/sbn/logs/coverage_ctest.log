@@ -1,0 +1,650 @@
+$ ctest --verbose
+# cwd: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1/apps/sbn
+
+UpdateCTestConfiguration  from :/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1/apps/sbn/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1/apps/sbn/DartConfiguration.tcl
+Test project /tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1/apps/sbn
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: sbn-sbn_app
+
+1: Test command: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1/apps/sbn/unit-test/sbn-sbn_app-testrunner
+1: Working Directory: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1/apps/sbn/unit-test
+1: Test timeout computed to be: 10000000
+1: 
+1: [BEGIN] UNIT TEST
+1: 
+1: [BEGIN] 01 SETUP
+1: [  END] No test cases
+1: 
+1: [BEGIN] 01 SBN_AppMain
+1: [ PASS] 01.001 coveragetest_sbn_app.c:40 - CallCount: CFE_ES_GetAppID() (0) == 0 (0)
+1: [ PASS] 01.002 coveragetest_sbn_app.c:52 - CallCount: OS_TaskGetId() (0) == 0 (0)
+1: [ PASS] 01.003 coveragetest_sbn_app.c:53 - EID generated (1)
+1: [ PASS] 01.004 coveragetest_sbn_app.c:65 - EID generated (1)
+1: [ PASS] 01.005 coveragetest_sbn_app.c:79 - EID generated (1)
+1: [ PASS] 01.006 coveragetest_sbn_app.c:91 - EID generated (1)
+1: [ PASS] 01.007 coveragetest_sbn_app.c:103 - EID generated (1)
+1: [ PASS] 01.008 coveragetest_sbn_app.c:115 - EID generated (1)
+1: [ PASS] 01.009 coveragetest_sbn_app.c:166 - EID generated (1)
+1: [ PASS] 01.010 coveragetest_sbn_app.c:200 - EID generated (1)
+1: [ PASS] 01.011 coveragetest_sbn_app.c:232 - EID generated (1)
+1: [ PASS] 01.012 coveragetest_sbn_app.c:272 - EID generated (1)
+1: [ PASS] 01.013 coveragetest_sbn_app.c:296 - EID generated (1)
+1: [ PASS] 01.014 coveragetest_sbn_app.c:348 - EID generated (1)
+1: [ PASS] 01.015 coveragetest_sbn_app.c:397 - EID generated (1)
+1: [ PASS] 01.016 coveragetest_sbn_app.c:441 - EID generated (1)
+1: [ PASS] 01.017 coveragetest_sbn_app.c:491 - EID generated (1)
+1: [ PASS] 01.018 coveragetest_sbn_app.c:530 - EID generated (1)
+1: [ PASS] 01.019 coveragetest_sbn_app.c:570 - EID generated (1)
+1: [ PASS] 01.020 coveragetest_sbn_app.c:610 - EID generated (1)
+1: [ PASS] 01.021 coveragetest_sbn_app.c:624 - EID generated (1)
+1: [ PASS] 01.022 coveragetest_sbn_app.c:651 - EID generated (1)
+1: [ PASS] 01.023 coveragetest_sbn_app.c:690 - EID generated (1)
+1: [ PASS] 01.024 coveragetest_sbn_app.c:782 - EID generated (1)
+1: [ PASS] 01.025 coveragetest_sbn_app.c:837 - EID generated (1)
+1: [ PASS] 01.026 coveragetest_sbn_app.c:876 - EID generated (1)
+1: [ PASS] 01.027 coveragetest_sbn_app.c:916 - EID generated (1)
+1: [ PASS] 01.028 coveragetest_sbn_app.c:951 - EID generated (1)
+1: [ PASS] 01.029 coveragetest_sbn_app.c:987 - EID generated (1)
+1: [ PASS] 01.030 coveragetest_sbn_app.c:1028 - EID generated (1)
+1: [ PASS] 01.031 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+1: [ PASS] 01.032 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+1: [ PASS] 01.033 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+1: [ PASS] 01.034 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+1: [ PASS] 01.035 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+1: [ PASS] 01.036 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+1: [ PASS] 01.037 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+1: [ PASS] 01.038 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+1: [ PASS] 01.039 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+1: [ PASS] 01.040 coveragetest_sbn_app.c:1465 - EID generated (1)
+1: [ PASS] 01.041 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+1: [ PASS] 01.042 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+1: [ PASS] 01.043 coveragetest_sbn_app.c:1633 - EID generated (1)
+1: [ PASS] 01.044 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+1: [ PASS] 01.045 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+1: [ PASS] 01.046 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 01 SBN_AppMain          TOTAL::46    PASS::46    FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 02 SBN_ProcessNetMsg
+1: [ PASS] 02.001 coveragetest_sbn_app.c:1789 - SBN_ProcessNetMsg(NetPtr, SBN_PROTO_MSG, ProcessorID + 1, SpacecraftID, 0, NULL) (1) == SBN_ERROR (1)
+1: [ PASS] 02.002 coveragetest_sbn_app.c:1791 - EID generated (1)
+1: [ PASS] 02.003 coveragetest_sbn_app.c:1849 - SBN_ProcessNetMsg(NetPtr, SBN_APP_MSG, ProcessorID, SpacecraftID, 0, NULL) (1) == SBN_ERROR (1)
+1: [ PASS] 02.004 coveragetest_sbn_app.c:1880 - SBN_ProcessNetMsg(NetPtr, SBN_APP_MSG, ProcessorID, SpacecraftID, 0, NULL) (2) == SBN_IF_EMPTY (2)
+1: [ PASS] 02.005 coveragetest_sbn_app.c:1900 - SBN_ProcessNetMsg(NetPtr, SBN_APP_MSG, ProcessorID, SpacecraftID, 0, NULL) (1) == SBN_ERROR (1)
+1: [ PASS] 02.006 coveragetest_sbn_app.c:1902 - EID generated (1)
+1: [ PASS] 02.007 coveragetest_sbn_app.c:1803 - SBN_ProcessNetMsg(NetPtr, SBN_PROTO_MSG, ProcessorID, SpacecraftID, sizeof(ver), &ver) (0) == SBN_SUCCESS (0)
+1: [ PASS] 02.008 coveragetest_sbn_app.c:1806 - EID generated (1)
+1: [ PASS] 02.009 coveragetest_sbn_app.c:1996 - SBN_ProcessNetMsg(NetPtr, SBN_NO_MSG + 100, ProcessorID, SpacecraftID, 0, NULL) (1) == SBN_ERROR (1)
+1: [ PASS] 02.010 coveragetest_sbn_app.c:1929 - SBN_ProcessNetMsg(NetPtr, SBN_APP_MSG, ProcessorID, SpacecraftID, 0, NULL) (0) == SBN_SUCCESS (0)
+1: [ PASS] 02.011 coveragetest_sbn_app.c:1949 - SBN_ProcessNetMsg(NetPtr, SBN_SUB_MSG, ProcessorID, SpacecraftID, sizeof(Buf), &Buf) (0) == SBN_SUCCESS (0)
+1: [ PASS] 02.012 coveragetest_sbn_app.c:1951 - PeerPtr->Subs[0].MsgID.Value (6168) == MsgID.Value (6168)
+1: [ PASS] 02.013 coveragetest_sbn_app.c:1972 - SBN_ProcessNetMsg(NetPtr, SBN_SUB_MSG, ProcessorID, SpacecraftID, sizeof(Buf), &Buf) (0) == SBN_SUCCESS (0)
+1: [ PASS] 02.014 coveragetest_sbn_app.c:1974 - PeerPtr->SubCnt (1) == 1 (1)
+1: [ PASS] 02.015 coveragetest_sbn_app.c:1975 - PeerPtr->Subs[0].MsgID.Value (6168) == MsgID.Value (6168)
+1: [ PASS] 02.016 coveragetest_sbn_app.c:1976 - SBN_ProcessNetMsg(NetPtr, SBN_UNSUB_MSG, ProcessorID, SpacecraftID, sizeof(Buf), &Buf) (0) == SBN_SUCCESS (0)
+1: [ PASS] 02.017 coveragetest_sbn_app.c:1978 - PeerPtr->SubCnt (0) == 0 (0)
+1: [ PASS] 02.018 coveragetest_sbn_app.c:1818 - SBN_ProcessNetMsg(NetPtr, SBN_PROTO_MSG, ProcessorID, SpacecraftID, sizeof(ver), &ver) (0) == SBN_SUCCESS (0)
+1: [ PASS] 02.019 coveragetest_sbn_app.c:1821 - EID generated (1)
+1: [ PASS] 02.020 coveragetest_sbn_app.c:1986 - SBN_ProcessNetMsg(NetPtr, SBN_NO_MSG, ProcessorID, SpacecraftID, 0, NULL) (0) == SBN_SUCCESS (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 02 SBN_ProcessNetMsg    TOTAL::20    PASS::20    FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 03 SBN_Connected
+1: [ PASS] 03.001 coveragetest_sbn_app.c:2027 - SBN_Connected(PeerPtr) (1) == SBN_ERROR (1)
+1: [ PASS] 03.002 coveragetest_sbn_app.c:2028 - PeerPtr->Connected (1) == 1 (1)
+1: [ PASS] 03.003 coveragetest_sbn_app.c:2029 - EID generated (1)
+1: [ PASS] 03.004 coveragetest_sbn_app.c:2072 - SBN_Connected(PeerPtr) (1) == SBN_ERROR (1)
+1: [ PASS] 03.005 coveragetest_sbn_app.c:2073 - EID generated (1)
+1: [ PASS] 03.006 coveragetest_sbn_app.c:2042 - SBN_Connected(PeerPtr) (1) == SBN_ERROR (1)
+1: [ PASS] 03.007 coveragetest_sbn_app.c:2043 - EID generated (1)
+1: [ PASS] 03.008 coveragetest_sbn_app.c:2057 - SBN_Connected(PeerPtr) (1) == SBN_ERROR (1)
+1: [ PASS] 03.009 coveragetest_sbn_app.c:2081 - SBN_Connected(PeerPtr) (0) == SBN_SUCCESS (0)
+1: [ PASS] 03.010 coveragetest_sbn_app.c:2083 - PeerPtr->Connected (1) == 1 (1)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 03 SBN_Connected        TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 04 SBN_Disconnected
+1: [ PASS] 04.001 coveragetest_sbn_app.c:2110 - SBN_Disconnected(PeerPtr) (1) == SBN_ERROR (1)
+1: [ PASS] 04.002 coveragetest_sbn_app.c:2111 - EID generated (1)
+1: [ PASS] 04.003 coveragetest_sbn_app.c:2130 - SBN_Disconnected(PeerPtr) (0) == SBN_SUCCESS (0)
+1: [ PASS] 04.004 coveragetest_sbn_app.c:2131 - PeerPtr->Connected (0) == 0 (0)
+1: [ PASS] 04.005 coveragetest_sbn_app.c:2132 - EID generated (1)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 04 SBN_Disconnected     TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 05 SBN_ReloadConfTbl
+1: [ PASS] 05.001 coveragetest_sbn_app.c:2163 - SBN_ReloadConfTbl() (1) == SBN_ERROR (1)
+1: [ PASS] 05.002 coveragetest_sbn_app.c:2165 - EID generated (1)
+1: [ PASS] 05.003 coveragetest_sbn_app.c:2190 - SBN_ReloadConfTbl() (1) == SBN_ERROR (1)
+1: [ PASS] 05.004 coveragetest_sbn_app.c:2192 - EID generated (1)
+1: [ PASS] 05.005 coveragetest_sbn_app.c:2211 - SBN_ReloadConfTbl() (1) == SBN_ERROR (1)
+1: [ PASS] 05.006 coveragetest_sbn_app.c:2213 - EID generated (1)
+1: [ PASS] 05.007 coveragetest_sbn_app.c:2230 - SBN_ReloadConfTbl() (1) == SBN_ERROR (1)
+1: [ PASS] 05.008 coveragetest_sbn_app.c:2321 - Result (0) == SBN_SUCCESS (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 05 SBN_ReloadConfTbl    TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 06 SBN_PackUnpack
+1: [ PASS] 06.001 coveragetest_sbn_app.c:2346 - unpack of an empty pack
+1: [ PASS] 06.002 coveragetest_sbn_app.c:2347 - MsgSz (0) == 0 (0)
+1: [ PASS] 06.003 coveragetest_sbn_app.c:2348 - MsgType (3) == SBN_APP_MSG (3)
+1: [ PASS] 06.004 coveragetest_sbn_app.c:2349 - ProcID (1234) == ProcessorID (1234)
+1: [ PASS] 06.005 coveragetest_sbn_app.c:2350 - SpaceID (5678) == SpacecraftID (5678)
+1: [ PASS] 06.006 coveragetest_sbn_app.c:2372 - unpack of invalid pack
+1: [ PASS] 06.007 coveragetest_sbn_app.c:2390 - unpack of a pack
+1: [ PASS] 06.008 coveragetest_sbn_app.c:2392 - MsgSz (1) == 1 (1)
+1: [ PASS] 06.009 coveragetest_sbn_app.c:2393 - MsgType (3) == SBN_APP_MSG (3)
+1: [ PASS] 06.010 coveragetest_sbn_app.c:2394 - ProcID (1234) == ProcessorID (1234)
+1: [ PASS] 06.011 coveragetest_sbn_app.c:2395 - SpaceID (5678) == SpacecraftID (5678)
+1: [ PASS] 06.012 coveragetest_sbn_app.c:2396 - (int32)TestData (123) == (int32)Payload[0] (123)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 06 SBN_PackUnpack       TOTAL::12    PASS::12    FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 07 SBN_RecvNetMsgs
+1: [ PASS] 07.001 coveragetest_sbn_app.c:2438 - SBN_RecvNetMsgs() (0) == SBN_SUCCESS (0)
+1: [ PASS] 07.002 coveragetest_sbn_app.c:2413 - SBN_RecvNetMsgs() (0) == SBN_SUCCESS (0)
+1: [ PASS] 07.003 coveragetest_sbn_app.c:2455 - SBN_RecvNetMsgs() (0) == SBN_SUCCESS (0)
+1: [ PASS] 07.004 coveragetest_sbn_app.c:2475 - SBN_RecvNetMsgs() (0) == SBN_SUCCESS (0)
+1: [ PASS] 07.005 coveragetest_sbn_app.c:2480 - EID generated (1)
+1: [ PASS] 07.006 coveragetest_sbn_app.c:2488 - SBN_RecvNetMsgs() (0) == SBN_SUCCESS (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 07 SBN_RecvNetMsgs      TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 08 SBN_RecvPeerTask
+1: [ PASS] 08.001 coveragetest_sbn_app.c:2514 - EID generated (1)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 08 SBN_RecvPeerTask     TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 09 SBN_RecvNetTask
+1: [ PASS] 09.001 coveragetest_sbn_app.c:2613 - EID generated (1)
+1: [ PASS] 09.002 coveragetest_sbn_app.c:2679 - EID generated (1)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 09 SBN_RecvNetTask      TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 10 SBN_SendTask
+1: [ PASS] 10.001 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+1: [ PASS] 10.002 coveragetest_sbn_app.c:2948 - SendTaskID should be cleared after error
+1: [ PASS] 10.003 coveragetest_sbn_app.c:2952 - CallCount: CFE_SB_ReceiveBuffer() (2) == 2 (2)
+1: [ PASS] 10.004 coveragetest_sbn_app.c:2955 - CallCount: OS_GetLocalTime() (1) == 1 (1)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 10 SBN_SendTask         TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 11 SBN_SendNetMsg
+1: [ PASS] 11.001 coveragetest_sbn_app.c:3006 - SBN_SendNetMsg(0, 0, NULL, PeerPtr) (1) == SBN_ERROR (1)
+1: [ PASS] 11.002 coveragetest_sbn_app.c:3008 - EID generated (1)
+1: [ PASS] 11.003 coveragetest_sbn_app.c:3022 - SBN_SendNetMsg(0, 0, NULL, PeerPtr) (1) == SBN_ERROR (1)
+1: [ PASS] 11.004 coveragetest_sbn_app.c:3024 - EID generated (1)
+1: [ PASS] 11.005 coveragetest_sbn_app.c:3036 - SBN_SendNetMsg(0, 0, NULL, PeerPtr) (1) == SBN_ERROR (1)
+1: [ PASS] 11.006 coveragetest_sbn_app.c:3037 - PeerPtr->SendCnt (0) == 0 (0)
+1: [ PASS] 11.007 coveragetest_sbn_app.c:3038 - PeerPtr->SendErrCnt (1) == 1 (1)
+1: [ PASS] 11.008 coveragetest_sbn_app.c:3044 - PeerPtr->SendCnt (1) == 1 (1)
+1: [ PASS] 11.009 coveragetest_sbn_app.c:3045 - PeerPtr->SendErrCnt (1) == 1 (1)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 11 SBN_SendNetMsg       TOTAL::9     PASS::9     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 11 SUMMARY              TOTAL::123   PASS::123   FAIL::0     MIR::0     TSF::0     TTF::0   
+1: COMPLETE: 11 tests Segment(s) executed
+1: 
+1: Start item AppMain_EVSRegisterErr (34)
+1: Start item AppMain_AppIdErr (45)
+1: Start item AppMain_TaskInfoErr (58)
+1: Start item LoadConfTbl_RegisterErr (72)
+1: Start item LoadConfTbl_LoadErr (84)
+1: Start item LoadConfTbl_ManageErr (96)
+1: Start item LoadConfTbl_NotifyErr (108)
+1: Start item LoadConf_Module_ProtoLibFNNull (150)
+1: Start item LoadConf_Module_FiltLibFNNull (184)
+1: Start item LoadConf_Module_ModLdErr (220)
+1: Start item LoadConf_Module_SymLookErr (257)
+1: Start item LoadConf_GetAddrErr (285)
+1: Start item LoadConf_ProtoInitErr (332)
+1: Start item LoadConf_FilterInitErr (381)
+1: Start item LoadConf_ProtoNameErr (421)
+1: Start item LoadConf_FiltNameErr (474)
+1: Start item LoadConf_TooManyNets (516)
+1: Start item LoadConf_ReleaseAddrErr (555)
+1: Start item LoadConf_NetCntInc (595)
+1: Start item LoadConf_Nominal (615)
+1: Start item AppMain_MutSemCrErr (642)
+1: Start item InitInt_NoNets (674)
+1: Start item InitInt_NetConfErr (736)
+1: Start item AppMain_SubPipeCrErr (804)
+1: Start item AppMain_SubPipeAllSubErr (842)
+1: Start item AppMain_SubPipeOneSubErr (881)
+1: Start item AppMain_CmdPipeCrErr (921)
+1: Start item AppMain_CmdPipeSubErr (956)
+1: Start item SBStart_DelPipeErr (992)
+1: Start item W4W_NoMsg (1038)
+1: Start item W4W_RcvMsgErr (1327)
+1: Start item CheckPP_SendTask (1075)
+1: Start item CheckPP_SendTaskErr (1110)
+1: Start item CheckPP_RecvErr (1147)
+1: Start item CheckPP_FilterEmpty (1185)
+1: Start item CheckPP_FilterErr (1236)
+1: Start item CheckPP_Nominal (1284)
+1: Start item PeerPoll_RecvNetTask_ChildTaskErr (1384)
+1: Start item PeerPoll_RecvNetTask_Nominal (1470)
+1: Start item PeerPoll_RecvPeerTask_ChildTaskErr (1552)
+1: Start item PeerPoll_RecvPeerTask_Nominal (1643)
+1: Start item AppMain_Nominal (1713)
+1: Start item ProcessNetMsg_PeerErr (1784)
+1: Start item ProcessNetMsg_AppMsg_FiltErr (1831)
+1: Start item ProcessNetMsg_AppMsg_FiltOut (1859)
+1: Start item ProcessNetMsg_AppMsg_PassMsgErr (1890)
+1: Start item ProcessNetMsg_ProtoMsg_VerErr (1796)
+1: Start item ProcessNetMsg_MsgErr (1991)
+1: Start item ProcessNetMsg_AppMsg_Nominal (1907)
+1: Start item ProcessNetMsg_SubMsg_Nominal (1934)
+1: Start item ProcessNetMsg_UnSubMsg_Nominal (1956)
+1: Start item ProcessNetMsg_ProtoMsg_Nominal (1811)
+1: Start item ProcessNetMsg_NoMsg_Nominal (1983)
+1: Start item Connected_AlreadyErr (2017)
+1: Start item Connected_CrPipeErr (2064)
+1: Start item Connected_PipeOptErr (2034)
+1: Start item Connected_SendErr (2048)
+1: Start item Connected_Nominal (2078)
+1: Start item Disconnected_ConnErr (2097)
+1: Start item Disconnected_Nominal (2116)
+1: Start item ReloadConfTbl_UnloadNetErr (2148)
+1: Start item ReloadConfTbl_ProtoUnloadErr (2172)
+1: Start item ReloadConfTbl_FiltUnloadErr (2197)
+1: Start item ReloadConfTbl_TblUpdErr (2218)
+1: Start item ReloadConfTbl_Nominal (2235)
+1: Start item Unpack_Empty (2335)
+1: Start item Unpack_Err (2355)
+1: Start item Unpack_Nominal (2377)
+1: Start item RecvNetMsgs_NetEmpty (2430)
+1: Start item RecvNetMsgs_TaskRecv (2408)
+1: Start item RecvNetMsgs_PeerRecv (2445)
+1: Start item RecvNetMsgs_NoRecv (2463)
+1: Start item RecvNetMsgs_Nominal (2485)
+1: Start item RecvPeerTask_NetConfErr (2502)
+1: Start item RecvPeerTask_Empty (2534)
+1: Start item RecvPeerTask_Nominal (2571)
+1: Start item RecvNetTask_NetConfErr (2600)
+1: Start item RecvNetTask_Empty (2632)
+1: Start item RecvNetTask_PeerErr (2663)
+1: Start item RecvNetTask_Nominal (2704)
+1: Start item SendTask_ConnTaskErr (2732)
+1: Start item SendTask_PeerNotConn (2770)
+1: Start item SendTask_FiltErr (2804)
+1: Start item SendTask_Filters (2848)
+1: Start item SendTask_SendNetMsgErr (2889)
+1: Start item SendTask_Nominal (2960)
+1: Start item SendNetMsg_MutexTakeErr (2997)
+1: Start item SendNetMsg_MutexGiveErr (3013)
+1: Start item SendNetMsg_SendErr (3029)
+1/4 Test #1: sbn-sbn_app ......................   Passed    0.00 sec
+test 2
+    Start 2: sbn-sbn_subs
+
+2: Test command: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1/apps/sbn/unit-test/sbn-sbn_subs-testrunner
+2: Working Directory: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1/apps/sbn/unit-test
+2: Test timeout computed to be: 10000000
+2: 
+2: [BEGIN] UNIT TEST
+2: 
+2: [BEGIN] 01 SETUP
+2: [  END] No test cases
+2: 
+2: [BEGIN] 01 SBN_SendSubsRequests
+2: [ PASS] 01.001 coveragetest_sbn_subs.c:33 - SBN_SendSubsRequests() (1) == SBN_ERROR (1)
+2: [ PASS] 01.002 coveragetest_sbn_subs.c:34 - EID generated (1)
+2: [ PASS] 01.003 coveragetest_sbn_subs.c:45 - SBN_SendSubsRequests() (1) == SBN_ERROR (1)
+2: [ PASS] 01.004 coveragetest_sbn_subs.c:46 - EID generated (1)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 01 SBN_SendSubsRequests TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 02 SBN_SendLocalSubsToPeer
+2: [ PASS] 02.001 coveragetest_sbn_subs.c:66 - SBN_SendLocalSubsToPeer(&SBN.Nets[0].Peers[1]) (1) == SBN_ERROR (1)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 02 SBN_SendLocalSubsToPeer TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 03 SBN_CheckSubscriptionPipe
+2: [ PASS] 03.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+2: [ PASS] 03.002 coveragetest_sbn_subs.c:94 - SBN_CheckSubscriptionPipe() (1) == SBN_ERROR (1)
+2: [ PASS] 03.003 coveragetest_sbn_subs.c:96 - EID generated (1)
+2: [ PASS] 03.004 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+2: [ PASS] 03.005 coveragetest_sbn_subs.c:117 - SBN_CheckSubscriptionPipe() (0) == SBN_SUCCESS (0)
+2: [ PASS] 03.006 coveragetest_sbn_subs.c:119 - SBN.Subs[0].InUseCtr (2) == 2 (2)
+2: [ PASS] 03.007 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+2: [ PASS] 03.008 coveragetest_sbn_subs.c:138 - SBN_CheckSubscriptionPipe() (1) == SBN_ERROR (1)
+2: [ PASS] 03.009 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+2: [ PASS] 03.010 coveragetest_sbn_subs.c:161 - SBN_CheckSubscriptionPipe() (0) == SBN_SUCCESS (0)
+2: [ PASS] 03.011 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+2: [ PASS] 03.012 coveragetest_sbn_subs.c:184 - SBN_CheckSubscriptionPipe() (0) == SBN_SUCCESS (0)
+2: [ PASS] 03.013 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+2: [ PASS] 03.014 coveragetest_sbn_subs.c:203 - SBN_CheckSubscriptionPipe() (0) == SBN_SUCCESS (0)
+2: [ PASS] 03.015 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+2: [ PASS] 03.016 coveragetest_sbn_subs.c:224 - SBN_CheckSubscriptionPipe() (0) == SBN_SUCCESS (0)
+2: [ PASS] 03.017 coveragetest_sbn_subs.c:226 - SBN.Subs[0].InUseCtr (1) == 1 (1)
+2: [ PASS] 03.018 coveragetest_sbn_subs.c:227 - SBN.SubCnt (1) == 1 (1)
+2: [ PASS] 03.019 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+2: [ PASS] 03.020 coveragetest_sbn_subs.c:250 - SBN_CheckSubscriptionPipe() (1) == SBN_ERROR (1)
+2: [ PASS] 03.021 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+2: [ PASS] 03.022 coveragetest_sbn_subs.c:273 - SBN_CheckSubscriptionPipe() (0) == SBN_SUCCESS (0)
+2: [ PASS] 03.023 coveragetest_sbn_subs.c:275 - SBN.Subs[0].InUseCtr (0) == 0 (0)
+2: [ PASS] 03.024 coveragetest_sbn_subs.c:276 - SBN.SubCnt (0) == 0 (0)
+2: [ PASS] 03.025 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+2: [ PASS] 03.026 coveragetest_sbn_subs.c:295 - SBN_CheckSubscriptionPipe() (1) == SBN_ERROR (1)
+2: [ PASS] 03.027 coveragetest_sbn_subs.c:297 - SBN.Subs[0].InUseCtr (0) == 0 (0)
+2: [ PASS] 03.028 coveragetest_sbn_subs.c:298 - SBN.SubCnt (0) == 0 (0)
+2: [ PASS] 03.029 coveragetest_sbn_subs.c:300 - EID generated (1)
+2: [ PASS] 03.030 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+2: [ PASS] 03.031 coveragetest_sbn_subs.c:318 - SBN_CheckSubscriptionPipe() (1) == SBN_ERROR (1)
+2: [ PASS] 03.032 coveragetest_sbn_subs.c:320 - SBN.Subs[0].InUseCtr (0) == 0 (0)
+2: [ PASS] 03.033 coveragetest_sbn_subs.c:321 - SBN.SubCnt (0) == 0 (0)
+2: [ PASS] 03.034 coveragetest_sbn_subs.c:323 - EID generated (1)
+2: [ PASS] 03.035 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+2: [ PASS] 03.036 coveragetest_sbn_subs.c:345 - SBN_CheckSubscriptionPipe() (1) == SBN_ERROR (1)
+2: [ PASS] 03.037 coveragetest_sbn_subs.c:347 - EID generated (1)
+2: [ PASS] 03.038 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+2: [ PASS] 03.039 coveragetest_sbn_subs.c:364 - SBN_CheckSubscriptionPipe() (0) == SBN_SUCCESS (0)
+2: [ PASS] 03.040 coveragetest_sbn_subs.c:366 - SBN.Subs[0].InUseCtr (1) == 1 (1)
+2: [ PASS] 03.041 coveragetest_sbn_subs.c:367 - SBN.SubCnt (1) == 1 (1)
+2: [ PASS] 03.042 coveragetest_sbn_subs.c:376 - SBN_CheckSubscriptionPipe() (2) == SBN_IF_EMPTY (2)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 03 SBN_CheckSubscriptionPipe TOTAL::42    PASS::42    FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 04 SBN_ProcessSubsFromPeer
+2: [ PASS] 04.001 coveragetest_sbn_subs.c:423 - SBN_ProcessSubsFromPeer(PeerPtr, Buf) (1) == SBN_ERROR (1)
+2: [ PASS] 04.002 coveragetest_sbn_subs.c:425 - PeerPtr->SubCnt (0) == 0 (0)
+2: [ PASS] 04.003 coveragetest_sbn_subs.c:444 - SBN_ProcessSubsFromPeer(PeerPtr, Buf) (0) == SBN_SUCCESS (0)
+2: [ PASS] 04.004 coveragetest_sbn_subs.c:446 - PeerPtr->SubCnt (1) == 1 (1)
+2: [ PASS] 04.005 coveragetest_sbn_subs.c:448 - EID generated (1)
+2: [ PASS] 04.006 coveragetest_sbn_subs.c:468 - SBN_ProcessSubsFromPeer(PeerPtr, Buf) (1) == SBN_ERROR (1)
+2: [ PASS] 04.007 coveragetest_sbn_subs.c:470 - PeerPtr->SubCnt (0) == 0 (0)
+2: [ PASS] 04.008 coveragetest_sbn_subs.c:472 - EID generated (1)
+2: [ PASS] 04.009 coveragetest_sbn_subs.c:492 - SBN_ProcessSubsFromPeer(PeerPtr, Buf) (1) == SBN_ERROR (1)
+2: [ PASS] 04.010 coveragetest_sbn_subs.c:494 - PeerPtr->SubCnt (256) == SBN_MAX_SUBS_PER_PEER (256)
+2: [ PASS] 04.011 coveragetest_sbn_subs.c:496 - EID generated (1)
+2: [ PASS] 04.012 coveragetest_sbn_subs.c:516 - SBN_ProcessSubsFromPeer(PeerPtr, Buf) (1) == SBN_ERROR (1)
+2: [ PASS] 04.013 coveragetest_sbn_subs.c:518 - PeerPtr->SubCnt (0) == 0 (0)
+2: [ PASS] 04.014 coveragetest_sbn_subs.c:520 - EID generated (1)
+2: [ PASS] 04.015 coveragetest_sbn_subs.c:536 - SBN_ProcessSubsFromPeer(PeerPtr, Buf) (0) == SBN_SUCCESS (0)
+2: [ PASS] 04.016 coveragetest_sbn_subs.c:538 - PeerPtr->SubCnt (1) == 1 (1)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 04 SBN_ProcessSubsFromPeer TOTAL::16    PASS::16    FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 05 SBN_ProcessUnsubsFromPeer
+2: [ PASS] 05.001 coveragetest_sbn_subs.c:574 - SBN_ProcessUnsubsFromPeer(PeerPtr, Buf) (0) == SBN_SUCCESS (0)
+2: [ PASS] 05.002 coveragetest_sbn_subs.c:577 - PeerPtr->SubCnt (1) == 1 (1)
+2: [ PASS] 05.003 coveragetest_sbn_subs.c:595 - SBN_ProcessUnsubsFromPeer(PeerPtr, Buf) (0) == SBN_SUCCESS (0)
+2: [ PASS] 05.004 coveragetest_sbn_subs.c:597 - PeerPtr->SubCnt (0) == 0 (0)
+2: [ PASS] 05.005 coveragetest_sbn_subs.c:599 - EID generated (1)
+2: [ PASS] 05.006 coveragetest_sbn_subs.c:622 - SBN_ProcessUnsubsFromPeer(PeerPtr, Buf) (0) == SBN_SUCCESS (0)
+2: [ PASS] 05.007 coveragetest_sbn_subs.c:624 - PeerPtr->SubCnt (0) == 0 (0)
+2: [ PASS] 05.008 coveragetest_sbn_subs.c:626 - EID generated (1)
+2: [ PASS] 05.009 coveragetest_sbn_subs.c:649 - SBN_ProcessUnsubsFromPeer(PeerPtr, Buf) (0) == SBN_SUCCESS (0)
+2: [ PASS] 05.010 coveragetest_sbn_subs.c:651 - PeerPtr->SubCnt (0) == 0 (0)
+2: [ PASS] 05.011 coveragetest_sbn_subs.c:653 - EID generated (1)
+2: [ PASS] 05.012 coveragetest_sbn_subs.c:672 - SBN_ProcessUnsubsFromPeer(PeerPtr, Buf) (0) == SBN_SUCCESS (0)
+2: [ PASS] 05.013 coveragetest_sbn_subs.c:674 - PeerPtr->SubCnt (0) == 0 (0)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 05 SBN_ProcessUnsubsFromPeer TOTAL::13    PASS::13    FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 06 SBN_RemoveAllSubsFromPeer
+2: [ PASS] 06.001 coveragetest_sbn_subs.c:698 - SBN_RemoveAllSubsFromPeer(PeerPtr) (0) == SBN_SUCCESS (0)
+2: [ PASS] 06.002 coveragetest_sbn_subs.c:700 - EID generated (1)
+2: [ PASS] 06.003 coveragetest_sbn_subs.c:712 - SBN_RemoveAllSubsFromPeer(PeerPtr) (0) == SBN_SUCCESS (0)
+2: [ PASS] 06.004 coveragetest_sbn_subs.c:714 - EID generated (1)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 06 SBN_RemoveAllSubsFromPeer TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 06 SUMMARY              TOTAL::80    PASS::80    FAIL::0     MIR::0     TSF::0     TTF::0   
+2: COMPLETE: 6 tests Segment(s) executed
+2: 
+2: Start item SendSubsRequests_SendMsg1Err (27)
+2: Start item SendSubsRequests_SendMsg2Err (39)
+2: Start item SLS2P_SendNetMsgErr (57)
+2: Start item CSP_PLS_MaxSubsErr (78)
+2: Start item CSP_PLS_AddlSubs (101)
+2: Start item CSP_PLS_SendErr (124)
+2: Start item CSP_PLS_EvtMsg (145)
+2: Start item CSP_PLS_SbnMsg (168)
+2: Start item CSP_PLU_NotSub (191)
+2: Start item CSP_PLU_OtherSub (208)
+2: Start item CSP_PLU_SLS2PErr (232)
+2: Start item CSP_PLU_Nominal (257)
+2: Start item CSP_SubTypeErr (281)
+2: Start item CSP_AllSubs_EntryCntErr (305)
+2: Start item CSP_AllSubs_PLSErr (328)
+2: Start item CSP_AllSubs_Nominal (352)
+2: Start item CSP_NoMsg (372)
+2: Start item PSFP_PFP_FiltErr (404)
+2: Start item PSFP_PFP_AlreadySub (430)
+2: Start item PSFP_PFP_SubErr (453)
+2: Start item PSFP_PFP_MaxSubsErr (477)
+2: Start item PSFP_IdentErr (501)
+2: Start item PSFP_Nominal (525)
+2: Start item PUSFP_PUFP_FiltErr (553)
+2: Start item PUSFP_PUFP_NotSub (582)
+2: Start item PUSFP_PUFP_UnsubErr (604)
+2: Start item PUSFP_IdentWarn (631)
+2: Start item PUSFP_Nominal (658)
+2: Start item RASFP_UnsubErr (688)
+2: Start item RASFP_Nominal (705)
+2/4 Test #2: sbn-sbn_subs .....................   Passed    0.00 sec
+test 3
+    Start 3: sbn-sbn_pack
+
+3: Test command: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1/apps/sbn/unit-test/sbn-sbn_pack-testrunner
+3: Working Directory: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1/apps/sbn/unit-test
+3: Test timeout computed to be: 10000000
+3: 
+3: [BEGIN] UNIT TEST
+3: 
+3: [BEGIN] 01 SETUP
+3: [  END] No test cases
+3: 
+3: [BEGIN] 01 Pack
+3: [ PASS] 01.001 coveragetest_sbn_pack.c:28 - pack init
+3: [ PASS] 01.002 coveragetest_sbn_pack.c:29 - pack uint8
+3: [ PASS] 01.003 coveragetest_sbn_pack.c:30 - pack uint8
+3: [ PASS] 01.004 coveragetest_sbn_pack.c:31 - pack uint16
+3: [ PASS] 01.005 coveragetest_sbn_pack.c:32 - pack int16
+3: [ PASS] 01.006 coveragetest_sbn_pack.c:33 - pack uint32
+3: [ PASS] 01.007 coveragetest_sbn_pack.c:34 - pack msgid
+3: [ PASS] 01.008 coveragetest_sbn_pack.c:35 - pack time
+3: [ PASS] 01.009 coveragetest_sbn_pack.c:36 - pack time 2
+3: [ PASS] 01.010 coveragetest_sbn_pack.c:39 - pack init 2
+3: [ PASS] 01.011 coveragetest_sbn_pack.c:42 - unpack uint8
+3: [ PASS] 01.012 coveragetest_sbn_pack.c:43 - u8 (1) == 1 (1)
+3: [ PASS] 01.013 coveragetest_sbn_pack.c:45 - unpack uint8
+3: [ PASS] 01.014 coveragetest_sbn_pack.c:46 - u8 (255) == 255 (255)
+3: [ PASS] 01.015 coveragetest_sbn_pack.c:49 - unpack uint16
+3: [ PASS] 01.016 coveragetest_sbn_pack.c:50 - u16 (2) == 2 (2)
+3: [ PASS] 01.017 coveragetest_sbn_pack.c:53 - unpack int16
+3: [ PASS] 01.018 coveragetest_sbn_pack.c:54 - i16 (-2) == -2 (-2)
+3: [ PASS] 01.019 coveragetest_sbn_pack.c:57 - unpack uint32
+3: [ PASS] 01.020 coveragetest_sbn_pack.c:58 - u32 (3) == 3 (3)
+3: [ PASS] 01.021 coveragetest_sbn_pack.c:61 - unpack msgid
+3: [ PASS] 01.022 coveragetest_sbn_pack.c:62 - MsgID.Value (57005) == 0xdead (57005)
+3: [ PASS] 01.023 coveragetest_sbn_pack.c:65 - unpack time
+3: [ PASS] 01.024 coveragetest_sbn_pack.c:66 - check time
+3: [ PASS] 01.025 coveragetest_sbn_pack.c:68 - unpack uint8
+3: [ PASS] 01.026 coveragetest_sbn_pack.c:69 - unpack uint16
+3: [ PASS] 01.027 coveragetest_sbn_pack.c:70 - unpack int16
+3: [ PASS] 01.028 coveragetest_sbn_pack.c:71 - unpack uint32
+3: [ PASS] 01.029 coveragetest_sbn_pack.c:72 - unpack msgid
+3: [ PASS] 01.030 coveragetest_sbn_pack.c:73 - unpack time
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 01 Pack                 TOTAL::30    PASS::30    FAIL::0     MIR::0     TSF::0     TTF::0   
+3: COMPLETE: 1 tests Segment(s) executed
+3: 
+3/4 Test #3: sbn-sbn_pack .....................   Passed    0.00 sec
+test 4
+    Start 4: sbn-sbn_cmds
+
+4: Test command: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1/apps/sbn/unit-test/sbn-sbn_cmds-testrunner
+4: Working Directory: /tmp/vdd_sbn_coverage_cjj9r_tj/cFS/build/native/default_cpu1/apps/sbn/unit-test
+4: Test timeout computed to be: 10000000
+4: 
+4: [BEGIN] UNIT TEST
+4: 
+4: [BEGIN] 01 SETUP
+4: [  END] No test cases
+4: 
+4: [BEGIN] 01 SBN_Cmds
+4: [ PASS] 01.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.002 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.003 coveragetest_sbn_cmds.c:56 - EID generated (1)
+4: [ PASS] 01.004 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.005 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.006 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.007 coveragetest_sbn_cmds.c:74 - EID generated (1)
+4: [ PASS] 01.008 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.009 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.010 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.011 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.012 coveragetest_sbn_cmds.c:92 - EID generated (0)
+4: [ PASS] 01.013 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.014 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.015 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.016 coveragetest_sbn_cmds.c:113 - EID generated (1)
+4: [ PASS] 01.017 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.018 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.019 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.020 coveragetest_sbn_cmds.c:131 - EID generated (1)
+4: [ PASS] 01.021 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.022 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.023 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.024 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.025 coveragetest_sbn_cmds.c:149 - EID generated (0)
+4: [ PASS] 01.026 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.027 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.028 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.029 coveragetest_sbn_cmds.c:170 - EID generated (1)
+4: [ PASS] 01.030 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.031 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.032 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.033 coveragetest_sbn_cmds.c:191 - EID generated (1)
+4: [ PASS] 01.034 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.035 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.036 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.037 coveragetest_sbn_cmds.c:209 - EID generated (1)
+4: [ PASS] 01.038 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.039 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.040 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.041 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.042 coveragetest_sbn_cmds.c:227 - EID generated (0)
+4: [ PASS] 01.043 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.044 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.045 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.046 coveragetest_sbn_cmds.c:248 - EID generated (1)
+4: [ PASS] 01.047 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.048 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.049 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.050 coveragetest_sbn_cmds.c:269 - EID generated (1)
+4: [ PASS] 01.051 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.052 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.053 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.054 coveragetest_sbn_cmds.c:289 - EID generated (1)
+4: [ PASS] 01.055 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.056 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.057 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.058 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.059 coveragetest_sbn_cmds.c:307 - EID generated (0)
+4: [ PASS] 01.060 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.061 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.062 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.063 coveragetest_sbn_cmds.c:327 - EID generated (1)
+4: [ PASS] 01.064 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.065 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.066 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.067 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.068 coveragetest_sbn_cmds.c:345 - EID generated (0)
+4: [ PASS] 01.069 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.070 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.071 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.072 coveragetest_sbn_cmds.c:363 - EID generated (1)
+4: [ PASS] 01.073 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.074 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.075 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.076 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.077 coveragetest_sbn_cmds.c:381 - EID generated (1)
+4: [ PASS] 01.078 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.079 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.080 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.081 coveragetest_sbn_cmds.c:402 - EID generated (1)
+4: [ PASS] 01.082 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.083 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.084 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.085 coveragetest_sbn_cmds.c:424 - EID generated (1)
+4: [ PASS] 01.086 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.087 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.088 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.089 coveragetest_sbn_cmds.c:442 - EID generated (1)
+4: [ PASS] 01.090 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.091 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.092 coveragetest_sbn_cmds.c:460 - EID generated (1)
+4: [ PASS] 01.093 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.094 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.095 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.096 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.097 coveragetest_sbn_cmds.c:478 - EID generated (0)
+4: [ PASS] 01.098 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.099 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.100 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.101 coveragetest_sbn_cmds.c:496 - EID generated (1)
+4: [ PASS] 01.102 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.103 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.104 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.105 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.106 coveragetest_sbn_cmds.c:532 - EID generated (0)
+4: [ PASS] 01.107 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.108 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.109 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.110 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.111 coveragetest_sbn_cmds.c:559 - EID generated (0)
+4: [ PASS] 01.112 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.113 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.114 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.115 coveragetest_sbn_cmds.c:577 - EID generated (1)
+4: [ PASS] 01.116 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.117 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 01.118 coveragetest_sbn_cmds.c:514 - EID generated (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 01 SBN_Cmds             TOTAL::118   PASS::118   FAIL::0     MIR::0     TSF::0     TTF::0   
+4: COMPLETE: 1 tests Segment(s) executed
+4: 
+4: Start item NOOP_MsgLenErr (41)
+4: Start item NOOP_Nominal (61)
+4: Start item HKNet_MsgLenErr (79)
+4: Start item HKNet_NetIdErr (97)
+4: Start item HKNet_Nominal (118)
+4: Start item HKPeer_MsgLenErr (136)
+4: Start item HKPeer_NetIdErr (154)
+4: Start item HKPeer_PeerIdErr (175)
+4: Start item HKPeer_Nominal (196)
+4: Start item HKPeerSubs_MsgLenErr (214)
+4: Start item HKPeerSubs_NetIdErr (232)
+4: Start item HKPeerSubs_PeerIdErr (253)
+4: Start item HKPeerSubs_Nominal (274)
+4: Start item HKMySubs_MsgLenErr (294)
+4: Start item HKMySubs_Nominal (312)
+4: Start item HKReset_MsgLenErr (332)
+4: Start item HKReset_Nominal (350)
+4: Start item HKResetPeer_MsgLenErr (368)
+4: Start item HKResetPeer_NetIdErr (386)
+4: Start item HKResetPeer_PeerIdErr (407)
+4: Start item HKResetPeer_Nominal (429)
+4: Start item SCH_Nominal (447)
+4: Start item TBL_MsgLenErr (465)
+4: Start item TBL_Nominal (483)
+4: Start item HK_MsgLenErr (519)
+4: Start item HK_MsgLenErr2 (537)
+4: Start item HK_Nominal (564)
+4: Start item CC_Err (501)
+4/4 Test #4: sbn-sbn_cmds .....................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =   0.01 sec

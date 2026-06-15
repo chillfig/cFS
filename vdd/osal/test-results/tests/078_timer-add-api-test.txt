@@ -1,0 +1,24 @@
+name: timer-add-api-test
+classname: timer-add-api-test
+time_seconds: 30.1221
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 TestTimerAddApi
+[ PASS] 01.001 timer-add-api-test.c:81 - OS_TimeBaseCreate(&time_base_id, "TimeBase", 0) (0) == OS_SUCCESS (0)
+[ PASS] 01.002 timer-add-api-test.c:82 - OS_TimeBaseSet(time_base_id, 10000, 10000) (0) == OS_SUCCESS (0)
+[ PASS] 01.003 timer-add-api-test.c:86 - OS_TimerAdd(&timer_id, temp_name, time_base_id, &null_func, NULL) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+[ PASS] 01.004 timer-add-api-test.c:92 - OS_TimerAdd(&TimerID[i], temp_name, time_base_id, &null_func, NULL) (0) == OS_SUCCESS (0)
+[ INFO] timer-add-api-test.c:93:Timer 0 Created ID=90001
+[ PASS] 01.005 timer-add-api-test.c:92 - OS_TimerAdd(&TimerID[i], temp_name, time_base_id, &null_func, NULL) (0) == OS_SUCCESS (0)
+[ INFO] timer-add-api-test.c:93:Timer 1 Created ID=90002
+[ PASS] 01.006 timer-add-api-test.c:92 - OS_TimerAdd(&TimerID[i], temp_name, time_base_id, &null_func, NULL) (0) == OS_SUCCESS (0)
+[ INFO] timer-add-api-test.c:93:Timer 2 Created ID=90003
+[ PASS] 01.00...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

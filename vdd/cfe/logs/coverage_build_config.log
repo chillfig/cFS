@@ -1,0 +1,207 @@
+$ make -C build/native/default_cpu1/config
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS
+
+make: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/config'
+make[1]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  0%] Generating ../src/cfe_platformcfg_tables.c
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  0%] Building C object config/CMakeFiles/config.dir/fsw/src/cfe_config_init.c.o
+[  0%] Building C object config/CMakeFiles/config.dir/fsw/src/cfe_config_lookup.c.o
+[  0%] Building C object config/CMakeFiles/config.dir/fsw/src/cfe_config_get.c.o
+[  0%] Building C object config/CMakeFiles/config.dir/fsw/src/cfe_config_set.c.o
+[  0%] Building C object config/CMakeFiles/config.dir/fsw/src/cfe_config_objtab.c.o
+[  0%] Building C object config/CMakeFiles/config.dir/fsw/src/cfe_config_eds_disabled.c.o
+[  9%] Building C object config/CMakeFiles/config.dir/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/src/cfe_configid_nametable.c.o
+[  9%] Building C object config/CMakeFiles/config.dir/__/src/cfe_platformcfg_tables.c.o
+[  9%] Linking C static library libconfig.a
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  9%] Built target config
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  9%] Building C object osal/generic-linux_impl/CMakeFiles/osal_generic-linux_impl.dir/src/bsp_start.c.o
+[  9%] Building C object osal/generic-linux_impl/CMakeFiles/osal_generic-linux_impl.dir/src/bsp_console.c.o
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  9%] Built target osal_generic-linux_impl
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  9%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/osapi-bsp.c.o
+[  9%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_run.c.o
+[  9%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_app_startup.c.o
+[  9%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_symtab.c.o
+[  9%] Building C object osal/CMakeFiles/osal_bsp.dir/src/bsp/shared/src/bsp_default_resourcecfg.c.o
+[  9%] Linking C static library libosal_bsp.a
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  9%] Built target osal_bsp
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  9%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/utassert.c.o
+[  9%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/utlist.c.o
+[  9%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/utstubs.c.o
+[  9%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/uttest.c.o
+[  9%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/uttools.c.o
+[  9%] Building C object osal/ut_assert/CMakeFiles/ut_assert.dir/src/utbsp.c.o
+[  9%] Linking C static library libut_assert.a
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  9%] Built target ut_assert
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[  9%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_cache_api_stubs.c.o
+[  9%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_cds_api_handlers.c.o
+[  9%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_cds_api_stubs.c.o
+[  9%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_eepromaccess_api_stubs.c.o
+[  9%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_endian_handlers.c.o
+[  9%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_endian_stubs.c.o
+[  9%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_error_stubs.c.o
+[  9%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_exception_api_handlers.c.o
+[  9%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_exception_api_stubs.c.o
+[  9%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_exceptionstorage_api_stubs.c.o
+[  9%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_globaldata_stubs.c.o
+[ 18%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_id_api_handlers.c.o
+[ 18%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_id_api_stubs.c.o
+[ 18%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memaccess_api_handlers.c.o
+[ 18%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memaccess_api_stubs.c.o
+[ 18%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memory_stubs.c.o
+[ 18%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memrange_api_handlers.c.o
+[ 18%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_memrange_api_stubs.c.o
+[ 18%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_module_stubs.c.o
+[ 18%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_port_api_stubs.c.o
+[ 18%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_ssr_api_stubs.c.o
+[ 18%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_stubs.c.o
+[ 18%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_timertick_api_handlers.c.o
+[ 27%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_timertick_api_stubs.c.o
+[ 27%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_version_api_handlers.c.o
+[ 27%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_version_api_stubs.c.o
+[ 27%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_watchdog_api_handlers.c.o
+[ 27%] Building C object psp/ut-stubs/CMakeFiles/ut_psp_api_stubs.dir/src/cfe_psp_watchdog_api_stubs.c.o
+[ 27%] Linking C static library libut_psp_api_stubs.a
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 27%] Built target ut_psp_api_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 27%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/utstub-helpers.c.o
+[ 36%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-binsem-stubs.c.o
+[ 36%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-binsem-handlers.c.o
+[ 36%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-clock-stubs.c.o
+[ 36%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-clock-handlers.c.o
+[ 36%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-common-stubs.c.o
+[ 36%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-common-handlers.c.o
+[ 36%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-condvar-stubs.c.o
+[ 36%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-countsem-stubs.c.o
+[ 36%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-countsem-handlers.c.o
+[ 36%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-dir-stubs.c.o
+[ 36%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-dir-handlers.c.o
+[ 36%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-error-stubs.c.o
+[ 36%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-error-handlers.c.o
+[ 45%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-file-stubs.c.o
+[ 45%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-file-handlers.c.o
+[ 45%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-filesys-stubs.c.o
+[ 45%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-filesys-handlers.c.o
+[ 45%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-heap-stubs.c.o
+[ 45%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-heap-handlers.c.o
+[ 45%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-idmap-stubs.c.o
+[ 45%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-idmap-handlers.c.o
+[ 45%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-module-stubs.c.o
+[ 45%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-module-handlers.c.o
+[ 45%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-mutex-stubs.c.o
+[ 45%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-mutex-handlers.c.o
+[ 54%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-network-stubs.c.o
+[ 54%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-network-handlers.c.o
+[ 54%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-printf-stubs.c.o
+[ 54%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-printf-handlers.c.o
+[ 54%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-queue-stubs.c.o
+[ 54%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-queue-handlers.c.o
+[ 54%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-rwlock-stubs.c.o
+[ 54%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-rwlock-handlers.c.o
+[ 54%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-select-stubs.c.o
+[ 54%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-shell-stubs.c.o
+[ 54%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-sockets-stubs.c.o
+[ 54%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-sockets-handlers.c.o
+[ 63%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-task-stubs.c.o
+[ 63%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-task-handlers.c.o
+[ 63%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-timer-stubs.c.o
+[ 63%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-timer-handlers.c.o
+[ 63%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-timebase-stubs.c.o
+[ 63%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-timebase-handlers.c.o
+[ 63%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-version-stubs.c.o
+[ 63%] Building C object osal/ut-stubs/CMakeFiles/ut_osapi_stubs.dir/osapi-version-handlers.c.o
+[ 63%] Linking C static library libut_osapi_stubs.a
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 63%] Built target ut_osapi_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 63%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_config_handlers.c.o
+[ 63%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_config_stubs.c.o
+[ 63%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_es_handlers.c.o
+[ 63%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_es_stubs.c.o
+[ 63%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_evs_handlers.c.o
+[ 63%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_evs_stubs.c.o
+[ 72%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_fs_handlers.c.o
+[ 72%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_fs_stubs.c.o
+[ 72%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_msg_handlers.c.o
+[ 72%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_msg_stubs.c.o
+[ 72%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_resourceid_handlers.c.o
+[ 72%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_resourceid_stubs.c.o
+[ 72%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_sb_handlers.c.o
+[ 72%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_sb_stubs.c.o
+[ 72%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_tbl_handlers.c.o
+[ 72%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_tbl_stubs.c.o
+[ 72%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_time_handlers.c.o
+[ 72%] Building C object core_api/ut-stubs/CMakeFiles/ut_core_api_stubs.dir/src/cfe_time_stubs.c.o
+[ 81%] Linking C static library libut_core_api_stubs.a
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 81%] Built target ut_core_api_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 81%] Building C object core_private/ut-stubs/CMakeFiles/ut_core_private_stubs.dir/src/cfe_config_core_internal_stubs.c.o
+[ 81%] Building C object core_private/ut-stubs/CMakeFiles/ut_core_private_stubs.dir/src/cfe_es_core_internal_handlers.c.o
+[ 81%] Building C object core_private/ut-stubs/CMakeFiles/ut_core_private_stubs.dir/src/cfe_es_core_internal_stubs.c.o
+[ 81%] Building C object core_private/ut-stubs/CMakeFiles/ut_core_private_stubs.dir/src/cfe_evs_core_internal_stubs.c.o
+[ 81%] Building C object core_private/ut-stubs/CMakeFiles/ut_core_private_stubs.dir/src/cfe_fs_core_internal_handlers.c.o
+[ 81%] Building C object core_private/ut-stubs/CMakeFiles/ut_core_private_stubs.dir/src/cfe_fs_core_internal_stubs.c.o
+[ 81%] Building C object core_private/ut-stubs/CMakeFiles/ut_core_private_stubs.dir/src/cfe_sb_core_internal_stubs.c.o
+[ 81%] Building C object core_private/ut-stubs/CMakeFiles/ut_core_private_stubs.dir/src/cfe_tbl_core_internal_stubs.c.o
+[ 81%] Building C object core_private/ut-stubs/CMakeFiles/ut_core_private_stubs.dir/src/cfe_time_core_internal_stubs.c.o
+[ 81%] Building C object core_private/ut-stubs/CMakeFiles/ut_core_private_stubs.dir/src/ut_osprintf_stubs.c.o
+[ 81%] Building C object core_private/ut-stubs/CMakeFiles/ut_core_private_stubs.dir/src/ut_support.c.o
+[ 90%] Linking C static library libut_core_private_stubs.a
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 90%] Built target ut_core_private_stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 90%] Building C object config/ut-coverage/CMakeFiles/coverage-cfe_config_internal-stubs.dir/ut-stubs/cfe_config_init_stubs.c.o
+[ 90%] Building C object config/ut-coverage/CMakeFiles/coverage-cfe_config_internal-stubs.dir/ut-stubs/cfe_config_external_stubs.c.o
+[ 90%] Building C object config/ut-coverage/CMakeFiles/coverage-cfe_config_internal-stubs.dir/ut-stubs/cfe_config_lookup_stubs.c.o
+[ 90%] Building C object config/ut-coverage/CMakeFiles/coverage-cfe_config_internal-stubs.dir/ut-stubs/cfe_config_set_stubs.c.o
+[ 90%] Linking C static library libcoverage-cfe_config_internal-stubs.a
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 90%] Built target coverage-cfe_config_internal-stubs
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[ 90%] Building C object config/ut-coverage/CMakeFiles/coverage-config-ALL-object.dir/__/fsw/src/cfe_config_init.c.o
+[ 90%] Building C object config/ut-coverage/CMakeFiles/coverage-config-ALL-object.dir/__/fsw/src/cfe_config_lookup.c.o
+[ 90%] Building C object config/ut-coverage/CMakeFiles/coverage-config-ALL-object.dir/__/fsw/src/cfe_config_get.c.o
+[ 90%] Building C object config/ut-coverage/CMakeFiles/coverage-config-ALL-object.dir/__/fsw/src/cfe_config_set.c.o
+[ 90%] Building C object config/ut-coverage/CMakeFiles/coverage-config-ALL-object.dir/__/fsw/src/cfe_config_objtab.c.o
+[100%] Building C object config/ut-coverage/CMakeFiles/coverage-config-ALL-object.dir/__/fsw/src/cfe_config_eds_disabled.c.o
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[100%] Built target coverage-config-ALL-object
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make[2]: Entering directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[100%] Building C object config/ut-coverage/CMakeFiles/coverage-config-ALL-testrunner.dir/test_cfe_config.c.o
+[100%] Linking C executable coverage-config-ALL-testrunner
+make[2]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+[100%] Built target coverage-config-ALL-testrunner
+make[1]: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1'
+make: Leaving directory '/tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/config'

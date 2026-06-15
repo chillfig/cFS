@@ -1,0 +1,26 @@
+name: coverage-shared-rwlock
+classname: coverage-shared-rwlock
+time_seconds: 0.00117842
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_RwLockAPI_Init
+[ PASS] 01.001 coveragetest-rwlock.c:42 - OS_RwLockAPI_Init() (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_RwLockAPI_Init    TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_RwLockCreate
+[ PASS] 02.001 coveragetest-rwlock.c:53 - OS_RwLockCreate(&objid, "UT", 0) (0) == OS_SUCCESS (0)
+[ PASS] 02.002 coveragetest-rwlock.c:54 - objid (1074659329) != OS_OBJECT_ID_UNDEFINED (0)
+[ PASS] 02.003 coveragetest-rwlock.c:56 - OS_RwLockCreate(NULL, "UT", 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 02.004 coveragetest-rwlock.c:57 - OS_RwLockCreate(&objid, NULL, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 02.005 coveragetest-rwlock.c:60 - OS_RwLockCreate(&objid, "UT", 0) (-1) == OS_ERROR (-1)
+[ PASS] 02.006 coveragetest-rwlock.c:63 - OS_RwLockCreate(&objid, "UT", 0) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+[ INFO]                ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

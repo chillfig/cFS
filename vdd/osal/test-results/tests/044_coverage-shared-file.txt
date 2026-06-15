@@ -1,0 +1,26 @@
+name: coverage-shared-file
+classname: coverage-shared-file
+time_seconds: 0.00150771
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_FileAPI_Init
+[ PASS] 01.001 coveragetest-file.c:43 - OS_FileAPI_Init() (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_FileAPI_Init      TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_OpenCreate
+[ PASS] 02.001 coveragetest-file.c:59 - OS_OpenCreate() (0) == OS_SUCCESS (create mode)
+[ PASS] 02.002 coveragetest-file.c:63 - OS_OpenCreate() (0) == OS_SUCCESS (open mode)
+[ PASS] 02.003 coveragetest-file.c:68 - OS_OpenCreate() (-2) == OS_INVALID_POINTER (bad buffer)
+[ PASS] 02.004 coveragetest-file.c:73 - OS_OpenCreate() (-1) == OS_ERROR (bad flags)
+[ PASS] 02.005 coveragetest-file.c:76 - OS_OpenCreate(&filedes, "/cf/file", OS_FILE_FLAG_NONE, OS_READ_WRITE) (-14) == OS_ERR_NO_FREE_IDS (-14)
+[ PASS] 02.006 coveragetest-file.c:82 - OS_OpenCreate() (-1) == OS_ERROR (bad path)
+[ INFO]                        ABORT::0     WARN::0     ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

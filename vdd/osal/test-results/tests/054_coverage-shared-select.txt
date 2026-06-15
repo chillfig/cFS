@@ -1,0 +1,25 @@
+name: coverage-shared-select
+classname: coverage-shared-select
+time_seconds: 0.000927166
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_SelectFdAddClearOps
+[ PASS] 01.001 coveragetest-select.c:78 - OS_SelectFdZero(NULL) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.002 coveragetest-select.c:79 - OS_SelectFdAdd(NULL, UT_OBJID_1) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.003 coveragetest-select.c:80 - OS_SelectFdClear(NULL, UT_OBJID_1) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.004 coveragetest-select.c:81 - !OS_SelectFdIsSet(NULL, UT_OBJID_1)
+[ PASS] 01.005 coveragetest-select.c:83 - OS_SelectFdZero(&UtSet) (0) == OS_SUCCESS (0)
+[ PASS] 01.006 coveragetest-select.c:86 - CallCount: OCS_memset() (1) == 1 (1)
+[ PASS] 01.007 coveragetest-select.c:87 - OS_SelectFdIsSet(1) == false
+[ PASS] 01.008 coveragetest-select.c:88 - OS_SelectFdIsSet(2) == false
+[ PASS] 01.009 coveragetest-select.c:90 - OS_SelectFdAdd(&UtSet, UT_OBJID_1) (0) == OS_SUCCESS (0)
+[ PASS] 01.010 coveragetest-select.c:92 - OS_SelectFdIsSet(1) == true
+[ PASS] 01.011 coveragetest-select.c:93 - OS_SelectFdIsSet(2) ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

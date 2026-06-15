@@ -1,0 +1,22 @@
+name: mutex-test
+classname: mutex-test
+time_seconds: 60.0065
+status: failed
+message: Timeout
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 MutexTest
+[ PASS] 01.001 mutex-test.c:239 - MutSem1 create Id=50001 Rc=0
+[ PASS] 01.002 mutex-test.c:245 - OS_MutSemTake 1 Rc=0
+[ PASS] 01.003 mutex-test.c:248 - OS_MutSemTake 2 Rc=0
+[ PASS] 01.004 mutex-test.c:251 - OS_MutSemGive 2 Rc=0
+[ PASS] 01.005 mutex-test.c:254 - OS_MutSemGive 1 Rc=0
+[  TSF] 01.006 mutex-test.c:266 - Task 1 create Id=0 Rc=-1
+[  TSF] 01.007 mutex-test.c:275 - Task 2 create Id=0 Rc=-1
+[  TSF] 01.008 mutex-test.c:284 - Task 3 create Id=0 Rc=-1

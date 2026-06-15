@@ -1,0 +1,17 @@
+name: coverage-vxworks-dirs-globals
+classname: coverage-vxworks-dirs-globals
+time_seconds: 0.00104237
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_VxWorks_DirAPI_Impl_Init
+[ PASS] 01.001 coveragetest-dirs-globals.c:43 - UT_Call_OS_VxWorks_DirAPI_Impl_Init() (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_VxWorks_DirAPI_Impl_Init TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+COMPLETE: 1 tests Segment(s) executed

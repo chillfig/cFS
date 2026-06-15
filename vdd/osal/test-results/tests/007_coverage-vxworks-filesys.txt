@@ -1,0 +1,23 @@
+name: coverage-vxworks-filesys
+classname: coverage-vxworks-filesys
+time_seconds: 0.000976458
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_FileSysStartVolume_Impl
+[ PASS] 01.001 coveragetest-filesys.c:53 - OS_FileSysStartVolume_Impl(&token) (-28) == OS_ERR_NOT_IMPLEMENTED (-28)
+[ PASS] 01.002 coveragetest-filesys.c:57 - OS_FileSysStartVolume_Impl(&token) (0) == OS_SUCCESS (0)
+[ PASS] 01.003 coveragetest-filesys.c:63 - OS_FileSysStartVolume_Impl(&token) (-106) == OS_FS_ERR_DRIVE_NOT_CREATED (-106)
+[ PASS] 01.004 coveragetest-filesys.c:67 - OS_FileSysStartVolume_Impl(&token) (0) == OS_SUCCESS (0)
+[ PASS] 01.005 coveragetest-filesys.c:78 - OS_FileSysStartVolume_Impl(&token) (-28) == expected (-28)
+[ PASS] 01.006 coveragetest-filesys.c:83 - OS_FileSysStartVolume_Impl(&token) (-106) == OS_FS_ERR_DRIVE_NOT_CREATED (-106)
+[ PASS] 01.007 coveragetest-filesys.c:87 - OS_FileSysStartVolume_Impl(&token) (-106) == OS_FS_ERR_DRIVE_NOT_CREATED (-106)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_FileSysStartVolume_Impl TOTAL::7  ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

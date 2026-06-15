@@ -1,0 +1,23 @@
+name: shell-test
+classname: shell-test
+time_seconds: 0.0276493
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 ShellTest
+[ PASS] 01.001 shell-test.c:72 - status after creat = 0
+[  N/A] 01.002 shell-test.c:80 - Shell Commands not implemented
+[ PASS] 01.003 shell-test.c:131 - status after close = 0
+[ PASS] 01.004 shell-test.c:135 - status after remove = 0
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::1   
+[  END] 01 ShellTest            TOTAL::4     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 Cleanup
+[  END] No test cases
+COMPLETE: 1 tests Segment(s) executed

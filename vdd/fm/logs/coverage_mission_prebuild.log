@@ -1,0 +1,54 @@
+$ make -C build mission-prebuild
+# cwd: /tmp/vdd_fm_coverage_mq5f_3if/cFS
+
+make: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[1]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[2]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+[ 11%] Building C object tools/elf2cfetbl/CMakeFiles/elf2cfetbl.dir/elf2cfetbl.c.o
+[ 22%] Linking C executable elf2cfetbl
+make[3]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+[ 22%] Built target elf2cfetbl
+make[3]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+[ 22%] Built target cfe-build-env
+make[3]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+[ 22%] Built target cfe-module-version
+make[3]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+[ 22%] Built target mission-version
+make[3]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+[ 33%] Building C object cfeconfig_platformdata_tool/CMakeFiles/cfeconfig_platformdata_native_default_cpu1.dir/cfeconfig_platformdata_table.c.o
+make[3]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+[ 33%] Built target cfeconfig_platformdata_native_default_cpu1
+make[3]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+[ 44%] Building C object cfeconfig_platformdata_tool/CMakeFiles/cfeconfig_platformdata_tool.dir/cfeconfig_platformdata_tool.c.o
+[ 55%] Building C object cfeconfig_platformdata_tool/CMakeFiles/cfeconfig_platformdata_tool.dir/__/src/cfe_configid_nametable.c.o
+[ 66%] Building C object cfeconfig_platformdata_tool/CMakeFiles/cfeconfig_platformdata_tool.dir/__/src/cfe_platform_list.c.o
+[ 77%] Linking C executable cfeconfig_platformdata_tool
+make[3]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+[ 77%] Built target cfeconfig_platformdata_tool
+make[3]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+[ 88%] Generating ../src/cfeconfig_platformdata_native_default_cpu1.c
+[100%] Generating ../src/cfeconfig_platformdata_native_default_cpu1.list
+make[3]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+[100%] Built target cfgtool-execute-native_default_cpu1
+make[3]: Entering directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[3]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+[100%] Built target mission-prebuild
+make[2]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make[1]: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'
+make: Leaving directory '/tmp/vdd_fm_coverage_mq5f_3if/cFS/build'

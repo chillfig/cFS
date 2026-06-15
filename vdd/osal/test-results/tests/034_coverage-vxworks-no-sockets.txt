@@ -1,0 +1,22 @@
+name: coverage-vxworks-no-sockets
+classname: coverage-vxworks-no-sockets
+time_seconds: 0.00140808
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 No_Sockets
+[ PASS] 01.001 coveragetest-no-sockets.c:29 - OS_SocketOpen_Impl(NULL) (-28) == OS_ERR_NOT_IMPLEMENTED (-28)
+[ PASS] 01.002 coveragetest-no-sockets.c:30 - OS_SocketBindAddress_Impl(NULL, NULL) (-28) == OS_ERR_NOT_IMPLEMENTED (-28)
+[ PASS] 01.003 coveragetest-no-sockets.c:31 - OS_SocketListen_Impl(NULL) (-28) == OS_ERR_NOT_IMPLEMENTED (-28)
+[ PASS] 01.004 coveragetest-no-sockets.c:32 - OS_SocketConnect_Impl(NULL, NULL, OS_TIME_MIN) (-28) == OS_ERR_NOT_IMPLEMENTED (-28)
+[ PASS] 01.005 coveragetest-no-sockets.c:33 - OS_SocketAccept_Impl(NULL, NULL, NULL, OS_TIME_MIN) (-28) == OS_ERR_NOT_IMPLEMENTED (-28)
+[ PASS] 01.006 coveragetest-no-sockets.c:34 - OS_SocketShutdown_Impl(NULL, 0) (-28) == OS_ERR_NOT_IMPLEMENTED (-28)
+[ PASS] 01.007 coveragetest-no-sockets.c:35 - OS_SocketRecvFrom_Impl(NULL, NULL, 0, NULL, OS_TIME_MIN) (-28) == OS_ERR_NOT_IMPLEMENTED (-28)
+[ PASS] 01.008 coveragetest-no-sockets.c:36 - OS_SocketSendTo_Impl(NULL, NUL...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

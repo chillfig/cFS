@@ -1,0 +1,25 @@
+name: coverage-vxworks-posix-io
+classname: coverage-vxworks-posix-io
+time_seconds: 0.00103
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_GenericClose_Impl
+[ PASS] 01.001 coveragetest-posix-io.c:64 - OS_GenericClose_Impl(&token) (0) == OS_SUCCESS (0)
+[ PASS] 01.002 coveragetest-posix-io.c:71 - OS_GenericClose_Impl(&token) (0) == OS_SUCCESS (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_GenericClose_Impl TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_GenericSeek_Impl
+[ PASS] 02.001 coveragetest-posix-io.c:86 - OS_GenericSeek_Impl(&token, 0, OS_SEEK_CUR) (111) == 111 (111)
+[ PASS] 02.002 coveragetest-posix-io.c:88 - OS_GenericSeek_Impl(&token, 0, OS_SEEK_SET) (222) == 222 (222)
+[ PASS] 02.003 coveragetest-posix-io.c:90 - OS_GenericSeek_Impl(&token, 0, OS_SEEK_END) (333) == 333 (333)
+[ PASS] 02.004 coveragetest-posix-io.c:93 - OS_GenericSeek_Impl(&token, 0, 1234) (-1) == OS_ERROR (-1)
+[ PASS] 02.005 coveragetest-posix-io.c:97 - OS_GenericSeek_Impl(&token, 0, OS_SEEK_END) (-1) =...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

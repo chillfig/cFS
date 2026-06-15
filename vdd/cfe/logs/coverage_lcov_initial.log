@@ -1,0 +1,124 @@
+$ lcov --capture --initial --directory build --output-file coverage_base.info
+# cwd: /tmp/vdd_cfe_coverage_8n5668ys/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Capturing coverage data from build
+geninfo cmd: '/usr/bin/geninfo build --output-filename coverage_base.info --initial --memory 0'
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_datrwXs
+Scanning build for .gcno files ...
+Found 80 graph files in build
+Processing build/native/default_cpu1/sbr/ut-coverage/CMakeFiles/ut_sbr_map_hash_objs.dir/__/fsw/src/cfe_sbr_route_unsorted.c.gcno
+Processing build/native/default_cpu1/sbr/ut-coverage/CMakeFiles/ut_sbr_map_hash_objs.dir/__/fsw/src/cfe_sbr_map_hash.c.gcno
+Processing build/native/default_cpu1/sbr/ut-coverage/CMakeFiles/ut_sbr_route_unsorted_objs.dir/__/fsw/src/cfe_sbr_route_unsorted.c.gcno
+Processing build/native/default_cpu1/sbr/ut-coverage/CMakeFiles/ut_sbr_route_unsorted_objs.dir/__/fsw/src/cfe_sbr_map_hash.c.gcno
+Processing build/native/default_cpu1/sbr/ut-coverage/CMakeFiles/ut_sbr_map_direct_objs.dir/__/fsw/src/cfe_sbr_map_direct.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_objtab.c.gcno
+geninfo: WARNING: WARNING: GCOV did not produce any data for /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_objtab.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_regrec.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_dispatch.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_transaction.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_dump.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_api.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_registry.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_passthru_codec.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_task_cmds.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_valresult.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_accdesc.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_internal.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_load.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_loadbuff.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_dumpctl.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_task.c.gcno
+Processing build/native/default_cpu1/tbl/ut-coverage/CMakeFiles/coverage-tbl-ALL-object.dir/__/fsw/src/cfe_tbl_handlelink.c.gcno
+Processing build/native/default_cpu1/config/ut-coverage/CMakeFiles/coverage-config-ALL-object.dir/__/fsw/src/cfe_config_set.c.gcno
+Processing build/native/default_cpu1/config/ut-coverage/CMakeFiles/coverage-config-ALL-object.dir/__/fsw/src/cfe_config_init.c.gcno
+Processing build/native/default_cpu1/config/ut-coverage/CMakeFiles/coverage-config-ALL-object.dir/__/fsw/src/cfe_config_lookup.c.gcno
+Processing build/native/default_cpu1/config/ut-coverage/CMakeFiles/coverage-config-ALL-object.dir/__/fsw/src/cfe_config_eds_disabled.c.gcno
+Processing build/native/default_cpu1/config/ut-coverage/CMakeFiles/coverage-config-ALL-object.dir/__/fsw/src/cfe_config_objtab.c.gcno
+geninfo: WARNING: WARNING: GCOV did not produce any data for /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/config/ut-coverage/CMakeFiles/coverage-config-ALL-object.dir/__/fsw/src/cfe_config_objtab.c.gcno
+	(use "geninfo --ignore-errors gcov,gcov ..." to suppress this warning)
+Processing build/native/default_cpu1/config/ut-coverage/CMakeFiles/coverage-config-ALL-object.dir/__/fsw/src/cfe_config_get.c.gcno
+Processing build/native/default_cpu1/sb/ut-coverage/CMakeFiles/coverage-sb-ALL-object.dir/__/fsw/src/cfe_sb_priv.c.gcno
+Processing build/native/default_cpu1/sb/ut-coverage/CMakeFiles/coverage-sb-ALL-object.dir/__/fsw/src/cfe_sb_api.c.gcno
+Processing build/native/default_cpu1/sb/ut-coverage/CMakeFiles/coverage-sb-ALL-object.dir/__/fsw/src/cfe_sb_task.c.gcno
+Processing build/native/default_cpu1/sb/ut-coverage/CMakeFiles/coverage-sb-ALL-object.dir/__/fsw/src/cfe_sb_msg_id_util.c.gcno
+Processing build/native/default_cpu1/sb/ut-coverage/CMakeFiles/coverage-sb-ALL-object.dir/__/fsw/src/cfe_sb_buf.c.gcno
+Processing build/native/default_cpu1/sb/ut-coverage/CMakeFiles/coverage-sb-ALL-object.dir/__/fsw/src/cfe_sb_util.c.gcno
+Processing build/native/default_cpu1/sb/ut-coverage/CMakeFiles/coverage-sb-ALL-object.dir/__/fsw/src/cfe_sb_init.c.gcno
+Processing build/native/default_cpu1/sb/ut-coverage/CMakeFiles/coverage-sb-ALL-object.dir/__/fsw/src/cfe_sb_objtab.c.gcno
+geninfo: WARNING: WARNING: GCOV did not produce any data for /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/sb/ut-coverage/CMakeFiles/coverage-sb-ALL-object.dir/__/fsw/src/cfe_sb_objtab.c.gcno
+	(use "geninfo --ignore-errors gcov,gcov ..." to suppress this warning)
+Processing build/native/default_cpu1/sb/ut-coverage/CMakeFiles/coverage-sb-ALL-object.dir/__/fsw/src/cfe_sb_dispatch.c.gcno
+Processing build/native/default_cpu1/fs/ut-coverage/CMakeFiles/coverage-fs-ALL-object.dir/__/fsw/src/cfe_fs_priv.c.gcno
+Processing build/native/default_cpu1/fs/ut-coverage/CMakeFiles/coverage-fs-ALL-object.dir/__/fsw/src/cfe_fs_api.c.gcno
+Processing build/native/default_cpu1/fs/ut-coverage/CMakeFiles/coverage-fs-ALL-object.dir/__/fsw/src/cfe_fs_objtab.c.gcno
+geninfo: WARNING: WARNING: GCOV did not produce any data for /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/fs/ut-coverage/CMakeFiles/coverage-fs-ALL-object.dir/__/fsw/src/cfe_fs_objtab.c.gcno
+	(use "geninfo --ignore-errors gcov,gcov ..." to suppress this warning)
+Processing build/native/default_cpu1/time/ut-coverage/CMakeFiles/coverage-time-ALL-object.dir/__/fsw/src/cfe_time_api.c.gcno
+Processing build/native/default_cpu1/time/ut-coverage/CMakeFiles/coverage-time-ALL-object.dir/__/fsw/src/cfe_time_objtab.c.gcno
+geninfo: WARNING: WARNING: GCOV did not produce any data for /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/time/ut-coverage/CMakeFiles/coverage-time-ALL-object.dir/__/fsw/src/cfe_time_objtab.c.gcno
+	(use "geninfo --ignore-errors gcov,gcov ..." to suppress this warning)
+Processing build/native/default_cpu1/time/ut-coverage/CMakeFiles/coverage-time-ALL-object.dir/__/fsw/src/cfe_time_utils.c.gcno
+Processing build/native/default_cpu1/time/ut-coverage/CMakeFiles/coverage-time-ALL-object.dir/__/fsw/src/cfe_time_tone.c.gcno
+Processing build/native/default_cpu1/time/ut-coverage/CMakeFiles/coverage-time-ALL-object.dir/__/fsw/src/cfe_time_dispatch.c.gcno
+Processing build/native/default_cpu1/time/ut-coverage/CMakeFiles/coverage-time-ALL-object.dir/__/fsw/src/cfe_time_task.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_generic_pool.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_start.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_backgroundtask.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_task.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_mempool.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_erlog.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_perf.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_objtab.c.gcno
+geninfo: WARNING: WARNING: GCOV did not produce any data for /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_objtab.c.gcno
+	(use "geninfo --ignore-errors gcov,gcov ..." to suppress this warning)
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_crc.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_syslog.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_dispatch.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_cds.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_cds_mempool.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_resource.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_apps.c.gcno
+Processing build/native/default_cpu1/es/ut-coverage/CMakeFiles/coverage-es-ALL-object.dir/__/fsw/src/cfe_es_api.c.gcno
+Processing build/native/default_cpu1/msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_sechdr_time.c.gcno
+Processing build/native/default_cpu1/msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_init.c.gcno
+Processing build/native/default_cpu1/msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_integrity.c.gcno
+Processing build/native/default_cpu1/msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_msgid_v1.c.gcno
+Processing build/native/default_cpu1/msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_msgid_shared.c.gcno
+Processing build/native/default_cpu1/msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_ccsdspri.c.gcno
+Processing build/native/default_cpu1/msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_initdefaulthdr_pri.c.gcno
+Processing build/native/default_cpu1/msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_objtab.c.gcno
+geninfo: WARNING: WARNING: GCOV did not produce any data for /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_objtab.c.gcno
+	(use "geninfo --ignore-errors gcov,gcov ..." to suppress this warning)
+Processing build/native/default_cpu1/msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_sechdr_checksum.c.gcno
+Processing build/native/default_cpu1/msg/ut-coverage/CMakeFiles/coverage-msg-ALL-object.dir/__/fsw/src/cfe_msg_sechdr_fc.c.gcno
+Processing build/native/default_cpu1/evs/ut-coverage/CMakeFiles/coverage-evs-ALL-object.dir/__/fsw/src/cfe_evs_dispatch.c.gcno
+Processing build/native/default_cpu1/evs/ut-coverage/CMakeFiles/coverage-evs-ALL-object.dir/__/fsw/src/cfe_evs_task.c.gcno
+Processing build/native/default_cpu1/evs/ut-coverage/CMakeFiles/coverage-evs-ALL-object.dir/__/fsw/src/cfe_evs.c.gcno
+Processing build/native/default_cpu1/evs/ut-coverage/CMakeFiles/coverage-evs-ALL-object.dir/__/fsw/src/cfe_evs_utils.c.gcno
+Processing build/native/default_cpu1/evs/ut-coverage/CMakeFiles/coverage-evs-ALL-object.dir/__/fsw/src/cfe_evs_objtab.c.gcno
+geninfo: WARNING: WARNING: GCOV did not produce any data for /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/evs/ut-coverage/CMakeFiles/coverage-evs-ALL-object.dir/__/fsw/src/cfe_evs_objtab.c.gcno
+	(use "geninfo --ignore-errors gcov,gcov ..." to suppress this warning)
+Processing build/native/default_cpu1/evs/ut-coverage/CMakeFiles/coverage-evs-ALL-object.dir/__/fsw/src/cfe_evs_log.c.gcno
+Processing build/native/default_cpu1/resourceid/ut-coverage/CMakeFiles/ut_resourceid_OBJS.dir/__/fsw/src/cfe_resourceid_api.c.gcno
+Processing build/native/default_cpu1/resourceid/ut-coverage/CMakeFiles/ut_resourceid_OBJS.dir/__/fsw/src/cfe_resourceid_objtab.c.gcno
+geninfo: WARNING: WARNING: GCOV did not produce any data for /tmp/vdd_cfe_coverage_8n5668ys/cFS/build/native/default_cpu1/resourceid/ut-coverage/CMakeFiles/ut_resourceid_OBJS.dir/__/fsw/src/cfe_resourceid_objtab.c.gcno
+	(use "geninfo --ignore-errors gcov,gcov ..." to suppress this warning)
+Finished .info-file creation

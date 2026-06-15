@@ -1,0 +1,27 @@
+name: coverage-shared-printf
+classname: coverage-shared-printf
+time_seconds: 0.00230771
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_ConsoleAPI_Init
+[ PASS] 01.001 coveragetest-printf.c:51 - CallCount: OS_ConsoleCreate_Impl() (1) == 1 (1)
+[ PASS] 01.002 coveragetest-printf.c:57 - CallCount: OS_ConsoleCreate_Impl() (0) == 0 (0)
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 OS_ConsoleAPI_Init   TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_printf
+[ PASS] 02.001 coveragetest-printf.c:73 - WritePos (0) >= 0
+[ PASS] 02.002 coveragetest-printf.c:81 - WritePos (0) >= 0
+[ PASS] 02.003 coveragetest-printf.c:89 - CallCount: OS_ConsoleWakeup_Impl() (0) == 0 (0)
+[ PASS] 02.004 coveragetest-printf.c:90 - CallCount: OS_ConsoleOutput_Impl() (1) == 1 (1)
+[ PASS] 02.005 coveragetest-printf.c:91 - WritePos (10) >= 10
+[ PASS] 02.006 coveragetest-printf.c:99 - CallCount: OS_ConsoleWakeup_Impl() (1) == 1 (1)
+[ PASS] 02.007 coveragetest-printf.c:100 - CallCount: OS_ConsoleOutput_Impl() (1) == 1 (...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

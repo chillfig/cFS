@@ -1,0 +1,83 @@
+<h2>LCOV Report</h2>
+  <table><tr><td/><td>Coverage</td><td title="Covered + Uncovered code">Total</td><td title="Exercised code only">Hit</td>
+  </tr><tr><td>Lines:</td><td>100.0 %</td><td>3633</td><td>3633</td>
+  </tr><tr><td>Functions:</td><td>100.0 %</td><td>425</td><td>425</td>
+  </tr><tr><td>Branches:</td><td>100.0 %</td><td>1840</td><td>1840</td>
+  </tr></table>
+  <table><tr>
+              <th>Directory </th>
+        <th colspan="4">Line Coverage </th>
+        <th colspan="3">Branch Coverage </th>
+        <th colspan="3">Function Coverage </th>
+            </tr><tr>
+                    <th colspan="2"> Rate</th>
+                    <th> Total</th>
+                    <th> Hit</th>
+                    <th> Rate</th>
+                    <th> Total</th>
+                    <th> Hit</th>
+                    <th> Rate</th>
+                    <th> Total</th>
+                    <th> Hit</th>
+            </tr><tr>
+              <td>inc</td>
+              <td/>
+              <td>100.0 %</td>
+              <td>38</td>
+              <td>38</td>
+              <td>-</td>
+              <td/>
+              <td/>
+              <td>100.0 %</td>
+              <td>16</td>
+              <td>16</td>
+            </tr><tr>
+              <td>portable</td>
+              <td/>
+              <td>100.0 %</td>
+              <td>729</td>
+              <td>729</td>
+              <td>100.0 %</td>
+              <td>342</td>
+              <td>342</td>
+              <td>100.0 %</td>
+              <td>81</td>
+              <td>81</td>
+            </tr><tr>
+              <td>shared/inc</td>
+              <td/>
+              <td>100.0 %</td>
+              <td>14</td>
+              <td>14</td>
+              <td>100.0 %</td>
+              <td>4</td>
+              <td>4</td>
+              <td>100.0 %</td>
+              <td>6</td>
+              <td>6</td>
+            </tr><tr>
+              <td>shared/src</td>
+              <td/>
+              <td>100.0 %</td>
+              <td>2154</td>
+              <td>2154</td>
+              <td>100.0 %</td>
+              <td>1236</td>
+              <td>1236</td>
+              <td>100.0 %</td>
+              <td>235</td>
+              <td>235</td>
+            </tr><tr>
+              <td>vxworks/src</td>
+              <td/>
+              <td>100.0 %</td>
+              <td>698</td>
+              <td>698</td>
+              <td>100.0 %</td>
+              <td>258</td>
+              <td>258</td>
+              <td>100.0 %</td>
+              <td>87</td>
+              <td>87</td>
+            </tr></table>
+  

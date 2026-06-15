@@ -1,0 +1,33 @@
+$ lcov --capture --initial --directory build --output-file coverage_base.info
+# cwd: /tmp/vdd_fm_coverage_mq5f_3if/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Capturing coverage data from build
+geninfo cmd: '/usr/bin/geninfo build --output-filename coverage_base.info --initial --memory 0'
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_datg_rO
+Scanning build for .gcno files ...
+Found 6 graph files in build
+Processing build/native/default_cpu1/apps/fm/unit-test/CMakeFiles/coverage-fm-fm_table_utils-object.dir/tmp/vdd_fm_coverage_mq5f_3if/cFS/apps/fm/fsw/src/fm_table_utils.c.gcno
+Processing build/native/default_cpu1/apps/fm/unit-test/CMakeFiles/coverage-fm-fm_dispatch-object.dir/tmp/vdd_fm_coverage_mq5f_3if/cFS/apps/fm/fsw/src/fm_dispatch.c.gcno
+Processing build/native/default_cpu1/apps/fm/unit-test/CMakeFiles/coverage-fm-fm_cmd_utils-object.dir/tmp/vdd_fm_coverage_mq5f_3if/cFS/apps/fm/fsw/src/fm_cmd_utils.c.gcno
+Processing build/native/default_cpu1/apps/fm/unit-test/CMakeFiles/coverage-fm-fm_child-object.dir/tmp/vdd_fm_coverage_mq5f_3if/cFS/apps/fm/fsw/src/fm_child.c.gcno
+Processing build/native/default_cpu1/apps/fm/unit-test/CMakeFiles/coverage-fm-fm_cmds-object.dir/tmp/vdd_fm_coverage_mq5f_3if/cFS/apps/fm/fsw/src/fm_cmds.c.gcno
+Processing build/native/default_cpu1/apps/fm/unit-test/CMakeFiles/coverage-fm-fm_app-object.dir/tmp/vdd_fm_coverage_mq5f_3if/cFS/apps/fm/fsw/src/fm_app.c.gcno
+Finished .info-file creation

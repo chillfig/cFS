@@ -1,0 +1,18 @@
+$ make -C build osal_public_api_headerlist
+# cwd: /tmp/vdd_cfe_docs_azgfvx93/cFS
+
+make: Entering directory '/tmp/vdd_cfe_docs_azgfvx93/cFS/build'
+make[1]: Entering directory '/tmp/vdd_cfe_docs_azgfvx93/cFS/build'
+make[2]: Entering directory '/tmp/vdd_cfe_docs_azgfvx93/cFS/build'
+make[3]: Entering directory '/tmp/vdd_cfe_docs_azgfvx93/cFS/build'
+make[3]: Leaving directory '/tmp/vdd_cfe_docs_azgfvx93/cFS/build'
+make[3]: Entering directory '/tmp/vdd_cfe_docs_azgfvx93/cFS/build'
+[100%] Generating ../osal-public-api.doxyfile
+-- Generating OSAL API documentation input list
+-- OSAL API: Scanning directory /tmp/vdd_cfe_docs_azgfvx93/cFS/osal/src/os/inc
+-- OSAL API: Scanning directory /tmp/vdd_cfe_docs_azgfvx93/cFS/build/osal_public_api/inc
+make[3]: Leaving directory '/tmp/vdd_cfe_docs_azgfvx93/cFS/build'
+[100%] Built target osal_public_api_headerlist
+make[2]: Leaving directory '/tmp/vdd_cfe_docs_azgfvx93/cFS/build'
+make[1]: Leaving directory '/tmp/vdd_cfe_docs_azgfvx93/cFS/build'
+make: Leaving directory '/tmp/vdd_cfe_docs_azgfvx93/cFS/build'

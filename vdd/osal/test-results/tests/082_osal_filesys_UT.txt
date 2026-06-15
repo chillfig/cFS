@@ -1,0 +1,28 @@
+name: osal_filesys_UT
+classname: osal_filesys_UT
+time_seconds: 0.0280576
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_mkfs
+[ PASS] 01.001 ut_osfilesys_diskio_test.c:254 - OS_mkfs(g_fsAddrPtr, NULL, g_volNames[1], OSAL_SIZE_C(0), OSAL_BLOCKCOUNT_C(0)) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.002 ut_osfilesys_diskio_test.c:255 - OS_mkfs(g_fsAddrPtr, g_devNames[1], NULL, OSAL_SIZE_C(0), OSAL_BLOCKCOUNT_C(0)) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.003 ut_osfilesys_diskio_test.c:260 - OS_mkfs(g_fsAddrPtr, g_fsLongName, g_volNames[2], g_blkSize, g_blkCnt) (-103) == OS_FS_ERR_PATH_TOO_LONG (-103)
+
+**BUG** OS_FileSys_Initialize():148:check '(fsdevname) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_FileSys_Initialize():148:check '(fsdevname) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_FileSys_Initialize():149:check '(fsvolname) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 01.004 ut_osfilesys_diskio_test.c:261 - OS_mkfs(g_fsAddrPtr, g_devNames[2], g_fsLongName, g_blkSize, g_blkCnt) (-103) == OS_FS_ERR_PATH_TOO_LONG (-103)
+[ PASS] 01.005 ut...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

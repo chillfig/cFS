@@ -1,0 +1,27 @@
+name: time-base-api-test
+classname: time-base-api-test
+time_seconds: 0.054497
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 TestTimeBaseApi
+[ PASS] 01.001 time-base-api-test.c:85 - OS_TimeBaseCreate(NULL, "TimeBase6", 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.002 time-base-api-test.c:86 - OS_TimeBaseCreate(&time_base_id, NULL, 0) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.003 time-base-api-test.c:90 - OS_TimeBaseCreate(&time_base_id, timebase_name, 0) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+
+**BUG** OS_TimeBaseCreate():108:check '(timebase_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_TimeBaseCreate():109:check '(timebase_name) != NULL' FAILED --> OS_INVALID_POINTER
+
+[ PASS] 01.004 time-base-api-test.c:104 - OS_TimeBaseCreate(&tb_id[i], timebase_name, 0) (0) == OS_SUCCESS (0)
+[ PASS] 01.005 time-base-api-test.c:104 - OS_TimeBaseCreate(&tb_id[i], timebase_name, 0) (0) == OS_SUCCESS (0)
+[ PASS] 01.006 time-base-api-test.c:104 - OS_TimeBaseCreate(&tb_id[i], timebase_name, 0) (0) == OS_SUCCESS (0)
+[ PASS] 01.007 time-base-api-test.c:104 - OS_TimeBaseCreat...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

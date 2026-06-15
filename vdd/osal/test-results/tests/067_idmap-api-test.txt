@@ -1,0 +1,28 @@
+name: idmap-api-test
+classname: idmap-api-test
+time_seconds: 0.062108
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 TestIdMapApi
+[ PASS] 01.001 idmap-api-test.c:117 - OS_TaskCreate() (0) == OS_SUCCESS
+[ PASS] 01.002 idmap-api-test.c:119 - OS_QueueCreate() (0) == OS_SUCCESS
+[ PASS] 01.003 idmap-api-test.c:121 - OS_CountSemCreate() (0) == OS_SUCCESS
+[ PASS] 01.004 idmap-api-test.c:123 - OS_BinSemCreate() (0) == OS_SUCCESS
+[ PASS] 01.005 idmap-api-test.c:125 - OS_MutSemCreate() (0) == OS_SUCCESS
+[ PASS] 01.006 idmap-api-test.c:127 - OS_MutSemCreate() (0) == OS_SUCCESS
+[ PASS] 01.007 idmap-api-test.c:129 - OS_MutSemCreate() (0) == OS_SUCCESS
+[ PASS] 01.008 idmap-api-test.c:131 - OS_TimeBaseCreate() (0) == OS_SUCCESS
+[ PASS] 01.009 idmap-api-test.c:140 - Task exited after 1 iterations
+[ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+[  END] 01 TestIdMapApi         TOTAL::9     PASS::9     FAIL::0     MIR::0     TSF::0     TTF::0   
+
+[BEGIN] 02 OS_IdentifyObject
+[ PASS] 02.001 idmap-api-test.c:172 - OS_IdentifyObject(...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

@@ -1,0 +1,24 @@
+name: osal_timer_UT
+classname: osal_timer_UT
+time_seconds: 5.32333
+status: passed
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 OS_TimerCreate
+[ PASS] 01.001 ut_ostimer_timerio_test.c:183 - OS_TimerCreate(NULL, g_timerNames[1], &g_clkAccuracy, &UT_os_timercallback) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.002 ut_ostimer_timerio_test.c:184 - OS_TimerCreate(&g_timerIds[1], NULL, &g_clkAccuracy, &UT_os_timercallback) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.003 ut_ostimer_timerio_test.c:185 - OS_TimerCreate(&g_timerIds[1], g_timerNames[1], NULL, &UT_os_timercallback) (-2) == OS_INVALID_POINTER (-2)
+[ PASS] 01.004 ut_ostimer_timerio_test.c:190 - OS_TimerCreate(&g_timerIds[2], g_longTimerName, &g_clkAccuracy, &UT_os_timercallback) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+[ PASS] 01.005 ut_ostimer_timerio_test.c:200 - OS_TimerCreate(&g_timerIds[2], tmpStr, &g_clkAccuracy, &UT_os_timercallback) (-13) == OS_ERR_NAME_TOO_LONG (-13)
+
+**BUG** OS_TimerCreate():250:check '(timer_id) != NULL' FAILED --> OS_INVALID_POINTER
+
+
+**BUG** OS_TimerCreate():251:check '(timer_name) != NULL...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]

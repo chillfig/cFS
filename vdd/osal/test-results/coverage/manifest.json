@@ -1,0 +1,39 @@
+{
+  "generated_at_utc": "2026-05-28T16:05:49.468403+00:00",
+  "build_dir": "osal/build",
+  "source_dir": "osal",
+  "files": [
+    "vdd/osal/test-results/coverage/lcov_out.txt",
+    "vdd/osal/test-results/coverage/genhtml_out.txt",
+    "vdd/osal/test-results/coverage/coverage_summary.txt",
+    "vdd/osal/test-results/coverage/coverage_stats.json",
+    "vdd/osal/test-results/coverage/coverage.info",
+    "vdd/osal/test-results/coverage/lcov-html.tar.gz",
+    "vdd/osal/test-results/coverage/lcov-summary.xml"
+  ],
+  "vdd_files": [
+    "vdd/osal/osal_lcov_summary.txt",
+    "vdd/osal/osal_lcov.tar.gz",
+    "vdd/osal/osal_ut_results.txt"
+  ],
+  "metrics": {
+    "lines": {
+      "percent": 100.0,
+      "hit": 3633,
+      "total": 3633,
+      "missed": 0
+    },
+    "functions": {
+      "percent": 100.0,
+      "hit": 425,
+      "total": 425,
+      "missed": 0
+    },
+    "branches": {
+      "percent": 100.0,
+      "hit": 1840,
+      "total": 1840,
+      "missed": 0
+    }
+  }
+}

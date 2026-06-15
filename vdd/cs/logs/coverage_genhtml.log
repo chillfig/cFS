@@ -1,0 +1,48 @@
+$ genhtml coverage_total.info --branch-coverage --output-directory lcov
+# cwd: /tmp/vdd_cs_coverage_tifa03mx/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found 15 entries.
+Found common filename prefix "/tmp/vdd_cs_coverage_tifa03mx/cFS/apps/cs/fsw"
+Generating output.
+Processing file src/cs_memory_cmds.c
+  lines=131 hit=131 functions=7 hit=7 branches=46 hit=46
+Processing file src/cs_dispatch.c
+  lines=205 hit=205 functions=3 hit=3 branches=135 hit=135
+Processing file src/cs_eeprom_cmds.c
+  lines=131 hit=131 functions=7 hit=7 branches=46 hit=46
+Processing file src/cs_app.h
+  lines=18 hit=18 functions=9 hit=9
+Processing file src/cs_utils.h
+  lines=18 hit=18 functions=9 hit=9 branches=4 hit=4
+Processing file src/cs_table_cmds.c
+  lines=80 hit=80 functions=6 hit=6 branches=28 hit=28
+Processing file src/cs_app_cmds.c
+  lines=80 hit=80 functions=6 hit=6 branches=28 hit=28
+Processing file src/cs_compute.c
+  lines=272 hit=272 functions=16 hit=16 branches=98 hit=98
+Processing file /tmp/vdd_cs_coverage_tifa03mx/cFS/cfe/modules/core_api/fsw/inc/cfe_resourceid.h
+  lines=4 hit=4 functions=2 hit=2
+Processing file src/cs_cmds.c
+  lines=196 hit=196 functions=16 hit=16 branches=51 hit=51
+Processing file src/cs_utils.c
+  lines=383 hit=383 functions=33 hit=33 branches=187 hit=187
+Processing file src/cs_init.c
+  lines=73 hit=73 functions=3 hit=3 branches=22 hit=22
+Processing file /tmp/vdd_cs_coverage_tifa03mx/cFS/cfe/modules/core_api/fsw/inc/cfe_sb.h
+  lines=7 hit=7 functions=3 hit=3
+Processing file src/cs_app.c
+  lines=106 hit=106 functions=4 hit=4 branches=40 hit=40
+Processing file src/cs_table_processing.c
+  lines=322 hit=322 functions=22 hit=22 branches=131 hit=131
+Overall coverage rate:
+  lines......: 100.0% (2026 of 2026 lines)
+  functions......: 100.0% (146 of 146 functions)
+  branches......: 100.0% (816 of 816 branches)

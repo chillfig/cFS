@@ -1,0 +1,25 @@
+name: rwlock-test
+classname: rwlock-test
+time_seconds: 60.0288
+status: failed
+message: Timeout
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 RwLockTest
+[ PASS] 01.001 rwlock-test.c:356 - RwLock ID=e0002, status=0
+[ PASS] 01.002 rwlock-test.c:360 - OS_RwLockReadTake 1, status=0
+[ PASS] 01.003 rwlock-test.c:363 - OS_RwLockReadTake 2, status=0
+[ PASS] 01.004 rwlock-test.c:366 - OS_RwLockReadGive 2, status=0
+[ PASS] 01.005 rwlock-test.c:369 - OS_RwLockReadGive 1, status=0
+[ PASS] 01.006 rwlock-test.c:373 - OS_RwLockWriteTake, status=0
+[  TSF] 01.007 rwlock-test.c:383 - Reader ID=0, status=-1
+[  TSF] 01.008 rwlock-test.c:392 - Reader ID=0, status=-1
+Starting ORCHESTRATOR...
+Single-writer only check passed!
+ORCHESTRATOR:Error, readers unable to simultaneously read

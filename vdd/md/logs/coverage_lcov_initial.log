@@ -1,0 +1,33 @@
+$ lcov --capture --initial --directory build --output-file coverage_base.info
+# cwd: /tmp/vdd_md_coverage_oscs5ja5/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Capturing coverage data from build
+geninfo cmd: '/usr/bin/geninfo build --output-filename coverage_base.info --initial --memory 0'
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found gcov version: 13.3.0
+Using intermediate gcov format
+Writing temporary data to /tmp/geninfo_dat2kUg
+Scanning build for .gcno files ...
+Found 6 graph files in build
+Processing build/native/default_cpu1/apps/md/unit-test/CMakeFiles/coverage-md-md_dwell_tbl-object.dir/tmp/vdd_md_coverage_oscs5ja5/cFS/apps/md/fsw/src/md_dwell_tbl.c.gcno
+Processing build/native/default_cpu1/apps/md/unit-test/CMakeFiles/coverage-md-md_cmds-object.dir/tmp/vdd_md_coverage_oscs5ja5/cFS/apps/md/fsw/src/md_cmds.c.gcno
+Processing build/native/default_cpu1/apps/md/unit-test/CMakeFiles/coverage-md-md_app-object.dir/tmp/vdd_md_coverage_oscs5ja5/cFS/apps/md/fsw/src/md_app.c.gcno
+Processing build/native/default_cpu1/apps/md/unit-test/CMakeFiles/coverage-md-md_dispatch-object.dir/tmp/vdd_md_coverage_oscs5ja5/cFS/apps/md/fsw/src/md_dispatch.c.gcno
+Processing build/native/default_cpu1/apps/md/unit-test/CMakeFiles/coverage-md-md_utils-object.dir/tmp/vdd_md_coverage_oscs5ja5/cFS/apps/md/fsw/src/md_utils.c.gcno
+Processing build/native/default_cpu1/apps/md/unit-test/CMakeFiles/coverage-md-md_dwell_pkt-object.dir/tmp/vdd_md_coverage_oscs5ja5/cFS/apps/md/fsw/src/md_dwell_pkt.c.gcno
+Finished .info-file creation

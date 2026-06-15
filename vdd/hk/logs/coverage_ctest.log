@@ -1,0 +1,838 @@
+$ ctest --verbose
+# cwd: /tmp/vdd_hk_coverage_8k3jjcjo/cFS/build/native/default_cpu1/apps/hk
+
+UpdateCTestConfiguration  from :/tmp/vdd_hk_coverage_8k3jjcjo/cFS/build/native/default_cpu1/apps/hk/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/tmp/vdd_hk_coverage_8k3jjcjo/cFS/build/native/default_cpu1/apps/hk/DartConfiguration.tcl
+Test project /tmp/vdd_hk_coverage_8k3jjcjo/cFS/build/native/default_cpu1/apps/hk
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: coverage-hk-hk_app
+
+1: Test command: /tmp/vdd_hk_coverage_8k3jjcjo/cFS/build/native/default_cpu1/apps/hk/unit-test/coverage-hk-hk_app-testrunner
+1: Working Directory: /tmp/vdd_hk_coverage_8k3jjcjo/cFS/build/native/default_cpu1/apps/hk/unit-test
+1: Test timeout computed to be: 10000000
+1: 
+1: [BEGIN] UNIT TEST
+1: 
+1: [BEGIN] 01 SETUP
+1: [  END] No test cases
+1: 
+1: [BEGIN] 01 Test_HK_AppMain_Success
+1: [ PASS] 01.001 hk_app_tests.c:62 - CFE_ES_ExitApp() called
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 01 Test_HK_AppMain_Success TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 02 Test_HK_AppMain_InitFail
+1: [ PASS] 02.001 hk_app_tests.c:86 - HK_AppData.RunStatus (3) == CFE_ES_RunStatus_APP_ERROR (3)
+1: [ PASS] 02.002 hk_app_tests.c:89 - call_count_CFE_SB_ReceiveBuffer (0) == 0 (0)
+1: [ PASS] 02.003 hk_app_tests.c:92 - call_count_CFE_ES_ExitApp (1) == 1 (1)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 02 Test_HK_AppMain_InitFail TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 03 Test_HK_AppMain_SingleRunLoop
+1: [ PASS] 03.001 hk_app_tests.c:135 - call_count_CFE_SB_ReceiveBuffer (1) == 1 (1)
+1: [ PASS] 03.002 hk_app_tests.c:137 - HK_AppData.RunStatus (1) == CFE_ES_RunStatus_APP_RUN (1)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 03 Test_HK_AppMain_SingleRunLoop TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 04 Test_HK_AppMain_RcvBufFail
+1: [ PASS] 04.001 hk_app_tests.c:174 - call_count_CFE_EVS_SendEvent (2) == 2 (2)
+1: [ PASS] 04.002 hk_app_tests.c:176 - context_CFE_EVS_SendEvent[1].EventID (26) == HK_RCV_MSG_ERR_EID (26)
+1: [ PASS] 04.003 hk_app_tests.c:178 - context_CFE_EVS_SendEvent[1].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 04.004 hk_app_tests.c:182 - Event string matched expected result, 'HK_APP Exiting due to CFE_SB_RcvMsg error 0x%08X'
+1: [ PASS] 04.005 hk_app_tests.c:184 - HK_AppData.RunStatus (3) == CFE_ES_RunStatus_APP_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 04 Test_HK_AppMain_RcvBufFail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 05 Test_HK_AppMain_RcvBufTimeout
+1: [ PASS] 05.001 hk_app_tests.c:216 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 05.002 hk_app_tests.c:217 - HK_AppData.RunStatus (1) == CFE_ES_RunStatus_APP_RUN (1)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 05 Test_HK_AppMain_RcvBufTimeout TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 06 Test_HK_AppMain_RcvBufTimeoutCheckFail
+1: [ PASS] 06.001 hk_app_tests.c:251 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 06.002 hk_app_tests.c:252 - HK_AppData.RunStatus (3) == CFE_ES_RunStatus_APP_ERROR (3)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 06 Test_HK_AppMain_RcvBufTimeoutCheckFail TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 07 Test_HK_AppInit_Success
+1: [ PASS] 07.001 hk_app_tests.c:287 - ReturnValue (0) == CFE_SUCCESS (0)
+1: [ PASS] 07.002 hk_app_tests.c:289 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 07.003 hk_app_tests.c:291 - context_CFE_EVS_SendEvent[0].EventID (1) == HK_INIT_INF_EID (1)
+1: [ PASS] 07.004 hk_app_tests.c:293 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+1: [ PASS] 07.005 hk_app_tests.c:297 - Event string matched expected result, 'HK Initialized.  Version %d.%d.%d.%d'
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 07 Test_HK_AppInit_Success TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 08 Test_HK_AppInit_EVSRegFail
+1: [ PASS] 08.001 hk_app_tests.c:321 - ReturnValue (-1) == -1 (-1)
+1: [ PASS] 08.002 hk_app_tests.c:325 - Sys Log string matched expected result, 'HK: error registering for event services: 0x%08X
+1: '
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 08 Test_HK_AppInit_EVSRegFail TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 09 Test_HK_AppInit_SBCreatePipeFail
+1: [ PASS] 09.001 hk_app_tests.c:351 - ReturnValue (-1) == ForcedReturnVal (-1)
+1: [ PASS] 09.002 hk_app_tests.c:353 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 09.003 hk_app_tests.c:355 - context_CFE_EVS_SendEvent[0].EventID (14) == HK_CR_PIPE_ERR_EID (14)
+1: [ PASS] 09.004 hk_app_tests.c:357 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 09.005 hk_app_tests.c:361 - Sys Log string matched expected result, 'Error Creating SB Pipe,RC=0x%08X'
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 09 Test_HK_AppInit_SBCreatePipeFail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 10 Test_HK_AppInit_SBSubscribe1Fail
+1: [ PASS] 10.001 hk_app_tests.c:389 - ReturnValue (-1) == ForcedReturnVal (-1)
+1: [ PASS] 10.002 hk_app_tests.c:391 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 10.003 hk_app_tests.c:393 - context_CFE_EVS_SendEvent[0].EventID (15) == HK_SUB_CMB_ERR_EID (15)
+1: [ PASS] 10.004 hk_app_tests.c:395 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 10.005 hk_app_tests.c:399 - Sys Log string matched expected result, 'Error Subscribing to HK Snd Cmb Pkt, MID=0x%08X, RC=0x%08X'
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 10 Test_HK_AppInit_SBSubscribe1Fail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 11 Test_HK_AppInit_SBSubscribe2Fail
+1: [ PASS] 11.001 hk_app_tests.c:427 - ReturnValue (-1) == ForcedReturnVal (-1)
+1: [ PASS] 11.002 hk_app_tests.c:429 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 11.003 hk_app_tests.c:431 - context_CFE_EVS_SendEvent[0].EventID (16) == HK_SUB_REQ_ERR_EID (16)
+1: [ PASS] 11.004 hk_app_tests.c:433 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 11.005 hk_app_tests.c:437 - Sys Log string matched expected result, 'Error Subscribing to HK Request, MID=0x%08X, RC=0x%08X'
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 11 Test_HK_AppInit_SBSubscribe2Fail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 12 Test_HK_AppInit_SBSubscribe3Fail
+1: [ PASS] 12.001 hk_app_tests.c:465 - ReturnValue (-1) == ForcedReturnVal (-1)
+1: [ PASS] 12.002 hk_app_tests.c:467 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 12.003 hk_app_tests.c:469 - context_CFE_EVS_SendEvent[0].EventID (17) == HK_SUB_CMD_ERR_EID (17)
+1: [ PASS] 12.004 hk_app_tests.c:471 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 12.005 hk_app_tests.c:475 - Sys Log string matched expected result, 'Error Subscribing to HK Gnd Cmds, MID=0x%08X, RC=0x%08X'
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 12 Test_HK_AppInit_SBSubscribe3Fail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 13 Test_HK_AppInit_PoolCreateFail
+1: [ PASS] 13.001 hk_app_tests.c:501 - ReturnValue (-1) == ForcedReturnVal (-1)
+1: [ PASS] 13.002 hk_app_tests.c:503 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 13.003 hk_app_tests.c:505 - context_CFE_EVS_SendEvent[0].EventID (18) == HK_CR_POOL_ERR_EID (18)
+1: [ PASS] 13.004 hk_app_tests.c:507 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 13.005 hk_app_tests.c:511 - Sys Log string matched expected result, 'Error Creating Memory Pool,RC=0x%08X'
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 13 Test_HK_AppInit_PoolCreateFail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 14 Test_HK_AppInit_TblInitFail
+1: [ PASS] 14.001 hk_app_tests.c:534 - ReturnValue (-1) == ForcedReturnVal (-1)
+1: [ PASS] 14.002 hk_app_tests.c:536 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 14 Test_HK_AppInit_TblInitFail TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 15 Test_HK_AppInit_SendEventFail
+1: [ PASS] 15.001 hk_app_tests.c:563 - ReturnValue (-1) == -1 (-1)
+1: [ PASS] 15.002 hk_app_tests.c:565 - call_count_CFE_ES_WriteToSysLog (1) == 1 (1)
+1: [ PASS] 15.003 hk_app_tests.c:569 - Sys Log string matched expected result, 'HK App:Error Sending Initialization Event,RC=0x%08X
+1: '
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 15 Test_HK_AppInit_SendEventFail TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 16 Test_HK_TableInit_Success
+1: [ PASS] 16.001 hk_app_tests.c:597 - ReturnValue (0) == CFE_SUCCESS (0)
+1: [ PASS] 16.002 hk_app_tests.c:599 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 16 Test_HK_TableInit_Success TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 17 Test_HK_TableInit_RegisterCpyTblFail
+1: [ PASS] 17.001 hk_app_tests.c:624 - ReturnValue (-1) == -1 (-1)
+1: [ PASS] 17.002 hk_app_tests.c:626 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 17.003 hk_app_tests.c:628 - context_CFE_EVS_SendEvent[0].EventID (19) == HK_CPTBL_REG_ERR_EID (19)
+1: [ PASS] 17.004 hk_app_tests.c:630 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 17.005 hk_app_tests.c:634 - Event string matched expected result, 'Error Registering Copy Table,RC=0x%08X'
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 17 Test_HK_TableInit_RegisterCpyTblFail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 18 Test_HK_TableInit_RegisterRtTblFail
+1: [ PASS] 18.001 hk_app_tests.c:658 - ReturnValue (-1) == -1 (-1)
+1: [ PASS] 18.002 hk_app_tests.c:660 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 18.003 hk_app_tests.c:662 - context_CFE_EVS_SendEvent[0].EventID (20) == HK_RTTBL_REG_ERR_EID (20)
+1: [ PASS] 18.004 hk_app_tests.c:664 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 18.005 hk_app_tests.c:668 - Event string matched expected result, 'Error Registering Runtime Table,RC=0x%08X'
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 18 Test_HK_TableInit_RegisterRtTblFail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 19 Test_HK_TableInit_LoadCpyTblFail
+1: [ PASS] 19.001 hk_app_tests.c:692 - ReturnValue (-1) == -1 (-1)
+1: [ PASS] 19.002 hk_app_tests.c:694 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 19.003 hk_app_tests.c:696 - context_CFE_EVS_SendEvent[0].EventID (21) == HK_CPTBL_LD_ERR_EID (21)
+1: [ PASS] 19.004 hk_app_tests.c:698 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 19.005 hk_app_tests.c:702 - Event string matched expected result, 'Error Loading Copy Table,RC=0x%08X'
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 19 Test_HK_TableInit_LoadCpyTblFail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 20 Test_HK_TableInit_ManageCpyTblFail
+1: [ PASS] 20.001 hk_app_tests.c:728 - ReturnValue (-1) == -1 (-1)
+1: [ PASS] 20.002 hk_app_tests.c:730 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 20.003 hk_app_tests.c:732 - context_CFE_EVS_SendEvent[0].EventID (22) == HK_CPTBL_MNG_ERR_EID (22)
+1: [ PASS] 20.004 hk_app_tests.c:734 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 20.005 hk_app_tests.c:738 - Event string matched expected result, 'Error from TBL Manage call for Copy Table,RC=0x%08X'
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 20 Test_HK_TableInit_ManageCpyTblFail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 21 Test_HK_TableInit_ManageRtTblFail
+1: [ PASS] 21.001 hk_app_tests.c:764 - ReturnValue (-1) == -1 (-1)
+1: [ PASS] 21.002 hk_app_tests.c:766 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 21.003 hk_app_tests.c:768 - context_CFE_EVS_SendEvent[0].EventID (23) == HK_RTTBL_MNG_ERR_EID (23)
+1: [ PASS] 21.004 hk_app_tests.c:770 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 21.005 hk_app_tests.c:774 - Event string matched expected result, 'Error from TBL Manage call for Runtime Table,RC=0x%08X'
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 21 Test_HK_TableInit_ManageRtTblFail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 22 Test_HK_TableInit_GetAddrCpyTblFail
+1: [ PASS] 22.001 hk_app_tests.c:798 - ReturnValue (-1) == -1 (-1)
+1: [ PASS] 22.002 hk_app_tests.c:800 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 22.003 hk_app_tests.c:802 - context_CFE_EVS_SendEvent[0].EventID (24) == HK_CPTBL_GADR_ERR_EID (24)
+1: [ PASS] 22.004 hk_app_tests.c:804 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 22.005 hk_app_tests.c:808 - Event string matched expected result, 'Error Getting Adr for Cpy Tbl,RC=0x%08X'
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 22 Test_HK_TableInit_GetAddrCpyTblFail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 23 Test_HK_TableInit_GetAddrRtTblFail
+1: [ PASS] 23.001 hk_app_tests.c:833 - ReturnValue (-1) == -1 (-1)
+1: [ PASS] 23.002 hk_app_tests.c:835 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 23.003 hk_app_tests.c:837 - context_CFE_EVS_SendEvent[0].EventID (25) == HK_RTTBL_GADR_ERR_EID (25)
+1: [ PASS] 23.004 hk_app_tests.c:839 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 23.005 hk_app_tests.c:843 - Event string matched expected result, 'Error Getting Adr for Runtime Table,RC=0x%08X'
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 23 Test_HK_TableInit_GetAddrRtTblFail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 24 Test_HK_TableInit_ProcessNewCpyTblFail
+1: [ PASS] 24.001 hk_app_tests.c:870 - ReturnValue (-1) == -1 (-1)
+1: [ PASS] 24.002 hk_app_tests.c:872 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+1: [ PASS] 24.003 hk_app_tests.c:874 - context_CFE_EVS_SendEvent[0].EventID (37) == HK_NEWCPYTBL_INIT_FAILED_EID (37)
+1: [ PASS] 24.004 hk_app_tests.c:876 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+1: [ PASS] 24.005 hk_app_tests.c:880 - Event string matched expected result, 'Process New Copy Table Failed, status = 0x%08X'
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 24 Test_HK_TableInit_ProcessNewCpyTblFail TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: 
+1: [BEGIN] 25 Test_HK_ResetHkData
+1: [ PASS] 25.001 hk_app_tests.c:907 - HK_AppData.CommandCounter (0) == 0 (0)
+1: [ PASS] 25.002 hk_app_tests.c:908 - HK_AppData.CommandErrorCounter (0) == 0 (0)
+1: [ PASS] 25.003 hk_app_tests.c:909 - HK_AppData.CombinedPacketsSent (0) == 0 (0)
+1: [ PASS] 25.004 hk_app_tests.c:910 - HK_AppData.MissingDataCtr (0) == 0 (0)
+1: [ PASS] 25.005 hk_app_tests.c:913 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 25 Test_HK_ResetHkData  TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+1: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+1: [  END] 25 SUMMARY              TOTAL::99    PASS::99    FAIL::0     MIR::0     TSF::0     TTF::0   
+1: COMPLETE: 25 tests Segment(s) executed
+1: 
+1/4 Test #1: coverage-hk-hk_app ...............   Passed    0.00 sec
+test 2
+    Start 2: coverage-hk-hk_cmds
+
+2: Test command: /tmp/vdd_hk_coverage_8k3jjcjo/cFS/build/native/default_cpu1/apps/hk/unit-test/coverage-hk-hk_cmds-testrunner
+2: Working Directory: /tmp/vdd_hk_coverage_8k3jjcjo/cFS/build/native/default_cpu1/apps/hk/unit-test
+2: Test timeout computed to be: 10000000
+2: 
+2: [BEGIN] UNIT TEST
+2: 
+2: [BEGIN] 01 SETUP
+2: [  END] No test cases
+2: 
+2: [BEGIN] 01 Test_HK_SendCombinedPktCmd
+2: [ PASS] 01.001 hk_cmds_tests.c:63 - CallCount: HK_SendCombinedHkPacket() (1) == 1 (1)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 01 Test_HK_SendCombinedPktCmd TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 02 Test_HK_SendHkCmd
+2: [ PASS] 02.001 hk_cmds_tests.c:103 - HK_AppData.CommandCounter (1) == PayloadPtr->CommandCounter (1)
+2: [ PASS] 02.002 hk_cmds_tests.c:104 - HK_AppData.CommandErrorCounter (2) == PayloadPtr->CommandErrorCounter (2)
+2: [ PASS] 02.003 hk_cmds_tests.c:105 - HK_AppData.MissingDataCtr (3) == PayloadPtr->MissingDataCtr (3)
+2: [ PASS] 02.004 hk_cmds_tests.c:106 - HK_AppData.CombinedPacketsSent (4) == PayloadPtr->CombinedPacketsSent (4)
+2: [ PASS] 02.005 hk_cmds_tests.c:107 - CFE_RESOURCEID_TEST_EQUAL(HK_AppData.MemPoolHandle, PayloadPtr->MemPoolHandle)
+2: [ PASS] 02.006 hk_cmds_tests.c:110 - call_count_CFE_SB_TimeStampMsg (1) == 1 (1)
+2: [ PASS] 02.007 hk_cmds_tests.c:111 - call_count_CFE_SB_TransmitMsg (1) == 1 (1)
+2: [ PASS] 02.008 hk_cmds_tests.c:120 - HK_AppData.RunStatus (3) == CFE_ES_RunStatus_APP_ERROR (3)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 02 Test_HK_SendHkCmd    TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 03 Test_HK_NoopCmd
+2: [ PASS] 03.001 hk_cmds_tests.c:147 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 03.002 hk_cmds_tests.c:149 - context_CFE_EVS_SendEvent[0].EventID (4) == HK_NOOP_INF_EID (4)
+2: [ PASS] 03.003 hk_cmds_tests.c:151 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 03.004 hk_cmds_tests.c:155 - Event string matched expected result, 'HK No-op command, Version %d.%d.%d.%d'
+2: [ PASS] 03.005 hk_cmds_tests.c:157 - HK_AppData.CommandCounter (1) == 1 (1)
+2: [ PASS] 03.006 hk_cmds_tests.c:158 - HK_AppData.CommandErrorCounter (0) == 0 (0)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 03 Test_HK_NoopCmd      TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: 
+2: [BEGIN] 04 Test_HK_ResetCountersCmd
+2: [ PASS] 04.001 hk_cmds_tests.c:188 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+2: [ PASS] 04.002 hk_cmds_tests.c:190 - context_CFE_EVS_SendEvent[0].EventID (5) == HK_RESET_INF_EID (5)
+2: [ PASS] 04.003 hk_cmds_tests.c:192 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+2: [ PASS] 04.004 hk_cmds_tests.c:196 - Event string matched expected result, 'HK Reset Counters command received'
+2: [ PASS] 04.005 hk_cmds_tests.c:199 - HK_AppData.CommandCounter (0) == 0 (0)
+2: [ PASS] 04.006 hk_cmds_tests.c:200 - HK_AppData.CommandErrorCounter (0) == 0 (0)
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 04 Test_HK_ResetCountersCmd TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+2: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+2: [  END] 04 SUMMARY              TOTAL::21    PASS::21    FAIL::0     MIR::0     TSF::0     TTF::0   
+2: COMPLETE: 4 tests Segment(s) executed
+2: 
+2/4 Test #2: coverage-hk-hk_cmds ..............   Passed    0.00 sec
+test 3
+    Start 3: coverage-hk-hk_utils
+
+3: Test command: /tmp/vdd_hk_coverage_8k3jjcjo/cFS/build/native/default_cpu1/apps/hk/unit-test/coverage-hk-hk_utils-testrunner
+3: Working Directory: /tmp/vdd_hk_coverage_8k3jjcjo/cFS/build/native/default_cpu1/apps/hk/unit-test
+3: Test timeout computed to be: 10000000
+3: 
+3: [BEGIN] UNIT TEST
+3: 
+3: [BEGIN] 01 SETUP
+3: [  END] No test cases
+3: 
+3: [BEGIN] 01 Test_HK_ProcessIncomingHkData_MidNotFou
+3: [ PASS] 01.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+3: [ PASS] 01.002 hk_utils_tests.c:101 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 01.003 hk_utils_tests.c:113 - NumEntriesWithDataPresent (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 01 Test_HK_ProcessIncomingHkData_MidNotFou TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 02 Test_HK_ProcessIncomingHkData_LengthOkE
+3: [ PASS] 02.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+3: [ PASS] 02.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+3: [ PASS] 02.003 hk_utils_tests.c:156 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 02.004 hk_utils_tests.c:168 - NumEntriesWithDataPresent (1) == 1 (1)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 02 Test_HK_ProcessIncomingHkData_LengthOkE TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 03 Test_HK_ProcessIncomingHkData_LengthOkG
+3: [ PASS] 03.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+3: [ PASS] 03.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+3: [ PASS] 03.003 hk_utils_tests.c:214 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 03.004 hk_utils_tests.c:226 - NumEntriesWithDataPresent (1) == 1 (1)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 03 Test_HK_ProcessIncomingHkData_LengthOkG TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 04 Test_HK_ProcessIncomingHkData_MessageEr
+3: [ PASS] 04.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+3: [ PASS] 04.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+3: [ PASS] 04.003 hk_utils_tests.c:274 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+3: [ PASS] 04.004 hk_utils_tests.c:276 - context_CFE_EVS_SendEvent[0].EventID (6) == HK_ACCESSING_PAST_PACKET_END_EID (6)
+3: [ PASS] 04.005 hk_utils_tests.c:278 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 04.006 hk_utils_tests.c:282 - Event string matched expected result, 'HK table definition exceeds packet length. MID:0x%08lX, Length:%d, Count:%d'
+3: [ PASS] 04.007 hk_utils_tests.c:293 - NumEntriesWithDataPresent (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 04 Test_HK_ProcessIncomingHkData_MessageEr TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 05 Test_HK_ValidateHkCopyTable_Success
+3: [ PASS] 05.001 hk_utils_tests.c:314 - HK_ValidateHkCopyTable(CopyTblPtr) (0) == HK_SUCCESS (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 05 Test_HK_ValidateHkCopyTable_Success TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 06 Test_HK_ValidateHkCopyTable_Error
+3: [ PASS] 06.001 hk_utils_tests.c:333 - HK_ValidateHkCopyTable(CopyTblPtr) (-1) == HK_ERROR (-1)
+3: [ PASS] 06.002 hk_utils_tests.c:338 - HK_ValidateHkCopyTable(CopyTblPtr) (-1) == HK_ERROR (-1)
+3: [ PASS] 06.003 hk_utils_tests.c:343 - HK_ValidateHkCopyTable(CopyTblPtr) (-1) == HK_ERROR (-1)
+3: [ PASS] 06.004 hk_utils_tests.c:348 - HK_ValidateHkCopyTable(CopyTblPtr) (-1) == HK_ERROR (-1)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 06 Test_HK_ValidateHkCopyTable_Error TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 07 Test_HK_ProcessNewCopyTable_EmptyTable
+3: [ PASS] 07.001 hk_utils_tests.c:789 - ReturnValue (0) == CFE_SUCCESS (0)
+3: [ PASS] 07.002 hk_utils_tests.c:791 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 07.003 hk_utils_tests.c:801 - SubscriptionCount (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 07 Test_HK_ProcessNewCopyTable_EmptyTable TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 08 Test_HK_ProcessNewCopyTable_NullCpyTbl
+3: [ PASS] 08.001 hk_utils_tests.c:381 - ReturnValue (-1) == HK_NULL_POINTER_DETECTED (-1)
+3: [ PASS] 08.002 hk_utils_tests.c:383 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+3: [ PASS] 08.003 hk_utils_tests.c:385 - context_CFE_EVS_SendEvent[0].EventID (34) == HK_NULL_POINTER_NEWCPY_ERR_EID (34)
+3: [ PASS] 08.004 hk_utils_tests.c:387 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 08.005 hk_utils_tests.c:391 - Event string matched expected result, 'Null pointer detected in new copy tbl processing: CpyTbl = %p, RtTbl = %p'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 08 Test_HK_ProcessNewCopyTable_NullCpyTbl TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 09 Test_HK_ProcessNewCopyTable_NullRtTbl
+3: [ PASS] 09.001 hk_utils_tests.c:417 - ReturnValue (-1) == HK_NULL_POINTER_DETECTED (-1)
+3: [ PASS] 09.002 hk_utils_tests.c:419 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+3: [ PASS] 09.003 hk_utils_tests.c:421 - context_CFE_EVS_SendEvent[0].EventID (34) == HK_NULL_POINTER_NEWCPY_ERR_EID (34)
+3: [ PASS] 09.004 hk_utils_tests.c:423 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 09.005 hk_utils_tests.c:427 - Event string matched expected result, 'Null pointer detected in new copy tbl processing: CpyTbl = %p, RtTbl = %p'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 09 Test_HK_ProcessNewCopyTable_NullRtTbl TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 10 Test_HK_ProcessNewCopyTable_PoolBufFail
+3: [ PASS] 10.001 hk_utils_tests.c:464 - ReturnValue (0) == CFE_SUCCESS (0)
+3: [ PASS] 10.002 hk_utils_tests.c:466 - call_count_CFE_EVS_SendEvent (5) == 5 (5)
+3: [ PASS] 10.003 hk_utils_tests.c:470 - context_CFE_EVS_SendEvent[i].EventID (7) == HK_MEM_POOL_MALLOC_FAILED_EID (7)
+3: [ PASS] 10.004 hk_utils_tests.c:472 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 10.005 hk_utils_tests.c:477 - Event #0 string matched expected result, 'HK Processing New Table: ES_GetPoolBuf for size %d returned 0x%04X'
+3: [ PASS] 10.006 hk_utils_tests.c:470 - context_CFE_EVS_SendEvent[i].EventID (7) == HK_MEM_POOL_MALLOC_FAILED_EID (7)
+3: [ PASS] 10.007 hk_utils_tests.c:472 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 10.008 hk_utils_tests.c:477 - Event #1 string matched expected result, 'HK Processing New Table: ES_GetPoolBuf for size %d returned 0x%04X'
+3: [ PASS] 10.009 hk_utils_tests.c:470 - context_CFE_EVS_SendEvent[i].EventID (7) == HK_MEM_POOL_MALLOC_FAILED_EID (7)
+3: [ PASS] 10.010 hk_utils_tests.c:472 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 10.011 hk_utils_tests.c:477 - Event #2 string matched expected result, 'HK Processing New Table: ES_GetPoolBuf for size %d returned 0x%04X'
+3: [ PASS] 10.012 hk_utils_tests.c:470 - context_CFE_EVS_SendEvent[i].EventID (7) == HK_MEM_POOL_MALLOC_FAILED_EID (7)
+3: [ PASS] 10.013 hk_utils_tests.c:472 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 10.014 hk_utils_tests.c:477 - Event #3 string matched expected result, 'HK Processing New Table: ES_GetPoolBuf for size %d returned 0x%04X'
+3: [ PASS] 10.015 hk_utils_tests.c:470 - context_CFE_EVS_SendEvent[i].EventID (7) == HK_MEM_POOL_MALLOC_FAILED_EID (7)
+3: [ PASS] 10.016 hk_utils_tests.c:472 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 10.017 hk_utils_tests.c:477 - Event #4 string matched expected result, 'HK Processing New Table: ES_GetPoolBuf for size %d returned 0x%04X'
+3: [ PASS] 10.018 hk_utils_tests.c:483 - RtTblPtr[0].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 10.019 hk_utils_tests.c:484 - RtTblPtr[1].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 10.020 hk_utils_tests.c:485 - RtTblPtr[2].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 10.021 hk_utils_tests.c:486 - RtTblPtr[3].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 10.022 hk_utils_tests.c:487 - RtTblPtr[4].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 10.023 hk_utils_tests.c:496 - ExtraSubscribes (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 10 Test_HK_ProcessNewCopyTable_PoolBufFail TOTAL::23    PASS::23    FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 11 Test_HK_ProcessNewCopyTable_SubscribeFa
+3: [ PASS] 11.001 hk_utils_tests.c:532 - ReturnValue (0) == CFE_SUCCESS (0)
+3: [ PASS] 11.002 hk_utils_tests.c:534 - call_count_CFE_EVS_SendEvent (5) == 5 (5)
+3: [ PASS] 11.003 hk_utils_tests.c:538 - context_CFE_EVS_SendEvent[i].EventID (8) == HK_CANT_SUBSCRIBE_TO_SB_PKT_EID (8)
+3: [ PASS] 11.004 hk_utils_tests.c:540 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 11.005 hk_utils_tests.c:545 - Event #0 string matched expected result, 'HK Processing New Table:SB_Subscribe for Mid 0x%08lX returned 0x%04X'
+3: [ PASS] 11.006 hk_utils_tests.c:538 - context_CFE_EVS_SendEvent[i].EventID (8) == HK_CANT_SUBSCRIBE_TO_SB_PKT_EID (8)
+3: [ PASS] 11.007 hk_utils_tests.c:540 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 11.008 hk_utils_tests.c:545 - Event #1 string matched expected result, 'HK Processing New Table:SB_Subscribe for Mid 0x%08lX returned 0x%04X'
+3: [ PASS] 11.009 hk_utils_tests.c:538 - context_CFE_EVS_SendEvent[i].EventID (8) == HK_CANT_SUBSCRIBE_TO_SB_PKT_EID (8)
+3: [ PASS] 11.010 hk_utils_tests.c:540 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 11.011 hk_utils_tests.c:545 - Event #2 string matched expected result, 'HK Processing New Table:SB_Subscribe for Mid 0x%08lX returned 0x%04X'
+3: [ PASS] 11.012 hk_utils_tests.c:538 - context_CFE_EVS_SendEvent[i].EventID (8) == HK_CANT_SUBSCRIBE_TO_SB_PKT_EID (8)
+3: [ PASS] 11.013 hk_utils_tests.c:540 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 11.014 hk_utils_tests.c:545 - Event #3 string matched expected result, 'HK Processing New Table:SB_Subscribe for Mid 0x%08lX returned 0x%04X'
+3: [ PASS] 11.015 hk_utils_tests.c:538 - context_CFE_EVS_SendEvent[i].EventID (8) == HK_CANT_SUBSCRIBE_TO_SB_PKT_EID (8)
+3: [ PASS] 11.016 hk_utils_tests.c:540 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 11.017 hk_utils_tests.c:545 - Event #4 string matched expected result, 'HK Processing New Table:SB_Subscribe for Mid 0x%08lX returned 0x%04X'
+3: [ PASS] 11.018 hk_utils_tests.c:558 - SubscriptionCount (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 11 Test_HK_ProcessNewCopyTable_SubscribeFa TOTAL::18    PASS::18    FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 12 Test_HK_ProcessNewCopyTable_Success
+3: [ PASS] 12.001 hk_utils_tests.c:589 - ReturnValue (0) == CFE_SUCCESS (0)
+3: [ PASS] 12.002 hk_utils_tests.c:591 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 12.003 hk_utils_tests.c:593 - RtTblPtr[0].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 12.004 hk_utils_tests.c:594 - RtTblPtr[1].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 12.005 hk_utils_tests.c:595 - RtTblPtr[2].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 12.006 hk_utils_tests.c:596 - RtTblPtr[3].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 12.007 hk_utils_tests.c:597 - RtTblPtr[4].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 12.008 hk_utils_tests.c:606 - ExtraSubscribes (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 12 Test_HK_ProcessNewCopyTable_Success TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 13 Test_HK_ProcessNewCopyTable_Success2
+3: [ PASS] 13.001 hk_utils_tests.c:640 - ReturnValue (0) == CFE_SUCCESS (0)
+3: [ PASS] 13.002 hk_utils_tests.c:642 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 13.003 hk_utils_tests.c:644 - RtTblPtr[0].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 13.004 hk_utils_tests.c:645 - RtTblPtr[1].InputMidSubscribed (0) == HK_INPUTMID_NOT_SUBSCRIBED (0)
+3: [ PASS] 13.005 hk_utils_tests.c:646 - RtTblPtr[2].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 13.006 hk_utils_tests.c:647 - RtTblPtr[3].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 13.007 hk_utils_tests.c:648 - RtTblPtr[4].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 13.008 hk_utils_tests.c:658 - ExtraSubscribes (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 13 Test_HK_ProcessNewCopyTable_Success2 TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 14 Test_HK_ProcessNewCopyTable_PacketSizeZ
+3: [ PASS] 14.001 hk_utils_tests.c:690 - ReturnValue (0) == CFE_SUCCESS (0)
+3: [ PASS] 14.002 hk_utils_tests.c:692 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 14.003 hk_utils_tests.c:694 - RtTblPtr[0].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 14.004 hk_utils_tests.c:695 - RtTblPtr[1].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 14.005 hk_utils_tests.c:696 - RtTblPtr[2].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 14.006 hk_utils_tests.c:697 - RtTblPtr[3].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 14.007 hk_utils_tests.c:698 - RtTblPtr[4].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 14.008 hk_utils_tests.c:707 - ExtraSubscribes (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 14 Test_HK_ProcessNewCopyTable_PacketSizeZ TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 15 Test_HK_ProcessNewCopyTable_AllPacketsS
+3: [ PASS] 15.001 hk_utils_tests.c:742 - ReturnValue (0) == CFE_SUCCESS (0)
+3: [ PASS] 15.002 hk_utils_tests.c:744 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 15.003 hk_utils_tests.c:746 - RtTblPtr[0].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 15.004 hk_utils_tests.c:747 - RtTblPtr[1].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 15.005 hk_utils_tests.c:748 - RtTblPtr[2].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 15.006 hk_utils_tests.c:749 - RtTblPtr[3].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 15.007 hk_utils_tests.c:750 - RtTblPtr[4].InputMidSubscribed (255) == HK_INPUTMID_SUBSCRIBED (255)
+3: [ PASS] 15.008 hk_utils_tests.c:760 - ExtraSubscribes (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 15 Test_HK_ProcessNewCopyTable_AllPacketsS TOTAL::8     PASS::8     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 16 Test_HK_TearDownOldCopyTable_NullCpyTbl
+3: [ PASS] 16.001 hk_utils_tests.c:834 - ReturnValue (-1) == HK_NULL_POINTER_DETECTED (-1)
+3: [ PASS] 16.002 hk_utils_tests.c:836 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+3: [ PASS] 16.003 hk_utils_tests.c:838 - context_CFE_EVS_SendEvent[0].EventID (35) == HK_NULL_POINTER_TEARCPY_ERR_EID (35)
+3: [ PASS] 16.004 hk_utils_tests.c:840 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 16.005 hk_utils_tests.c:844 - Event string matched expected result, 'Null pointer detected in copy tbl tear down: CpyTbl = %p, RtTbl = %p'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 16 Test_HK_TearDownOldCopyTable_NullCpyTbl TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 17 Test_HK_TearDownOldCopyTable_NullRtTbl
+3: [ PASS] 17.001 hk_utils_tests.c:871 - ReturnValue (-1) == HK_NULL_POINTER_DETECTED (-1)
+3: [ PASS] 17.002 hk_utils_tests.c:873 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+3: [ PASS] 17.003 hk_utils_tests.c:875 - context_CFE_EVS_SendEvent[0].EventID (35) == HK_NULL_POINTER_TEARCPY_ERR_EID (35)
+3: [ PASS] 17.004 hk_utils_tests.c:877 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 17.005 hk_utils_tests.c:881 - Event string matched expected result, 'Null pointer detected in copy tbl tear down: CpyTbl = %p, RtTbl = %p'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 17 Test_HK_TearDownOldCopyTable_NullRtTbl TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 18 Test_HK_TearDownOldCopyTable_PoolFreeFa
+3: [ PASS] 18.001 hk_utils_tests.c:916 - ReturnValue (0) == CFE_SUCCESS (0)
+3: [ PASS] 18.002 hk_utils_tests.c:918 - call_count_CFE_EVS_SendEvent (5) == 5 (5)
+3: [ PASS] 18.003 hk_utils_tests.c:922 - context_CFE_EVS_SendEvent[i].EventID (9) == HK_MEM_POOL_FREE_FAILED_EID (9)
+3: [ PASS] 18.004 hk_utils_tests.c:924 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 18.005 hk_utils_tests.c:929 - Event #0 string matched expected result, 'HK TearDown: ES_putPoolBuf Err pkt:0x%08lX ret 0x%04X, hdl 0x%08lx'
+3: [ PASS] 18.006 hk_utils_tests.c:922 - context_CFE_EVS_SendEvent[i].EventID (9) == HK_MEM_POOL_FREE_FAILED_EID (9)
+3: [ PASS] 18.007 hk_utils_tests.c:924 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 18.008 hk_utils_tests.c:929 - Event #1 string matched expected result, 'HK TearDown: ES_putPoolBuf Err pkt:0x%08lX ret 0x%04X, hdl 0x%08lx'
+3: [ PASS] 18.009 hk_utils_tests.c:922 - context_CFE_EVS_SendEvent[i].EventID (9) == HK_MEM_POOL_FREE_FAILED_EID (9)
+3: [ PASS] 18.010 hk_utils_tests.c:924 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 18.011 hk_utils_tests.c:929 - Event #2 string matched expected result, 'HK TearDown: ES_putPoolBuf Err pkt:0x%08lX ret 0x%04X, hdl 0x%08lx'
+3: [ PASS] 18.012 hk_utils_tests.c:922 - context_CFE_EVS_SendEvent[i].EventID (9) == HK_MEM_POOL_FREE_FAILED_EID (9)
+3: [ PASS] 18.013 hk_utils_tests.c:924 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 18.014 hk_utils_tests.c:929 - Event #3 string matched expected result, 'HK TearDown: ES_putPoolBuf Err pkt:0x%08lX ret 0x%04X, hdl 0x%08lx'
+3: [ PASS] 18.015 hk_utils_tests.c:922 - context_CFE_EVS_SendEvent[i].EventID (9) == HK_MEM_POOL_FREE_FAILED_EID (9)
+3: [ PASS] 18.016 hk_utils_tests.c:924 - context_CFE_EVS_SendEvent[i].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 18.017 hk_utils_tests.c:929 - Event #4 string matched expected result, 'HK TearDown: ES_putPoolBuf Err pkt:0x%08lX ret 0x%04X, hdl 0x%08lx'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 18 Test_HK_TearDownOldCopyTable_PoolFreeFa TOTAL::17    PASS::17    FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 19 Test_HK_TearDownOldCopyTable_Success
+3: [ PASS] 19.001 hk_utils_tests.c:962 - ReturnValue (0) == CFE_SUCCESS (0)
+3: [ PASS] 19.002 hk_utils_tests.c:964 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 19.003 hk_utils_tests.c:968 - CFE_ES_MEMADDRESS_TO_PTR(RtTblPtr[i].OutputPktAddr) (0x0) == NULL (0x0)
+3: [ PASS] 19.004 hk_utils_tests.c:969 - RtTblPtr[i].InputMidSubscribed (0) == HK_INPUTMID_NOT_SUBSCRIBED (0)
+3: [ PASS] 19.005 hk_utils_tests.c:968 - CFE_ES_MEMADDRESS_TO_PTR(RtTblPtr[i].OutputPktAddr) (0x0) == NULL (0x0)
+3: [ PASS] 19.006 hk_utils_tests.c:969 - RtTblPtr[i].InputMidSubscribed (0) == HK_INPUTMID_NOT_SUBSCRIBED (0)
+3: [ PASS] 19.007 hk_utils_tests.c:968 - CFE_ES_MEMADDRESS_TO_PTR(RtTblPtr[i].OutputPktAddr) (0x0) == NULL (0x0)
+3: [ PASS] 19.008 hk_utils_tests.c:969 - RtTblPtr[i].InputMidSubscribed (0) == HK_INPUTMID_NOT_SUBSCRIBED (0)
+3: [ PASS] 19.009 hk_utils_tests.c:968 - CFE_ES_MEMADDRESS_TO_PTR(RtTblPtr[i].OutputPktAddr) (0x0) == NULL (0x0)
+3: [ PASS] 19.010 hk_utils_tests.c:969 - RtTblPtr[i].InputMidSubscribed (0) == HK_INPUTMID_NOT_SUBSCRIBED (0)
+3: [ PASS] 19.011 hk_utils_tests.c:968 - CFE_ES_MEMADDRESS_TO_PTR(RtTblPtr[i].OutputPktAddr) (0x0) == NULL (0x0)
+3: [ PASS] 19.012 hk_utils_tests.c:969 - RtTblPtr[i].InputMidSubscribed (0) == HK_INPUTMID_NOT_SUBSCRIBED (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 19 Test_HK_TearDownOldCopyTable_Success TOTAL::12    PASS::12    FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 20 Test_HK_TearDownOldCopyTable_EmptyTable
+3: [ PASS] 20.001 hk_utils_tests.c:998 - ReturnValue (0) == CFE_SUCCESS (0)
+3: [ PASS] 20.002 hk_utils_tests.c:1000 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 20.003 hk_utils_tests.c:1010 - SubscriptionCount (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 20 Test_HK_TearDownOldCopyTable_EmptyTable TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 21 Test_HK_TearDownOldCopyTable_Success2
+3: [ PASS] 21.001 hk_utils_tests.c:1043 - ReturnValue (0) == CFE_SUCCESS (0)
+3: [ PASS] 21.002 hk_utils_tests.c:1045 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 21.003 hk_utils_tests.c:1049 - CFE_ES_MEMADDRESS_TO_PTR(RtTblPtr[i].OutputPktAddr) (0x0) == NULL (0x0)
+3: [ PASS] 21.004 hk_utils_tests.c:1050 - RtTblPtr[i].InputMidSubscribed (0) == HK_INPUTMID_NOT_SUBSCRIBED (0)
+3: [ PASS] 21.005 hk_utils_tests.c:1049 - CFE_ES_MEMADDRESS_TO_PTR(RtTblPtr[i].OutputPktAddr) (0x0) == NULL (0x0)
+3: [ PASS] 21.006 hk_utils_tests.c:1050 - RtTblPtr[i].InputMidSubscribed (0) == HK_INPUTMID_NOT_SUBSCRIBED (0)
+3: [ PASS] 21.007 hk_utils_tests.c:1049 - CFE_ES_MEMADDRESS_TO_PTR(RtTblPtr[i].OutputPktAddr) (0x0) == NULL (0x0)
+3: [ PASS] 21.008 hk_utils_tests.c:1050 - RtTblPtr[i].InputMidSubscribed (0) == HK_INPUTMID_NOT_SUBSCRIBED (0)
+3: [ PASS] 21.009 hk_utils_tests.c:1049 - CFE_ES_MEMADDRESS_TO_PTR(RtTblPtr[i].OutputPktAddr) (0x0) == NULL (0x0)
+3: [ PASS] 21.010 hk_utils_tests.c:1050 - RtTblPtr[i].InputMidSubscribed (0) == HK_INPUTMID_NOT_SUBSCRIBED (0)
+3: [ PASS] 21.011 hk_utils_tests.c:1049 - CFE_ES_MEMADDRESS_TO_PTR(RtTblPtr[i].OutputPktAddr) (0x0) == NULL (0x0)
+3: [ PASS] 21.012 hk_utils_tests.c:1050 - RtTblPtr[i].InputMidSubscribed (0) == HK_INPUTMID_NOT_SUBSCRIBED (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 21 Test_HK_TearDownOldCopyTable_Success2 TOTAL::12    PASS::12    FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 22 Test_HK_SendCombinedHkPacket_NoMissingD
+3: [ PASS] 22.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+3: [ PASS] 22.002 hk_utils_tests.c:1098 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 22.003 hk_utils_tests.c:1099 - HK_AppData.MissingDataCtr (0) == 0 (0)
+3: [ PASS] 22.004 hk_utils_tests.c:1100 - call_count_CFE_SB_TimeStampMsg (1) == 1 (1)
+3: [ PASS] 22.005 hk_utils_tests.c:1101 - call_count_CFE_SB_TransmitMsg (1) == 1 (1)
+3: [ PASS] 22.006 hk_utils_tests.c:1102 - HK_AppData.CombinedPacketsSent (1) == 1 (1)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 22 Test_HK_SendCombinedHkPacket_NoMissingD TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 23 Test_HK_SendCombinedHkPacket_MissingDat
+3: [ PASS] 23.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+3: [ PASS] 23.002 hk_utils_tests.c:1133 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+3: [ PASS] 23.003 hk_utils_tests.c:1134 - HK_AppData.MissingDataCtr (1) == 1 (1)
+3: [ PASS] 23.004 hk_utils_tests.c:1140 - call_count_CFE_SB_TimeStampMsg (1) == 1 (1)
+3: [ PASS] 23.005 hk_utils_tests.c:1141 - call_count_CFE_SB_TransmitMsg (1) == 1 (1)
+3: [ PASS] 23.006 hk_utils_tests.c:1142 - HK_AppData.CombinedPacketsSent (1) == 1 (1)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 23 Test_HK_SendCombinedHkPacket_MissingDat TOTAL::6     PASS::6     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 24 Test_HK_SendCombinedHkPacket_EmptyTable
+3: [ PASS] 24.001 hk_utils_tests.c:1176 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+3: [ PASS] 24.002 hk_utils_tests.c:1178 - context_CFE_EVS_SendEvent[0].EventID (11) == HK_UNKNOWN_COMBINED_PACKET_EID (11)
+3: [ PASS] 24.003 hk_utils_tests.c:1180 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+3: [ PASS] 24.004 hk_utils_tests.c:1184 - Event string matched expected result, 'Combined HK Packet 0x%08lX is not found in current HK Copy Table'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 24 Test_HK_SendCombinedHkPacket_EmptyTable TOTAL::4     PASS::4     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 25 Test_HK_SendCombinedHkPacket_PacketNotF
+3: [ PASS] 25.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+3: [ PASS] 25.002 hk_utils_tests.c:1226 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+3: [ PASS] 25.003 hk_utils_tests.c:1228 - context_CFE_EVS_SendEvent[0].EventID (11) == HK_UNKNOWN_COMBINED_PACKET_EID (11)
+3: [ PASS] 25.004 hk_utils_tests.c:1230 - context_CFE_EVS_SendEvent[0].EventType (2) == CFE_EVS_EventType_INFORMATION (2)
+3: [ PASS] 25.005 hk_utils_tests.c:1234 - Event string matched expected result, 'Combined HK Packet 0x%08lX is not found in current HK Copy Table'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 25 Test_HK_SendCombinedHkPacket_PacketNotF TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 26 Test_HK_CheckStatusOfTables_AllSuccess
+3: [ PASS] 26.001 hk_utils_tests.c:1261 - ReturnValue (0) == HK_SUCCESS (0)
+3: [ PASS] 26.002 hk_utils_tests.c:1263 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 26 Test_HK_CheckStatusOfTables_AllSuccess TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 27 Test_HK_CheckStatusOfTables_CpyTblFail
+3: [ PASS] 27.001 hk_utils_tests.c:1283 - ReturnValue (-1) == HK_ERROR (-1)
+3: [ PASS] 27.002 hk_utils_tests.c:1285 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 27 Test_HK_CheckStatusOfTables_CpyTblFail TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 28 Test_HK_CheckStatusOfTables_RtTblFail
+3: [ PASS] 28.001 hk_utils_tests.c:1305 - ReturnValue (-1) == HK_ERROR (-1)
+3: [ PASS] 28.002 hk_utils_tests.c:1307 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 28 Test_HK_CheckStatusOfTables_RtTblFail TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 29 Test_HK_CheckStatusOfCopyTable_TblSucce
+3: [ PASS] 29.001 hk_utils_tests.c:1334 - ReturnValue (0) == HK_SUCCESS (0)
+3: [ PASS] 29.002 hk_utils_tests.c:1336 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 29 Test_HK_CheckStatusOfCopyTable_TblSucce TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 30 Test_HK_CheckStatusOfCopyTable_TblStatF
+3: [ PASS] 30.001 hk_utils_tests.c:1363 - ReturnValue (-1) == HK_ERROR (-1)
+3: [ PASS] 30.002 hk_utils_tests.c:1365 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+3: [ PASS] 30.003 hk_utils_tests.c:1367 - context_CFE_EVS_SendEvent[0].EventID (10) == HK_UNEXPECTED_GETSTAT_RET_EID (10)
+3: [ PASS] 30.004 hk_utils_tests.c:1369 - context_CFE_EVS_SendEvent[0].EventType (4) == CFE_EVS_EventType_CRITICAL (4)
+3: [ PASS] 30.005 hk_utils_tests.c:1373 - Event string matched expected result, 'Unexpected CFE_TBL_GetStatus return (0x%08X) for Copy Table'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 30 Test_HK_CheckStatusOfCopyTable_TblStatF TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 31 Test_HK_CheckStatusOfCopyTable_TblValPe
+3: [ PASS] 31.001 hk_utils_tests.c:1396 - ReturnValue (0) == HK_SUCCESS (0)
+3: [ PASS] 31.002 hk_utils_tests.c:1397 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 31 Test_HK_CheckStatusOfCopyTable_TblValPe TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 32 Test_HK_CheckStatusOfCopyTable_TblValPe
+3: [ PASS] 32.001 hk_utils_tests.c:1427 - ReturnValue (0) == HK_SUCCESS (0)
+3: [ PASS] 32.002 hk_utils_tests.c:1429 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+3: [ PASS] 32.003 hk_utils_tests.c:1431 - context_CFE_EVS_SendEvent[0].EventID (32) == HK_UNEXPECTED_TBLVLD_RET_EID (32)
+3: [ PASS] 32.004 hk_utils_tests.c:1433 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+3: [ PASS] 32.005 hk_utils_tests.c:1437 - Event string matched expected result, 'Unexpected CFE_TBL_Validate return (0x%08X) for Copy Table'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 32 Test_HK_CheckStatusOfCopyTable_TblValPe TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 33 Test_HK_CheckStatusOfCopyTable_TblInfoU
+3: [ PASS] 33.001 hk_utils_tests.c:1467 - ReturnValue (-1) == HK_ERROR (-1)
+3: [ PASS] 33.002 hk_utils_tests.c:1469 - call_count_CFE_EVS_SendEvent (2) == 2 (2)
+3: [ PASS] 33.003 hk_utils_tests.c:1471 - context_CFE_EVS_SendEvent[1].EventID (31) == HK_UNEXPECTED_RELADDR_RET_EID (31)
+3: [ PASS] 33.004 hk_utils_tests.c:1473 - context_CFE_EVS_SendEvent[1].EventType (4) == CFE_EVS_EventType_CRITICAL (4)
+3: [ PASS] 33.005 hk_utils_tests.c:1477 - Event string matched expected result, 'Unexpected CFE_TBL_ReleaseAddress return (0x%08X) for Copy Table'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 33 Test_HK_CheckStatusOfCopyTable_TblInfoU TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 34 Test_HK_CheckStatusOfCopyTable_TblInfoU
+3: [ PASS] 34.001 hk_utils_tests.c:1508 - ReturnValue (-1) == HK_ERROR (-1)
+3: [ PASS] 34.002 hk_utils_tests.c:1510 - call_count_CFE_EVS_SendEvent (2) == 2 (2)
+3: [ PASS] 34.003 hk_utils_tests.c:1512 - context_CFE_EVS_SendEvent[1].EventID (30) == HK_UNEXPECTED_TBLUPD_RET_EID (30)
+3: [ PASS] 34.004 hk_utils_tests.c:1514 - context_CFE_EVS_SendEvent[1].EventType (4) == CFE_EVS_EventType_CRITICAL (4)
+3: [ PASS] 34.005 hk_utils_tests.c:1518 - Event string matched expected result, 'Unexpected CFE_TBL_Update return (0x%08X) for Copy Table'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 34 Test_HK_CheckStatusOfCopyTable_TblInfoU TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 35 Test_HK_CheckStatusOfCopyTable_TblInfoU
+3: [ PASS] 35.001 hk_utils_tests.c:1550 - ReturnValue (-1) == HK_ERROR (-1)
+3: [ PASS] 35.002 hk_utils_tests.c:1552 - call_count_CFE_EVS_SendEvent (2) == 2 (2)
+3: [ PASS] 35.003 hk_utils_tests.c:1554 - context_CFE_EVS_SendEvent[1].EventID (29) == HK_UNEXPECTED_GETADDR_RET_EID (29)
+3: [ PASS] 35.004 hk_utils_tests.c:1556 - context_CFE_EVS_SendEvent[1].EventType (4) == CFE_EVS_EventType_CRITICAL (4)
+3: [ PASS] 35.005 hk_utils_tests.c:1560 - Event string matched expected result, 'Unexpected CFE_TBL_GetAddress return (0x%08X) for Copy Table'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 35 Test_HK_CheckStatusOfCopyTable_TblInfoU TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 36 Test_HK_CheckStatusOfCopyTable_TblInfoU
+3: [ PASS] 36.001 hk_utils_tests.c:1592 - ReturnValue (-1) == HK_ERROR (-1)
+3: [ PASS] 36.002 hk_utils_tests.c:1594 - call_count_CFE_EVS_SendEvent (3) == 3 (3)
+3: [ PASS] 36.003 hk_utils_tests.c:1596 - context_CFE_EVS_SendEvent[2].EventID (36) == HK_NEWCPYTBL_HK_FAILED_EID (36)
+3: [ PASS] 36.004 hk_utils_tests.c:1598 - context_CFE_EVS_SendEvent[2].EventType (4) == CFE_EVS_EventType_CRITICAL (4)
+3: [ PASS] 36.005 hk_utils_tests.c:1602 - Event string matched expected result, 'Process New Copy Table Failed, status = 0x%08X'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 36 Test_HK_CheckStatusOfCopyTable_TblInfoU TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 37 Test_HK_CheckStatusOfCopyTable_TblInfoU
+3: [ PASS] 37.001 hk_utils_tests.c:1637 - ReturnValue (0) == HK_SUCCESS (0)
+3: [ PASS] 37.002 hk_utils_tests.c:1638 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 37 Test_HK_CheckStatusOfCopyTable_TblInfoU TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 38 Test_HK_CheckStatusOfDumpTable_TblStatS
+3: [ PASS] 38.001 hk_utils_tests.c:1665 - ReturnValue (0) == HK_SUCCESS (0)
+3: [ PASS] 38.002 hk_utils_tests.c:1667 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 38 Test_HK_CheckStatusOfDumpTable_TblStatS TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 39 Test_HK_CheckStatusOfDumpTable_TblStatF
+3: [ PASS] 39.001 hk_utils_tests.c:1695 - ReturnValue (-1) == HK_ERROR (-1)
+3: [ PASS] 39.002 hk_utils_tests.c:1697 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+3: [ PASS] 39.003 hk_utils_tests.c:1699 - context_CFE_EVS_SendEvent[0].EventID (27) == HK_UNEXPECTED_GETSTAT2_RET_EID (27)
+3: [ PASS] 39.004 hk_utils_tests.c:1701 - context_CFE_EVS_SendEvent[0].EventType (4) == CFE_EVS_EventType_CRITICAL (4)
+3: [ PASS] 39.005 hk_utils_tests.c:1705 - Event string matched expected result, 'Unexpected CFE_TBL_GetStatus return (0x%08X) for Runtime Table'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 39 Test_HK_CheckStatusOfDumpTable_TblStatF TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 40 Test_HK_CheckStatusOfDumpTable_TblStatU
+3: [ PASS] 40.001 hk_utils_tests.c:1729 - ReturnValue (0) == HK_SUCCESS (0)
+3: [ PASS] 40.002 hk_utils_tests.c:1731 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 40 Test_HK_CheckStatusOfDumpTable_TblStatU TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 41 Test_HK_CheckStatusOfDumpTable_TblStatU
+3: [ PASS] 41.001 hk_utils_tests.c:1761 - ReturnValue (-1) == HK_ERROR (-1)
+3: [ PASS] 41.002 hk_utils_tests.c:1763 - call_count_CFE_EVS_SendEvent (1) == 1 (1)
+3: [ PASS] 41.003 hk_utils_tests.c:1765 - context_CFE_EVS_SendEvent[0].EventID (33) == HK_UNEXPECTED_DUMPTOBUFFER_RET_EID (33)
+3: [ PASS] 41.004 hk_utils_tests.c:1767 - context_CFE_EVS_SendEvent[0].EventType (4) == CFE_EVS_EventType_CRITICAL (4)
+3: [ PASS] 41.005 hk_utils_tests.c:1771 - Event string matched expected result, 'Unexpected CFE_TBL_DumpToBuffer return (0x%08X) for Runtime Table'
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 41 Test_HK_CheckStatusOfDumpTable_TblStatU TOTAL::5     PASS::5     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 42 Test_HK_CheckForMissingData_MissingData
+3: [ PASS] 42.001 hk_utils_tests.c:1808 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 42.002 hk_utils_tests.c:1809 - ReturnValue (1) == HK_MISSING_DATA_DETECTED (1)
+3: [ PASS] 42.003 hk_utils_tests.c:1812 - CFE_SB_MsgIdToValue(MissingInputMid) (2049) == CFE_EVS_HK_TLM_MID (2049)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 42 Test_HK_CheckForMissingData_MissingData TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 43 Test_HK_CheckForMissingData_NoMissingDa
+3: [ PASS] 43.001 hk_utils_tests.c:1843 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 43.002 hk_utils_tests.c:1844 - ReturnValue (0) == HK_NO_MISSING_DATA (0)
+3: [ PASS] 43.003 hk_utils_tests.c:1847 - CFE_SB_IsValidMsgId(MissingInputMid) (0) == false (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 43 Test_HK_CheckForMissingData_NoMissingDa TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 44 Test_HK_CheckForMissingData_NoMissingDa
+3: [ PASS] 44.001 hk_utils_tests.c:1878 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 44.002 hk_utils_tests.c:1879 - ReturnValue (0) == HK_NO_MISSING_DATA (0)
+3: [ PASS] 44.003 hk_utils_tests.c:1882 - CFE_SB_IsValidMsgId(MissingInputMid) (0) == false (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 44 Test_HK_CheckForMissingData_NoMissingDa TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 45 Test_HK_CheckForMissingData_NoMissingDa
+3: [ PASS] 45.001 hk_utils_tests.c:1919 - call_count_CFE_EVS_SendEvent (0) == 0 (0)
+3: [ PASS] 45.002 hk_utils_tests.c:1920 - ReturnValue (0) == HK_NO_MISSING_DATA (0)
+3: [ PASS] 45.003 hk_utils_tests.c:1923 - CFE_SB_IsValidMsgId(MissingInputMid) (0) == false (0)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 45 Test_HK_CheckForMissingData_NoMissingDa TOTAL::3     PASS::3     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: 
+3: [BEGIN] 46 Test_HK_SetFlagsToNotPresent
+3: [ PASS] 46.001 hk_utils_tests.c:1970 - EntriesWithDataPresent (1) == 1 (1)
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 46 Test_HK_SetFlagsToNotPresent TOTAL::1     PASS::1     FAIL::0     MIR::0     TSF::0     TTF::0   
+3: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+3: [  END] 46 SUMMARY              TOTAL::253   PASS::253   FAIL::0     MIR::0     TSF::0     TTF::0   
+3: COMPLETE: 46 tests Segment(s) executed
+3: 
+3/4 Test #3: coverage-hk-hk_utils .............   Passed    0.00 sec
+test 4
+    Start 4: coverage-hk-hk_dispatch
+
+4: Test command: /tmp/vdd_hk_coverage_8k3jjcjo/cFS/build/native/default_cpu1/apps/hk/unit-test/coverage-hk-hk_dispatch-testrunner
+4: Working Directory: /tmp/vdd_hk_coverage_8k3jjcjo/cFS/build/native/default_cpu1/apps/hk/unit-test
+4: Test timeout computed to be: 10000000
+4: 
+4: [BEGIN] UNIT TEST
+4: 
+4: [BEGIN] 01 SETUP
+4: [  END] No test cases
+4: 
+4: [BEGIN] 01 Test_HK_AppPipe_SendCombinedPktCmd
+4: [ PASS] 01.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.003 hk_dispatch_tests.c:80 - CallCount: HK_SendCombinedPktCmd() (1) == 1 (1)
+4: [ PASS] 01.004 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.005 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 01.006 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 01.007 hk_dispatch_tests.c:88 - CallCount: HK_SendCombinedPktCmd() (1) == 1 (1)
+4: [ PASS] 01.008 hk_dispatch_tests.c:89 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 01.009 hk_dispatch_tests.c:90 - context_CFE_EVS_SendEvent[0].EventID (28) == HK_MSG_LEN_ERR_EID (28)
+4: [ PASS] 01.010 hk_dispatch_tests.c:91 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 01 Test_HK_AppPipe_SendCombinedPktCmd TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 02 Test_HK_AppPipe_SendHkCmd
+4: [ PASS] 02.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 02.002 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 02.003 hk_dispatch_tests.c:110 - CallCount: HK_SendHkCmd() (1) == 1 (1)
+4: [ PASS] 02.004 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 02.005 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 02.006 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 02.007 hk_dispatch_tests.c:118 - CallCount: HK_SendHkCmd() (1) == 1 (1)
+4: [ PASS] 02.008 hk_dispatch_tests.c:119 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 02.009 hk_dispatch_tests.c:120 - context_CFE_EVS_SendEvent[0].EventID (28) == HK_MSG_LEN_ERR_EID (28)
+4: [ PASS] 02.010 hk_dispatch_tests.c:121 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 02 Test_HK_AppPipe_SendHkCmd TOTAL::10    PASS::10    FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 03 Test_HK_AppPipe_NoopCmd
+4: [ PASS] 03.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 03.002 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 03.003 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 03.004 hk_dispatch_tests.c:140 - CallCount: HK_NoopCmd() (1) == 1 (1)
+4: [ PASS] 03.005 hk_dispatch_tests.c:141 - HK_AppData.CommandErrorCounter (0) == ZERO (0)
+4: [ PASS] 03.006 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 03.007 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 03.008 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 03.009 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 03.010 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 03.011 hk_dispatch_tests.c:149 - CallCount: HK_NoopCmd() (1) == 1 (1)
+4: [ PASS] 03.012 hk_dispatch_tests.c:150 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 03.013 hk_dispatch_tests.c:151 - context_CFE_EVS_SendEvent[0].EventID (3) == HK_CMD_LEN_ERR_EID (3)
+4: [ PASS] 03.014 hk_dispatch_tests.c:152 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 03.015 hk_dispatch_tests.c:153 - uint8: HK_AppData.CommandErrorCounter (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 03 Test_HK_AppPipe_NoopCmd TOTAL::15    PASS::15    FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 04 Test_HK_AppPipe_ResetCountersCmd
+4: [ PASS] 04.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 04.002 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 04.003 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 04.004 hk_dispatch_tests.c:172 - CallCount: HK_ResetCountersCmd() (1) == 1 (1)
+4: [ PASS] 04.005 hk_dispatch_tests.c:173 - HK_AppData.CommandErrorCounter (0) == ZERO (0)
+4: [ PASS] 04.006 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 04.007 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 04.008 cfe_msg_handlers.c:268 - UT_DefaultHandler_CFE_MSG_GetSize: Check for get value provided by test
+4: [ PASS] 04.009 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 04.010 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 04.011 hk_dispatch_tests.c:181 - CallCount: HK_ResetCountersCmd() (1) == 1 (1)
+4: [ PASS] 04.012 hk_dispatch_tests.c:182 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 04.013 hk_dispatch_tests.c:183 - context_CFE_EVS_SendEvent[0].EventID (3) == HK_CMD_LEN_ERR_EID (3)
+4: [ PASS] 04.014 hk_dispatch_tests.c:184 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 04.015 hk_dispatch_tests.c:185 - uint8: HK_AppData.CommandErrorCounter (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 04 Test_HK_AppPipe_ResetCountersCmd TOTAL::15    PASS::15    FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 05 Test_HK_AppPipe_UnknownCmd
+4: [ PASS] 05.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 05.002 cfe_msg_handlers.c:114 - UT_DefaultHandler_CFE_MSG_GetFcnCode: Check for get value provided by test
+4: [ PASS] 05.003 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 05.004 hk_dispatch_tests.c:204 - CallCount: CFE_EVS_SendEvent() (1) == 1 (1)
+4: [ PASS] 05.005 hk_dispatch_tests.c:205 - context_CFE_EVS_SendEvent[0].EventID (2) == HK_CC_ERR_EID (2)
+4: [ PASS] 05.006 hk_dispatch_tests.c:206 - context_CFE_EVS_SendEvent[0].EventType (3) == CFE_EVS_EventType_ERROR (3)
+4: [ PASS] 05.007 hk_dispatch_tests.c:207 - uint8: HK_AppData.CommandErrorCounter (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 05 Test_HK_AppPipe_UnknownCmd TOTAL::7     PASS::7     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: 
+4: [BEGIN] 06 Test_HK_AppPipe_ProcessIncoming
+4: [ PASS] 06.001 cfe_msg_handlers.c:173 - UT_DefaultHandler_CFE_MSG_GetMsgId: Check for get value provided by test
+4: [ PASS] 06.002 hk_dispatch_tests.c:226 - CallCount: HK_ProcessIncomingHkData() (1) == 1 (1)
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 06 Test_HK_AppPipe_ProcessIncoming TOTAL::2     PASS::2     FAIL::0     MIR::0     TSF::0     TTF::0   
+4: [ INFO]                        ABORT::0     WARN::0     FLOW::0     DEBUG::0     N/A::0   
+4: [  END] 06 SUMMARY              TOTAL::59    PASS::59    FAIL::0     MIR::0     TSF::0     TTF::0   
+4: COMPLETE: 6 tests Segment(s) executed
+4: 
+4/4 Test #4: coverage-hk-hk_dispatch ..........   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =   0.01 sec

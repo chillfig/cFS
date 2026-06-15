@@ -1,0 +1,38 @@
+$ genhtml coverage_total.info --branch-coverage --output-directory lcov
+# cwd: /tmp/vdd_mm_coverage_f0ltoi0l/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found 10 entries.
+Found common filename prefix "/tmp/vdd_mm_coverage_f0ltoi0l/cFS/apps/mm/fsw"
+Generating output.
+Processing file src/mm_cmds.c
+  lines=317 hit=317 functions=14 hit=14 branches=103 hit=103
+Processing file src/mm_app.c
+  lines=44 hit=44 functions=2 hit=2 branches=18 hit=18
+Processing file src/mm_dump.c
+  lines=123 hit=123 functions=4 hit=4 branches=43 hit=43
+Processing file src/mm_mem8.c
+  lines=97 hit=97 functions=3 hit=3 branches=46 hit=46
+Processing file src/mm_dispatch.c
+  lines=90 hit=90 functions=3 hit=3 branches=48 hit=48
+Processing file /tmp/vdd_mm_coverage_f0ltoi0l/cFS/cfe/modules/core_api/fsw/inc/cfe_sb.h
+  lines=7 hit=7 functions=3 hit=3
+Processing file src/mm_utils.c
+  lines=188 hit=188 functions=8 hit=8 branches=116 hit=116
+Processing file src/mm_mem32.c
+  lines=102 hit=102 functions=3 hit=3 branches=48 hit=48
+Processing file src/mm_load.c
+  lines=165 hit=165 functions=6 hit=6 branches=58 hit=58
+Processing file src/mm_mem16.c
+  lines=102 hit=102 functions=3 hit=3 branches=48 hit=48
+Overall coverage rate:
+  lines......: 100.0% (1235 of 1235 lines)
+  functions......: 100.0% (49 of 49 functions)
+  branches......: 100.0% (528 of 528 branches)

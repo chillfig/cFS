@@ -1,0 +1,34 @@
+$ genhtml coverage_total.info --branch-coverage --output-directory lcov
+# cwd: /tmp/vdd_hs_coverage_9yzbfrit/cFS
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "C.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Found 8 entries.
+Found common filename prefix "/tmp/vdd_hs_coverage_9yzbfrit/cFS/apps/hs/fsw"
+Generating output.
+Processing file src/hs_app.c
+  lines=198 hit=198 functions=6 hit=6 branches=102 hit=102
+Processing file src/hs_dispatch.c
+  lines=143 hit=143 functions=16 hit=16 branches=49 hit=49
+Processing file src/hs_sysmon.c
+  lines=48 hit=48 functions=3 hit=3 branches=16 hit=16
+Processing file /tmp/vdd_hs_coverage_9yzbfrit/cFS/psp/fsw/modules/iodriver/inc/iodriver_base.h
+  lines=9 hit=9 functions=3 hit=3
+Processing file src/hs_monitors.c
+  lines=301 hit=301 functions=8 hit=8 branches=170 hit=170
+Processing file /tmp/vdd_hs_coverage_9yzbfrit/cFS/cfe/modules/core_api/fsw/inc/cfe_sb.h
+  lines=7 hit=7 functions=3 hit=3
+Processing file src/hs_utils.c
+  lines=10 hit=10 functions=2 hit=2 branches=4 hit=4
+Processing file src/hs_cmds.c
+  lines=231 hit=231 functions=17 hit=17 branches=104 hit=104
+Overall coverage rate:
+  lines......: 100.0% (947 of 947 lines)
+  functions......: 100.0% (58 of 58 functions)
+  branches......: 100.0% (445 of 445 branches)

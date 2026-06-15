@@ -1,0 +1,15 @@
+name: timer-test
+classname: timer-test
+time_seconds: 60.0145
+status: failed
+message: Timeout
+
+system-out:
+
+[BEGIN] UNIT TEST
+
+[BEGIN] 01 SETUP
+[  END] No test cases
+
+[BEGIN] 01 TimerTest
+[  TSF] 01.001 timer-test.c:99 - Timer Test Task Created RC=-1
