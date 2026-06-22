@@ -20,8 +20,8 @@ fi
 
 # update parent module
 git fetch nasa
-git merge nasa/main
-git rebase nasa/main
+git merge nasa/dev
+git rebase nasa/dev
 
 # update submodules
 git submodule update --init --recursive
@@ -29,7 +29,7 @@ git submodule update --init --recursive
 for app in "${cfs_apps[@]}"; do
     cd "${app}"
     git fetch
-    git checkout main
+    git checkout dev
     git pull
     cd "$ROOT_DIR"
 done
