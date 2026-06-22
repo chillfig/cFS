@@ -20,7 +20,6 @@ fi
 
 # update parent module
 git fetch nasa
-git merge nasa/dev
 git rebase nasa/dev
 
 # update submodules
@@ -43,5 +42,5 @@ if [ -n "$(git status --porcelain)" ]; then
     git commit -m "Updating submodule references"
 
     # Push the changes
-    git push --set-upstream origin cFS_testbed
+    git push --set-upstream origin cFS_testbed --force-with-lease
 fi
